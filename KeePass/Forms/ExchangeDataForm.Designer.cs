@@ -47,17 +47,19 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(378, 60);
+			this.m_bannerImage.Size = new System.Drawing.Size(1008, 148);
 			this.m_bannerImage.TabIndex = 0;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(210, 449);
+			this.m_btnOK.Location = new System.Drawing.Point(560, 1106);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(200, 56);
 			this.m_btnOK.TabIndex = 0;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(291, 449);
+			this.m_btnCancel.Location = new System.Drawing.Point(776, 1106);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(200, 56);
 			this.m_btnCancel.TabIndex = 1;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -77,9 +80,11 @@
 			// m_grpFormat
 			// 
 			this.m_grpFormat.Controls.Add(this.m_lvFormats);
-			this.m_grpFormat.Location = new System.Drawing.Point(12, 72);
+			this.m_grpFormat.Location = new System.Drawing.Point(32, 178);
+			this.m_grpFormat.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_grpFormat.Name = "m_grpFormat";
-			this.m_grpFormat.Size = new System.Drawing.Size(354, 297);
+			this.m_grpFormat.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_grpFormat.Size = new System.Drawing.Size(944, 732);
 			this.m_grpFormat.TabIndex = 2;
 			this.m_grpFormat.TabStop = false;
 			this.m_grpFormat.Text = "Format";
@@ -89,10 +94,11 @@
 			this.m_lvFormats.FullRowSelect = true;
 			this.m_lvFormats.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
 			this.m_lvFormats.HideSelection = false;
-			this.m_lvFormats.Location = new System.Drawing.Point(9, 19);
+			this.m_lvFormats.Location = new System.Drawing.Point(24, 46);
+			this.m_lvFormats.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvFormats.MultiSelect = false;
 			this.m_lvFormats.Name = "m_lvFormats";
-			this.m_lvFormats.Size = new System.Drawing.Size(336, 268);
+			this.m_lvFormats.Size = new System.Drawing.Size(890, 654);
 			this.m_lvFormats.TabIndex = 0;
 			this.m_lvFormats.UseCompatibleStateImageBehavior = false;
 			this.m_lvFormats.View = System.Windows.Forms.View.Details;
@@ -105,9 +111,11 @@
 			this.m_grpFile.Controls.Add(this.m_btnSelFile);
 			this.m_grpFile.Controls.Add(this.m_tbFile);
 			this.m_grpFile.Controls.Add(this.m_lblFile);
-			this.m_grpFile.Location = new System.Drawing.Point(12, 375);
+			this.m_grpFile.Location = new System.Drawing.Point(32, 924);
+			this.m_grpFile.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_grpFile.Name = "m_grpFile";
-			this.m_grpFile.Size = new System.Drawing.Size(354, 68);
+			this.m_grpFile.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_grpFile.Size = new System.Drawing.Size(944, 168);
 			this.m_grpFile.TabIndex = 3;
 			this.m_grpFile.TabStop = false;
 			this.m_grpFile.Text = "File";
@@ -115,9 +123,10 @@
 			// m_lnkFileFormats
 			// 
 			this.m_lnkFileFormats.AutoSize = true;
-			this.m_lnkFileFormats.Location = new System.Drawing.Point(110, 45);
+			this.m_lnkFileFormats.Location = new System.Drawing.Point(294, 110);
+			this.m_lnkFileFormats.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lnkFileFormats.Name = "m_lnkFileFormats";
-			this.m_lnkFileFormats.Size = new System.Drawing.Size(182, 13);
+			this.m_lnkFileFormats.Size = new System.Drawing.Size(437, 30);
 			this.m_lnkFileFormats.TabIndex = 3;
 			this.m_lnkFileFormats.TabStop = true;
 			this.m_lnkFileFormats.Text = "Help: Configuring source applications";
@@ -125,43 +134,48 @@
 			// 
 			// m_btnSelFile
 			// 
-			this.m_btnSelFile.Location = new System.Drawing.Point(316, 17);
+			this.m_btnSelFile.Location = new System.Drawing.Point(842, 42);
+			this.m_btnSelFile.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnSelFile.Name = "m_btnSelFile";
-			this.m_btnSelFile.Size = new System.Drawing.Size(32, 23);
+			this.m_btnSelFile.Size = new System.Drawing.Size(86, 56);
 			this.m_btnSelFile.TabIndex = 2;
 			this.m_btnSelFile.UseVisualStyleBackColor = true;
 			this.m_btnSelFile.Click += new System.EventHandler(this.OnBtnSelFile);
 			// 
 			// m_tbFile
 			// 
-			this.m_tbFile.Location = new System.Drawing.Point(113, 19);
+			this.m_tbFile.Location = new System.Drawing.Point(302, 46);
+			this.m_tbFile.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbFile.Name = "m_tbFile";
-			this.m_tbFile.Size = new System.Drawing.Size(197, 20);
+			this.m_tbFile.Size = new System.Drawing.Size(518, 37);
 			this.m_tbFile.TabIndex = 1;
 			this.m_tbFile.TextChanged += new System.EventHandler(this.OnImportFileTextChanged);
 			// 
 			// m_lblFile
 			// 
 			this.m_lblFile.AutoSize = true;
-			this.m_lblFile.Location = new System.Drawing.Point(6, 22);
+			this.m_lblFile.Location = new System.Drawing.Point(16, 54);
+			this.m_lblFile.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblFile.Name = "m_lblFile";
-			this.m_lblFile.Size = new System.Drawing.Size(19, 13);
+			this.m_lblFile.Size = new System.Drawing.Size(43, 30);
 			this.m_lblFile.TabIndex = 0;
 			this.m_lblFile.Text = "<>";
 			// 
 			// ExchangeDataForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(378, 484);
+			this.ClientSize = new System.Drawing.Size(1008, 1192);
 			this.Controls.Add(this.m_grpFile);
 			this.Controls.Add(this.m_grpFormat);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_btnOK);
 			this.Controls.Add(this.m_bannerImage);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "ExchangeDataForm";
@@ -169,8 +183,8 @@
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "<DYN>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
 			this.m_grpFormat.ResumeLayout(false);
 			this.m_grpFile.ResumeLayout(false);

@@ -39,9 +39,10 @@
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(160, 100);
+			this.m_btnOK.Location = new System.Drawing.Point(426, 246);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(200, 56);
 			this.m_btnOK.TabIndex = 4;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(241, 100);
+			this.m_btnCancel.Location = new System.Drawing.Point(642, 246);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(200, 56);
 			this.m_btnCancel.TabIndex = 5;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -60,57 +62,63 @@
 			// m_lblScheme
 			// 
 			this.m_lblScheme.AutoSize = true;
-			this.m_lblScheme.Location = new System.Drawing.Point(9, 15);
+			this.m_lblScheme.Location = new System.Drawing.Point(24, 36);
+			this.m_lblScheme.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblScheme.Name = "m_lblScheme";
-			this.m_lblScheme.Size = new System.Drawing.Size(49, 13);
+			this.m_lblScheme.Size = new System.Drawing.Size(114, 30);
 			this.m_lblScheme.TabIndex = 0;
 			this.m_lblScheme.Text = "&Scheme:";
 			// 
 			// m_tbScheme
 			// 
-			this.m_tbScheme.Location = new System.Drawing.Point(64, 12);
+			this.m_tbScheme.Location = new System.Drawing.Point(170, 30);
+			this.m_tbScheme.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbScheme.Name = "m_tbScheme";
-			this.m_tbScheme.Size = new System.Drawing.Size(252, 20);
+			this.m_tbScheme.Size = new System.Drawing.Size(666, 37);
 			this.m_tbScheme.TabIndex = 1;
 			// 
 			// m_lblUrlOverride
 			// 
 			this.m_lblUrlOverride.AutoSize = true;
-			this.m_lblUrlOverride.Location = new System.Drawing.Point(9, 45);
+			this.m_lblUrlOverride.Location = new System.Drawing.Point(24, 110);
+			this.m_lblUrlOverride.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblUrlOverride.Name = "m_lblUrlOverride";
-			this.m_lblUrlOverride.Size = new System.Drawing.Size(73, 13);
+			this.m_lblUrlOverride.Size = new System.Drawing.Size(172, 30);
 			this.m_lblUrlOverride.TabIndex = 2;
 			this.m_lblUrlOverride.Text = "&URL override:";
 			// 
 			// m_tbOverride
 			// 
-			this.m_tbOverride.Location = new System.Drawing.Point(12, 63);
+			this.m_tbOverride.Location = new System.Drawing.Point(32, 156);
+			this.m_tbOverride.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbOverride.Name = "m_tbOverride";
-			this.m_tbOverride.Size = new System.Drawing.Size(304, 20);
+			this.m_tbOverride.Size = new System.Drawing.Size(804, 37);
 			this.m_tbOverride.TabIndex = 3;
 			// 
 			// UrlOverrideForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(328, 135);
+			this.ClientSize = new System.Drawing.Size(874, 332);
 			this.Controls.Add(this.m_tbOverride);
 			this.Controls.Add(this.m_lblUrlOverride);
 			this.Controls.Add(this.m_tbScheme);
 			this.Controls.Add(this.m_lblScheme);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_btnOK);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "UrlOverrideForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "<>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
