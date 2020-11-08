@@ -1,0 +1,13 @@
+.vs/
+Build/
+Backup/
+
+KeePassLib/obj/
+KeePass/obj/
+
+Translation/TrlUtil/obj/
+Translation/KeePass.exe
+Translation/KeePass.pdb
+Translation/TrlUtil.exe
+Translation/TrlUtil.pdb
+Translation/KeePass.XmlSerializers.dll
