@@ -27,7 +27,7 @@
 
       div.database-notes pre,
       div.group-notes pre,
-      div.entry-notes pre {margin: 0}
+      div.entry-notes pre {margin: 0; white-space: pre-wrap}
 
       /* main content div - contains everything else */
       div.content {margin: auto 2em;}
