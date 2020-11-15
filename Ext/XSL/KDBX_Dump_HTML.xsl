@@ -127,6 +127,9 @@
       <!-- manufacture fields that are stored not as key/value pairs -->
       <xsl:apply-templates select="Tags"/>
       <xsl:apply-templates select="Times/Expires"/>
+
+      <!-- output attachment names as values -->
+      <xsl:apply-templates select="Binary"/>
     </div>
 
     <!-- output notes on their own, so line breaks are visible -->
@@ -181,6 +184,14 @@
     <xsl:call-template name="key-value-line">
       <xsl:with-param name="key" select="Key" />
       <xsl:with-param name="value" select="Value" />
+    </xsl:call-template>
+  </xsl:template>
+
+  <!-- Outputs names of binary fields (attachments) -->
+  <xsl:template match="Entry/Binary">
+    <xsl:call-template name="key-value-line">
+      <xsl:with-param name="key" select="'Attachment'" />
+      <xsl:with-param name="value" select="Key" />
     </xsl:call-template>
   </xsl:template>
 
