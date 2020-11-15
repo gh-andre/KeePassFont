@@ -75,7 +75,7 @@
           </xsl:if>
         </div>
         <div class="database">
-        <xsl:apply-templates select="Root" />
+          <xsl:apply-templates select="Root/Group" />
         </div>
       </div>
     </body>
