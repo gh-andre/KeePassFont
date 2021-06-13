@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.47 source, with a few changes described in
+This is a copy of KeePass v2.48.1 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -15,47 +15,137 @@ not work in other environments and may even cause unexpected results,
 including possible loss of data. **Use these instructions and modified source
 at your own risk.**
 
-### Larger Application Font Size
+## Changes
 
-All UI forms updated to use `10pt` font size instead of the original `8pt`,
-which is very hard on the eyes, especially on high resolution monitors.
+### Application Font Size
 
-There are a few questions on KeePass forums about increasing font size and
-many of them are either unanswered or described as _working as designed_.
+All UI forms in this repository are updated to use `10pt` font size instead
+of the original `8pt`, which is very hard on the eyes, especially on high
+resolution monitors.
+
+There are a few questions on KeePass forums about increasing font size
+and many of them are either unanswered or described as _working as designed_.
 
 https://sourceforge.net/p/keepass/discussion/search/?q=font+size
 
 This repository is an attempt to address the need for larger fonts for those
 who feel comfortable building this application from the source.
 
-#### Display Resolution
+### XSL Template to Export All Fields and History
 
-These changes work best on high-resolution displays and were tested on a
-display 3840x2160 with up to 200% display scaling on Windows 10.
+KeePass comes with excellent data export capabilities, but the bundled XSL
+stylesheets do not export entry history, collapse entry notes, drop group
+notes and group hierarchy.
 
-Display resolution 1920x1080 was the lowest tested resolution and on some
-displays it worked and on others some buttons were not be visible, depending
-on display scaling and font scaling Windows settings.
+Being able to search through password history is quite important for those
+who want to track down some old compromised passwords and KeePass does not
+offer history search in the application either.
 
-If you build KeePass using these steps, make sure to go through application
-dialogs you regularly use to check whether _Ok_ and _Cancel_ buttons are
-visible before making any data changes or you will not be able to accept your
-changes.
+The new XSL template [KDBX_Dump_HTML.xsl](Ext/XSL/KDBX_Dump_HTML.xsl)
+outputs all fields, including history, and preserves the group hierarchy
+in the output. It also recognizes the recycle bin group and omits it from
+the output.
 
-#### Building
+History may be disabled by changing the following line in the XSL source
+to look like this:
+
+    <xsl:variable name="dump-history" select="'no'" />
+
+Output font size and other CSS properties may be changed in the XSL at the
+top of the source file.
+
+`KDBX_Dump_HTML.xsl` may be used in two ways. You can copy this file into
+the XSL folder in the KeePass installation folder, where other XSL templates
+are, and use it via KeePass' export functionality. Alternatively, you can
+export KeePass XML file and use a standalone XSL processor to produce the
+HTML. For example, using `msxsl.exe`:
+
+    msxsl MyKeePass.xml KDBX_Dump_HTML.xsl -o MyKeePass.html
+
+The latter provides greater flexibility, but you must ensure that exported
+XML and generated HTML are saved in some encrypted storage, such as a BitLocker
+folder or a USB drive attached via a hardware encryption key.
+
+## Repository Structure
+
+The original KeePass source is always committed on `master` and tagged
+with the original version number. All changes are maintained in version
+branches, which contain cherry-picked changes from the previous version
+and new changes. Current topology looks like this:
+
+    
+           VS2019    8pt/10pt        VS2019   8pt/10pt
+              |         |               |        |   
+           +--o---------o----->     +---o--------o---->      +---... v2-48-1
+          /                v2-46-0 /               v2-47-0  /   
+    -o---o------------------------o----o-------------------o---o---> master
+     |  README.md                 |   README.md            |  README.md
+    keepass-2-46-0            keepass-2-47-0           keepass-2-48-1
+
+Version branches `v2-46-0`, `v2-47-0` and `v2-48-1` contain modifications
+of the original code, which is maintained in `master` and are tagged with
+`keepass-2-46-0`, `keepass-2-47-0` and `keepass-2-48-1`, respectively, for
+each new source drop.
+
+The `master` branch contains original KeePass source and two additional
+files, `.gitignore` and `README.md`. The latter is required for GitHub to
+show README on the repository home page. `README.md` should be cherry-picked
+between `master` and the latest version branch for each new source drop.
+
+### Importing KeePass Source
+
+New KeePass source is imported using following steps.
+
+* If you maintain Visual Studio key patch as a stash, push it onto the
+  stash stack:
+
+      git stash push KeePass\KeePass.csproj
+
+* Checkout `master`
+
+      git checkout master
+
+* Delete all source, except `.git`, `.gitignore`, `README.md` and, perhaps,
+  `.vs`.
+* Unzip the new source archive.
+* Add all new source, commit and tag with `keepass-x-y-z`, where `x-y-z`
+  would be the actual version, such as `keepass-2-48-1`.
+* Create a new branch for changes to the new version, with an actual
+  version instead of `x-y-z` (e.g. `v2-48-1`).
+
+      git checkout -b vx-y-z
+
+* Cherry-pick non-conflicting changes from the previous branch, which
+  typically includes added files, such as an added XSL template. For
+  example, if `12345678` represents a commit that includes the last
+  non-conflicting change since the last version 2.47.0, the cherry-pick
+  command would look like this:
+
+      git cherry-pick keepass-2-47-0..12345678
+
+* Font changes from the previous branch will most likely conflict with
+  the new source, so at this point you can either apply all font changes
+  manually or cherry-pick those that merge without a conflict, delete
+  conflicting source, commit the non-conflicting changes and then manually
+  modify conflicting files.
+
+## Building
 
 These steps are tested on Windows 10 (x64) with Visual Studio 2019, Community
 Edition. The original KeePass project was upgraded to Visual Studio 2019.
 
 Download the source from this repository.
 
+Check out the version branch you would like to use. For example,
+
+    git checkout v2-48-1
+
 Run `cmd.exe` and run `vcvarsall.bat` from Visual Studio installation to set
 up x64 build environment.
 
     vcvarsall.bat x64
 
-In the command prompt window, change to the directory with this source and
-start Visual Studio from the the same command prompt, so it can find
+Start Visual Studio from the the same command prompt, so it can find
 `sgen.exe`, which is referenced in the solution.
 
     devenv KeePass.sln
@@ -103,28 +193,7 @@ way accepted by Windows 10 and if your **Smart Screen** is turned on, it will
 pop up a warning that the application is not signed. You will need to click
 _More info_ and the click to run the app anyway.
 
-#### Changing Font Size
-
-Visual Studio is buggy in the handling high DPI settings and dialogs failed to
-resize automatically unless these steps were followed. Follow the _Build_ steps
-to make sure Visual Studio builds properly these changes.
-
-* Click the form whose font size you would like to change, such as `AboutForm.cs`.
-* The dialog editor may appear empty and you need to minimize/restore Visual Studio
-  IDE window to see the dialog. This appears to be a bug in Visual Studio. 
-* Visual Studio will present a pop-up line at the top asking if you would like
-  to restart Visual Studio with display scaling. Go ahead and restart.
-* Double-click the form again and go to _Properties_ in the solution explorer.
-* Click the font picker in the _Font_ proprty line. Choose font size `10pt`.
-  The dialog may appear to have a larger outline, but all controls will still
-  be in the same locations as before.
-* Scroll down to `AutoScaleMode` in _Layout_ and change it from `Font` to `Dpi`.
-  You should see the dialog rendered properly in Visual Studio.
-
-Once this is done, build the app and run it from Visual Studio and test the
-dialog you changed to make sure it is rendered properly.
-
-#### Installing
+## Installing
 
 Install the standard version of KeePass downloaded from the application website:
 
@@ -148,8 +217,8 @@ Open the KeePass installation directory:
 
     C:\Program Files (x86)\KeePass Password Safe 2
 
-, and rename the original `KeePass.exe` file. Do not delete it. Copy the new `KeePass.exe`
-you just built and tested into the installation directory.
+, and rename the original `KeePass.exe` file. Do not delete it. Copy the new
+`KeePass.exe` you just built and tested into the installation directory.
 
 It's worth noting that this step replaces only the executable and not the KeePass
 library, which implements encryption and other secure algorithms.
@@ -157,45 +226,44 @@ library, which implements encryption and other secure algorithms.
 Launch the new KeePass application and test that it works in every way in how
 you normally use the application.
 
-#### Final Notes
-
 Before installing a new version of KeePass, restore the original `KeePass.exe`
 file.
 
-## XSL Template to Export All Fields and History
+## Changing Font Size
 
-KeePass comes with excellent data export capabilities, but the bundled XSL
-stylesheets do not export entry history, collapse entry notes, drop group
-notes and group hierarchy.
+Follow the _Build_ steps to make sure Visual Studio can build these changes,
+so you can check whether font changes worked or not.
 
-Being able to search through password history is quite important for those
-who want to track down some old compromised passwords and KeePass does not
-offer history search in the application either.
+Visual Studio is very buggy in handling forms and DPI settings and you may
+need to repeat these steps.
 
-The new XSL template [KDBX_Dump_HTML.xsl](Ext/XSL/KDBX_Dump_HTML.xsl)
-outputs all fields, including history, and preserves the group hierarchy
-in the output. It also recognizes the recycle bin group and omits it from
-the output.
+* Click the form whose font size you would like to change, such as
+ `AboutForm.cs`.
+* The form editor may appear empty and you need to minimize/restore Visual
+  Studio IDE to see the form. This appears to be a bug in Visual Studio.
+* Visual Studio will present a pop-up line at the top asking if you would
+  like to restart Visual Studio with 100% display scaling. Do not restart
+  or some dialogs will have overlapping controls and cut-off text.
+* Go to form _Properties_ in the solution explorer.
+* Click the font picker in the _Font_ proprty line. Choose font size `10pt`.
+* Scroll down to `AutoScaleMode` in _Layout_ and change it from `Font` to
+  `Dpi`.
+* Repeat this for all forms, except `MainForm_Events.cs` and
+  `MainForm_Functions.cs`.
 
-History may be disabled by changing the following line in the XSL source
-to look like this:
+Build the app and run it from Visual Studio to test whether forms are
+rendered without controls overlapping and there is no truncated text.
 
-    <xsl:variable name="dump-history" select="'no'" />
+### Display Resolution
 
-Output font size and other CSS properties may be changed in the XSL at the
-top of the source file.
+These changes were tested on 3840x2160 displays, with up to 200% display
+scaling, and 1920x1080 displays on Windows 10. On one of of the lower
+resolution displays some buttons were not visible for some display scaling
+and font scaling combinations.
 
-`KDBX_Dump_HTML.xsl` may be used in two ways. You can copy this file into
-the XSL folder in the KeePass installation folder, where other XSL templates
-are, and use it via KeePass' export functionality. Alternatively, you can
-export KeePass XML file and use a standalone XSL processor to produce the
-HTML. For example, using `msxsl.exe`:
-
-    msxsl MyKeePass.xml KDBX_Dump_HTML.xsl -o MyKeePass.html
-
-The latter provides greater flexibility, but you must ensure that exported
-XML and generated HTML are saved in some encrypted storage, such as a BitLocker
-folder or a USB drive attached via a hardware encryption key.
+Make sure to go through application dialogs you regularly use to check
+whether _Ok_ and _Cancel_ buttons are visible before making any data changes
+or you will not be able to accept your changes.
 
 ## Issues
 
@@ -212,4 +280,3 @@ inappropriate mix of some .Net assemblies between installed and built applicatio
 create an issue here.
 
 Similarly, if you find bugs in `KDBX_Dump_HTML.xsl`, also create an issue here.
-
