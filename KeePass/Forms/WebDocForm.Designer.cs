@@ -37,27 +37,30 @@
 			this.m_wbMain.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.m_wbMain.IsWebBrowserContextMenuEnabled = false;
 			this.m_wbMain.Location = new System.Drawing.Point(0, 0);
-			this.m_wbMain.MinimumSize = new System.Drawing.Size(20, 20);
+			this.m_wbMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_wbMain.MinimumSize = new System.Drawing.Size(40, 38);
 			this.m_wbMain.Name = "m_wbMain";
 			this.m_wbMain.ScriptErrorsSuppressed = true;
-			this.m_wbMain.Size = new System.Drawing.Size(541, 445);
+			this.m_wbMain.Size = new System.Drawing.Size(1082, 822);
 			this.m_wbMain.TabIndex = 0;
 			this.m_wbMain.WebBrowserShortcutsEnabled = false;
 			this.m_wbMain.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.OnWebNavigating);
 			// 
 			// WebDocForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(541, 445);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+			this.ClientSize = new System.Drawing.Size(1082, 822);
 			this.Controls.Add(this.m_wbMain);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.MinimizeBox = false;
 			this.Name = "WebDocForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "<>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.ResumeLayout(false);
 
 		}

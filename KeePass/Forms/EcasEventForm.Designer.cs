@@ -42,9 +42,10 @@
 			// m_lblEvent
 			// 
 			this.m_lblEvent.AutoSize = true;
-			this.m_lblEvent.Location = new System.Drawing.Point(9, 14);
+			this.m_lblEvent.Location = new System.Drawing.Point(18, 26);
+			this.m_lblEvent.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblEvent.Name = "m_lblEvent";
-			this.m_lblEvent.Size = new System.Drawing.Size(38, 13);
+			this.m_lblEvent.Size = new System.Drawing.Size(68, 25);
 			this.m_lblEvent.TabIndex = 7;
 			this.m_lblEvent.Text = "Event:";
 			// 
@@ -52,18 +53,20 @@
 			// 
 			this.m_cmbEvents.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.m_cmbEvents.FormattingEnabled = true;
-			this.m_cmbEvents.Location = new System.Drawing.Point(12, 30);
+			this.m_cmbEvents.Location = new System.Drawing.Point(24, 56);
+			this.m_cmbEvents.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cmbEvents.Name = "m_cmbEvents";
-			this.m_cmbEvents.Size = new System.Drawing.Size(510, 21);
+			this.m_cmbEvents.Size = new System.Drawing.Size(1016, 33);
 			this.m_cmbEvents.TabIndex = 0;
 			this.m_cmbEvents.SelectedIndexChanged += new System.EventHandler(this.OnEventsSelectedIndexChanged);
 			// 
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(366, 289);
+			this.m_btnOK.Location = new System.Drawing.Point(732, 534);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(150, 42);
 			this.m_btnOK.TabIndex = 5;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -72,9 +75,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(447, 289);
+			this.m_btnCancel.Location = new System.Drawing.Point(894, 534);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(150, 42);
 			this.m_btnCancel.TabIndex = 6;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -86,32 +90,37 @@
 			this.m_dgvParams.AllowUserToDeleteRows = false;
 			this.m_dgvParams.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.m_dgvParams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.m_dgvParams.Location = new System.Drawing.Point(12, 57);
+			this.m_dgvParams.Location = new System.Drawing.Point(24, 105);
+			this.m_dgvParams.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_dgvParams.Name = "m_dgvParams";
-			this.m_dgvParams.Size = new System.Drawing.Size(510, 180);
+			this.m_dgvParams.RowHeadersWidth = 82;
+			this.m_dgvParams.Size = new System.Drawing.Size(1020, 333);
 			this.m_dgvParams.TabIndex = 1;
 			// 
 			// m_lblParamHint
 			// 
-			this.m_lblParamHint.Location = new System.Drawing.Point(9, 249);
+			this.m_lblParamHint.Location = new System.Drawing.Point(18, 459);
+			this.m_lblParamHint.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblParamHint.Name = "m_lblParamHint";
-			this.m_lblParamHint.Size = new System.Drawing.Size(513, 15);
+			this.m_lblParamHint.Size = new System.Drawing.Size(1026, 27);
 			this.m_lblParamHint.TabIndex = 2;
 			this.m_lblParamHint.Text = "<>";
 			// 
 			// m_lblSep
 			// 
 			this.m_lblSep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.m_lblSep.Location = new System.Drawing.Point(0, 280);
+			this.m_lblSep.Location = new System.Drawing.Point(0, 518);
+			this.m_lblSep.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblSep.Name = "m_lblSep";
-			this.m_lblSep.Size = new System.Drawing.Size(535, 2);
+			this.m_lblSep.Size = new System.Drawing.Size(1070, 3);
 			this.m_lblSep.TabIndex = 3;
 			// 
 			// m_btnHelp
 			// 
-			this.m_btnHelp.Location = new System.Drawing.Point(12, 289);
+			this.m_btnHelp.Location = new System.Drawing.Point(24, 534);
+			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnHelp.Name = "m_btnHelp";
-			this.m_btnHelp.Size = new System.Drawing.Size(75, 23);
+			this.m_btnHelp.Size = new System.Drawing.Size(150, 42);
 			this.m_btnHelp.TabIndex = 4;
 			this.m_btnHelp.Text = "&Help";
 			this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -120,10 +129,10 @@
 			// EcasEventForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(534, 324);
+			this.ClientSize = new System.Drawing.Size(1068, 598);
 			this.Controls.Add(this.m_btnHelp);
 			this.Controls.Add(this.m_lblSep);
 			this.Controls.Add(this.m_lblParamHint);
@@ -132,15 +141,17 @@
 			this.Controls.Add(this.m_btnOK);
 			this.Controls.Add(this.m_lblEvent);
 			this.Controls.Add(this.m_cmbEvents);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "EcasEventForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "<>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.m_dgvParams)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
