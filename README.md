@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.46 source, with a few changes described in
+This is a copy of KeePass v2.47 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -102,6 +102,27 @@ Note that the application built this way will not be digitally signed in a
 way accepted by Windows 10 and if your **Smart Screen** is turned on, it will
 pop up a warning that the application is not signed. You will need to click
 _More info_ and the click to run the app anyway.
+
+#### Changing Font Size
+
+Visual Studio is buggy in the handling high DPI settings and dialogs failed to
+resize automatically unless these steps were followed. Follow the _Build_ steps
+to make sure Visual Studio builds properly these changes.
+
+* Click the form whose font size you would like to change, such as `AboutForm.cs`.
+* The dialog editor may appear empty and you need to minimize/restore Visual Studio
+  IDE window to see the dialog. This appears to be a bug in Visual Studio. 
+* Visual Studio will present a pop-up line at the top asking if you would like
+  to restart Visual Studio with display scaling. Go ahead and restart.
+* Double-click the form again and go to _Properties_ in the solution explorer.
+* Click the font picker in the _Font_ proprty line. Choose font size `10pt`.
+  The dialog may appear to have a larger outline, but all controls will still
+  be in the same locations as before.
+* Scroll down to `AutoScaleMode` in _Layout_ and change it from `Font` to `Dpi`.
+  You should see the dialog rendered properly in Visual Studio.
+
+Once this is done, build the app and run it from Visual Studio and test the
+dialog you changed to make sure it is rendered properly.
 
 #### Installing
 
