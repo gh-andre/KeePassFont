@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.47 source, with a few changes described in
+This is a copy of KeePass v2.48.1 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -15,13 +15,72 @@ not work in other environments and may even cause unexpected results,
 including possible loss of data. **Use these instructions and modified source
 at your own risk.**
 
+### Repository Structure
+
+The original KeePass source is always committed on `master` and tagged
+with the original version number. All changes are maintained in version
+branches, which contain cherry-picked changes from the previous version
+and new changes. Current topology looks like this:
+
+    
+          VS2019    8pt/10pt         VS2019   8pt/10pt
+             |         |                |        |   
+          +--o---------o----->      +---o--------o---->      +---... v2-48-1
+         /                v2-46-0  /               v2-47-0  /   
+    -o--o------------------------o----o-------------------o---o---> master
+     | README.md                 |   README.md            |  README.md
+    keepass-2-46-0            keepass-2-47-0           keepass-2-48-1
+
+Version branches `v2-46-0`, `v2-47-0` and `v2-48-1` contain modifications
+of the original code, which is maintained in `master` and is tagged with
+`keepass-2-46-0`, `keepass-2-47-0` and `keepass-2-48-1`, respectively, for
+each new source drop.
+
+### Importing KeePass Source
+
+New KeePass source is imported using following steps.
+
+* If you maintain Visual Studio key patch as a stash, push it onto the
+  stash stack:
+
+      git stash KeePass\KeePass.csproj
+
+* Checkout `master`
+
+      git checkout master
+
+* Delete all source, except `.git`, `.giignore`, `README.md` and, perhaps,
+  `.vs`.
+* Unzip the new source archive.
+* Add all new source, commit and tag with `keepass-x-y-z`, where `x-y-z`
+  would be the actual version, such as `keepass-2-48-1`.
+* Create a new branch for changes to the new version, with an actual
+  version instead of `x-y-z` (e.g. `v2-48-1`).
+
+      git checkout -b vx-y-z
+
+* Cherry-pick non-conflicting changes from the previous branch, which
+  typically includes added files, such as an added XSL template. For
+  example, if `12345678` represents a commit that includes the last
+  non-conflicting change since the last version 2.47.0, the cherry-pick
+  command would look like this:
+
+      git cherry-pick keepass-2-47-0..12345678
+
+* Font changes from the previous branch will most likely conflict with
+  the new source, so at this point you can either apply all font changes
+  manually or cherry-pick those that merge without a conflict, delete
+  conflicting source, commit the non-conflicting changes and then manually
+  modify conflicting files.
+
 ### Larger Application Font Size
 
-All UI forms updated to use `10pt` font size instead of the original `8pt`,
-which is very hard on the eyes, especially on high resolution monitors.
+All UI forms are updated to use `10pt` font size instead of the original
+`8pt`, which is very hard on the eyes, especially on high resolution
+monitors.
 
-There are a few questions on KeePass forums about increasing font size and
-many of them are either unanswered or described as _working as designed_.
+There are a few questions on KeePass forums about increasing font size
+and many of them are either unanswered or described as _working as designed_.
 
 https://sourceforge.net/p/keepass/discussion/search/?q=font+size
 
@@ -105,24 +164,28 @@ _More info_ and the click to run the app anyway.
 
 #### Changing Font Size
 
-Visual Studio is buggy in the handling high DPI settings and dialogs failed to
-resize automatically unless these steps were followed. Follow the _Build_ steps
-to make sure Visual Studio builds properly these changes.
+Follow the _Build_ steps to make sure Visual Studio can build these changes,
+so you can check whether font changes worked or not.
 
-* Click the form whose font size you would like to change, such as `AboutForm.cs`.
-* The dialog editor may appear empty and you need to minimize/restore Visual Studio
-  IDE window to see the dialog. This appears to be a bug in Visual Studio. 
-* Visual Studio will present a pop-up line at the top asking if you would like
-  to restart Visual Studio with display scaling. Go ahead and restart.
-* Double-click the form again and go to _Properties_ in the solution explorer.
+Visual Studio is very buggy in handling forms and DPI settings and you may
+need to repeat these steps.
+
+* Click the form whose font size you would like to change, such as
+ `AboutForm.cs`.
+* The form editor may appear empty and you need to minimize/restore Visual
+  Studio IDE to see the form. This appears to be a bug in Visual Studio.
+* Visual Studio will present a pop-up line at the top asking if you would
+  like to restart Visual Studio with 100% display scaling. Do not restart
+  or some dialogs will have overlapping controls and cut-off text.
+* Go to form _Properties_ in the solution explorer.
 * Click the font picker in the _Font_ proprty line. Choose font size `10pt`.
-  The dialog may appear to have a larger outline, but all controls will still
-  be in the same locations as before.
-* Scroll down to `AutoScaleMode` in _Layout_ and change it from `Font` to `Dpi`.
-  You should see the dialog rendered properly in Visual Studio.
+* Scroll down to `AutoScaleMode` in _Layout_ and change it from `Font` to
+  `Dpi`.
+* Repeat this for all forms, except `MainForm_Events.cs` and
+  `MainForm_Functions.cs`.
 
-Once this is done, build the app and run it from Visual Studio and test the
-dialog you changed to make sure it is rendered properly.
+Build the app and run it from Visual Studio to test whether forms are
+rendered without controls overlapping and there is no truncated text.
 
 #### Installing
 
