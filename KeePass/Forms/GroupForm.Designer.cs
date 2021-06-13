@@ -70,9 +70,10 @@
 			// m_lblName
 			// 
 			this.m_lblName.AutoSize = true;
-			this.m_lblName.Location = new System.Drawing.Point(3, 13);
+			this.m_lblName.Location = new System.Drawing.Point(8, 32);
+			this.m_lblName.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblName.Name = "m_lblName";
-			this.m_lblName.Size = new System.Drawing.Size(38, 13);
+			this.m_lblName.Size = new System.Drawing.Size(89, 30);
 			this.m_lblName.TabIndex = 0;
 			this.m_lblName.Text = "&Name:";
 			// 
@@ -80,17 +81,19 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(388, 60);
+			this.m_bannerImage.Size = new System.Drawing.Size(1034, 148);
 			this.m_bannerImage.TabIndex = 1;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(220, 238);
+			this.m_btnOK.Location = new System.Drawing.Point(586, 586);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(200, 56);
 			this.m_btnOK.TabIndex = 1;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -99,9 +102,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(301, 238);
+			this.m_btnCancel.Location = new System.Drawing.Point(802, 586);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(200, 56);
 			this.m_btnCancel.TabIndex = 2;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -109,25 +113,28 @@
 			// 
 			// m_tbName
 			// 
-			this.m_tbName.Location = new System.Drawing.Point(84, 10);
+			this.m_tbName.Location = new System.Drawing.Point(224, 24);
+			this.m_tbName.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbName.Name = "m_tbName";
-			this.m_tbName.Size = new System.Drawing.Size(262, 20);
+			this.m_tbName.Size = new System.Drawing.Size(692, 37);
 			this.m_tbName.TabIndex = 1;
 			// 
 			// m_lblIcon
 			// 
 			this.m_lblIcon.AutoSize = true;
-			this.m_lblIcon.Location = new System.Drawing.Point(3, 41);
+			this.m_lblIcon.Location = new System.Drawing.Point(8, 100);
+			this.m_lblIcon.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblIcon.Name = "m_lblIcon";
-			this.m_lblIcon.Size = new System.Drawing.Size(31, 13);
+			this.m_lblIcon.Size = new System.Drawing.Size(67, 30);
 			this.m_lblIcon.TabIndex = 2;
 			this.m_lblIcon.Text = "&Icon:";
 			// 
 			// m_btnIcon
 			// 
-			this.m_btnIcon.Location = new System.Drawing.Point(83, 36);
+			this.m_btnIcon.Location = new System.Drawing.Point(222, 88);
+			this.m_btnIcon.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnIcon.Name = "m_btnIcon";
-			this.m_btnIcon.Size = new System.Drawing.Size(32, 23);
+			this.m_btnIcon.Size = new System.Drawing.Size(86, 56);
 			this.m_btnIcon.TabIndex = 3;
 			this.m_btnIcon.UseVisualStyleBackColor = true;
 			this.m_btnIcon.Click += new System.EventHandler(this.OnBtnIcon);
@@ -139,10 +146,11 @@
 			this.m_tabMain.Controls.Add(this.m_tabBehavior);
 			this.m_tabMain.Controls.Add(this.m_tabAutoType);
 			this.m_tabMain.Controls.Add(this.m_tabCustomData);
-			this.m_tabMain.Location = new System.Drawing.Point(12, 66);
+			this.m_tabMain.Location = new System.Drawing.Point(32, 162);
+			this.m_tabMain.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabMain.Name = "m_tabMain";
 			this.m_tabMain.SelectedIndex = 0;
-			this.m_tabMain.Size = new System.Drawing.Size(364, 166);
+			this.m_tabMain.Size = new System.Drawing.Size(970, 408);
 			this.m_tabMain.TabIndex = 0;
 			// 
 			// m_tabGeneral
@@ -155,44 +163,49 @@
 			this.m_tabGeneral.Controls.Add(this.m_btnIcon);
 			this.m_tabGeneral.Controls.Add(this.m_tbName);
 			this.m_tabGeneral.Controls.Add(this.m_lblIcon);
-			this.m_tabGeneral.Location = new System.Drawing.Point(4, 22);
+			this.m_tabGeneral.Location = new System.Drawing.Point(8, 44);
+			this.m_tabGeneral.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabGeneral.Name = "m_tabGeneral";
-			this.m_tabGeneral.Size = new System.Drawing.Size(356, 140);
+			this.m_tabGeneral.Size = new System.Drawing.Size(954, 356);
 			this.m_tabGeneral.TabIndex = 0;
 			this.m_tabGeneral.Text = "General";
 			this.m_tabGeneral.UseVisualStyleBackColor = true;
 			// 
 			// m_tbUuid
 			// 
-			this.m_tbUuid.Location = new System.Drawing.Point(84, 111);
+			this.m_tbUuid.Location = new System.Drawing.Point(224, 274);
+			this.m_tbUuid.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbUuid.Name = "m_tbUuid";
 			this.m_tbUuid.ReadOnly = true;
-			this.m_tbUuid.Size = new System.Drawing.Size(262, 20);
+			this.m_tbUuid.Size = new System.Drawing.Size(692, 37);
 			this.m_tbUuid.TabIndex = 7;
 			// 
 			// m_lblUuid
 			// 
 			this.m_lblUuid.AutoSize = true;
-			this.m_lblUuid.Location = new System.Drawing.Point(3, 114);
+			this.m_lblUuid.Location = new System.Drawing.Point(8, 280);
+			this.m_lblUuid.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblUuid.Name = "m_lblUuid";
-			this.m_lblUuid.Size = new System.Drawing.Size(37, 13);
+			this.m_lblUuid.Size = new System.Drawing.Size(83, 30);
 			this.m_lblUuid.TabIndex = 6;
 			this.m_lblUuid.Text = "&UUID:";
 			// 
 			// m_dtExpires
 			// 
 			this.m_dtExpires.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-			this.m_dtExpires.Location = new System.Drawing.Point(84, 85);
+			this.m_dtExpires.Location = new System.Drawing.Point(224, 210);
+			this.m_dtExpires.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_dtExpires.Name = "m_dtExpires";
-			this.m_dtExpires.Size = new System.Drawing.Size(262, 20);
+			this.m_dtExpires.Size = new System.Drawing.Size(692, 37);
 			this.m_dtExpires.TabIndex = 5;
 			// 
 			// m_cbExpires
 			// 
 			this.m_cbExpires.AutoSize = true;
-			this.m_cbExpires.Location = new System.Drawing.Point(6, 87);
+			this.m_cbExpires.Location = new System.Drawing.Point(16, 214);
+			this.m_cbExpires.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_cbExpires.Name = "m_cbExpires";
-			this.m_cbExpires.Size = new System.Drawing.Size(63, 17);
+			this.m_cbExpires.Size = new System.Drawing.Size(137, 34);
 			this.m_cbExpires.TabIndex = 4;
 			this.m_cbExpires.Text = "&Expires:";
 			this.m_cbExpires.UseVisualStyleBackColor = true;
@@ -201,9 +214,10 @@
 			// 
 			this.m_tabNotes.Controls.Add(this.m_lblNotesHint);
 			this.m_tabNotes.Controls.Add(this.m_tbNotes);
-			this.m_tabNotes.Location = new System.Drawing.Point(4, 22);
+			this.m_tabNotes.Location = new System.Drawing.Point(8, 44);
+			this.m_tabNotes.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabNotes.Name = "m_tabNotes";
-			this.m_tabNotes.Size = new System.Drawing.Size(356, 140);
+			this.m_tabNotes.Size = new System.Drawing.Size(954, 356);
 			this.m_tabNotes.TabIndex = 2;
 			this.m_tabNotes.Text = "Notes";
 			this.m_tabNotes.UseVisualStyleBackColor = true;
@@ -211,20 +225,22 @@
 			// m_lblNotesHint
 			// 
 			this.m_lblNotesHint.AutoSize = true;
-			this.m_lblNotesHint.Location = new System.Drawing.Point(3, 121);
+			this.m_lblNotesHint.Location = new System.Drawing.Point(8, 298);
+			this.m_lblNotesHint.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblNotesHint.Name = "m_lblNotesHint";
-			this.m_lblNotesHint.Size = new System.Drawing.Size(167, 13);
+			this.m_lblNotesHint.Size = new System.Drawing.Size(399, 30);
 			this.m_lblNotesHint.TabIndex = 1;
 			this.m_lblNotesHint.Text = "Notes are shown in group tooltips.";
 			// 
 			// m_tbNotes
 			// 
 			this.m_tbNotes.AcceptsReturn = true;
-			this.m_tbNotes.Location = new System.Drawing.Point(7, 10);
+			this.m_tbNotes.Location = new System.Drawing.Point(18, 24);
+			this.m_tbNotes.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbNotes.Multiline = true;
 			this.m_tbNotes.Name = "m_tbNotes";
 			this.m_tbNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.m_tbNotes.Size = new System.Drawing.Size(339, 108);
+			this.m_tbNotes.Size = new System.Drawing.Size(898, 260);
 			this.m_tbNotes.TabIndex = 0;
 			// 
 			// m_tabBehavior
@@ -233,9 +249,10 @@
 			this.m_tabBehavior.Controls.Add(this.m_cmbEnableAutoType);
 			this.m_tabBehavior.Controls.Add(this.m_lblEnableSearching);
 			this.m_tabBehavior.Controls.Add(this.m_lblEnableAutoType);
-			this.m_tabBehavior.Location = new System.Drawing.Point(4, 22);
+			this.m_tabBehavior.Location = new System.Drawing.Point(8, 44);
+			this.m_tabBehavior.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabBehavior.Name = "m_tabBehavior";
-			this.m_tabBehavior.Size = new System.Drawing.Size(356, 140);
+			this.m_tabBehavior.Size = new System.Drawing.Size(954, 356);
 			this.m_tabBehavior.TabIndex = 3;
 			this.m_tabBehavior.Text = "Behavior";
 			this.m_tabBehavior.UseVisualStyleBackColor = true;
@@ -244,35 +261,39 @@
 			// 
 			this.m_cmbEnableSearching.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.m_cmbEnableSearching.FormattingEnabled = true;
-			this.m_cmbEnableSearching.Location = new System.Drawing.Point(9, 74);
+			this.m_cmbEnableSearching.Location = new System.Drawing.Point(24, 182);
+			this.m_cmbEnableSearching.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_cmbEnableSearching.Name = "m_cmbEnableSearching";
-			this.m_cmbEnableSearching.Size = new System.Drawing.Size(334, 21);
+			this.m_cmbEnableSearching.Size = new System.Drawing.Size(884, 38);
 			this.m_cmbEnableSearching.TabIndex = 3;
 			// 
 			// m_cmbEnableAutoType
 			// 
 			this.m_cmbEnableAutoType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.m_cmbEnableAutoType.FormattingEnabled = true;
-			this.m_cmbEnableAutoType.Location = new System.Drawing.Point(9, 25);
+			this.m_cmbEnableAutoType.Location = new System.Drawing.Point(24, 62);
+			this.m_cmbEnableAutoType.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_cmbEnableAutoType.Name = "m_cmbEnableAutoType";
-			this.m_cmbEnableAutoType.Size = new System.Drawing.Size(334, 21);
+			this.m_cmbEnableAutoType.Size = new System.Drawing.Size(884, 38);
 			this.m_cmbEnableAutoType.TabIndex = 1;
 			// 
 			// m_lblEnableSearching
 			// 
 			this.m_lblEnableSearching.AutoSize = true;
-			this.m_lblEnableSearching.Location = new System.Drawing.Point(6, 58);
+			this.m_lblEnableSearching.Location = new System.Drawing.Point(16, 142);
+			this.m_lblEnableSearching.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblEnableSearching.Name = "m_lblEnableSearching";
-			this.m_lblEnableSearching.Size = new System.Drawing.Size(152, 13);
+			this.m_lblEnableSearching.Size = new System.Drawing.Size(365, 30);
 			this.m_lblEnableSearching.TabIndex = 2;
 			this.m_lblEnableSearching.Text = "&Searching entries in this group:";
 			// 
 			// m_lblEnableAutoType
 			// 
 			this.m_lblEnableAutoType.AutoSize = true;
-			this.m_lblEnableAutoType.Location = new System.Drawing.Point(6, 9);
+			this.m_lblEnableAutoType.Location = new System.Drawing.Point(16, 22);
+			this.m_lblEnableAutoType.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblEnableAutoType.Name = "m_lblEnableAutoType";
-			this.m_lblEnableAutoType.Size = new System.Drawing.Size(168, 13);
+			this.m_lblEnableAutoType.Size = new System.Drawing.Size(405, 30);
 			this.m_lblEnableAutoType.TabIndex = 0;
 			this.m_lblEnableAutoType.Text = "&Auto-Type for entries in this group:";
 			// 
@@ -283,18 +304,20 @@
 			this.m_tabAutoType.Controls.Add(this.m_rbAutoTypeInherit);
 			this.m_tabAutoType.Controls.Add(this.m_lblAutoTypeDesc);
 			this.m_tabAutoType.Controls.Add(this.m_tbDefaultAutoTypeSeq);
-			this.m_tabAutoType.Location = new System.Drawing.Point(4, 22);
+			this.m_tabAutoType.Location = new System.Drawing.Point(8, 44);
+			this.m_tabAutoType.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabAutoType.Name = "m_tabAutoType";
-			this.m_tabAutoType.Size = new System.Drawing.Size(356, 140);
+			this.m_tabAutoType.Size = new System.Drawing.Size(954, 356);
 			this.m_tabAutoType.TabIndex = 1;
 			this.m_tabAutoType.Text = "Auto-Type";
 			this.m_tabAutoType.UseVisualStyleBackColor = true;
 			// 
 			// m_btnAutoTypeEdit
 			// 
-			this.m_btnAutoTypeEdit.Location = new System.Drawing.Point(315, 54);
+			this.m_btnAutoTypeEdit.Location = new System.Drawing.Point(840, 132);
+			this.m_btnAutoTypeEdit.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnAutoTypeEdit.Name = "m_btnAutoTypeEdit";
-			this.m_btnAutoTypeEdit.Size = new System.Drawing.Size(32, 23);
+			this.m_btnAutoTypeEdit.Size = new System.Drawing.Size(86, 56);
 			this.m_btnAutoTypeEdit.TabIndex = 3;
 			this.m_btnAutoTypeEdit.UseVisualStyleBackColor = true;
 			this.m_btnAutoTypeEdit.Click += new System.EventHandler(this.OnBtnAutoTypeEdit);
@@ -302,9 +325,10 @@
 			// m_rbAutoTypeOverride
 			// 
 			this.m_rbAutoTypeOverride.AutoSize = true;
-			this.m_rbAutoTypeOverride.Location = new System.Drawing.Point(9, 33);
+			this.m_rbAutoTypeOverride.Location = new System.Drawing.Point(24, 82);
+			this.m_rbAutoTypeOverride.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_rbAutoTypeOverride.Name = "m_rbAutoTypeOverride";
-			this.m_rbAutoTypeOverride.Size = new System.Drawing.Size(153, 17);
+			this.m_rbAutoTypeOverride.Size = new System.Drawing.Size(350, 34);
 			this.m_rbAutoTypeOverride.TabIndex = 1;
 			this.m_rbAutoTypeOverride.TabStop = true;
 			this.m_rbAutoTypeOverride.Text = "&Override default sequence:";
@@ -313,9 +337,10 @@
 			// m_rbAutoTypeInherit
 			// 
 			this.m_rbAutoTypeInherit.AutoSize = true;
-			this.m_rbAutoTypeInherit.Location = new System.Drawing.Point(9, 10);
+			this.m_rbAutoTypeInherit.Location = new System.Drawing.Point(24, 24);
+			this.m_rbAutoTypeInherit.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_rbAutoTypeInherit.Name = "m_rbAutoTypeInherit";
-			this.m_rbAutoTypeInherit.Size = new System.Drawing.Size(272, 17);
+			this.m_rbAutoTypeInherit.Size = new System.Drawing.Size(637, 34);
 			this.m_rbAutoTypeInherit.TabIndex = 0;
 			this.m_rbAutoTypeInherit.TabStop = true;
 			this.m_rbAutoTypeInherit.Text = "&Inherit default auto-type sequence from parent group";
@@ -324,36 +349,40 @@
 			// 
 			// m_lblAutoTypeDesc
 			// 
-			this.m_lblAutoTypeDesc.Location = new System.Drawing.Point(26, 80);
+			this.m_lblAutoTypeDesc.Location = new System.Drawing.Point(70, 196);
+			this.m_lblAutoTypeDesc.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblAutoTypeDesc.Name = "m_lblAutoTypeDesc";
-			this.m_lblAutoTypeDesc.Size = new System.Drawing.Size(321, 27);
+			this.m_lblAutoTypeDesc.Size = new System.Drawing.Size(856, 66);
 			this.m_lblAutoTypeDesc.TabIndex = 4;
 			this.m_lblAutoTypeDesc.Text = "All subgroups and entries in the current group that inherit the group\'s auto-type" +
-				" sequence will use the one entered above.";
+    " sequence will use the one entered above.";
 			// 
 			// m_tbDefaultAutoTypeSeq
 			// 
-			this.m_tbDefaultAutoTypeSeq.Location = new System.Drawing.Point(29, 56);
+			this.m_tbDefaultAutoTypeSeq.Location = new System.Drawing.Point(78, 138);
+			this.m_tbDefaultAutoTypeSeq.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbDefaultAutoTypeSeq.Name = "m_tbDefaultAutoTypeSeq";
-			this.m_tbDefaultAutoTypeSeq.Size = new System.Drawing.Size(280, 20);
+			this.m_tbDefaultAutoTypeSeq.Size = new System.Drawing.Size(740, 37);
 			this.m_tbDefaultAutoTypeSeq.TabIndex = 2;
 			// 
 			// m_tabCustomData
 			// 
 			this.m_tabCustomData.Controls.Add(this.m_btnCDDel);
 			this.m_tabCustomData.Controls.Add(this.m_lvCustomData);
-			this.m_tabCustomData.Location = new System.Drawing.Point(4, 22);
+			this.m_tabCustomData.Location = new System.Drawing.Point(8, 44);
+			this.m_tabCustomData.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabCustomData.Name = "m_tabCustomData";
-			this.m_tabCustomData.Size = new System.Drawing.Size(356, 140);
+			this.m_tabCustomData.Size = new System.Drawing.Size(954, 356);
 			this.m_tabCustomData.TabIndex = 4;
 			this.m_tabCustomData.Text = "Plugin Data";
 			this.m_tabCustomData.UseVisualStyleBackColor = true;
 			// 
 			// m_btnCDDel
 			// 
-			this.m_btnCDDel.Location = new System.Drawing.Point(272, 109);
+			this.m_btnCDDel.Location = new System.Drawing.Point(726, 268);
+			this.m_btnCDDel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCDDel.Name = "m_btnCDDel";
-			this.m_btnCDDel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCDDel.Size = new System.Drawing.Size(200, 56);
 			this.m_btnCDDel.TabIndex = 1;
 			this.m_btnCDDel.Text = "&Delete";
 			this.m_btnCDDel.UseVisualStyleBackColor = true;
@@ -364,10 +393,11 @@
 			this.m_lvCustomData.FullRowSelect = true;
 			this.m_lvCustomData.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
 			this.m_lvCustomData.HideSelection = false;
-			this.m_lvCustomData.Location = new System.Drawing.Point(7, 10);
+			this.m_lvCustomData.Location = new System.Drawing.Point(18, 24);
+			this.m_lvCustomData.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvCustomData.Name = "m_lvCustomData";
 			this.m_lvCustomData.ShowItemToolTips = true;
-			this.m_lvCustomData.Size = new System.Drawing.Size(339, 93);
+			this.m_lvCustomData.Size = new System.Drawing.Size(898, 224);
 			this.m_lvCustomData.TabIndex = 0;
 			this.m_lvCustomData.UseCompatibleStateImageBehavior = false;
 			this.m_lvCustomData.View = System.Windows.Forms.View.Details;
@@ -376,23 +406,25 @@
 			// GroupForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(388, 273);
+			this.ClientSize = new System.Drawing.Size(1034, 672);
 			this.Controls.Add(this.m_tabMain);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_btnOK);
 			this.Controls.Add(this.m_bannerImage);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "GroupForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "<DYN>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
 			this.m_tabMain.ResumeLayout(false);
 			this.m_tabGeneral.ResumeLayout(false);

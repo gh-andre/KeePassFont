@@ -39,9 +39,10 @@
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(428, 340);
+			this.m_btnOK.Location = new System.Drawing.Point(1142, 836);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(200, 56);
 			this.m_btnOK.TabIndex = 0;
 			this.m_btnOK.Text = "<>";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(509, 340);
+			this.m_btnCancel.Location = new System.Drawing.Point(1358, 836);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(200, 56);
 			this.m_btnCancel.TabIndex = 1;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -60,16 +62,18 @@
 			// m_lblSeparator
 			// 
 			this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.m_lblSeparator.Location = new System.Drawing.Point(0, 374);
+			this.m_lblSeparator.Location = new System.Drawing.Point(0, 920);
+			this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblSeparator.Name = "m_lblSeparator";
-			this.m_lblSeparator.Size = new System.Drawing.Size(595, 2);
+			this.m_lblSeparator.Size = new System.Drawing.Size(1586, 4);
 			this.m_lblSeparator.TabIndex = 2;
 			// 
 			// m_lblHint
 			// 
-			this.m_lblHint.Location = new System.Drawing.Point(9, 383);
+			this.m_lblHint.Location = new System.Drawing.Point(24, 942);
+			this.m_lblHint.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblHint.Name = "m_lblHint";
-			this.m_lblHint.Size = new System.Drawing.Size(574, 28);
+			this.m_lblHint.Size = new System.Drawing.Size(1530, 68);
 			this.m_lblHint.TabIndex = 3;
 			this.m_lblHint.Text = "<>";
 			// 
@@ -77,10 +81,11 @@
 			// 
 			this.m_tvFolders.HideSelection = false;
 			this.m_tvFolders.HotTracking = true;
-			this.m_tvFolders.Location = new System.Drawing.Point(12, 12);
+			this.m_tvFolders.Location = new System.Drawing.Point(32, 30);
+			this.m_tvFolders.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tvFolders.Name = "m_tvFolders";
 			this.m_tvFolders.ShowNodeToolTips = true;
-			this.m_tvFolders.Size = new System.Drawing.Size(186, 321);
+			this.m_tvFolders.Size = new System.Drawing.Size(490, 784);
 			this.m_tvFolders.TabIndex = 4;
 			this.m_tvFolders.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.OnFoldersBeforeExpand);
 			this.m_tvFolders.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.OnFoldersAfterSelect);
@@ -90,12 +95,13 @@
 			this.m_lvFiles.FullRowSelect = true;
 			this.m_lvFiles.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvFiles.HideSelection = false;
-			this.m_lvFiles.Location = new System.Drawing.Point(202, 12);
+			this.m_lvFiles.Location = new System.Drawing.Point(538, 30);
+			this.m_lvFiles.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvFiles.MultiSelect = false;
 			this.m_lvFiles.Name = "m_lvFiles";
 			this.m_lvFiles.ShowGroups = false;
 			this.m_lvFiles.ShowItemToolTips = true;
-			this.m_lvFiles.Size = new System.Drawing.Size(381, 321);
+			this.m_lvFiles.Size = new System.Drawing.Size(1010, 784);
 			this.m_lvFiles.TabIndex = 5;
 			this.m_lvFiles.UseCompatibleStateImageBehavior = false;
 			this.m_lvFiles.View = System.Windows.Forms.View.Details;
@@ -105,25 +111,27 @@
 			// FileBrowserForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(595, 420);
+			this.ClientSize = new System.Drawing.Size(1586, 1034);
 			this.Controls.Add(this.m_lvFiles);
 			this.Controls.Add(this.m_tvFolders);
 			this.Controls.Add(this.m_lblHint);
 			this.Controls.Add(this.m_lblSeparator);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_btnOK);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "FileBrowserForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "<>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.ResumeLayout(false);
 
 		}

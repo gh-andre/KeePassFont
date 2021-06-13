@@ -86,13 +86,16 @@
 			// 
 			// m_menuMain
 			// 
+			this.m_menuMain.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+			this.m_menuMain.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.m_menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_menuFile,
             this.m_menuEdit,
             this.m_menuView});
 			this.m_menuMain.Location = new System.Drawing.Point(0, 0);
 			this.m_menuMain.Name = "m_menuMain";
-			this.m_menuMain.Size = new System.Drawing.Size(608, 24);
+			this.m_menuMain.Padding = new System.Windows.Forms.Padding(16, 4, 0, 4);
+			this.m_menuMain.Size = new System.Drawing.Size(1622, 50);
 			this.m_menuMain.TabIndex = 1;
 			// 
 			// m_menuFile
@@ -102,27 +105,27 @@
             this.m_menuFileSep0,
             this.m_menuFileExit});
 			this.m_menuFile.Name = "m_menuFile";
-			this.m_menuFile.Size = new System.Drawing.Size(37, 20);
+			this.m_menuFile.Size = new System.Drawing.Size(80, 42);
 			this.m_menuFile.Text = "&File";
 			// 
 			// m_menuFileSave
 			// 
 			this.m_menuFileSave.Image = global::KeePass.Properties.Resources.B16x16_FileSave;
 			this.m_menuFileSave.Name = "m_menuFileSave";
-			this.m_menuFileSave.Size = new System.Drawing.Size(103, 22);
+			this.m_menuFileSave.Size = new System.Drawing.Size(220, 46);
 			this.m_menuFileSave.Text = "&Save";
 			this.m_menuFileSave.Click += new System.EventHandler(this.OnFileSave);
 			// 
 			// m_menuFileSep0
 			// 
 			this.m_menuFileSep0.Name = "m_menuFileSep0";
-			this.m_menuFileSep0.Size = new System.Drawing.Size(100, 6);
+			this.m_menuFileSep0.Size = new System.Drawing.Size(217, 6);
 			// 
 			// m_menuFileExit
 			// 
 			this.m_menuFileExit.Image = global::KeePass.Properties.Resources.B16x16_Exit;
 			this.m_menuFileExit.Name = "m_menuFileExit";
-			this.m_menuFileExit.Size = new System.Drawing.Size(103, 22);
+			this.m_menuFileExit.Size = new System.Drawing.Size(220, 46);
 			this.m_menuFileExit.Text = "&Close";
 			this.m_menuFileExit.Click += new System.EventHandler(this.OnFileExit);
 			// 
@@ -141,14 +144,14 @@
             this.m_menuEditSep2,
             this.m_menuEditFind});
 			this.m_menuEdit.Name = "m_menuEdit";
-			this.m_menuEdit.Size = new System.Drawing.Size(39, 20);
+			this.m_menuEdit.Size = new System.Drawing.Size(83, 42);
 			this.m_menuEdit.Text = "&Edit";
 			// 
 			// m_menuEditUndo
 			// 
 			this.m_menuEditUndo.Image = global::KeePass.Properties.Resources.B16x16_Undo;
 			this.m_menuEditUndo.Name = "m_menuEditUndo";
-			this.m_menuEditUndo.Size = new System.Drawing.Size(122, 22);
+			this.m_menuEditUndo.Size = new System.Drawing.Size(267, 46);
 			this.m_menuEditUndo.Text = "&Undo";
 			this.m_menuEditUndo.Click += new System.EventHandler(this.OnEditUndo);
 			// 
@@ -156,20 +159,20 @@
 			// 
 			this.m_menuEditRedo.Image = global::KeePass.Properties.Resources.B16x16_Redo;
 			this.m_menuEditRedo.Name = "m_menuEditRedo";
-			this.m_menuEditRedo.Size = new System.Drawing.Size(122, 22);
+			this.m_menuEditRedo.Size = new System.Drawing.Size(267, 46);
 			this.m_menuEditRedo.Text = "&Redo";
 			this.m_menuEditRedo.Click += new System.EventHandler(this.OnEditRedo);
 			// 
 			// m_menuEditSep0
 			// 
 			this.m_menuEditSep0.Name = "m_menuEditSep0";
-			this.m_menuEditSep0.Size = new System.Drawing.Size(119, 6);
+			this.m_menuEditSep0.Size = new System.Drawing.Size(264, 6);
 			// 
 			// m_menuEditCut
 			// 
 			this.m_menuEditCut.Image = global::KeePass.Properties.Resources.B16x16_Cut;
 			this.m_menuEditCut.Name = "m_menuEditCut";
-			this.m_menuEditCut.Size = new System.Drawing.Size(122, 22);
+			this.m_menuEditCut.Size = new System.Drawing.Size(267, 46);
 			this.m_menuEditCut.Text = "Cu&t";
 			this.m_menuEditCut.Click += new System.EventHandler(this.OnEditCut);
 			// 
@@ -177,7 +180,7 @@
 			// 
 			this.m_menuEditCopy.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
 			this.m_menuEditCopy.Name = "m_menuEditCopy";
-			this.m_menuEditCopy.Size = new System.Drawing.Size(122, 22);
+			this.m_menuEditCopy.Size = new System.Drawing.Size(267, 46);
 			this.m_menuEditCopy.Text = "&Copy";
 			this.m_menuEditCopy.Click += new System.EventHandler(this.OnEditCopy);
 			// 
@@ -185,7 +188,7 @@
 			// 
 			this.m_menuEditPaste.Image = global::KeePass.Properties.Resources.B16x16_EditPaste;
 			this.m_menuEditPaste.Name = "m_menuEditPaste";
-			this.m_menuEditPaste.Size = new System.Drawing.Size(122, 22);
+			this.m_menuEditPaste.Size = new System.Drawing.Size(267, 46);
 			this.m_menuEditPaste.Text = "&Paste";
 			this.m_menuEditPaste.Click += new System.EventHandler(this.OnEditPaste);
 			// 
@@ -193,32 +196,32 @@
 			// 
 			this.m_menuEditDelete.Image = global::KeePass.Properties.Resources.B16x16_EditDelete;
 			this.m_menuEditDelete.Name = "m_menuEditDelete";
-			this.m_menuEditDelete.Size = new System.Drawing.Size(122, 22);
+			this.m_menuEditDelete.Size = new System.Drawing.Size(267, 46);
 			this.m_menuEditDelete.Text = "&Delete";
 			this.m_menuEditDelete.Click += new System.EventHandler(this.OnEditDelete);
 			// 
 			// m_menuEditSep1
 			// 
 			this.m_menuEditSep1.Name = "m_menuEditSep1";
-			this.m_menuEditSep1.Size = new System.Drawing.Size(119, 6);
+			this.m_menuEditSep1.Size = new System.Drawing.Size(264, 6);
 			// 
 			// m_menuEditSelectAll
 			// 
 			this.m_menuEditSelectAll.Name = "m_menuEditSelectAll";
-			this.m_menuEditSelectAll.Size = new System.Drawing.Size(122, 22);
+			this.m_menuEditSelectAll.Size = new System.Drawing.Size(267, 46);
 			this.m_menuEditSelectAll.Text = "Select &All";
 			this.m_menuEditSelectAll.Click += new System.EventHandler(this.OnEditSelectAll);
 			// 
 			// m_menuEditSep2
 			// 
 			this.m_menuEditSep2.Name = "m_menuEditSep2";
-			this.m_menuEditSep2.Size = new System.Drawing.Size(119, 6);
+			this.m_menuEditSep2.Size = new System.Drawing.Size(264, 6);
 			// 
 			// m_menuEditFind
 			// 
 			this.m_menuEditFind.Image = global::KeePass.Properties.Resources.B16x16_XMag;
 			this.m_menuEditFind.Name = "m_menuEditFind";
-			this.m_menuEditFind.Size = new System.Drawing.Size(122, 22);
+			this.m_menuEditFind.Size = new System.Drawing.Size(267, 46);
 			this.m_menuEditFind.Text = "&Find...";
 			this.m_menuEditFind.Click += new System.EventHandler(this.OnEditFind);
 			// 
@@ -229,30 +232,31 @@
             this.m_menuViewSep0,
             this.m_menuViewWordWrap});
 			this.m_menuView.Name = "m_menuView";
-			this.m_menuView.Size = new System.Drawing.Size(44, 20);
+			this.m_menuView.Size = new System.Drawing.Size(96, 42);
 			this.m_menuView.Text = "&View";
 			// 
 			// m_menuViewFont
 			// 
 			this.m_menuViewFont.Name = "m_menuViewFont";
-			this.m_menuViewFont.Size = new System.Drawing.Size(134, 22);
+			this.m_menuViewFont.Size = new System.Drawing.Size(294, 46);
 			this.m_menuViewFont.Text = "&Font...";
 			this.m_menuViewFont.Click += new System.EventHandler(this.OnViewFont);
 			// 
 			// m_menuViewSep0
 			// 
 			this.m_menuViewSep0.Name = "m_menuViewSep0";
-			this.m_menuViewSep0.Size = new System.Drawing.Size(131, 6);
+			this.m_menuViewSep0.Size = new System.Drawing.Size(291, 6);
 			// 
 			// m_menuViewWordWrap
 			// 
 			this.m_menuViewWordWrap.Name = "m_menuViewWordWrap";
-			this.m_menuViewWordWrap.Size = new System.Drawing.Size(134, 22);
+			this.m_menuViewWordWrap.Size = new System.Drawing.Size(294, 46);
 			this.m_menuViewWordWrap.Text = "&Word Wrap";
 			this.m_menuViewWordWrap.Click += new System.EventHandler(this.OnViewWordWrap);
 			// 
 			// m_toolFile
 			// 
+			this.m_toolFile.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.m_toolFile.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_tbFileSave,
             this.m_tbFileSep0,
@@ -264,9 +268,10 @@
             this.m_tbEditRedo,
             this.m_tbFileSep2,
             this.m_tbFind});
-			this.m_toolFile.Location = new System.Drawing.Point(0, 24);
+			this.m_toolFile.Location = new System.Drawing.Point(0, 50);
 			this.m_toolFile.Name = "m_toolFile";
-			this.m_toolFile.Size = new System.Drawing.Size(608, 25);
+			this.m_toolFile.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+			this.m_toolFile.Size = new System.Drawing.Size(1622, 50);
 			this.m_toolFile.TabIndex = 2;
 			// 
 			// m_tbFileSave
@@ -275,13 +280,13 @@
 			this.m_tbFileSave.Image = global::KeePass.Properties.Resources.B16x16_FileSave;
 			this.m_tbFileSave.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbFileSave.Name = "m_tbFileSave";
-			this.m_tbFileSave.Size = new System.Drawing.Size(23, 22);
+			this.m_tbFileSave.Size = new System.Drawing.Size(46, 44);
 			this.m_tbFileSave.Click += new System.EventHandler(this.OnFileSave);
 			// 
 			// m_tbFileSep0
 			// 
 			this.m_tbFileSep0.Name = "m_tbFileSep0";
-			this.m_tbFileSep0.Size = new System.Drawing.Size(6, 25);
+			this.m_tbFileSep0.Size = new System.Drawing.Size(6, 50);
 			// 
 			// m_tbEditCut
 			// 
@@ -289,7 +294,7 @@
 			this.m_tbEditCut.Image = global::KeePass.Properties.Resources.B16x16_Cut;
 			this.m_tbEditCut.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbEditCut.Name = "m_tbEditCut";
-			this.m_tbEditCut.Size = new System.Drawing.Size(23, 22);
+			this.m_tbEditCut.Size = new System.Drawing.Size(46, 44);
 			this.m_tbEditCut.Click += new System.EventHandler(this.OnEditCut);
 			// 
 			// m_tbEditCopy
@@ -298,7 +303,7 @@
 			this.m_tbEditCopy.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
 			this.m_tbEditCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbEditCopy.Name = "m_tbEditCopy";
-			this.m_tbEditCopy.Size = new System.Drawing.Size(23, 22);
+			this.m_tbEditCopy.Size = new System.Drawing.Size(46, 44);
 			this.m_tbEditCopy.Click += new System.EventHandler(this.OnEditCopy);
 			// 
 			// m_tbEditPaste
@@ -307,13 +312,13 @@
 			this.m_tbEditPaste.Image = global::KeePass.Properties.Resources.B16x16_EditPaste;
 			this.m_tbEditPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbEditPaste.Name = "m_tbEditPaste";
-			this.m_tbEditPaste.Size = new System.Drawing.Size(23, 22);
+			this.m_tbEditPaste.Size = new System.Drawing.Size(46, 44);
 			this.m_tbEditPaste.Click += new System.EventHandler(this.OnEditPaste);
 			// 
 			// m_tbFileSep1
 			// 
 			this.m_tbFileSep1.Name = "m_tbFileSep1";
-			this.m_tbFileSep1.Size = new System.Drawing.Size(6, 25);
+			this.m_tbFileSep1.Size = new System.Drawing.Size(6, 50);
 			// 
 			// m_tbEditUndo
 			// 
@@ -322,7 +327,7 @@
 			this.m_tbEditUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbEditUndo.Name = "m_tbEditUndo";
 			this.m_tbEditUndo.RightToLeftAutoMirrorImage = true;
-			this.m_tbEditUndo.Size = new System.Drawing.Size(23, 22);
+			this.m_tbEditUndo.Size = new System.Drawing.Size(46, 44);
 			this.m_tbEditUndo.Click += new System.EventHandler(this.OnEditUndo);
 			// 
 			// m_tbEditRedo
@@ -332,24 +337,26 @@
 			this.m_tbEditRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbEditRedo.Name = "m_tbEditRedo";
 			this.m_tbEditRedo.RightToLeftAutoMirrorImage = true;
-			this.m_tbEditRedo.Size = new System.Drawing.Size(23, 22);
+			this.m_tbEditRedo.Size = new System.Drawing.Size(46, 44);
 			this.m_tbEditRedo.Click += new System.EventHandler(this.OnEditRedo);
 			// 
 			// m_tbFileSep2
 			// 
 			this.m_tbFileSep2.Name = "m_tbFileSep2";
-			this.m_tbFileSep2.Size = new System.Drawing.Size(6, 25);
+			this.m_tbFileSep2.Size = new System.Drawing.Size(6, 50);
 			// 
 			// m_tbFind
 			// 
 			this.m_tbFind.AcceptsReturn = true;
+			this.m_tbFind.Font = new System.Drawing.Font("Segoe UI", 10.5F);
 			this.m_tbFind.Name = "m_tbFind";
-			this.m_tbFind.Size = new System.Drawing.Size(121, 25);
+			this.m_tbFind.Size = new System.Drawing.Size(316, 50);
 			this.m_tbFind.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnTextFindKeyDown);
 			this.m_tbFind.KeyUp += new System.Windows.Forms.KeyEventHandler(this.OnTextFindKeyUp);
 			// 
 			// m_toolFormat
 			// 
+			this.m_toolFormat.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.m_toolFormat.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_tbFontCombo,
             this.m_tbFontSizeCombo,
@@ -365,29 +372,30 @@
             this.m_tbAlignLeft,
             this.m_tbAlignCenter,
             this.m_tbAlignRight});
-			this.m_toolFormat.Location = new System.Drawing.Point(0, 49);
+			this.m_toolFormat.Location = new System.Drawing.Point(0, 100);
 			this.m_toolFormat.Name = "m_toolFormat";
-			this.m_toolFormat.Size = new System.Drawing.Size(608, 25);
+			this.m_toolFormat.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+			this.m_toolFormat.Size = new System.Drawing.Size(1622, 50);
 			this.m_toolFormat.TabIndex = 3;
 			// 
 			// m_tbFontCombo
 			// 
 			this.m_tbFontCombo.Name = "m_tbFontCombo";
-			this.m_tbFontCombo.Size = new System.Drawing.Size(160, 25);
+			this.m_tbFontCombo.Size = new System.Drawing.Size(420, 50);
 			this.m_tbFontCombo.SelectedIndexChanged += new System.EventHandler(this.OnFontComboSelectedIndexChanged);
 			this.m_tbFontCombo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnFontComboKeyDown);
 			// 
 			// m_tbFontSizeCombo
 			// 
 			this.m_tbFontSizeCombo.Name = "m_tbFontSizeCombo";
-			this.m_tbFontSizeCombo.Size = new System.Drawing.Size(75, 25);
+			this.m_tbFontSizeCombo.Size = new System.Drawing.Size(194, 50);
 			this.m_tbFontSizeCombo.SelectedIndexChanged += new System.EventHandler(this.OnFontSizeComboSelectedIndexChanged);
 			this.m_tbFontSizeCombo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnFontSizeComboKeyDown);
 			// 
 			// m_tbFormatSep0
 			// 
 			this.m_tbFormatSep0.Name = "m_tbFormatSep0";
-			this.m_tbFormatSep0.Size = new System.Drawing.Size(6, 25);
+			this.m_tbFormatSep0.Size = new System.Drawing.Size(6, 50);
 			// 
 			// m_tbFormatBold
 			// 
@@ -395,7 +403,7 @@
 			this.m_tbFormatBold.Image = global::KeePass.Properties.Resources.B16x16_FontBold;
 			this.m_tbFormatBold.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbFormatBold.Name = "m_tbFormatBold";
-			this.m_tbFormatBold.Size = new System.Drawing.Size(23, 22);
+			this.m_tbFormatBold.Size = new System.Drawing.Size(46, 44);
 			this.m_tbFormatBold.Click += new System.EventHandler(this.OnFormatBoldClicked);
 			// 
 			// m_tbFormatItalic
@@ -404,7 +412,7 @@
 			this.m_tbFormatItalic.Image = global::KeePass.Properties.Resources.B16x16_FontItalic;
 			this.m_tbFormatItalic.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbFormatItalic.Name = "m_tbFormatItalic";
-			this.m_tbFormatItalic.Size = new System.Drawing.Size(23, 22);
+			this.m_tbFormatItalic.Size = new System.Drawing.Size(46, 44);
 			this.m_tbFormatItalic.Click += new System.EventHandler(this.OnFormatItalicClicked);
 			// 
 			// m_tbFormatUnderline
@@ -413,7 +421,7 @@
 			this.m_tbFormatUnderline.Image = global::KeePass.Properties.Resources.B16x16_FontUnderline;
 			this.m_tbFormatUnderline.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbFormatUnderline.Name = "m_tbFormatUnderline";
-			this.m_tbFormatUnderline.Size = new System.Drawing.Size(23, 22);
+			this.m_tbFormatUnderline.Size = new System.Drawing.Size(46, 44);
 			this.m_tbFormatUnderline.Click += new System.EventHandler(this.OnFormatUnderlineClicked);
 			// 
 			// m_tbFormatStrikeout
@@ -422,13 +430,13 @@
 			this.m_tbFormatStrikeout.Image = global::KeePass.Properties.Resources.B16x16_FontStrikeout;
 			this.m_tbFormatStrikeout.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbFormatStrikeout.Name = "m_tbFormatStrikeout";
-			this.m_tbFormatStrikeout.Size = new System.Drawing.Size(23, 22);
+			this.m_tbFormatStrikeout.Size = new System.Drawing.Size(46, 44);
 			this.m_tbFormatStrikeout.Click += new System.EventHandler(this.OnFormatStrikeoutClicked);
 			// 
 			// m_tbFormatSep1
 			// 
 			this.m_tbFormatSep1.Name = "m_tbFormatSep1";
-			this.m_tbFormatSep1.Size = new System.Drawing.Size(6, 25);
+			this.m_tbFormatSep1.Size = new System.Drawing.Size(6, 50);
 			// 
 			// m_tbColorForeground
 			// 
@@ -436,7 +444,7 @@
 			this.m_tbColorForeground.Image = global::KeePass.Properties.Resources.B16x16_Colorize;
 			this.m_tbColorForeground.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbColorForeground.Name = "m_tbColorForeground";
-			this.m_tbColorForeground.Size = new System.Drawing.Size(23, 22);
+			this.m_tbColorForeground.Size = new System.Drawing.Size(46, 44);
 			this.m_tbColorForeground.Click += new System.EventHandler(this.OnColorForegroundClicked);
 			// 
 			// m_tbColorBackground
@@ -445,13 +453,13 @@
 			this.m_tbColorBackground.Image = global::KeePass.Properties.Resources.B16x16_Color_Fill;
 			this.m_tbColorBackground.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbColorBackground.Name = "m_tbColorBackground";
-			this.m_tbColorBackground.Size = new System.Drawing.Size(23, 22);
+			this.m_tbColorBackground.Size = new System.Drawing.Size(46, 44);
 			this.m_tbColorBackground.Click += new System.EventHandler(this.OnColorBackgroundClicked);
 			// 
 			// m_tbFormatSep2
 			// 
 			this.m_tbFormatSep2.Name = "m_tbFormatSep2";
-			this.m_tbFormatSep2.Size = new System.Drawing.Size(6, 25);
+			this.m_tbFormatSep2.Size = new System.Drawing.Size(6, 50);
 			// 
 			// m_tbAlignLeft
 			// 
@@ -459,7 +467,7 @@
 			this.m_tbAlignLeft.Image = global::KeePass.Properties.Resources.B16x16_TextAlignLeft;
 			this.m_tbAlignLeft.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbAlignLeft.Name = "m_tbAlignLeft";
-			this.m_tbAlignLeft.Size = new System.Drawing.Size(23, 22);
+			this.m_tbAlignLeft.Size = new System.Drawing.Size(46, 44);
 			this.m_tbAlignLeft.Click += new System.EventHandler(this.OnAlignLeftClicked);
 			// 
 			// m_tbAlignCenter
@@ -468,7 +476,7 @@
 			this.m_tbAlignCenter.Image = global::KeePass.Properties.Resources.B16x16_TextAlignCenter;
 			this.m_tbAlignCenter.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbAlignCenter.Name = "m_tbAlignCenter";
-			this.m_tbAlignCenter.Size = new System.Drawing.Size(23, 22);
+			this.m_tbAlignCenter.Size = new System.Drawing.Size(46, 44);
 			this.m_tbAlignCenter.Click += new System.EventHandler(this.OnAlignCenterClicked);
 			// 
 			// m_tbAlignRight
@@ -477,22 +485,24 @@
 			this.m_tbAlignRight.Image = global::KeePass.Properties.Resources.B16x16_TextAlignRight;
 			this.m_tbAlignRight.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_tbAlignRight.Name = "m_tbAlignRight";
-			this.m_tbAlignRight.Size = new System.Drawing.Size(23, 22);
+			this.m_tbAlignRight.Size = new System.Drawing.Size(46, 44);
 			this.m_tbAlignRight.Click += new System.EventHandler(this.OnAlignRightClicked);
 			// 
 			// m_statusMain
 			// 
+			this.m_statusMain.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.m_statusMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_tssStatusMain});
-			this.m_statusMain.Location = new System.Drawing.Point(0, 394);
+			this.m_statusMain.Location = new System.Drawing.Point(0, 1002);
 			this.m_statusMain.Name = "m_statusMain";
-			this.m_statusMain.Size = new System.Drawing.Size(608, 22);
+			this.m_statusMain.Padding = new System.Windows.Forms.Padding(2, 0, 38, 0);
+			this.m_statusMain.Size = new System.Drawing.Size(1622, 22);
 			this.m_statusMain.TabIndex = 4;
 			// 
 			// m_tssStatusMain
 			// 
 			this.m_tssStatusMain.Name = "m_tssStatusMain";
-			this.m_tssStatusMain.Size = new System.Drawing.Size(562, 17);
+			this.m_tssStatusMain.Size = new System.Drawing.Size(1582, 12);
 			this.m_tssStatusMain.Spring = true;
 			this.m_tssStatusMain.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
@@ -500,9 +510,10 @@
 			// 
 			this.m_rtbText.AcceptsTab = true;
 			this.m_rtbText.HideSelection = false;
-			this.m_rtbText.Location = new System.Drawing.Point(12, 86);
+			this.m_rtbText.Location = new System.Drawing.Point(32, 212);
+			this.m_rtbText.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_rtbText.Name = "m_rtbText";
-			this.m_rtbText.Size = new System.Drawing.Size(584, 296);
+			this.m_rtbText.Size = new System.Drawing.Size(1550, 722);
 			this.m_rtbText.TabIndex = 0;
 			this.m_rtbText.Text = "";
 			this.m_rtbText.SelectionChanged += new System.EventHandler(this.OnTextSelectionChanged);
@@ -510,22 +521,24 @@
 			// 
 			// DataEditorForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(608, 416);
+			this.ClientSize = new System.Drawing.Size(1622, 1024);
 			this.Controls.Add(this.m_rtbText);
 			this.Controls.Add(this.m_statusMain);
 			this.Controls.Add(this.m_toolFormat);
 			this.Controls.Add(this.m_toolFile);
 			this.Controls.Add(this.m_menuMain);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.MainMenuStrip = this.m_menuMain;
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MinimizeBox = false;
 			this.Name = "DataEditorForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "<>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.m_menuMain.ResumeLayout(false);
 			this.m_menuMain.PerformLayout();
 			this.m_toolFile.ResumeLayout(false);
