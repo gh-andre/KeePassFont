@@ -27,8 +27,8 @@ and new changes. Current topology looks like this:
              |         |                |        |   
           +--o---------o----->      +---o--------o---->      +---... v2-48-1
          /                v2-46-0  /               v2-47-0  /   
-    -o--o------------------------o----o-------------------o---o---> master
-     | README.md                 |   README.md            |  README.md
+    -o---o------------------------o----o-------------------o---o---> master
+     |  README.md                 |   README.md            |  README.md
     keepass-2-46-0            keepass-2-47-0           keepass-2-48-1
 
 Version branches `v2-46-0`, `v2-47-0` and `v2-48-1` contain modifications
@@ -43,7 +43,7 @@ New KeePass source is imported using following steps.
 * If you maintain Visual Studio key patch as a stash, push it onto the
   stash stack:
 
-      git stash KeePass\KeePass.csproj
+      git stash push KeePass\KeePass.csproj
 
 * Checkout `master`
 
