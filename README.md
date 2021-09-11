@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.48.1 source, with a few changes described in
+This is a copy of KeePass v2.49.0 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -232,27 +232,44 @@ file.
 ## Changing Font Size
 
 Follow the _Build_ steps to make sure Visual Studio can build these changes,
-so you can check whether font changes worked or not.
+so you can check whether font changes work or not.
 
-Visual Studio is very buggy in handling forms and DPI settings and you may
-need to repeat these steps.
+Visual Studio is very buggy in handling forms and DPI settings and depending
+on the version of Visual Studio, it may not work as described.
 
-* Click the form whose font size you would like to change, such as
- `AboutForm.cs`.
-* The form editor may appear empty and you need to minimize/restore Visual
-  Studio IDE to see the form. This appears to be a bug in Visual Studio.
-* Visual Studio will present a pop-up line at the top asking if you would
-  like to restart Visual Studio with 100% display scaling. Do not restart
-  or some dialogs will have overlapping controls and cut-off text.
-* Go to form _Properties_ in the solution explorer.
-* Click the font picker in the _Font_ proprty line. Choose font size `10pt`.
-* Scroll down to `AutoScaleMode` in _Layout_ and change it from `Font` to
-  `Dpi`.
-* Repeat this for all forms, except `MainForm_Events.cs` and
-  `MainForm_Functions.cs`.
+Font changes need to be applied in two steps. Do not change `MainForm_Events.cs`
+and `MainForm_Functions.cs` forms in either of these steps.
 
-Build the app and run it from Visual Studio to test whether forms are
-rendered without controls overlapping and there is no truncated text.
+For the first step, Visual Studio must be switched to 100% scaling mode,
+as described below.
+
+* Launch Visual Studio
+* Expand the `Forms` solution folder and click `AboutForm.cs`. The form
+  editor may appear empty and you need to minimize/restore Visual Studio
+  IDE to see the form.
+* Visual Studio will present a pop-up line at the top asking if you
+  would like to restart Visual Studio with 100% display scaling. Click
+  to restart with 100% scaling.
+* For every form, change the `Font` proprty from `8pt` to `10pt` and
+  `AutoScaleMode` property from `Font` to `Dpi`. Font size must be
+  changed first.
+* Once all forms have been changed, exit Visual Studio.
+
+For the second step, Visual Studio must be running in the default display
+scaling mode.
+
+* Launch Visual Studio
+* Dismiss the prompt to switch to 100% display scaling mode without
+  switching.
+* For every form, find a simple `True`/`False` property, such as _Behavior/
+  Enabled_ and flip it twice to its original value.
+* Build the app and run it from Visual Studio to test whether forms are
+  rendered without controls overlapping and there is no truncated text.
+
+The second step is completely illogical, but is required for some forms
+to render correctly. For example, `GroupForm.Designer.cs` and
+`TanWizardForm.Designer.cs` will have overlapping controls without this
+step. If you know a better way to avoid this, please start a discussion.
 
 ### Display Resolution
 
