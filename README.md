@@ -21,7 +21,7 @@ at your own risk.**
 
 All UI forms in this repository are updated to use `10pt` font size instead
 of the original `8pt`, which is very hard on the eyes, especially on high
-resolution monitors.
+resolution displays.
 
 There are a few questions on KeePass forums about increasing font size
 and many of them are either unanswered or described as _working as designed_.
@@ -34,20 +34,19 @@ who feel comfortable building this application from the source.
 ### XSL Template to Export All Fields and History
 
 KeePass comes with excellent data export capabilities, but the bundled XSL
-stylesheets do not export entry history, collapse entry notes, drop group
+style sheets do not export entry history, collapse entry notes, drop group
 notes and group hierarchy.
 
 Being able to search through password history is quite important for those
 who want to track down some old compromised passwords and KeePass does not
 offer history search in the application either.
 
-The new XSL template [KDBX_Dump_HTML.xsl](Ext/XSL/KDBX_Dump_HTML.xsl)
-outputs all fields, including history, and preserves the group hierarchy
-in the output. It also recognizes the recycle bin group and omits it from
-the output.
+The new XSL template `Ext/XSL/KDBX_Dump_HTML.xsl` outputs all fields,
+including history, and preserves the group hierarchy in the output. It
+also recognizes the recycle bin group and omits it from the output.
 
-History may be disabled by changing the following line in the XSL source
-to look like this:
+History output may be disabled by changing the following line in the XSL
+source to look like this:
 
     <xsl:variable name="dump-history" select="'no'" />
 
@@ -63,8 +62,8 @@ HTML. For example, using `msxsl.exe`:
     msxsl MyKeePass.xml KDBX_Dump_HTML.xsl -o MyKeePass.html
 
 The latter provides greater flexibility, but you must ensure that exported
-XML and generated HTML are saved in some encrypted storage, such as a BitLocker
-folder or a USB drive attached via a hardware encryption key.
+XML and generated HTML are saved in some encrypted storage, such as a
+BitLocker drive or a USB drive attached via a hardware encryption key.
 
 ## Repository Structure
 
@@ -83,21 +82,22 @@ and new changes. Current topology looks like this:
     keepass-2-46-0            keepass-2-47-0           keepass-2-48-1
 
 Version branches `v2-46-0`, `v2-47-0` and `v2-48-1` contain modifications
-of the original code, which is maintained in `master` and are tagged with
+of the original code, which is maintained in `master` and is tagged with
 `keepass-2-46-0`, `keepass-2-47-0` and `keepass-2-48-1`, respectively, for
 each new source drop.
 
 The `master` branch contains original KeePass source and two additional
 files, `.gitignore` and `README.md`. The latter is required for GitHub to
-show README on the repository home page. `README.md` should be cherry-picked
-between `master` and the latest version branch for each new source drop.
+show README on the repository home page. `README.md` on `master` should
+be cherry-picked from the latest version branch for each new modified
+source drop.
 
 ### Importing KeePass Source
 
 New KeePass source is imported using following steps.
 
-* If you maintain Visual Studio key patch as a stash, push it onto the
-  stash stack:
+* If you maintain Visual Studio key patch as a stash on a version branch,
+  push it onto the stash stack:
 
       git stash push KeePass\KeePass.csproj
 
@@ -115,28 +115,28 @@ New KeePass source is imported using following steps.
 
       git checkout -b vx-y-z
 
-* Cherry-pick non-conflicting changes from the previous branch, which
-  typically includes added files, such as an added XSL template. For
-  example, if `12345678` represents a commit that includes the last
-  non-conflicting change since the last version 2.47.0, the cherry-pick
-  command would look like this:
+* Cherry-pick non-conflicting changes from the previous version branch,
+  which typically includes added files, such as the new XSL template.
+  For example, if `12345678` represents a commit with the last
+  non-conflicting change for version 2.47.0, the cherry-pick command
+  for version 2.48.0 would look like this:
 
       git cherry-pick keepass-2-47-0..12345678
 
-* Font changes from the previous branch will most likely conflict with
-  the new source, so at this point you can either apply all font changes
-  manually or cherry-pick those that merge without a conflict, delete
-  conflicting source, commit the non-conflicting changes and then manually
-  modify conflicting files.
+* Trying to cherry-pick font size changes from the previous branch would
+  be quite error-prone, given how Visual Studio maintains form layout
+  in the source, so font size changes should be applied manually at this
+  point.
+* Once font size changes are applied, tested and committed, `README.md`
+  should be updated to reflect the new application version and any
+  additional changes and should be cherry-picked to `master`.
 
 ## Building
 
 These steps are tested on Windows 10 (x64) with Visual Studio 2019, Community
 Edition. The original KeePass project was upgraded to Visual Studio 2019.
 
-Download the source from this repository.
-
-Check out the version branch you would like to use. For example,
+Clone this repository and check out the version branch you would like to build.
 
     git checkout v2-48-1
 
@@ -243,14 +243,14 @@ and `MainForm_Functions.cs` forms in either of these steps.
 For the first step, Visual Studio must be switched to 100% scaling mode,
 as described below.
 
-* Launch Visual Studio
+* Launch Visual Studio as described in _Building_
 * Expand the `Forms` solution folder and click `AboutForm.cs`. The form
   editor may appear empty and you need to minimize/restore Visual Studio
   IDE to see the form.
 * Visual Studio will present a pop-up line at the top asking if you
   would like to restart Visual Studio with 100% display scaling. Click
   to restart with 100% scaling.
-* For every form, change the `Font` proprty from `8pt` to `10pt` and
+* For every form, change the `Font` property from `8pt` to `10pt` and
   `AutoScaleMode` property from `Font` to `Dpi`. Font size must be
   changed first.
 * Once all forms have been changed, exit Visual Studio.
@@ -258,7 +258,7 @@ as described below.
 For the second step, Visual Studio must be running in the default display
 scaling mode.
 
-* Launch Visual Studio
+* Launch Visual Studio as described in _Building_
 * Dismiss the prompt to switch to 100% display scaling mode without
   switching.
 * For every form, find a simple `True`/`False` property, such as _Behavior/
