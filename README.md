@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.49.0 source, with a few changes described in
+This is a copy of KeePass v2.50.0 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -115,6 +115,7 @@ New KeePass source is imported using following steps.
 
       git checkout -b vx-y-z
 
+* Upgrade solution to Visual Studio 2019 and commit changes.
 * Cherry-pick non-conflicting changes from the previous version branch,
   which typically includes added files, such as the new XSL template.
   For example, if `12345678` represents a commit with the last
@@ -123,6 +124,8 @@ New KeePass source is imported using following steps.
 
       git cherry-pick keepass-2-47-0..12345678
 
+  If the first commit has conflicts, you will need to cherry-pick changes
+  individually.
 * Trying to cherry-pick font size changes from the previous branch would
   be quite error-prone, given how Visual Studio maintains form layout
   in the source, so font size changes should be applied manually at this
@@ -145,53 +148,52 @@ up x64 build environment.
 
     vcvarsall.bat x64
 
+The solution is configured to sign KeePass binaries with `KeePass.pfx`,
+but a separate utility, `sgen`, is used to generate a serialization
+assembly for `KeePass.exe` and `sgen` needs access to the `KeePass.pfx`,
+which can only be done by importing this file into a strong name
+container.
+
+Run this command to import `KeeFile.pfx` into a container named
+`KeeFileFont`, instead of the Visual Studio container name used by the
+upstream project.
+
+    sn -i KeePass\KeePass.pfx KeePassFont
+
+Enter the password for the PFX key when prompted, which is described in
+`ReadMe_PFX.txt` and is `123123` in the current patch branch. Note that
+this certificate has expired in 2008 and will be silently ignored by
+the sign tool.
+
+As a side note, running `sgen` should not be necessary because there is
+a project setting to generate a serialization assembly withing Visual
+Studio, but there seems to be a bug that prevents the serialization
+assembly from being generated.
+
 Start Visual Studio from the the same command prompt, so it can find
-`sgen.exe`, which is referenced in the solution.
+`sgen.exe`, which is referenced in the solution, in post build events
+of the `KeePass` project.
 
     devenv KeePass.sln
 
-Change the solution configuration to `Release`, platform to `Any CPU`, startup
-project to `KeePass` and attempt to build it. The build will fail with this error,
-except that Visual Studio key will be different. Copy the key value.
+Change the solution configuration to `Release`, platform to `Any CPU`,
+startup project to `KeePass` and build the solution.
 
-> Cannot import the following key file: KeePass.pfx. The key file may
-> be password protected. To correct this, try to import the certificate again
-> or manually install the certificate to the Strong Name CSP with the following
-> key container name: VS_KEY_27A70973F3FC3787
-
-Go back to the command prompt and import PFX keys with this command, but using
-the Visual Studio key from the error above.
-
-    sn -i KeePass\KeePass.pfx VS_KEY_27A70973F3FC3787
-
-Enter the password for the PFX key, which is described in `ReadMe_PFX.txt`
-and is `123123` on the moment of this writing.
-
-In the command prompt window, run this command to confirm that .Net framework
-SDK is located in the same directory as described below.
+If the solution fails because it cannot find `sgen`, run this command
+to confirm that the .Net framework SDK is located in the directory used
+by the solution.
 
     set | findstr /C:"WindowsSDK"
 
 You should see the line that starts with `WindowsSDK_ExecutablePath_x64`,
 which is where `sgen.exe` is located. If you don't see this line, you need to
-find `sgen.exe` in your environment and adjust following steps to run `sgen.exe`
-from your location.
+find `sgen.exe` in your environment and adjust following steps to run
+`sgen.exe` from your location.
 
-In the solution, open `KeePass` project's properties and go to `Build Events`.
-You will see the `Post Build` event, which contains this text, except that
-ellipsis in the text below are for readability. Note the Visual Studio key.
-
-    "$(WindowsSDK_ExecutablePath_x64)sgen.exe" ... /compiler:/keycontainer:VS_KEY_27A70973F3FC3787 ...
-
-Replace the Visual Studio key with your key. Leave other text unchanged.
-
-Build the solution and make sure all three projects build without errors.
-There will be a couple of warnings about XML properties. Ignore those.
-
-Note that the application built this way will not be digitally signed in a
-way accepted by Windows 10 and if your **Smart Screen** is turned on, it will
-pop up a warning that the application is not signed. You will need to click
-_More info_ and the click to run the app anyway.
+Note that the application built this way will not be digitally signed and
+if your **Smart Screen** is turned on, it may pop up a warning that the
+application is not signed. You will need to click _More info_ and then click
+to run the app anyway.
 
 ## Installing
 
@@ -217,17 +219,22 @@ Open the KeePass installation directory:
 
     C:\Program Files (x86)\KeePass Password Safe 2
 
-, and rename the original `KeePass.exe` file. Do not delete it. Copy the new
-`KeePass.exe` you just built and tested into the installation directory.
+, and rename the original `KeePass.exe` and `KeePass.XmlSerializers.dll` files.
+Do not delete them. Copy the new files you just built and tested into the
+installation directory.
 
 It's worth noting that this step replaces only the executable and not the KeePass
-library, which implements encryption and other secure algorithms.
+encryption library, which implements encryption and other secure algorithms.
 
 Launch the new KeePass application and test that it works in every way in how
 you normally use the application.
 
+At this poiny you can remove the strong name container with this command:
+
+    sn -d KeePassFont
+
 Before installing a new version of KeePass, restore the original `KeePass.exe`
-file.
+and `KeePass.XmlSerializers.dll` files.
 
 ## Changing Font Size
 
