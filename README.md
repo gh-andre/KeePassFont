@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.50.0 source, with a few changes described in
+This is a copy of KeePass v2.50.1 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -12,8 +12,8 @@ This repository is maintained to keep track of source changes and to share
 the experience with other developers who may find these changes useful.
 However, these steps and source changes have not been tested much and may
 not work in other environments and may even cause unexpected results,
-including possible loss of data. **Use these instructions and modified source
-at your own risk.**
+including possible loss of data. **Use these instructions, modified source
+and build artifacts at your own risk.**
 
 ## Changes
 
@@ -141,34 +141,23 @@ Edition. The original KeePass project was upgraded to Visual Studio 2019.
 
 Clone this repository and check out the version branch you would like to build.
 
-    git checkout v2-48-1
+    git checkout v2-50-1
 
 Run `cmd.exe` and run `vcvarsall.bat` from Visual Studio installation to set
 up x64 build environment.
 
     vcvarsall.bat x64
 
-The solution is configured to sign KeePass binaries with `KeePass.pfx`,
-but a separate utility, `sgen`, is used to generate a serialization
-assembly for `KeePass.exe` and `sgen` needs access to the `KeePass.pfx`,
-which can only be done by importing this file into a strong name
-container.
+The original solution is configured to sign KeePass binaries with a
+dummy `KeePass.pfx`, which cannot be automated because it requires
+user input in importing this key file on the build machine. This key
+file was removed from the repository and all projects were modified
+not to sign build output.
 
-Run this command to import `KeeFile.pfx` into a container named
-`KeeFileFont`, instead of the Visual Studio container name used by the
-upstream project.
-
-    sn -i KeePass\KeePass.pfx KeePassFont
-
-Enter the password for the PFX key when prompted, which is described in
-`ReadMe_PFX.txt` and is `123123` in the current patch branch. Note that
-this certificate has expired in 2008 and will be silently ignored by
-the sign tool.
-
-As a side note, running `sgen` should not be necessary because there is
-a project setting to generate a serialization assembly withing Visual
-Studio, but there seems to be a bug that prevents the serialization
-assembly from being generated.
+Note that the application built this way will not be digitally signed and
+if your **Smart Screen** is turned on, it may pop up a warning that the
+application is not signed. You will need to click _More info_ and then
+click the button to run the app anyway.
 
 Start Visual Studio from the the same command prompt, so it can find
 `sgen.exe`, which is referenced in the solution, in post build events
@@ -179,21 +168,11 @@ of the `KeePass` project.
 Change the solution configuration to `Release`, platform to `Any CPU`,
 startup project to `KeePass` and build the solution.
 
-If the solution fails because it cannot find `sgen`, run this command
-to confirm that the .Net framework SDK is located in the directory used
-by the solution.
+## GitHub Releases
 
-    set | findstr /C:"WindowsSDK"
-
-You should see the line that starts with `WindowsSDK_ExecutablePath_x64`,
-which is where `sgen.exe` is located. If you don't see this line, you need to
-find `sgen.exe` in your environment and adjust following steps to run
-`sgen.exe` from your location.
-
-Note that the application built this way will not be digitally signed and
-if your **Smart Screen** is turned on, it may pop up a warning that the
-application is not signed. You will need to click _More info_ and then click
-to run the app anyway.
+This repository is configured to build `KeyPass.exe` as described above
+and maintain release packages with relevant files, which can be used as
+the installation source instead of the local build output.
 
 ## Installing
 
@@ -228,10 +207,6 @@ encryption library, which implements encryption and other secure algorithms.
 
 Launch the new KeePass application and test that it works in every way in how
 you normally use the application.
-
-At this poiny you can remove the strong name container with this command:
-
-    sn -d KeePassFont
 
 Before installing a new version of KeePass, restore the original `KeePass.exe`
 and `KeePass.XmlSerializers.dll` files.
