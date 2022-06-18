@@ -20,9 +20,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Windows.Forms;
-using System.Diagnostics;
 
 using KeePass.Resources;
 
@@ -119,8 +119,7 @@ namespace KeePass.UI
 
 			DeleteMenuItems();
 
-			IComparer icSorter = m_lv.ListViewItemSorter;
-			ListSorter ls = ((icSorter != null) ? (icSorter as ListSorter) : null);
+			ListSorter ls = (m_lv.ListViewItemSorter as ListSorter);
 			if(ls != null)
 			{
 				m_iCurSortColumn = ls.Column;
