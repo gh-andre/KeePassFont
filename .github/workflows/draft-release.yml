@@ -45,15 +45,15 @@ jobs:
         copy /y README.md KeePassFont-${{ env.VERSION }}\
         7z a KeePassFont-${{ env.VERSION }}+${{ env.BUILD_NUMBER }}.windows.x64.zip KeePassFont-${{ env.VERSION }}\
 
-      # create an empty draft release
+      # create an draft release
     - name: Create a draft release
       id: draft-release
       uses: actions/create-release@v1.1.4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ env.VERSION }}
-        release_name: KeePassFont ${{ env.VERSION }}
+        tag_name: ${{ env.VERSION }}+${{ env.BUILD_NUMBER }}
+        release_name: KeePassFont ${{ env.VERSION }}+${{ env.BUILD_NUMBER }}
         draft: true
 
       # upload packaged artifacts into the draft release as assets
