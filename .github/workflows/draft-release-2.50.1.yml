@@ -3,7 +3,11 @@
 # font and packages it along with a few more files in an archive
 # file, which is uploaded to a GitHub draft release as an asset.
 #
-name: Draft Release
+# GitHub maintains workflow run numbers per file name. This file
+# should be renamed in the new release branch to start a new
+# sequence.
+#
+name: Draft Release 2.50.1
 
 on: workflow_dispatch
 
