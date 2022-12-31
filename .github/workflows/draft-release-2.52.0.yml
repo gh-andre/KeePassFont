@@ -2,16 +2,16 @@
 # GitHub requires a workflow file in the main branch in order
 # to allow running workflows in other branches, even if the
 # main workflow doesn't do anything, like in this file. See
-# the actual workflow file in branch v2-50-1 or newer.
+# the actual workflow file in latest release branch.
 #
-name: Draft Release 2.50.1
+name: Draft Release 2.52.0
 
 on: workflow_dispatch
 
 jobs:
   build-windows:
     name: no-op
-    runs-on: windows-2019
+    runs-on: windows-2022
 
     steps:
     - name: no-op
