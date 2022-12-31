@@ -7,22 +7,22 @@
 # should be renamed in the new release branch to start a new
 # sequence.
 #
-name: Draft Release 2.50.1
+name: Draft Release 2.52.0
 
 on: workflow_dispatch
 
 env:
-  VERSION: 2.50.1
+  VERSION: 2.52.0
   BUILD_NUMBER: ${{ github.run_number }}
 
 jobs:
   draft-release:
     name: Build KeePassFont
-    runs-on: windows-2019
+    runs-on: windows-2022
 
-    # this path is valid only for the windows-2019 runner
+    # this path is valid only for the windows-2022 runner
     env:
-      VCVARSALL: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvarsall'
+      VCVARSALL: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall'
 
     defaults:
       run:
@@ -30,7 +30,7 @@ jobs:
 
     steps:
     - name: Checkout source
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
       # build all projects in the solution
     - name: Build KeePass.exe
@@ -52,7 +52,7 @@ jobs:
       # create an draft release
     - name: Create a draft release
       id: draft-release
-      uses: actions/create-release@v1.1.4
+      uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -62,7 +62,7 @@ jobs:
 
       # upload packaged artifacts into the draft release as assets
     - name: Upload release assets
-      uses: actions/upload-release-asset@v1.0.2
+      uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
