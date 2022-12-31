@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.50.1 source, with a few changes described in
+This is a copy of KeePass v2.52.0 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -105,8 +105,8 @@ New KeePass source is imported using following steps.
 
       git checkout master
 
-* Delete all source, except `.git`, `.gitignore`, `README.md` and, perhaps,
-  `.vs`.
+* Delete all source, except `.git`, `.gitignore`, `.github`, `README.md`
+  and, perhaps, `.vs`.
 * Unzip the new source archive.
 * Add all new source, commit and tag with `keepass-x-y-z`, where `x-y-z`
   would be the actual version, such as `keepass-2-48-1`.
@@ -115,7 +115,15 @@ New KeePass source is imported using following steps.
 
       git checkout -b vx-y-z
 
-* Upgrade solution to Visual Studio 2019 and commit changes.
+* Remove the `.github` directory with the empty GitHub workflow from
+  the main branch. This will prevent conflicts when the full GitHub
+  workflow is cherry-picked from the previous release branch.
+* Upgrade solution to Visual Studio 2022 and commit changes.
+* Retarget all projects to use the .Net Framework v4.8. The original
+  .Net v4.0 is no longer installed on GitHub runners. Note, however,
+  that very little testing was done with running a mix of original
+  KeePass DLLs built with .Net v4 with the UI component built with
+  .Net v4.8.
 * Cherry-pick non-conflicting changes from the previous version branch,
   which typically includes added files, such as the new XSL template.
   For example, if `12345678` represents a commit with the last
@@ -136,8 +144,8 @@ New KeePass source is imported using following steps.
 
 ## Building
 
-These steps are tested on Windows 10 (x64) with Visual Studio 2019, Community
-Edition. The original KeePass project was upgraded to Visual Studio 2019.
+These steps are tested on Windows 10 (x64) with Visual Studio 2022, Community
+Edition. The original KeePass project was upgraded to Visual Studio 2022.
 
 Clone this repository and check out the version branch you would like to build.
 
