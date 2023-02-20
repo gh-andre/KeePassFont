@@ -10,8 +10,8 @@
     <RootNamespace>KeePass</RootNamespace>
     <AssemblyName>KeePass</AssemblyName>
     <ApplicationIcon>KeePass.ico</ApplicationIcon>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>KeePass.pfx</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile/>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
@@ -1401,7 +1401,6 @@
     <None Include="Resources\Nuvola_Derived\B16x16_File_Close.png" />
     <None Include="Resources\Nuvola_Derived\B16x16_File_SaveAll.png" />
     <None Include="Resources\Nuvola_Derived\B16x16_File_SaveAll_Disabled.png" />
-    <None Include="KeePass.pfx" />
     <None Include="Resources\Nuvola\B16x16_Folder_Inbox.png" />
     <None Include="Resources\Nuvola\B48x48_Run.png" />
     <None Include="Resources\Nuvola\B16x16_WWW.png" />
@@ -1468,6 +1467,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>"$(FrameworkSDKDir)bin\sgen.exe" /assembly:"$(TargetPath)" /force /nologo /compiler:/keycontainer:VS_KEY_8C26407DBC890166 /compiler:/delaysign-</PostBuildEvent>
+    <PostBuildEvent>sgen.exe /assembly:"$(TargetPath)" /force /nologo</PostBuildEvent>
   </PropertyGroup>
 </Project>
