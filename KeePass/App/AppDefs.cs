@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2022 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -206,6 +206,8 @@ namespace KeePass.App
 			public static readonly string ConfigRemoveUrlOverride = "remove-urloverride";
 
 			public static readonly string ConfigSetLanguageFile = "set-languagefile";
+
+			internal const string KdfTest = "kdf-test";
 
 			public static readonly string PlgxCreate = "plgx-create";
 			public static readonly string PlgxCreateInfo = "plgx-create-info";

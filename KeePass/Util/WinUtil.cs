@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2022 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -388,8 +388,31 @@ namespace KeePass.Util
 
 		public static void Restart()
 		{
-			try { NativeLib.StartProcess(WinUtil.GetExecutable()); }
+			try { using(Process p = StartSelfEx(null)) { Debug.Assert(p != null); } }
 			catch(Exception ex) { MessageService.ShowWarning(ex); }
+		}
+
+		internal static Process StartSelfEx(string strArgs)
+		{
+			string strExe = WinUtil.GetExecutable();
+
+			ProcessStartInfo psi = new ProcessStartInfo();
+
+			// Mono detects CLR binaries and runs them with the same Mono
+			// binary (see mono/metadata/w32process-unix.c)
+			// if(NativeLib.IsUnix())
+			// {
+			//	psi.FileName = "mono";
+			//	string strArgsEx = "\"" + NativeLib.EncodeDataToArgs(strExe) + "\"";
+			//	if(!string.IsNullOrEmpty(strArgs)) strArgsEx += " " + strArgs;
+			//	psi.Arguments = strArgsEx;
+			// }
+			// else
+
+			psi.FileName = strExe;
+			if(!string.IsNullOrEmpty(strArgs)) psi.Arguments = strArgs;
+
+			return NativeLib.StartProcessEx(psi);
 		}
 
 		public static string GetExecutable()

@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2022 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -411,7 +411,7 @@ namespace KeePass.Forms
 
 			LoadPolicyOption("Plugins", AppPolicyId.Plugins);
 			LoadPolicyOption("Export", AppPolicyId.Export);
-			LoadPolicyOption("ExportNoKey", AppPolicyId.ExportNoKey);
+			// LoadPolicyOption("ExportNoKey", AppPolicyId.ExportNoKey);
 			LoadPolicyOption("Import", AppPolicyId.Import);
 			LoadPolicyOption("Print", AppPolicyId.Print);
 			LoadPolicyOption("PrintNoKey", AppPolicyId.PrintNoKey);
