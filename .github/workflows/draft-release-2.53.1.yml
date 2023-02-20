@@ -4,7 +4,7 @@
 # main workflow doesn't do anything, like in this file. See
 # the actual workflow file in latest release branch.
 #
-name: Draft Release 2.52.0
+name: Draft Release 2.53.0
 
 on: workflow_dispatch
 
