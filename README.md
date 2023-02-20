@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.52.0 source, with a few changes described in
+This is a copy of KeePass v2.53.1 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -24,12 +24,16 @@ of the original `8pt`, which is very hard on the eyes, especially on high
 resolution displays.
 
 There are a few questions on KeePass forums about increasing font size
-and many of them are either unanswered or described as _working as designed_.
+and many of them are either unanswered, answered dismissively or described
+as _working as designed_.
 
 https://sourceforge.net/p/keepass/discussion/search/?q=font+size
 
-This repository is an attempt to address the need for larger fonts for those
-who feel comfortable building this application from the source.
+The authors of this otherwise brilliant application seem to be unaware
+of display and font scaling and the difference between physical and
+effective pixels. This repository is an attempt to address the need for
+larger fonts in KeePass for those who feel comfortable building it from
+the source.
 
 ### XSL Template to Export All Fields and History
 
@@ -116,9 +120,11 @@ New KeePass source is imported using following steps.
       git checkout -b vx-y-z
 
 * Remove the `.github` directory with the empty GitHub workflow from
-  the main branch. This will prevent conflicts when the full GitHub
-  workflow is cherry-picked from the previous release branch.
-* Upgrade solution to Visual Studio 2022 and commit changes.
+  the main branch and commit the change. This will prevent conflicts
+  when the full GitHub workflow is cherry-picked from the previous
+  release branch.
+* Upgrade solution to Visual Studio 2022, remove `UpgradeLog.htm`
+  and commit changes.
 * Retarget all projects to use the .Net Framework v4.8. The original
   .Net v4.0 is no longer installed on GitHub runners. Note, however,
   that very little testing was done with running a mix of original
@@ -256,7 +262,7 @@ scaling mode.
 * Build the app and run it from Visual Studio to test whether forms are
   rendered without controls overlapping and there is no truncated text.
 
-The second step is completely illogical, but is required for some forms
+The third step makes very little sense, but is required for some forms
 to render correctly. For example, `GroupForm.Designer.cs` and
 `TanWizardForm.Designer.cs` will have overlapping controls without this
 step. If you know a better way to avoid this, please start a discussion.
