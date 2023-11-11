@@ -398,7 +398,9 @@
     <Compile Include="App\Configuration\AceTrayIcon.cs" />
     <Compile Include="App\Configuration\AceUI.cs" />
     <Compile Include="App\Configuration\AppConfigEx.cs" />
+    <Compile Include="App\Configuration\AppConfigEx.Sections.cs" />
     <Compile Include="App\Configuration\AppConfigSerializer.cs" />
+    <Compile Include="App\Configuration\AppEnforcedConfig.cs" />
     <Compile Include="DataExchange\CsvStreamReader.cs" />
     <Compile Include="DataExchange\CsvStreamReaderEx.cs" />
     <Compile Include="DataExchange\CsvStreamWriter.cs" />
@@ -492,6 +494,12 @@
     </Compile>
     <Compile Include="Forms\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptionsEnfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OptionsEnfForm.Designer.cs">
+      <DependentUpon>OptionsEnfForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\OtpGeneratorForm.cs">
       <SubType>Form</SubType>
@@ -864,6 +872,7 @@
     <Compile Include="UI\FileIcons.cs" />
     <Compile Include="UI\FontControlGroup.cs" />
     <Compile Include="UI\FontUtil.cs" />
+    <Compile Include="UI\FormDataExchange.cs" />
     <Compile Include="UI\GlobalWindowManager.cs" />
     <Compile Include="UI\IconColorizer.cs" />
     <Compile Include="UI\IGwmWindow.cs" />
@@ -1053,6 +1062,9 @@
     <EmbeddedResource Include="Forms\MainForm.resx">
       <SubType>Designer</SubType>
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsEnfForm.resx">
+      <DependentUpon>OptionsEnfForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OptionsForm.resx">
       <SubType>Designer</SubType>
@@ -1443,6 +1455,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>"$(FrameworkSDKDir)bin\sgen.exe" /assembly:"$(TargetPath)" /force /nologo /compiler:/keycontainer:VS_KEY_27A70973F3FC3787 /compiler:/delaysign-</PostBuildEvent>
+    <PostBuildEvent>"$(FrameworkSDKDir)bin\sgen.exe" /assembly:"$(TargetPath)" /force /nologo /compiler:/keycontainer:VS_KEY_8C26407DBC890166 /compiler:/delaysign-</PostBuildEvent>
   </PropertyGroup>
 </Project>

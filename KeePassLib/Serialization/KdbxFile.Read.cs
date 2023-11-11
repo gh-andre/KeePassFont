@@ -96,8 +96,7 @@ namespace KeePassLib.Serialization
 			byte[] pbCipherKey = null;
 			byte[] pbHmacKey64 = null;
 
-			List<Stream> lStreams = new List<Stream>();
-			lStreams.Add(sSource);
+			List<Stream> lStreams = new List<Stream> { sSource };
 
 			HashingStreamEx sHashing = new HashingStreamEx(sSource, false, null);
 			lStreams.Add(sHashing);
@@ -417,7 +416,7 @@ namespace KeePassLib.Serialization
 					Debug.Assert(false);
 					if(m_slLogger != null)
 						m_slLogger.SetText(KLRes.UnknownHeaderId + ": " +
-							kdbID.ToString() + "!", LogStatusType.Warning);
+							btFieldID.ToString() + "!", LogStatusType.Warning);
 					break;
 			}
 

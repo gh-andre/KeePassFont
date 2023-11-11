@@ -387,6 +387,10 @@ namespace KeePass.Forms
 			imgC = UIUtil.CreateColorBitmap24(w, h, AppDefs.NamedEntryColor.LightYellow);
 			m_milMain.SetImage(m_menuEntryColorLightYellow, imgC);
 
+			Debug.Assert(m_menuToolsOptionsEnf.Image == null);
+			m_menuToolsOptionsEnf.Image = UIUtil.AddShieldOverlay(
+				Properties.Resources.B16x16_Misc);
+
 			Debug.Assert(!m_tvGroups.ShowRootLines); // See designer
 			// m_lvEntries.GridLines = mw.ShowGridLines;
 			if(UIUtil.VistaStyleListsSupported)
@@ -892,8 +896,7 @@ namespace KeePass.Forms
 
 		private void OnHelpAbout(object sender, EventArgs e)
 		{
-			AboutForm abf = new AboutForm();
-			UIUtil.ShowDialogAndDestroy(abf);
+			UIUtil.ShowDialogAndDestroy(new AboutForm());
 		}
 
 		private void OnEntryCopyUserName(object sender, EventArgs e)
@@ -1260,7 +1263,7 @@ namespace KeePass.Forms
 
 				GlobalWindowManager.CustomizeFormHandleCreated(this, null, true);
 
-				AppConfigSerializer.Save(Program.Config);
+				AppConfigSerializer.Save();
 				UpdateTrayIcon(true);
 			}
 			UIUtil.DestroyForm(ofDlg);
@@ -1761,6 +1764,11 @@ namespace KeePass.Forms
 						if(e.Shift) OnEntryClipCopy(sender, e);
 						else OnEntryCopyPassword(sender, e);
 						break;
+					case Keys.D:
+						if(e.Shift) OnEntryCompareMark(sender, e);
+						else if(GetSelectedEntriesCount() == 2) OnEntryCompare2(sender, e);
+						else OnEntryCompare1(sender, e);
+						break;
 					case Keys.T:
 						OnEntryStringClick(sender, new DynamicMenuEventArgs(
 							string.Empty, (e.Shift ? m_edcShowTotp : m_edcCopyTotp)));
@@ -1802,6 +1810,7 @@ namespace KeePass.Forms
 					case Keys.A: break;
 					case Keys.C: break;
 					case Keys.Insert: break;
+					case Keys.D: break;
 					case Keys.T: break;
 					case Keys.V: break;
 					default: bHandled = false; break;
@@ -2873,6 +2882,71 @@ namespace KeePass.Forms
 				RefreshEntriesList();
 				UpdateUIState(true);
 			}
+		}
+
+		private void OnToolsOptionsEnf(object sender, EventArgs e)
+		{
+			UIUtil.ShowDialogAndDestroy(new OptionsEnfForm());
+		}
+
+		private void OnEntryCompare2(object sender, EventArgs e)
+		{
+			PwDatabase pd = m_docMgr.ActiveDatabase;
+			if((pd == null) || !pd.IsOpen) return;
+
+			PwEntry[] v = GetSelectedEntries();
+			if((v == null) || (v.Length != 2)) return;
+
+			DiffUtil.ShowDiff(v[0], v[0].ParentGroup, pd, v[1], v[1].ParentGroup, pd);
+		}
+
+		private void OnEntryCompareMark(object sender, EventArgs e)
+		{
+			if(GetSelectedEntriesCount() != 1) return;
+
+			m_peMarkedForComparison = GetSelectedEntry(false);
+		}
+
+		private void OnEntryCompare1(object sender, EventArgs e)
+		{
+			if(GetSelectedEntriesCount() != 1) return;
+
+			PwGroup pgA;
+			PwDatabase pdA;
+			PwEntry peA = GetEntryMarkedForComparison(out pgA, out pdA);
+			PwEntry peB = GetSelectedEntry(false);
+			if((peA == null) || (peB == null)) return;
+
+			DiffUtil.ShowDiff(peA, pgA, pdA, peB, peB.ParentGroup, m_docMgr.ActiveDatabase);
+		}
+
+		private void OnEntryCompareOpening(object sender, EventArgs e)
+		{
+			uint c = GetSelectedEntriesCount();
+
+			PwGroup pgM;
+			PwDatabase pdM;
+			PwEntry peM = GetEntryMarkedForComparison(out pgM, out pdM);
+
+			m_menuEntryCompare2.Enabled = (c == 2);
+			m_menuEntryCompareMark.Enabled = (c == 1);
+			m_menuEntryCompare1.Enabled = ((c == 1) && (peM != null));
+
+			string strNL = MessageService.NewLine;
+			string strSep = strNL + "\u2192 ";
+
+			m_menuEntryCompare2.ToolTipText =
+				KPRes.Entry + " 1: " + KPRes.SelectedLower + "." + strNL +
+				KPRes.Entry + " 2: " + KPRes.SelectedLower + ".";
+
+			string str = string.Empty;
+			if(peM != null)
+				str = KPRes.Entry + " 1:" + strNL +
+					pdM.IOConnectionInfo.GetDisplayName() + strSep +
+					pgM.GetFullPath(strSep, true) + strSep +
+					peM.Strings.ReadSafe(PwDefs.TitleField) + "." + strNL + strNL +
+					KPRes.Entry + " 2:" + strNL + KPRes.SelectedLower + ".";
+			m_menuEntryCompare1.ToolTipText = str;
 		}
 	}
 }

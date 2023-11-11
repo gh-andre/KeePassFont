@@ -61,6 +61,8 @@ namespace KeePass.Util
 
 	internal sealed class XmNodeOptions
 	{
+		internal const string AttribNodeMode = "MergeNodeMode";
+
 		private XmNodeMode m_nm = XmNodeMode.OpenOrCreate;
 		public XmNodeMode NodeMode
 		{
@@ -95,7 +97,7 @@ namespace KeePass.Util
 		{
 			if(xe == null) { Debug.Assert(false); return; }
 
-			string str = xe.GetAttribute("MergeNodeMode");
+			string str = xe.GetAttribute(AttribNodeMode);
 			if(!string.IsNullOrEmpty(str))
 			{
 				switch(str)
@@ -184,9 +186,9 @@ namespace KeePass.Util
 		private sealed class XmElementCollection : IEnumerable<KeyValuePair<string, XmlElement>>,
 			IEnumerable
 		{
-			private List<KeyValuePair<string, XmlElement>> m_l =
+			private readonly List<KeyValuePair<string, XmlElement>> m_l =
 				new List<KeyValuePair<string, XmlElement>>();
-			private Dictionary<string, XmlElement> m_d =
+			private readonly Dictionary<string, XmlElement> m_d =
 				new Dictionary<string, XmlElement>();
 
 			public IEnumerator<KeyValuePair<string, XmlElement>> GetEnumerator()
@@ -525,7 +527,7 @@ namespace KeePass.Util
 			return xeBase;
 		}
 
-		private static XmNodeOptions GetNodeOptions(XmlElement xe, string strXPath,
+		internal static XmNodeOptions GetNodeOptions(XmlElement xe, string strXPath,
 			XmContext ctx)
 		{
 			XmNodeOptions o = new XmNodeOptions();

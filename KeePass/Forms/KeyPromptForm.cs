@@ -53,8 +53,8 @@ namespace KeePass.Forms
 		private uint m_uUIAutoBlocked = 0;
 		private bool m_bDisposed = false;
 
-		private List<string> m_lKeyFileNames = new List<string>();
-		// private List<Image> m_lKeyFileImages = new List<Image>();
+		private readonly List<string> m_lKeyFileNames = new List<string>();
+		// private readonly List<Image> m_lKeyFileImages = new List<Image>();
 
 		private bool m_bSecureDesktop = false;
 		[Browsable(false)]
@@ -148,6 +148,21 @@ namespace KeePass.Forms
 			// in order to avoid a Caps Lock warning tooltip bug;
 			// https://sourceforge.net/p/keepass/bugs/1807/
 			Debug.Assert((m_tbPassword.TabIndex >= 2) && !m_tbPassword.Focused);
+
+			Debug.Assert(m_btnOK.Image == null);
+			if(m_strCustomTitle == KeyUtil.GetReAskKeyTitle(KPRes.Export))
+			{
+				string str = KPRes.ConfirmExport;
+				Rectangle r = m_btnOK.Bounds;
+				int wReq = TextRenderer.MeasureText(str, m_btnOK.Font).Width +
+					UIUtil.GetSmallIconSize().Width;
+
+				if(wReq > r.Width)
+					m_btnOK.SetBounds(r.X - (wReq - r.Width), r.Y, wReq, r.Height,
+						BoundsSpecified.X | BoundsSpecified.Width);
+
+				m_btnOK.Text = str;
+			}
 
 			GlobalWindowManager.AddWindow(this);
 			// if(m_bRedirectActivation) Program.MainForm.RedirectActivationPush(this);

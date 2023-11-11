@@ -21,7 +21,6 @@
 	<meta name="DC.rights" content="Copyright (C) 2003-2023 Dominik Reichl" />
 
 	<meta name="robots" content="index, follow" />
-	<meta name="flattr:id" content="42rykv" />
 
 	<title>Technical FAQ - KeePass</title>
 	<base target="_self" />
@@ -151,12 +150,14 @@ network drives/shares. Ask your administrator to do this (administrative
 rights are required). If you have administrative rights and want to do
 it yourself, you can use the
 <!-- https://msdn.microsoft.com/en-us/library/cb6t8dtz.aspx -->
-<a href="https://docs.microsoft.com/en-us/dotnet/framework/tools/caspol-exe-code-access-security-policy-tool"
+<!-- https://docs.microsoft.com/en-us/dotnet/framework/tools/caspol-exe-code-access-security-policy-tool -->
+<a href="https://learn.microsoft.com/en-us/dotnet/framework/tools/caspol-exe-code-access-security-policy-tool"
 target="_blank">Code Access Security Policy Tool (Caspol.exe)</a>
 that ships with the .NET framework (helpful instructions can be found
 <!-- https://blogs.msdn.com/shawnfa/archive/2004/12/30/344554.aspx -->
 <!-- https://blogs.msdn.microsoft.com/shawnfa/2004/12/30/using-caspol-to-fully-trust-a-share/ -->
-<a href="https://docs.microsoft.com/en-us/archive/blogs/shawnfa/using-caspol-to-fully-trust-a-share"
+<!-- https://docs.microsoft.com/en-us/archive/blogs/shawnfa/using-caspol-to-fully-trust-a-share -->
+<a href="https://learn.microsoft.com/en-us/archive/blogs/shawnfa/using-caspol-to-fully-trust-a-share"
 target="_blank">here</a> and
 <!-- https://blogs.msdn.com/shawnfa/archive/2005/07/27/443975.aspx -->
 <!-- https://blogs.msdn.microsoft.com/shawnfa/2005/07/27/why-is-caspol-prompting-me-for-confirmation/ -->
@@ -354,11 +355,12 @@ file and compares the available version with the installed version.
 No personal information is sent to the KeePass web server.</p>
 
 <p>Automatic update checks are performed unintrusively in the background.
-A notification is only displayed when an update is available. Updates are not
-downloaded or installed automatically.</p>
+A notification is only displayed when an update is available.
+Updates are not downloaded or installed automatically.</p>
 
-<p>The option is disabled by default. You can enable/disable it in
-'Tools' &rarr; 'Options' &rarr; tab 'Advanced'.</p>
+<p>When starting KeePass for the first time, it asks whether to enable
+automatic update checks (recommended). They can be enabled/disabled at any
+time using the option in 'Tools' &rarr; 'Options' &rarr; tab 'Advanced'.</p>
 
 <br />
 

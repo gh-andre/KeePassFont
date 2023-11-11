@@ -48,7 +48,7 @@ namespace KeePass.Util
 		private List<KeyValuePair<string, bool>> m_lDirs =
 			new List<KeyValuePair<string, bool>>();
 
-		private Dictionary<string, bool> m_dContentLoc = new Dictionary<string, bool>();
+		private readonly Dictionary<string, bool> m_dContentLoc = new Dictionary<string, bool>();
 		private readonly object m_oContentLocSync = new object();
 
 		private long m_nThreads = 0;
@@ -250,17 +250,16 @@ namespace KeePass.Util
 			int i = m_lFiles.IndexOf(strTempFile);
 			if(i < 0) { Debug.Assert(false); return false; }
 
-			bool bResult = false;
 			try
 			{
 				File.Delete(strTempFile);
 
 				m_lFiles.RemoveAt(i);
-				bResult = true;
+				return true;
 			}
 			catch(Exception) { Debug.Assert(false); }
 
-			return bResult;
+			return false;
 		}
 
 		private void ClearContentAsync()
