@@ -45,5 +45,21 @@ namespace KeePass.UI
 
 			if(bmpBackground != null) this.BackgroundImage = bmpBackground;
 		}
-	}
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // BackgroundForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(379, 321);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "BackgroundForm";
+            this.ResumeLayout(false);
+
+        }
+    }
 }
