@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.53.1 source, with a few changes described in
+This is a copy of KeePass v2.55 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -19,7 +19,7 @@ and build artifacts at your own risk.**
 
 ### Application Font Size
 
-All UI forms in this repository are updated to use `10pt` font size instead
+All UI forms in this repository are updated to use `11pt` font size instead
 of the original `8pt`, which is very hard on the eyes, especially on high
 resolution displays.
 
@@ -34,6 +34,13 @@ of display and font scaling and the difference between physical and
 effective pixels. This repository is an attempt to address the need for
 larger fonts in KeePass for those who feel comfortable building it from
 the source.
+
+Note that starting with v2.55.0, the target font size was changed from
+`10pt` to `11pt` in this repository, which works best on 4K displays.
+However, this may result in some dialogues rendered partially cut off
+on displays with lower resolutions. Make sure to test large dialogues,
+such as generating master passwords or the options dialogues, before
+switching to this version.
 
 ### XSL Template to Export All Fields and History
 
@@ -246,9 +253,10 @@ as described below.
 * Visual Studio will present a pop-up line at the top asking if you
   would like to restart Visual Studio with 100% display scaling. Click
   to restart with 100% scaling.
-* For every form, change the `Font` property from `8pt` to `10pt` and
+* For every form, change the `Font` property from `8pt` to `11pt` and
   `AutoScaleMode` property from `Font` to `Dpi`. Font size must be
-  changed first.
+  changed first or the form will not be resized proportionally to
+  accommodate resized fields.
 * Once all forms have been changed, exit Visual Studio.
 
 For the second step, Visual Studio must be running in the default display
@@ -266,6 +274,12 @@ The third step makes very little sense, but is required for some forms
 to render correctly. For example, `GroupForm.Designer.cs` and
 `TanWizardForm.Designer.cs` will have overlapping controls without this
 step. If you know a better way to avoid this, please start a discussion.
+
+These steps are very tedious and error-prone. It helps to open all
+forms at once via a _Click_ followed by _Shift-Double-Click_ for
+multiple forms, skipping those that should not be edited, and edit
+them one after another, closing updated and saved forms throughout
+the process.
 
 ### Display Resolution
 
