@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.55 source, with a few changes described in
+This is a copy of KeePass v2.57 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -8,12 +8,13 @@ https://keepass.info/download.html
 
 ## Disclaimer
 
-This repository is maintained to keep track of source changes and to share
-the experience with other developers who may find these changes useful.
-However, these steps and source changes have not been tested much and may
-not work in other environments and may even cause unexpected results,
-including possible loss of data. **Use these instructions, modified source
-and build artifacts at your own risk.**
+This repository is maintained to keep track of source changes and to
+share the experience with other developers who may find these changes
+useful. However, these steps and source changes have not been tested
+beyond personal use and may not work in other environments and may
+even cause unexpected results, including possible loss of data.
+**Use these instructions, modified source and build artifacts at your
+own risk.**
 
 ## Changes
 
@@ -34,13 +35,6 @@ of display and font scaling and the difference between physical and
 effective pixels. This repository is an attempt to address the need for
 larger fonts in KeePass for those who feel comfortable building it from
 the source.
-
-Note that starting with v2.55.0, the target font size was changed from
-`10pt` to `11pt` in this repository, which works best on 4K displays.
-However, this may result in some dialogues rendered partially cut off
-on displays with lower resolutions. Make sure to test large dialogues,
-such as generating master passwords or the options dialogues, before
-switching to this version.
 
 ### XSL Template to Export All Fields and History
 
@@ -78,7 +72,7 @@ BitLocker drive or a USB drive attached via a hardware encryption key.
 
 ## Repository Structure
 
-The original KeePass source is always committed on `master` and tagged
+The original KeePass source is always committed on `main` and tagged
 with the original version number. All changes are maintained in version
 branches, which contain cherry-picked changes from the previous version
 and new changes. Current topology looks like this:
@@ -88,18 +82,18 @@ and new changes. Current topology looks like this:
               |         |               |        |   
            +--o---------o----->     +---o--------o---->      +---... v2-48-1
           /                v2-46-0 /               v2-47-0  /   
-    -o---o------------------------o----o-------------------o---o---> master
+    -o---o------------------------o----o-------------------o---o---> main
      |  README.md                 |   README.md            |  README.md
     keepass-2-46-0            keepass-2-47-0           keepass-2-48-1
 
 Version branches `v2-46-0`, `v2-47-0` and `v2-48-1` contain modifications
-of the original code, which is maintained in `master` and is tagged with
+of the original code, which is maintained in `main` and is tagged with
 `keepass-2-46-0`, `keepass-2-47-0` and `keepass-2-48-1`, respectively, for
 each new source drop.
 
-The `master` branch contains original KeePass source and two additional
+The `main` branch contains original KeePass source and two additional
 files, `.gitignore` and `README.md`. The latter is required for GitHub to
-show README on the repository home page. `README.md` on `master` should
+show README on the repository home page. `README.md` on `main` should
 be cherry-picked from the latest version branch for each new modified
 source drop.
 
@@ -112,9 +106,9 @@ New KeePass source is imported using following steps.
 
       git stash push KeePass\KeePass.csproj
 
-* Checkout `master`
+* Checkout `main`
 
-      git checkout master
+      git checkout main
 
 * Delete all source, except `.git`, `.gitignore`, `.github`, `README.md`
   and, perhaps, `.vs`.
@@ -153,12 +147,13 @@ New KeePass source is imported using following steps.
   point.
 * Once font size changes are applied, tested and committed, `README.md`
   should be updated to reflect the new application version and any
-  additional changes and should be cherry-picked to `master`.
+  additional changes and should be cherry-picked to `main`.
 
 ## Building
 
-These steps are tested on Windows 10 (x64) with Visual Studio 2022, Community
-Edition. The original KeePass project was upgraded to Visual Studio 2022.
+These steps are tested on Windows 10/11 (x64) with Visual Studio 2022,
+Community Edition. The original KeePass project was upgraded to Visual
+Studio 2022.
 
 Clone this repository and check out the version branch you would like to build.
 
@@ -211,7 +206,7 @@ directory:
     KeePass\Build\KeePass\Release\KeePass.exe
 
 Open the test database and make sure the functionality you typically use still
-works and you can see all buttons in the dialogs.
+works and you can see all buttons in the forms.
 
 Backup your actual password file before you open it with the new application.
 
@@ -242,6 +237,9 @@ on the version of Visual Studio, it may not work as described.
 
 Font changes need to be applied in two steps. Do not change `MainForm_Events.cs`
 and `MainForm_Functions.cs` forms in either of these steps.
+
+Make sure the C# editor is set to use 4-space tab indents to make changes
+more concise and visible.
 
 For the first step, Visual Studio must be switched to 100% scaling mode,
 as described below.
@@ -283,14 +281,23 @@ the process.
 
 ### Display Resolution
 
-These changes were tested on 3840x2160 displays, with up to 200% display
-scaling, and 1920x1080 displays on Windows 10. On one of of the lower
-resolution displays some buttons were not visible for some display scaling
-and font scaling combinations.
+Windows is not consistent in rendering changes described in this document
+and on Windows 11 moving the application between 3840x2160 and 1920x1080
+displays keeps the forms usable, even though scroll bars are added to
+those forms that do not fit on screen.
 
-Make sure to go through application dialogs you regularly use to check
-whether _Ok_ and _Cancel_ buttons are visible before making any data changes
-or you will not be able to accept your changes.
+However, when running the application on 1920x1080 displays on Windows
+10, forms are truncated at the right and bottom edges, making them unusable.
+
+Make sure to go through application forms you regularly use to check
+whether _Ok_ and _Cancel_ buttons are visible before making any data
+changes or you will not be able to accept your changes.
+
+Try opening larger forms, such as _Tools > Advanced Tools > Enforce Options_
+or _Tools > Options_, to check if all of the buttons are visible and also
+whether the text that wraps on the right contains incomplete sentences (i.e.
+parts of sentences may extend beyond the right edge of the form and will not
+be visible).
 
 ## Issues
 
@@ -299,7 +306,7 @@ issues should be addressed via the application website.
 
 https://keepass.info/
 
-If you experience any issues with application dialogs display, simply switch back
+If you experience any issues with application forms display, simply switch back
 to the original application.
 
 If you find something missing from build instructions in this file, such as
