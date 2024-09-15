@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -204,10 +204,7 @@ namespace KeePass.DataExchange.Formats
 			if(!Directory.Exists(strDir))
 			{
 				try { Directory.CreateDirectory(strDir); }
-				catch(Exception exDir)
-				{
-					throw new Exception(strDir + MessageService.NewParagraph + exDir.Message);
-				}
+				catch(Exception exDir) { throw new ExtendedException(strDir, exDir); }
 
 				WaitForDirCommit(strDir, true);
 			}
@@ -236,10 +233,7 @@ namespace KeePass.DataExchange.Formats
 					File.WriteAllText(strFile, sb.ToString(), Encoding.Default);
 				}
 			}
-			catch(Exception exWrite)
-			{
-				throw new Exception(strFile + MessageService.NewParagraph + exWrite.Message);
-			}
+			catch(Exception exFile) { throw new ExtendedException(strFile, exFile); }
 		}
 
 		private static void WaitForDirCommit(string strDir, bool bRequireExists)

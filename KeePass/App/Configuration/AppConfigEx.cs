@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -293,6 +293,7 @@ namespace KeePass.App.Configuration
 		{
 			ulong uVersion = this.Meta.GetVersion();
 			AceMainWindow aceMW = this.MainWindow;
+			AceSecurity aceSec = this.Security;
 			AceSearch aceSearch = this.Search;
 			AceIntegration aceInt = this.Integration;
 
@@ -316,6 +317,17 @@ namespace KeePass.App.Configuration
 
 			DpiScale();
 
+			// AceFont af = this.UI.PasswordFont;
+			// Debug.Assert(af.GraphicsUnit == GraphicsUnit.Point);
+			// float fSize = ((af.GraphicsUnit == GraphicsUnit.Point) ? af.Size :
+			//	af.ToFont().SizeInPoints);
+			// if(fSize > AceUI.PasswordFontSizeMaximum)
+			// {
+			//	Debug.Assert(false);
+			//	af.Size = AceUI.PasswordFontSizeMaximum;
+			//	af.GraphicsUnit = GraphicsUnit.Point;
+			// }
+
 			if(aceMW.EscMinimizesToTray) // For backward compatibility
 			{
 				aceMW.EscMinimizesToTray = false; // Default value
@@ -334,7 +346,8 @@ namespace KeePass.App.Configuration
 
 			if(NativeLib.IsUnix())
 			{
-				this.Security.MasterKeyOnSecureDesktop = false;
+				aceSec.PreventScreenCapture = false;
+				aceSec.MasterKeyOnSecureDesktop = false;
 
 				aceInt.HotKeyGlobalAutoType = (long)Keys.None;
 				aceInt.HotKeyGlobalAutoTypePassword = (long)Keys.None;
@@ -345,7 +358,7 @@ namespace KeePass.App.Configuration
 
 			if(MonoWorkarounds.IsRequired(1378))
 			{
-				AceWorkspaceLocking aceWL = this.Security.WorkspaceLocking;
+				AceWorkspaceLocking aceWL = aceSec.WorkspaceLocking;
 				aceWL.LockOnSessionSwitch = false;
 				aceWL.LockOnSuspend = false;
 				aceWL.LockOnRemoteControlChange = false;
@@ -435,8 +448,7 @@ namespace KeePass.App.Configuration
 			AceApplication aceApp = this.Application; // m_aceApp might be null
 			AceIntegration aceInt = this.Integration; // m_int might be null
 
-			if(aceApp.LastUsedFile == null) { Debug.Assert(false); }
-			else aceApp.LastUsedFile.Obfuscate(bObf);
+			aceApp.LastUsedFile.Obfuscate(bObf);
 
 			foreach(IOConnectionInfo iocMru in aceApp.MostRecentlyUsed.Items)
 			{

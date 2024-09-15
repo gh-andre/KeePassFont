@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -64,7 +64,7 @@ namespace KeePass.DataExchange.Formats
 			foreach(string strType in jo.Items.Keys)
 			{
 				if(strType == null) { Debug.Assert(false); continue; }
-				string strTypeNorm = strType.Trim().ToLower();
+				string strTypeNorm = strType.Trim().ToLowerInvariant();
 
 				JsonObject[] vEntries = jo.GetValueArray<JsonObject>(strType);
 				if(vEntries == null) { Debug.Assert(false); continue; }
@@ -143,7 +143,7 @@ namespace KeePass.DataExchange.Formats
 				strKey = (new string(char.ToUpper(strKey[0]), 1)) +
 					strKey.Substring(1);
 
-				string strNorm = strKey.ToLower();
+				string strNorm = strKey.ToLowerInvariant();
 				switch(strNorm)
 				{
 					case "fullname":

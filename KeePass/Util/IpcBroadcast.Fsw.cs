@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -116,7 +116,7 @@ namespace KeePass.Util
 			if(!bSuccess)
 			{
 				Debug.Assert(false);
-				if(Program.CommandLineArgs[AppDefs.CommandLineOptions.Debug] != null)
+				if(PwDefs.DebugMode)
 					Console.WriteLine("Failed to broadcast message " +
 						((long)msg).ToString() + " (" + lParam.ToString() + ")!");
 			}
@@ -136,11 +136,11 @@ namespace KeePass.Util
 			catch(Exception ex) // Access denied?
 			{
 				Debug.Assert(false);
-				if(Program.CommandLineArgs[AppDefs.CommandLineOptions.Debug] != null)
+				if(PwDefs.DebugMode)
 				{
 					Console.WriteLine(UrlUtil.EnsureTerminatingSeparator(
 						UrlUtil.GetTempPath(), false) + m_strMsgFileName);
-					Console.WriteLine(ex.Message.Trim());
+					Console.WriteLine(StrUtil.FormatException(ex));
 				}
 				return;
 			}

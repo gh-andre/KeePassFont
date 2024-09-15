@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -18,8 +18,6 @@
 */
 
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Text;
@@ -86,10 +84,10 @@ namespace KeePass.DataExchange.Formats
 		{
 			XslCompiledTransform xsl = new XslCompiledTransform();
 			try { xsl.Load(strXslFile); }
-			catch(Exception exXsl)
+			catch(Exception ex)
 			{
-				throw new NotSupportedException(strXslFile + MessageService.NewParagraph +
-					KPRes.NoXslFile + MessageService.NewParagraph + exXsl.Message);
+				throw new ExtendedException(strXslFile + MessageService.NewParagraph +
+					KPRes.NoXslFile, ex);
 			}
 
 			byte[] pbData;

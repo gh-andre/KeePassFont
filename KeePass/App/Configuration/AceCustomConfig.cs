@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -96,9 +96,9 @@ namespace KeePass.App.Configuration
 		/// </summary>
 		/// <param name="strID">ID of the configuration item. This identifier
 		/// should consist only of English characters (a-z, A-Z, 0-9, '.',
-		/// ',', '-', '_') and should be unique -- for example (without quotes):
-		/// "PluginName.YourConfigGroupName.ItemName". Use upper camel
-		/// case as naming convention.</param>
+		/// ',', '-', '_') and should be unique; for example (without quotes):
+		/// "PluginName.YourConfigGroupName.ItemName". Use upper camel case as
+		/// naming convention.</param>
 		/// <param name="strValue">New value of the configuration item.</param>
 		public void SetString(string strID, string strValue)
 		{
@@ -114,9 +114,9 @@ namespace KeePass.App.Configuration
 		/// </summary>
 		/// <param name="strID">ID of the configuration item. This identifier
 		/// should consist only of English characters (a-z, A-Z, 0-9, '.',
-		/// ',', '-', '_') and should be unique -- for example (without quotes):
-		/// "PluginName.YourConfigGroupName.ItemName". Use upper camel
-		/// case as naming convention.</param>
+		/// ',', '-', '_') and should be unique; for example (without quotes):
+		/// "PluginName.YourConfigGroupName.ItemName". Use upper camel case as
+		/// naming convention.</param>
 		/// <param name="bValue">New value of the configuration item.</param>
 		public void SetBool(string strID, bool bValue)
 		{
@@ -128,9 +128,9 @@ namespace KeePass.App.Configuration
 		/// </summary>
 		/// <param name="strID">ID of the configuration item. This identifier
 		/// should consist only of English characters (a-z, A-Z, 0-9, '.',
-		/// ',', '-', '_') and should be unique -- for example (without quotes):
-		/// "PluginName.YourConfigGroupName.ItemName". Use upper camel
-		/// case as naming convention.</param>
+		/// ',', '-', '_') and should be unique; for example (without quotes):
+		/// "PluginName.YourConfigGroupName.ItemName". Use upper camel case as
+		/// naming convention.</param>
 		/// <param name="lValue">New value of the configuration item.</param>
 		public void SetLong(string strID, long lValue)
 		{
@@ -142,9 +142,9 @@ namespace KeePass.App.Configuration
 		/// </summary>
 		/// <param name="strID">ID of the configuration item. This identifier
 		/// should consist only of English characters (a-z, A-Z, 0-9, '.',
-		/// ',', '-', '_') and should be unique -- for example (without quotes):
-		/// "PluginName.YourConfigGroupName.ItemName". Use upper camel
-		/// case as naming convention.</param>
+		/// ',', '-', '_') and should be unique; for example (without quotes):
+		/// "PluginName.YourConfigGroupName.ItemName". Use upper camel case as
+		/// naming convention.</param>
 		/// <param name="uValue">New value of the configuration item.</param>
 		public void SetULong(string strID, ulong uValue)
 		{
@@ -177,9 +177,7 @@ namespace KeePass.App.Configuration
 		public bool GetBool(string strID, bool bDefault)
 		{
 			string strValue = GetString(strID, null);
-			if(string.IsNullOrEmpty(strValue)) return bDefault;
-
-			return StrUtil.StringToBool(strValue);
+			return (StrUtil.StringToBoolEx(strValue) ?? bDefault);
 		}
 
 		public long GetLong(string strID, long lDefault)

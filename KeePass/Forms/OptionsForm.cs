@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -27,6 +27,7 @@ using System.Windows.Forms;
 
 using KeePass.App;
 using KeePass.App.Configuration;
+using KeePass.Native;
 using KeePass.Resources;
 using KeePass.UI;
 using KeePass.UI.ToolStripRendering;
@@ -34,7 +35,6 @@ using KeePass.Util;
 
 using KeePassLib;
 using KeePassLib.Delegates;
-using KeePassLib.Serialization;
 using KeePassLib.Utility;
 
 using NativeLib = KeePassLib.Native.NativeLib;
@@ -197,6 +197,7 @@ namespace KeePass.Forms
 				Program.Config.UI.StandardFont, afDefault);
 			m_fcgPassword = new FontControlGroup(m_cbPasswordFont, m_btnPasswordFont,
 				Program.Config.UI.PasswordFont, afMono);
+			// m_fcgPassword.FontSizeMaximum = AceUI.PasswordFontSizeMaximum;
 
 			AceEscAction aEscCur = Program.Config.MainWindow.EscAction;
 			int iEscSel = (int)AceEscAction.Lock;
@@ -226,6 +227,8 @@ namespace KeePass.Forms
 			UIUtil.ConfigureToolTip(m_ttRect);
 			UIUtil.SetToolTip(m_ttRect, m_cbClipClearTime, KPRes.ClipboardClearDesc +
 				MessageService.NewParagraph + KPRes.ClipboardOptionME, false);
+			UIUtil.SetToolTip(m_ttRect, m_tbSearch, KPRes.Search + " (" +
+				UIUtil.GetKeysName(Keys.Control | Keys.F) + ")", true);
 
 			AccessibilityEx.SetContext(m_numLockAfterTime, m_cbLockAfterTime);
 			AccessibilityEx.SetContext(m_numLockAfterGlobalTime, m_cbLockAfterGlobalTime);
@@ -389,6 +392,8 @@ namespace KeePass.Forms
 
 			m_cdxSecurityOptions.CreateItem(aceSec, "KeyTransformWeakWarning",
 				lvg, KPRes.KeyTransformWeakWarning);
+			m_cdxSecurityOptions.CreateItem(aceSec, "PreventScreenCapture",
+				lvg, KPRes.PreventScreenCapture, obNoWin);
 			m_cdxSecurityOptions.CreateItem(aceSec, "MasterKeyOnSecureDesktop",
 				lvg, KPRes.MasterKeyOnSecureDesktop, obNoWin);
 			m_cdxSecurityOptions.CreateItem(aceSec, "ClearKeyCommandLineParams",
@@ -704,7 +709,7 @@ namespace KeePass.Forms
 			m_cdxAdvanced.CreateItem(Program.Config.Application, "SaveForceSync",
 				lvg, KPRes.SaveForceSync);
 			m_cdxAdvanced.CreateItem(Program.Config.Security, "SslCertsAcceptInvalid",
-				lvg, KPRes.SslCertsAcceptInvalid);
+				lvg, KPRes.TlsCertsAcceptInvalid);
 
 			lvg = new ListViewGroup(KPRes.Advanced);
 			m_lvAdvanced.Groups.Add(lvg);
@@ -768,6 +773,23 @@ namespace KeePass.Forms
 		}
 
 		private void SaveOptions()
+		{
+			bool bPreventSC = Program.Config.Security.PreventScreenCapture;
+
+			SaveOptionsPriv();
+
+			if(!bPreventSC && Program.Config.Security.PreventScreenCapture)
+			{
+				string strNL = MessageService.NewLine;
+				if(!MessageService.AskYesNo(KPRes.OptionActivateAboutTo + strNL +
+					"'" + KPRes.PreventScreenCapture + "'." + strNL + strNL +
+					KPRes.PreventScreenCaptureNote + strNL + strNL +
+					KPRes.OptionActivateConfirm))
+					Program.Config.Security.PreventScreenCapture = false;
+			}
+		}
+
+		private void SaveOptionsPriv()
 		{
 			if(!m_cbLockAfterTime.Checked)
 				Program.Config.Security.WorkspaceLocking.LockAfterTime = 0;
@@ -1031,6 +1053,30 @@ namespace KeePass.Forms
 		private void OnAltColorSelectedIndexChanged(object sender, EventArgs e)
 		{
 			UpdateUIState();
+		}
+
+		protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+		{
+			bool bDown;
+			if(!NativeMethods.GetKeyMessageState(ref msg, out bDown) ||
+				(UIUtil.GetActiveControl(this) is HotKeyControlEx))
+				return base.ProcessCmdKey(ref msg, keyData);
+
+			Keys kc = (keyData & Keys.KeyCode);
+
+			// Browsers use Ctrl+F, Visual Studio uses Ctrl+E
+			if(((kc == Keys.F) || (kc == Keys.E)) && ((keyData &
+				(Keys.Control | Keys.Alt)) == Keys.Control))
+			{
+				if(bDown)
+				{
+					UIUtil.SetFocus(m_tbSearch, this);
+					m_tbSearch.SelectAll();
+				}
+				return true;
+			}
+
+			return base.ProcessCmdKey(ref msg, keyData);
 		}
 	}
 }

@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -27,6 +27,7 @@ using System.Windows.Forms;
 using System.Xml;
 
 using KeePass.App;
+using KeePass.App.Configuration;
 using KeePass.Forms;
 using KeePass.Resources;
 using KeePass.UI;
@@ -91,7 +92,7 @@ namespace KeePass.Util
 					}
 					catch(Exception ex)
 					{
-						throw new Exception(strKeyFile + strNP + ex.Message);
+						throw new ExtendedException(strKeyFile, ex);
 					}
 					finally { if(pbKey != null) MemUtil.ZeroByteArray(pbKey); }
 				}
@@ -100,8 +101,8 @@ namespace KeePass.Util
 					try { ck.AddUserKey(new KcpKeyFile(strKeyFile, bNewKey)); }
 					catch(Exception ex)
 					{
-						throw new Exception(strKeyFile + strNP + KLRes.FileLoadFailed +
-							strNP + ex.Message);
+						throw new ExtendedException(strKeyFile + strNP +
+							KLRes.FileLoadFailed, ex);
 					}
 				}
 			}
@@ -433,8 +434,8 @@ namespace KeePass.Util
 			catch(Exception ex)
 			{
 				Debug.Assert(false);
-				if((d != null) && !string.IsNullOrEmpty(ex.Message))
-					d.SetString(KdfPrcError, ex.Message);
+				if(d != null)
+					d.SetString(KdfPrcError, StrUtil.FormatException(ex, null));
 			}
 
 			try
@@ -451,7 +452,9 @@ namespace KeePass.Util
 		{
 			if(p == null) { Debug.Assert(false); return false; }
 
-			if(!Program.Config.Security.KeyTransformWeakWarning) return false;
+			bool bForce = ((Program.Config.UI.UIFlags &
+				(ulong)AceUIFlags.AdjustWeakKdfParameters) != 0);
+			if(!Program.Config.Security.KeyTransformWeakWarning && !bForce) return false;
 
 			KdfEngine kdf = KdfPool.Get(p.KdfUuid);
 			if(kdf == null) { Debug.Assert(false); return false; }
@@ -485,7 +488,8 @@ namespace KeePass.Util
 			};
 
 			int dr;
-			if(dlg.ShowDialog())
+			if(bForce) dr = (int)DialogResult.OK;
+			else if(dlg.ShowDialog())
 			{
 				dr = dlg.Result;
 				if(dlg.ResultVerificationChecked)

@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -218,8 +218,7 @@ namespace KeePass.App.Configuration
 			}
 			catch(Exception ex)
 			{
-				FileDialogsEx.ShowConfigError(g_strEnforcedConfigFile,
-					ex.Message, false, false);
+				FileDialogsEx.ShowConfigError(g_strEnforcedConfigFile, ex, false, false);
 			}
 #if DEBUG
 			finally
@@ -273,7 +272,7 @@ namespace KeePass.App.Configuration
 			}
 			catch(Exception ex)
 			{
-				FileDialogsEx.ShowConfigError(strFilePath, ex.Message, false, true);
+				FileDialogsEx.ShowConfigError(strFilePath, ex, false, true);
 			}
 
 			if(cfg != null) cfg.OnLoad();
@@ -378,7 +377,7 @@ namespace KeePass.App.Configuration
 			}
 			catch(Exception ex)
 			{
-				FileDialogsEx.ShowConfigError(strFilePath, ex.Message, true, false);
+				FileDialogsEx.ShowConfigError(strFilePath, ex, true, false);
 			}
 
 			return false;

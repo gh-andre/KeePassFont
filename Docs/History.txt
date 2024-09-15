@@ -1,3 +1,133 @@
+2024-06-01: 2.57
+- Added option 'Prevent certain screen captures' (in 'Tools' ->
+  'Options' -> tab 'Security', turned off by default); note
+  that this may also prevent legitimate other software (remote
+  desktop solutions, accessibility tools such as screen
+  magnifiers, etc.) from seeing KeePass windows
+- Added the new option 'Prevent certain screen captures' in the
+  'Enforce Options (All Users)' dialog (in 'Tools' -> 'Advanced
+  Tools' -> 'Enforce Options')
+- Key files can be created on the secure desktop now
+- Added shortcut keys for the 'Copy Group (Encrypted)'
+  (Ctrl+Shift+C) and 'Paste Group' (Ctrl+Shift+V) commands
+- Ctrl+Shift+V can now be used for pasting entries while the
+  group tree has the input focus and vice versa
+- Added 'More' button in the icon picker dialog, which shows a
+  menu that provides two commands: 'Rename' and 'Export'; the
+  menu is also shown as context menu of the custom icons list
+- When importing an icon, the file name without extension is
+  now used as icon name
+- Added option 'Remember password hiding setting' in the main
+  window column configuration dialog (turned off by default)
+- Added support for long paths when running on .NET 4.6.2 or
+  higher
+- Some error messages now contain the type and the HResult of
+  the exception that occured
+- Some error messages are now more detailed when running
+  KeePass with the '-debug' command line option
+- Bitwarden JSON import: two-digit years are now converted to
+  four-digit years
+- Added UIFlags bit for automatically adjusting weak key
+  transformation settings to the current default values
+  (without a confirmation dialog)
+- Added DPI detection on Unix-like systems
+- For applications using KeePass as a library: added a new
+  common initialization method ('CommonInitialize') that allows
+  a custom error handling/reporting
+
+- Databases are now always saved in the KDBX 4/4.1 file format;
+  if you need a KDBX 3.1 file (e.g. for compatibility with an
+  old app), perform an export: main menu 'File' -> 'Export' ->
+  format 'KeePass KDBX (2.34, Old Format)'
+- Auto-Type: improved compatibility with Remote Desktop Client
+  (WSL)
+- In an auto-type error dialog, the sequence is now only
+  displayed if KeePass has been started with the '-debug'
+  command line option
+- Increased maximum length of the main window title
+- Improved handling of shortcut keys in the main window
+- Improved entry data exchange menu update performance
+- After moving a group, KeePass now ensures that the group is
+  visible
+- Improved database save confirmation dialog text
+- When showing the master key creation/change dialog on the
+  secure desktop, trying to perform an operation that is not
+  supported on the secure desktop now results in a simple error
+  message, i.e. it is not possible anymore to choose to cancel
+  the dialog and perform the operation on the normal desktop;
+  this avoids certain accidental data loss scenarios
+- Various improvements in the simple file browser dialog (for
+  the secure desktop)
+- While a hot key control of the options dialog is focused,
+  dialog-specific keyboard shortcuts are now disabled
+- Changed the 'MAC Address' password generator profile such
+  that it always generates a unicast, locally administered MAC
+  address in the SLAP administratively assigned quadrant
+- In the icon picker dialog: moved the 'Export' command into
+  the 'More'/context menu of the custom icons list
+- When running on .NET 4.7 or higher, KeePass now supports all
+  TLS/SSL protocol versions that are supported/enabled by the
+  framework/system
+- Improved error messages for exception chains
+- Improved serialization, deserialization and conversion of
+  nullable booleans
+- Improved deserialization of variant dictionaries
+- Improved application context initialization
+- Improved termination of the program in case of a fatal
+  exception
+- Various UI text improvements
+- Various code optimizations
+- Minor other improvements
+
+2024-02-04: 2.56
+- Added search box in the options dialog (keyboard shortcut
+  Ctrl+F)
+- When pressing the Enter key in the group tree of the main
+  window, the entries of the group are displayed now (this can
+  be useful for instance when the entry list is displaying
+  search results)
+- Added 'More' button on the 'History' tab page of the entry
+  dialog, which shows a menu that provides the following two
+  new commands: 'Select All Historic Entries' and 'Delete All
+  Historic Entries'; the menu is also shown as context menu of
+  the history entries list
+- Added Ctrl+A keyboard shortcut for the 'Select All Historic
+  Entries' command in the entry dialog (the history entries
+  list must have the input focus)
+- Added workaround for Mono window size bug
+- Added accessibility help page
+
+- In the main window, the entry list is now updated when right-
+  clicking onto a group in the group tree
+- Expanding/collapsing a group in the group tree of the main
+  window does not select it anymore
+- The option 'Remember password hiding setting in the main
+  window' is now turned off by default
+- In the auto-type entry selection dialog, comments ({C:...}
+  placeholders) are now removed from the values in the
+  'Sequence' column if the 'Sequence - Comments' column is
+  displayed
+- The view is now restored after syntax highlighting in the
+  sequence box of the auto-type association dialog
+- Reduced flickering in the sequence box of the auto-type
+  association dialog
+- Improved performance of Spr compilations of certain texts
+- Minor process memory protection improvement for the password
+  generator
+- Minor process memory protection improvements for some report
+  dialogs
+- Improved thread safety of message box management
+- Improved UUID object implementation
+- Collection equality testing improvements (for plugins)
+- Various code optimizations
+- Minor other improvements
+
+- In the main window, the entry list is now updated correctly
+  when performing overlapping keypresses into the group tree
+- When cancelling a group drag&drop operation, the group
+  selection is now restored correctly
+- Fixed background of CHM help pages
+
 2023-10-12: 2.55
 - Added 'Compare Entries' command (in the main menu 'Entry' ->
   'Compare'), which compares the two entries that are selected

@@ -353,6 +353,9 @@
     <Compile Include="..\KeePassLib\Utility\AppLogEx.cs">
       <Link>KeePassLib\Utility\AppLogEx.cs</Link>
     </Compile>
+    <Compile Include="..\KeePassLib\Utility\ExtendedException.cs">
+      <Link>KeePassLib\Utility\ExtendedException.cs</Link>
+    </Compile>
     <Compile Include="..\KeePassLib\Utility\GfxUtil.cs">
       <Link>KeePassLib\Utility\GfxUtil.cs</Link>
     </Compile>
@@ -915,6 +918,9 @@
     <Compile Include="UI\ToolStripRendering\VisualStyleTsr.cs" />
     <Compile Include="UI\ToolStripRendering\Win10Tsr.cs" />
     <Compile Include="UI\ToolStripRendering\Win81Tsr.cs" />
+    <Compile Include="UI\UIElementSearchBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UI\UISystemFonts.cs" />
     <Compile Include="UI\VistaTaskDialog.cs">
     </Compile>

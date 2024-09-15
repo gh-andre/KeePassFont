@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,12 +19,10 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Windows.Forms;
 using System.Diagnostics;
+using System.Text;
 
 using KeePass.Forms;
-using KeePass.UI;
 
 using KeePassLib;
 using KeePassLib.Security;
@@ -151,16 +149,16 @@ namespace KeePass.Util.Spr
 					if(dOptions.ContainsKey("count"))
 						uint.TryParse(dOptions["count"], out uCharCount);
 
-					bool? bInitHide = null;
+					bool? obInitHide = null;
 					if(dOptions.ContainsKey("hide"))
-						bInitHide = StrUtil.StringToBool(dOptions["hide"]);
+						obInitHide = StrUtil.StringToBoolEx(dOptions["hide"]);
 
 					string strContent = ctx.Entry.Strings.ReadSafe(strField);
 					if(strContent.Length == 0) { } // Leave strRep empty
 					else if((strID.Length > 0) && dPicked.ContainsKey(strID))
 						strRep = dPicked[strID];
 					else
-						strRep = ShowCharPickDlg(strContent, uCharCount, bInitHide,
+						strRep = ShowCharPickDlg(strContent, uCharCount, obInitHide,
 							ctx, uRecursionLevel);
 
 					if(strID.Length > 0) dPicked[strID] = strRep;

@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -71,6 +71,16 @@ namespace KeePass.Forms
 		{
 			get { return m_bRecreateOnly; }
 			set { m_bRecreateOnly = value; }
+		}
+
+		private bool m_bSecureDesktop = false;
+		[Browsable(false)]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+		[DefaultValue(false)]
+		public bool SecureDesktopMode
+		{
+			get { return m_bSecureDesktop; }
+			set { m_bSecureDesktop = value; }
 		}
 
 		private string m_strResultFile = null;
@@ -191,7 +201,7 @@ namespace KeePass.Forms
 			strName += "." + AppDefs.FileExtension.KeyFile;
 
 			return FileDialogsEx.ShowKeyFileDialog(true, KPRes.KeyFileCreateTitle,
-				strName, false, false);
+				strName, false, m_bSecureDesktop);
 		}
 
 		private string CreateKeyFile()

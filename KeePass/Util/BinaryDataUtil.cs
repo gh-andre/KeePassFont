@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -26,12 +26,10 @@ using System.Threading;
 using System.Diagnostics;
 
 using KeePass.Forms;
-using KeePass.Native;
 using KeePass.Resources;
 using KeePass.UI;
 
 using KeePassLib;
-using KeePassLib.Collections;
 using KeePassLib.Cryptography;
 using KeePassLib.Interfaces;
 using KeePassLib.Security;
@@ -278,9 +276,9 @@ namespace KeePass.Util
 							pbResult = File.ReadAllBytes(strFile);
 							break;
 						}
-						catch(Exception exRead)
+						catch(Exception exR)
 						{
-							if(!AskForRetry(strFile, exRead.Message)) break;
+							if(!AskForRetry(strFile, exR)) break;
 						}
 					}
 				}
@@ -311,9 +309,9 @@ namespace KeePass.Util
 
 						break;
 					}
-					catch(Exception exDel)
+					catch(Exception exD)
 					{
-						if(!AskForRetry(strReportObj, exDel.Message)) break;
+						if(!AskForRetry(strReportObj, exD)) break;
 					}
 				}
 			}
@@ -322,9 +320,10 @@ namespace KeePass.Util
 			return pbResult;
 		}
 
-		private static bool AskForRetry(string strObj, string strText)
+		private static bool AskForRetry(string strObj, Exception ex)
 		{
-			string strContent = strObj + MessageService.NewParagraph + strText;
+			string strContent = strObj + MessageService.NewParagraph +
+				StrUtil.FormatException(ex, null);
 
 			int i = VistaTaskDialog.ShowMessageBoxEx(strContent, null,
 				PwDefs.ShortProductName, VtdIcon.Warning, null,

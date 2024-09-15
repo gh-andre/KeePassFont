@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -41,8 +41,8 @@ namespace KeePassLib.Cryptography.KeyDerivation
 			0xC9, 0xD9, 0xF3, 0x9A, 0x62, 0x8A, 0x44, 0x60,
 			0xBF, 0x74, 0x0D, 0x08, 0xC1, 0x8A, 0x4F, 0xEA });
 
-		public static readonly string ParamRounds = "R"; // UInt64
 		public static readonly string ParamSeed = "S"; // Byte[32]
+		public static readonly string ParamRounds = "R"; // UInt64
 
 		private const ulong BenchStep = 3001;
 

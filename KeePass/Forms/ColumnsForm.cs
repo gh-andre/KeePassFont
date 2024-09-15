@@ -1,6 +1,6 @@
 ﻿/*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -58,17 +58,20 @@ namespace KeePass.Forms
 			this.Icon = AppIcons.Default;
 			this.Text = KPRes.ConfigureColumns;
 
+			UIUtil.SetExplorerTheme(m_lvColumns, false);
+
 			float fWidth = (float)(m_lvColumns.ClientRectangle.Width -
 				UIUtil.GetVScrollBarWidth()) / 5.0f;
 			m_lvColumns.Columns.Add(KPRes.Column, (int)(fWidth * 3.0f));
 			m_lvColumns.Columns.Add(KPRes.Asterisks + " ***", (int)fWidth);
 			m_lvColumns.Columns.Add(KPRes.Toggle + " ***", (int)fWidth);
 
-			UIUtil.SetExplorerTheme(m_lvColumns, false);
-
 			UpdateColumnPropInfo();
-
 			ThreadPool.QueueUserWorkItem(new WaitCallback(FillColumnsList));
+
+			Debug.Assert(KPRes.RememberHidingPasswordsMain.StartsWith(
+				StrUtil.RemoveAccelerator(m_cbRmbHidingPasswords.Text)));
+			m_cbRmbHidingPasswords.Checked = Program.Config.UI.Hiding.RememberHidingPasswordsMain;
 		}
 
 		private void AddAceColumnTh(AceColumn c)
@@ -324,6 +327,8 @@ namespace KeePass.Forms
 
 			mw.EntryListColumnDisplayOrder = ComputeNewDisplayOrder(l,
 				lOld, mw.EntryListColumnDisplayOrder);
+
+			Program.Config.UI.Hiding.RememberHidingPasswordsMain = m_cbRmbHidingPasswords.Checked;
 		}
 
 		private void OnBtnCancel(object sender, EventArgs e)

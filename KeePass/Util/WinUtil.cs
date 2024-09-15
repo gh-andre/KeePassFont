@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2023 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2024 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -21,10 +21,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -32,7 +30,6 @@ using System.Windows.Forms;
 
 using Microsoft.Win32;
 
-using KeePass.App;
 using KeePass.Forms;
 using KeePass.Native;
 using KeePass.Resources;
@@ -618,10 +615,10 @@ namespace KeePass.Util
 		{
 			if(strUrl == null) { Debug.Assert(false); return false; }
 
-			string strLower = strUrl.ToLower();
-
-			if(strLower.StartsWith("cmd://")) return true;
-			if(strLower.StartsWith("\\\\")) return true; // UNC path support
+			if(strUrl.StartsWith("cmd://", StrUtil.CaseIgnoreCmp))
+				return true;
+			if(strUrl.StartsWith("\\\\"))
+				return true; // UNC path support
 
 			return false;
 		}
@@ -631,10 +628,10 @@ namespace KeePass.Util
 		{
 			if(strUrl == null) { Debug.Assert(false); return string.Empty; }
 
-			string strLower = strUrl.ToLower();
-
-			if(strLower.StartsWith("cmd://")) return strUrl.Remove(0, 6);
-			if(strLower.StartsWith("\\\\")) return strUrl; // UNC path support
+			if(strUrl.StartsWith("cmd://", StrUtil.CaseIgnoreCmp))
+				return strUrl.Remove(0, 6);
+			if(strUrl.StartsWith("\\\\"))
+				return strUrl; // UNC path support
 
 			return strUrl;
 		}
@@ -952,8 +949,7 @@ namespace KeePass.Util
 			}
 			catch(Exception ex)
 			{
-				if(bShowError)
-					MessageService.ShowWarning(strFilePath, ex.Message);
+				if(bShowError) MessageService.ShowWarning(strFilePath, ex);
 			}
 		}
 	}
