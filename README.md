@@ -157,8 +157,9 @@ New KeePass source is imported using following steps.
 
 ## Building
 
-These steps are tested on Windows 10 (x64) with Visual Studio 2022, Community
-Edition. The original KeePass project was upgraded to Visual Studio 2022.
+These steps are tested on Windows 10/11 (x64) with Visual Studio 2022,
+Community Edition. The original KeePass project was upgraded to Visual
+Studio 2022.
 
 Clone this repository and check out the version branch you would like to build.
 
@@ -284,7 +285,7 @@ the process.
 ### Display Resolution
 
 These changes were tested on 3840x2160 displays, with up to 200% display
-scaling, and 1920x1080 displays on Windows 10. On one of of the lower
+scaling, and 1920x1080 displays on Windows 10/11. On one of of the lower
 resolution displays some buttons were not visible for some display scaling
 and font scaling combinations.
 
