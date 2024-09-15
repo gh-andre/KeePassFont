@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.55 source, with a few changes described in
+This is a copy of KeePass v2.57 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
