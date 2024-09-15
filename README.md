@@ -78,7 +78,7 @@ BitLocker drive or a USB drive attached via a hardware encryption key.
 
 ## Repository Structure
 
-The original KeePass source is always committed on `master` and tagged
+The original KeePass source is always committed on `main` and tagged
 with the original version number. All changes are maintained in version
 branches, which contain cherry-picked changes from the previous version
 and new changes. Current topology looks like this:
@@ -88,18 +88,18 @@ and new changes. Current topology looks like this:
               |         |               |        |   
            +--o---------o----->     +---o--------o---->      +---... v2-48-1
           /                v2-46-0 /               v2-47-0  /   
-    -o---o------------------------o----o-------------------o---o---> master
+    -o---o------------------------o----o-------------------o---o---> main
      |  README.md                 |   README.md            |  README.md
     keepass-2-46-0            keepass-2-47-0           keepass-2-48-1
 
 Version branches `v2-46-0`, `v2-47-0` and `v2-48-1` contain modifications
-of the original code, which is maintained in `master` and is tagged with
+of the original code, which is maintained in `main` and is tagged with
 `keepass-2-46-0`, `keepass-2-47-0` and `keepass-2-48-1`, respectively, for
 each new source drop.
 
-The `master` branch contains original KeePass source and two additional
+The `main` branch contains original KeePass source and two additional
 files, `.gitignore` and `README.md`. The latter is required for GitHub to
-show README on the repository home page. `README.md` on `master` should
+show README on the repository home page. `README.md` on `main` should
 be cherry-picked from the latest version branch for each new modified
 source drop.
 
@@ -112,9 +112,9 @@ New KeePass source is imported using following steps.
 
       git stash push KeePass\KeePass.csproj
 
-* Checkout `master`
+* Checkout `main`
 
-      git checkout master
+      git checkout main
 
 * Delete all source, except `.git`, `.gitignore`, `.github`, `README.md`
   and, perhaps, `.vs`.
@@ -153,7 +153,7 @@ New KeePass source is imported using following steps.
   point.
 * Once font size changes are applied, tested and committed, `README.md`
   should be updated to reflect the new application version and any
-  additional changes and should be cherry-picked to `master`.
+  additional changes and should be cherry-picked to `main`.
 
 ## Building
 
