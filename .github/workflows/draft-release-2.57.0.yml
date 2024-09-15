@@ -30,7 +30,7 @@ jobs:
 
     steps:
     - name: Checkout source
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
       # build all projects in the solution
     - name: Build KeePass.exe
@@ -49,24 +49,12 @@ jobs:
         copy /y README.md KeePassFont-${{ env.VERSION }}\
         7z a KeePassFont-${{ env.VERSION }}+${{ env.BUILD_NUMBER }}.windows.x64.zip KeePassFont-${{ env.VERSION }}\
 
-      # create an draft release
+      # create an draft release and upload build artifacts
     - name: Create a draft release
-      id: draft-release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: softprops/action-gh-release@v2
       with:
+        token : ${{ secrets.GITHUB_TOKEN }}
         tag_name: ${{ env.VERSION }}+${{ env.BUILD_NUMBER }}
-        release_name: KeePassFont ${{ env.VERSION }}+${{ env.BUILD_NUMBER }}
+        name: KeePassFont ${{ env.VERSION }}+${{ env.BUILD_NUMBER }}
+        files: KeePassFont-${{ env.VERSION }}+${{ env.BUILD_NUMBER }}.windows.x64.zip
         draft: true
-
-      # upload packaged artifacts into the draft release as assets
-    - name: Upload release assets
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.draft-release.outputs.upload_url }} 
-        asset_path: KeePassFont-${{ env.VERSION }}+${{ env.BUILD_NUMBER }}.windows.x64.zip
-        asset_name: KeePassFont-${{ env.VERSION }}+${{ env.BUILD_NUMBER }}.windows.x64.zip
-        asset_content_type: application/zip
