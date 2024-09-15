@@ -57,10 +57,11 @@
 			this.m_lvEntries.GridLines = true;
 			this.m_lvEntries.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvEntries.HideSelection = false;
-			this.m_lvEntries.Location = new System.Drawing.Point(12, 38);
+			this.m_lvEntries.Location = new System.Drawing.Point(27, 80);
+			this.m_lvEntries.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_lvEntries.MultiSelect = false;
 			this.m_lvEntries.Name = "m_lvEntries";
-			this.m_lvEntries.Size = new System.Drawing.Size(608, 280);
+			this.m_lvEntries.Size = new System.Drawing.Size(1363, 577);
 			this.m_lvEntries.TabIndex = 0;
 			this.m_lvEntries.UseCompatibleStateImageBehavior = false;
 			this.m_lvEntries.View = System.Windows.Forms.View.Details;
@@ -74,9 +75,11 @@
 			this.m_grpIdentify.Controls.Add(this.m_radioIdPassword);
 			this.m_grpIdentify.Controls.Add(this.m_radioIdUserName);
 			this.m_grpIdentify.Controls.Add(this.m_radioIdTitle);
-			this.m_grpIdentify.Location = new System.Drawing.Point(12, 326);
+			this.m_grpIdentify.Location = new System.Drawing.Point(27, 676);
+			this.m_grpIdentify.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_grpIdentify.Name = "m_grpIdentify";
-			this.m_grpIdentify.Size = new System.Drawing.Size(301, 69);
+			this.m_grpIdentify.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_grpIdentify.Size = new System.Drawing.Size(678, 144);
 			this.m_grpIdentify.TabIndex = 1;
 			this.m_grpIdentify.TabStop = false;
 			this.m_grpIdentify.Text = "Identify source entry by";
@@ -84,9 +87,10 @@
 			// m_radioIdUuid
 			// 
 			this.m_radioIdUuid.AutoSize = true;
-			this.m_radioIdUuid.Location = new System.Drawing.Point(202, 42);
+			this.m_radioIdUuid.Location = new System.Drawing.Point(454, 87);
+			this.m_radioIdUuid.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioIdUuid.Name = "m_radioIdUuid";
-			this.m_radioIdUuid.Size = new System.Drawing.Size(52, 17);
+			this.m_radioIdUuid.Size = new System.Drawing.Size(95, 33);
 			this.m_radioIdUuid.TabIndex = 5;
 			this.m_radioIdUuid.TabStop = true;
 			this.m_radioIdUuid.Text = "UU&ID";
@@ -95,9 +99,10 @@
 			// m_radioIdNotes
 			// 
 			this.m_radioIdNotes.AutoSize = true;
-			this.m_radioIdNotes.Location = new System.Drawing.Point(106, 42);
+			this.m_radioIdNotes.Location = new System.Drawing.Point(238, 87);
+			this.m_radioIdNotes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioIdNotes.Name = "m_radioIdNotes";
-			this.m_radioIdNotes.Size = new System.Drawing.Size(53, 17);
+			this.m_radioIdNotes.Size = new System.Drawing.Size(102, 33);
 			this.m_radioIdNotes.TabIndex = 4;
 			this.m_radioIdNotes.TabStop = true;
 			this.m_radioIdNotes.Text = "&Notes";
@@ -106,9 +111,10 @@
 			// m_radioIdUrl
 			// 
 			this.m_radioIdUrl.AutoSize = true;
-			this.m_radioIdUrl.Location = new System.Drawing.Point(10, 42);
+			this.m_radioIdUrl.Location = new System.Drawing.Point(22, 87);
+			this.m_radioIdUrl.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioIdUrl.Name = "m_radioIdUrl";
-			this.m_radioIdUrl.Size = new System.Drawing.Size(47, 17);
+			this.m_radioIdUrl.Size = new System.Drawing.Size(85, 33);
 			this.m_radioIdUrl.TabIndex = 3;
 			this.m_radioIdUrl.TabStop = true;
 			this.m_radioIdUrl.Text = "UR&L";
@@ -117,9 +123,10 @@
 			// m_radioIdPassword
 			// 
 			this.m_radioIdPassword.AutoSize = true;
-			this.m_radioIdPassword.Location = new System.Drawing.Point(202, 19);
+			this.m_radioIdPassword.Location = new System.Drawing.Point(454, 39);
+			this.m_radioIdPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioIdPassword.Name = "m_radioIdPassword";
-			this.m_radioIdPassword.Size = new System.Drawing.Size(71, 17);
+			this.m_radioIdPassword.Size = new System.Drawing.Size(145, 33);
 			this.m_radioIdPassword.TabIndex = 2;
 			this.m_radioIdPassword.TabStop = true;
 			this.m_radioIdPassword.Text = "&Password";
@@ -128,9 +135,10 @@
 			// m_radioIdUserName
 			// 
 			this.m_radioIdUserName.AutoSize = true;
-			this.m_radioIdUserName.Location = new System.Drawing.Point(106, 19);
+			this.m_radioIdUserName.Location = new System.Drawing.Point(238, 39);
+			this.m_radioIdUserName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioIdUserName.Name = "m_radioIdUserName";
-			this.m_radioIdUserName.Size = new System.Drawing.Size(76, 17);
+			this.m_radioIdUserName.Size = new System.Drawing.Size(155, 33);
 			this.m_radioIdUserName.TabIndex = 1;
 			this.m_radioIdUserName.TabStop = true;
 			this.m_radioIdUserName.Text = "&User name";
@@ -139,9 +147,10 @@
 			// m_radioIdTitle
 			// 
 			this.m_radioIdTitle.AutoSize = true;
-			this.m_radioIdTitle.Location = new System.Drawing.Point(10, 19);
+			this.m_radioIdTitle.Location = new System.Drawing.Point(22, 39);
+			this.m_radioIdTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioIdTitle.Name = "m_radioIdTitle";
-			this.m_radioIdTitle.Size = new System.Drawing.Size(45, 17);
+			this.m_radioIdTitle.Size = new System.Drawing.Size(86, 33);
 			this.m_radioIdTitle.TabIndex = 0;
 			this.m_radioIdTitle.TabStop = true;
 			this.m_radioIdTitle.Text = "&Title";
@@ -154,9 +163,11 @@
 			this.m_grpRefField.Controls.Add(this.m_radioRefPassword);
 			this.m_grpRefField.Controls.Add(this.m_radioRefUserName);
 			this.m_grpRefField.Controls.Add(this.m_radioRefTitle);
-			this.m_grpRefField.Location = new System.Drawing.Point(319, 326);
+			this.m_grpRefField.Location = new System.Drawing.Point(717, 676);
+			this.m_grpRefField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_grpRefField.Name = "m_grpRefField";
-			this.m_grpRefField.Size = new System.Drawing.Size(301, 69);
+			this.m_grpRefField.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_grpRefField.Size = new System.Drawing.Size(678, 144);
 			this.m_grpRefField.TabIndex = 2;
 			this.m_grpRefField.TabStop = false;
 			this.m_grpRefField.Text = "Source field to reference";
@@ -164,9 +175,10 @@
 			// m_radioRefNotes
 			// 
 			this.m_radioRefNotes.AutoSize = true;
-			this.m_radioRefNotes.Location = new System.Drawing.Point(107, 42);
+			this.m_radioRefNotes.Location = new System.Drawing.Point(240, 87);
+			this.m_radioRefNotes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioRefNotes.Name = "m_radioRefNotes";
-			this.m_radioRefNotes.Size = new System.Drawing.Size(53, 17);
+			this.m_radioRefNotes.Size = new System.Drawing.Size(102, 33);
 			this.m_radioRefNotes.TabIndex = 4;
 			this.m_radioRefNotes.TabStop = true;
 			this.m_radioRefNotes.Text = "N&otes";
@@ -175,9 +187,10 @@
 			// m_radioRefUrl
 			// 
 			this.m_radioRefUrl.AutoSize = true;
-			this.m_radioRefUrl.Location = new System.Drawing.Point(11, 42);
+			this.m_radioRefUrl.Location = new System.Drawing.Point(24, 87);
+			this.m_radioRefUrl.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioRefUrl.Name = "m_radioRefUrl";
-			this.m_radioRefUrl.Size = new System.Drawing.Size(47, 17);
+			this.m_radioRefUrl.Size = new System.Drawing.Size(85, 33);
 			this.m_radioRefUrl.TabIndex = 3;
 			this.m_radioRefUrl.TabStop = true;
 			this.m_radioRefUrl.Text = "U&RL";
@@ -186,9 +199,10 @@
 			// m_radioRefPassword
 			// 
 			this.m_radioRefPassword.AutoSize = true;
-			this.m_radioRefPassword.Location = new System.Drawing.Point(203, 19);
+			this.m_radioRefPassword.Location = new System.Drawing.Point(456, 39);
+			this.m_radioRefPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioRefPassword.Name = "m_radioRefPassword";
-			this.m_radioRefPassword.Size = new System.Drawing.Size(71, 17);
+			this.m_radioRefPassword.Size = new System.Drawing.Size(145, 33);
 			this.m_radioRefPassword.TabIndex = 2;
 			this.m_radioRefPassword.TabStop = true;
 			this.m_radioRefPassword.Text = "P&assword";
@@ -197,9 +211,10 @@
 			// m_radioRefUserName
 			// 
 			this.m_radioRefUserName.AutoSize = true;
-			this.m_radioRefUserName.Location = new System.Drawing.Point(107, 19);
+			this.m_radioRefUserName.Location = new System.Drawing.Point(240, 39);
+			this.m_radioRefUserName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioRefUserName.Name = "m_radioRefUserName";
-			this.m_radioRefUserName.Size = new System.Drawing.Size(76, 17);
+			this.m_radioRefUserName.Size = new System.Drawing.Size(155, 33);
 			this.m_radioRefUserName.TabIndex = 1;
 			this.m_radioRefUserName.TabStop = true;
 			this.m_radioRefUserName.Text = "U&ser name";
@@ -208,9 +223,10 @@
 			// m_radioRefTitle
 			// 
 			this.m_radioRefTitle.AutoSize = true;
-			this.m_radioRefTitle.Location = new System.Drawing.Point(11, 19);
+			this.m_radioRefTitle.Location = new System.Drawing.Point(24, 39);
+			this.m_radioRefTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_radioRefTitle.Name = "m_radioRefTitle";
-			this.m_radioRefTitle.Size = new System.Drawing.Size(45, 17);
+			this.m_radioRefTitle.Size = new System.Drawing.Size(86, 33);
 			this.m_radioRefTitle.TabIndex = 0;
 			this.m_radioRefTitle.TabStop = true;
 			this.m_radioRefTitle.Text = "Titl&e";
@@ -219,9 +235,10 @@
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(464, 405);
+			this.m_btnOK.Location = new System.Drawing.Point(1044, 842);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
 			this.m_btnOK.TabIndex = 4;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -230,9 +247,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(545, 405);
+			this.m_btnCancel.Location = new System.Drawing.Point(1227, 842);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
 			this.m_btnCancel.TabIndex = 5;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -240,9 +258,10 @@
 			// 
 			// m_btnHelp
 			// 
-			this.m_btnHelp.Location = new System.Drawing.Point(12, 405);
+			this.m_btnHelp.Location = new System.Drawing.Point(27, 842);
+			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnHelp.Name = "m_btnHelp";
-			this.m_btnHelp.Size = new System.Drawing.Size(75, 23);
+			this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
 			this.m_btnHelp.TabIndex = 3;
 			this.m_btnHelp.Text = "&Help";
 			this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -251,17 +270,19 @@
 			// m_lblFilter
 			// 
 			this.m_lblFilter.AutoSize = true;
-			this.m_lblFilter.Location = new System.Drawing.Point(396, 15);
+			this.m_lblFilter.Location = new System.Drawing.Point(891, 32);
+			this.m_lblFilter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblFilter.Name = "m_lblFilter";
-			this.m_lblFilter.Size = new System.Drawing.Size(32, 13);
+			this.m_lblFilter.Size = new System.Drawing.Size(74, 29);
 			this.m_lblFilter.TabIndex = 6;
 			this.m_lblFilter.Text = "&Filter:";
 			// 
 			// m_tbFilter
 			// 
-			this.m_tbFilter.Location = new System.Drawing.Point(434, 12);
+			this.m_tbFilter.Location = new System.Drawing.Point(976, 26);
+			this.m_tbFilter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tbFilter.Name = "m_tbFilter";
-			this.m_tbFilter.Size = new System.Drawing.Size(186, 20);
+			this.m_tbFilter.Size = new System.Drawing.Size(414, 33);
 			this.m_tbFilter.TabIndex = 7;
 			this.m_tbFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnFilterKeyDown);
 			this.m_tbFilter.KeyUp += new System.Windows.Forms.KeyEventHandler(this.OnFilterKeyUp);
@@ -269,10 +290,10 @@
 			// FieldRefForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(632, 440);
+			this.ClientSize = new System.Drawing.Size(1422, 914);
 			this.Controls.Add(this.m_tbFilter);
 			this.Controls.Add(this.m_lblFilter);
 			this.Controls.Add(this.m_btnHelp);
@@ -281,15 +302,17 @@
 			this.Controls.Add(this.m_grpRefField);
 			this.Controls.Add(this.m_grpIdentify);
 			this.Controls.Add(this.m_lvEntries);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "FieldRefForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Insert Field Reference";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.m_grpIdentify.ResumeLayout(false);
 			this.m_grpIdentify.PerformLayout();
 			this.m_grpRefField.ResumeLayout(false);

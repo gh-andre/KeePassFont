@@ -85,9 +85,10 @@
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(321, 515);
+			this.m_btnOK.Location = new System.Drawing.Point(723, 1070);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
 			this.m_btnOK.TabIndex = 0;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -96,9 +97,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(402, 515);
+			this.m_btnCancel.Location = new System.Drawing.Point(904, 1070);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
 			this.m_btnCancel.TabIndex = 1;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -108,9 +110,10 @@
 			// 
 			this.m_rbStandardCharSet.AutoSize = true;
 			this.m_rbStandardCharSet.Checked = true;
-			this.m_rbStandardCharSet.Location = new System.Drawing.Point(9, 20);
+			this.m_rbStandardCharSet.Location = new System.Drawing.Point(21, 42);
+			this.m_rbStandardCharSet.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_rbStandardCharSet.Name = "m_rbStandardCharSet";
-			this.m_rbStandardCharSet.Size = new System.Drawing.Size(165, 17);
+			this.m_rbStandardCharSet.Size = new System.Drawing.Size(351, 33);
 			this.m_rbStandardCharSet.TabIndex = 0;
 			this.m_rbStandardCharSet.TabStop = true;
 			this.m_rbStandardCharSet.Text = "&Generate using character set:";
@@ -119,22 +122,24 @@
 			// m_lblNumGenChars
 			// 
 			this.m_lblNumGenChars.AutoSize = true;
-			this.m_lblNumGenChars.Location = new System.Drawing.Point(26, 45);
+			this.m_lblNumGenChars.Location = new System.Drawing.Point(58, 93);
+			this.m_lblNumGenChars.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblNumGenChars.Name = "m_lblNumGenChars";
-			this.m_lblNumGenChars.Size = new System.Drawing.Size(154, 13);
+			this.m_lblNumGenChars.Size = new System.Drawing.Size(345, 29);
 			this.m_lblNumGenChars.TabIndex = 1;
 			this.m_lblNumGenChars.Text = "&Length of generated password:";
 			// 
 			// m_numGenChars
 			// 
-			this.m_numGenChars.Location = new System.Drawing.Point(228, 43);
+			this.m_numGenChars.Location = new System.Drawing.Point(513, 90);
+			this.m_numGenChars.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_numGenChars.Maximum = new decimal(new int[] {
-            30000,
-            0,
-            0,
-            0});
+			30000,
+			0,
+			0,
+			0});
 			this.m_numGenChars.Name = "m_numGenChars";
-			this.m_numGenChars.Size = new System.Drawing.Size(69, 20);
+			this.m_numGenChars.Size = new System.Drawing.Size(156, 33);
 			this.m_numGenChars.TabIndex = 2;
 			this.m_numGenChars.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
@@ -142,17 +147,19 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(489, 60);
+			this.m_bannerImage.Size = new System.Drawing.Size(1101, 124);
 			this.m_bannerImage.TabIndex = 10;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_lblProfile
 			// 
 			this.m_lblProfile.AutoSize = true;
-			this.m_lblProfile.Location = new System.Drawing.Point(6, 9);
+			this.m_lblProfile.Location = new System.Drawing.Point(14, 18);
+			this.m_lblProfile.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblProfile.Name = "m_lblProfile";
-			this.m_lblProfile.Size = new System.Drawing.Size(39, 13);
+			this.m_lblProfile.Size = new System.Drawing.Size(89, 29);
 			this.m_lblProfile.TabIndex = 0;
 			this.m_lblProfile.Text = "&Profile:";
 			// 
@@ -160,27 +167,30 @@
 			// 
 			this.m_cmbProfiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.m_cmbProfiles.FormattingEnabled = true;
-			this.m_cmbProfiles.Location = new System.Drawing.Point(51, 6);
+			this.m_cmbProfiles.Location = new System.Drawing.Point(114, 12);
+			this.m_cmbProfiles.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cmbProfiles.MaxDropDownItems = 16;
 			this.m_cmbProfiles.Name = "m_cmbProfiles";
-			this.m_cmbProfiles.Size = new System.Drawing.Size(309, 21);
+			this.m_cmbProfiles.Size = new System.Drawing.Size(691, 37);
 			this.m_cmbProfiles.TabIndex = 1;
 			this.m_cmbProfiles.SelectedIndexChanged += new System.EventHandler(this.OnProfilesSelectedIndexChanged);
 			// 
 			// m_btnProfileAdd
 			// 
-			this.m_btnProfileAdd.Location = new System.Drawing.Point(366, 5);
+			this.m_btnProfileAdd.Location = new System.Drawing.Point(824, 10);
+			this.m_btnProfileAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnProfileAdd.Name = "m_btnProfileAdd";
-			this.m_btnProfileAdd.Size = new System.Drawing.Size(25, 23);
+			this.m_btnProfileAdd.Size = new System.Drawing.Size(57, 48);
 			this.m_btnProfileAdd.TabIndex = 2;
 			this.m_btnProfileAdd.UseVisualStyleBackColor = true;
 			this.m_btnProfileAdd.Click += new System.EventHandler(this.OnBtnProfileSave);
 			// 
 			// m_btnProfileRemove
 			// 
-			this.m_btnProfileRemove.Location = new System.Drawing.Point(396, 5);
+			this.m_btnProfileRemove.Location = new System.Drawing.Point(891, 10);
+			this.m_btnProfileRemove.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnProfileRemove.Name = "m_btnProfileRemove";
-			this.m_btnProfileRemove.Size = new System.Drawing.Size(25, 23);
+			this.m_btnProfileRemove.Size = new System.Drawing.Size(57, 48);
 			this.m_btnProfileRemove.TabIndex = 3;
 			this.m_btnProfileRemove.UseVisualStyleBackColor = true;
 			this.m_btnProfileRemove.Click += new System.EventHandler(this.OnBtnProfileRemove);
@@ -208,18 +218,21 @@
 			this.m_grpCurOpt.Controls.Add(this.m_lblNumGenChars);
 			this.m_grpCurOpt.Controls.Add(this.m_rbStandardCharSet);
 			this.m_grpCurOpt.Controls.Add(this.m_numGenChars);
-			this.m_grpCurOpt.Location = new System.Drawing.Point(6, 31);
+			this.m_grpCurOpt.Location = new System.Drawing.Point(14, 64);
+			this.m_grpCurOpt.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_grpCurOpt.Name = "m_grpCurOpt";
-			this.m_grpCurOpt.Size = new System.Drawing.Size(445, 377);
+			this.m_grpCurOpt.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_grpCurOpt.Size = new System.Drawing.Size(1002, 783);
 			this.m_grpCurOpt.TabIndex = 5;
 			this.m_grpCurOpt.TabStop = false;
 			this.m_grpCurOpt.Text = "Current settings";
 			// 
 			// m_btnCustomOpt
 			// 
-			this.m_btnCustomOpt.Location = new System.Drawing.Point(414, 321);
+			this.m_btnCustomOpt.Location = new System.Drawing.Point(932, 666);
+			this.m_btnCustomOpt.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnCustomOpt.Name = "m_btnCustomOpt";
-			this.m_btnCustomOpt.Size = new System.Drawing.Size(25, 23);
+			this.m_btnCustomOpt.Size = new System.Drawing.Size(57, 48);
 			this.m_btnCustomOpt.TabIndex = 19;
 			this.m_btnCustomOpt.UseVisualStyleBackColor = true;
 			this.m_btnCustomOpt.Click += new System.EventHandler(this.OnBtnCustomOpt);
@@ -228,17 +241,19 @@
 			// 
 			this.m_cmbCustomAlgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.m_cmbCustomAlgo.FormattingEnabled = true;
-			this.m_cmbCustomAlgo.Location = new System.Drawing.Point(29, 322);
+			this.m_cmbCustomAlgo.Location = new System.Drawing.Point(66, 669);
+			this.m_cmbCustomAlgo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cmbCustomAlgo.Name = "m_cmbCustomAlgo";
-			this.m_cmbCustomAlgo.Size = new System.Drawing.Size(379, 21);
+			this.m_cmbCustomAlgo.Size = new System.Drawing.Size(847, 37);
 			this.m_cmbCustomAlgo.TabIndex = 18;
 			// 
 			// m_rbCustom
 			// 
 			this.m_rbCustom.AutoSize = true;
-			this.m_rbCustom.Location = new System.Drawing.Point(9, 299);
+			this.m_rbCustom.Location = new System.Drawing.Point(21, 621);
+			this.m_rbCustom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_rbCustom.Name = "m_rbCustom";
-			this.m_rbCustom.Size = new System.Drawing.Size(182, 17);
+			this.m_rbCustom.Size = new System.Drawing.Size(397, 33);
 			this.m_rbCustom.TabIndex = 17;
 			this.m_rbCustom.TabStop = true;
 			this.m_rbCustom.Text = "Generate using cust&om algorithm:";
@@ -247,9 +262,10 @@
 			// m_cbPatternPermute
 			// 
 			this.m_cbPatternPermute.AutoSize = true;
-			this.m_cbPatternPermute.Location = new System.Drawing.Point(29, 276);
+			this.m_cbPatternPermute.Location = new System.Drawing.Point(66, 573);
+			this.m_cbPatternPermute.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbPatternPermute.Name = "m_cbPatternPermute";
-			this.m_cbPatternPermute.Size = new System.Drawing.Size(227, 17);
+			this.m_cbPatternPermute.Size = new System.Drawing.Size(496, 33);
 			this.m_cbPatternPermute.TabIndex = 16;
 			this.m_cbPatternPermute.Text = "&Randomly permute characters of password";
 			this.m_cbPatternPermute.UseVisualStyleBackColor = true;
@@ -257,25 +273,28 @@
 			// m_lblCustomChars
 			// 
 			this.m_lblCustomChars.AutoSize = true;
-			this.m_lblCustomChars.Location = new System.Drawing.Point(26, 183);
+			this.m_lblCustomChars.Location = new System.Drawing.Point(58, 380);
+			this.m_lblCustomChars.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblCustomChars.Name = "m_lblCustomChars";
-			this.m_lblCustomChars.Size = new System.Drawing.Size(182, 13);
+			this.m_lblCustomChars.Size = new System.Drawing.Size(409, 29);
 			this.m_lblCustomChars.TabIndex = 12;
 			this.m_lblCustomChars.Text = "Also &include the following characters:";
 			// 
 			// m_tbCustomChars
 			// 
-			this.m_tbCustomChars.Location = new System.Drawing.Point(29, 199);
+			this.m_tbCustomChars.Location = new System.Drawing.Point(66, 414);
+			this.m_tbCustomChars.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tbCustomChars.Name = "m_tbCustomChars";
-			this.m_tbCustomChars.Size = new System.Drawing.Size(410, 20);
+			this.m_tbCustomChars.Size = new System.Drawing.Size(918, 33);
 			this.m_tbCustomChars.TabIndex = 13;
 			// 
 			// m_cbLatin1S
 			// 
 			this.m_cbLatin1S.AutoSize = true;
-			this.m_cbLatin1S.Location = new System.Drawing.Point(228, 137);
+			this.m_cbLatin1S.Location = new System.Drawing.Point(513, 285);
+			this.m_cbLatin1S.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbLatin1S.Name = "m_cbLatin1S";
-			this.m_cbLatin1S.Size = new System.Drawing.Size(117, 17);
+			this.m_cbLatin1S.Size = new System.Drawing.Size(247, 33);
 			this.m_cbLatin1S.TabIndex = 10;
 			this.m_cbLatin1S.Text = "L&atin-1 Supplement";
 			this.m_cbLatin1S.UseVisualStyleBackColor = true;
@@ -283,9 +302,10 @@
 			// m_cbBrackets
 			// 
 			this.m_cbBrackets.AutoSize = true;
-			this.m_cbBrackets.Location = new System.Drawing.Point(228, 115);
+			this.m_cbBrackets.Location = new System.Drawing.Point(513, 238);
+			this.m_cbBrackets.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbBrackets.Name = "m_cbBrackets";
-			this.m_cbBrackets.Size = new System.Drawing.Size(68, 17);
+			this.m_cbBrackets.Size = new System.Drawing.Size(132, 33);
 			this.m_cbBrackets.TabIndex = 8;
 			this.m_cbBrackets.Text = "&Brackets";
 			this.m_cbBrackets.UseVisualStyleBackColor = true;
@@ -293,9 +313,10 @@
 			// m_cbSpecial
 			// 
 			this.m_cbSpecial.AutoSize = true;
-			this.m_cbSpecial.Location = new System.Drawing.Point(228, 93);
+			this.m_cbSpecial.Location = new System.Drawing.Point(513, 194);
+			this.m_cbSpecial.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbSpecial.Name = "m_cbSpecial";
-			this.m_cbSpecial.Size = new System.Drawing.Size(61, 17);
+			this.m_cbSpecial.Size = new System.Drawing.Size(120, 33);
 			this.m_cbSpecial.TabIndex = 6;
 			this.m_cbSpecial.Text = "Sp&ecial";
 			this.m_cbSpecial.UseVisualStyleBackColor = true;
@@ -303,9 +324,10 @@
 			// m_cbSpace
 			// 
 			this.m_cbSpace.AutoSize = true;
-			this.m_cbSpace.Location = new System.Drawing.Point(228, 71);
+			this.m_cbSpace.Location = new System.Drawing.Point(513, 147);
+			this.m_cbSpace.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbSpace.Name = "m_cbSpace";
-			this.m_cbSpace.Size = new System.Drawing.Size(57, 17);
+			this.m_cbSpace.Size = new System.Drawing.Size(108, 33);
 			this.m_cbSpace.TabIndex = 4;
 			this.m_cbSpace.Text = "&Space";
 			this.m_cbSpace.UseVisualStyleBackColor = true;
@@ -313,9 +335,10 @@
 			// m_cbUnderline
 			// 
 			this.m_cbUnderline.AutoSize = true;
-			this.m_cbUnderline.Location = new System.Drawing.Point(29, 159);
+			this.m_cbUnderline.Location = new System.Drawing.Point(66, 330);
+			this.m_cbUnderline.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbUnderline.Name = "m_cbUnderline";
-			this.m_cbUnderline.Size = new System.Drawing.Size(71, 17);
+			this.m_cbUnderline.Size = new System.Drawing.Size(144, 33);
 			this.m_cbUnderline.TabIndex = 11;
 			this.m_cbUnderline.Text = "U&nderline";
 			this.m_cbUnderline.UseVisualStyleBackColor = true;
@@ -323,9 +346,10 @@
 			// m_cbMinus
 			// 
 			this.m_cbMinus.AutoSize = true;
-			this.m_cbMinus.Location = new System.Drawing.Point(29, 137);
+			this.m_cbMinus.Location = new System.Drawing.Point(66, 285);
+			this.m_cbMinus.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbMinus.Name = "m_cbMinus";
-			this.m_cbMinus.Size = new System.Drawing.Size(54, 17);
+			this.m_cbMinus.Size = new System.Drawing.Size(103, 33);
 			this.m_cbMinus.TabIndex = 9;
 			this.m_cbMinus.Text = "&Minus";
 			this.m_cbMinus.UseVisualStyleBackColor = true;
@@ -333,9 +357,10 @@
 			// m_cbDigits
 			// 
 			this.m_cbDigits.AutoSize = true;
-			this.m_cbDigits.Location = new System.Drawing.Point(29, 115);
+			this.m_cbDigits.Location = new System.Drawing.Point(66, 238);
+			this.m_cbDigits.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbDigits.Name = "m_cbDigits";
-			this.m_cbDigits.Size = new System.Drawing.Size(52, 17);
+			this.m_cbDigits.Size = new System.Drawing.Size(100, 33);
 			this.m_cbDigits.TabIndex = 7;
 			this.m_cbDigits.Text = "&Digits";
 			this.m_cbDigits.UseVisualStyleBackColor = true;
@@ -343,9 +368,10 @@
 			// m_cbLowerCase
 			// 
 			this.m_cbLowerCase.AutoSize = true;
-			this.m_cbLowerCase.Location = new System.Drawing.Point(29, 93);
+			this.m_cbLowerCase.Location = new System.Drawing.Point(66, 194);
+			this.m_cbLowerCase.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbLowerCase.Name = "m_cbLowerCase";
-			this.m_cbLowerCase.Size = new System.Drawing.Size(81, 17);
+			this.m_cbLowerCase.Size = new System.Drawing.Size(165, 33);
 			this.m_cbLowerCase.TabIndex = 5;
 			this.m_cbLowerCase.Text = "Lo&wer-case";
 			this.m_cbLowerCase.UseVisualStyleBackColor = true;
@@ -353,9 +379,10 @@
 			// m_cbUpperCase
 			// 
 			this.m_cbUpperCase.AutoSize = true;
-			this.m_cbUpperCase.Location = new System.Drawing.Point(29, 71);
+			this.m_cbUpperCase.Location = new System.Drawing.Point(66, 147);
+			this.m_cbUpperCase.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbUpperCase.Name = "m_cbUpperCase";
-			this.m_cbUpperCase.Size = new System.Drawing.Size(81, 17);
+			this.m_cbUpperCase.Size = new System.Drawing.Size(165, 33);
 			this.m_cbUpperCase.TabIndex = 3;
 			this.m_cbUpperCase.Text = "&Upper-case";
 			this.m_cbUpperCase.UseVisualStyleBackColor = true;
@@ -363,26 +390,29 @@
 			// m_cbEntropy
 			// 
 			this.m_cbEntropy.AutoSize = true;
-			this.m_cbEntropy.Location = new System.Drawing.Point(9, 352);
+			this.m_cbEntropy.Location = new System.Drawing.Point(21, 730);
+			this.m_cbEntropy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbEntropy.Name = "m_cbEntropy";
-			this.m_cbEntropy.Size = new System.Drawing.Size(296, 17);
+			this.m_cbEntropy.Size = new System.Drawing.Size(655, 33);
 			this.m_cbEntropy.TabIndex = 20;
 			this.m_cbEntropy.Text = "Show dialog for &collecting user input as additional entropy";
 			this.m_cbEntropy.UseVisualStyleBackColor = true;
 			// 
 			// m_tbPattern
 			// 
-			this.m_tbPattern.Location = new System.Drawing.Point(29, 250);
+			this.m_tbPattern.Location = new System.Drawing.Point(66, 519);
+			this.m_tbPattern.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tbPattern.Name = "m_tbPattern";
-			this.m_tbPattern.Size = new System.Drawing.Size(410, 20);
+			this.m_tbPattern.Size = new System.Drawing.Size(918, 33);
 			this.m_tbPattern.TabIndex = 15;
 			// 
 			// m_rbPattern
 			// 
 			this.m_rbPattern.AutoSize = true;
-			this.m_rbPattern.Location = new System.Drawing.Point(9, 227);
+			this.m_rbPattern.Location = new System.Drawing.Point(21, 471);
+			this.m_rbPattern.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_rbPattern.Name = "m_rbPattern";
-			this.m_rbPattern.Size = new System.Drawing.Size(136, 17);
+			this.m_rbPattern.Size = new System.Drawing.Size(288, 33);
 			this.m_rbPattern.TabIndex = 14;
 			this.m_rbPattern.TabStop = true;
 			this.m_rbPattern.Text = "Genera&te using pattern:";
@@ -391,18 +421,20 @@
 			// m_cbExcludeLookAlike
 			// 
 			this.m_cbExcludeLookAlike.AutoSize = true;
-			this.m_cbExcludeLookAlike.Location = new System.Drawing.Point(12, 39);
+			this.m_cbExcludeLookAlike.Location = new System.Drawing.Point(27, 81);
+			this.m_cbExcludeLookAlike.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbExcludeLookAlike.Name = "m_cbExcludeLookAlike";
-			this.m_cbExcludeLookAlike.Size = new System.Drawing.Size(165, 17);
+			this.m_cbExcludeLookAlike.Size = new System.Drawing.Size(353, 33);
 			this.m_cbExcludeLookAlike.TabIndex = 1;
 			this.m_cbExcludeLookAlike.Text = "E&xclude look-alike characters";
 			this.m_cbExcludeLookAlike.UseVisualStyleBackColor = true;
 			// 
 			// m_btnHelp
 			// 
-			this.m_btnHelp.Location = new System.Drawing.Point(12, 515);
+			this.m_btnHelp.Location = new System.Drawing.Point(27, 1070);
+			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnHelp.Name = "m_btnHelp";
-			this.m_btnHelp.Size = new System.Drawing.Size(75, 23);
+			this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
 			this.m_btnHelp.TabIndex = 3;
 			this.m_btnHelp.Text = "&Help";
 			this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -413,10 +445,11 @@
 			this.m_tabMain.Controls.Add(this.m_tabSettings);
 			this.m_tabMain.Controls.Add(this.m_tabAdvanced);
 			this.m_tabMain.Controls.Add(this.m_tabPreview);
-			this.m_tabMain.Location = new System.Drawing.Point(12, 66);
+			this.m_tabMain.Location = new System.Drawing.Point(27, 136);
+			this.m_tabMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tabMain.Name = "m_tabMain";
 			this.m_tabMain.SelectedIndex = 0;
-			this.m_tabMain.Size = new System.Drawing.Size(465, 439);
+			this.m_tabMain.Size = new System.Drawing.Size(1047, 912);
 			this.m_tabMain.TabIndex = 2;
 			this.m_tabMain.SelectedIndexChanged += new System.EventHandler(this.OnTabMainSelectedIndexChanged);
 			// 
@@ -428,19 +461,21 @@
 			this.m_tabSettings.Controls.Add(this.m_grpCurOpt);
 			this.m_tabSettings.Controls.Add(this.m_btnProfileAdd);
 			this.m_tabSettings.Controls.Add(this.m_btnProfileRemove);
-			this.m_tabSettings.Location = new System.Drawing.Point(4, 22);
+			this.m_tabSettings.Location = new System.Drawing.Point(4, 38);
+			this.m_tabSettings.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tabSettings.Name = "m_tabSettings";
-			this.m_tabSettings.Padding = new System.Windows.Forms.Padding(3);
-			this.m_tabSettings.Size = new System.Drawing.Size(457, 413);
+			this.m_tabSettings.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabSettings.Size = new System.Drawing.Size(1039, 870);
 			this.m_tabSettings.TabIndex = 0;
 			this.m_tabSettings.Text = "Settings";
 			this.m_tabSettings.UseVisualStyleBackColor = true;
 			// 
 			// m_btnProfileEnforce
 			// 
-			this.m_btnProfileEnforce.Location = new System.Drawing.Point(426, 5);
+			this.m_btnProfileEnforce.Location = new System.Drawing.Point(958, 10);
+			this.m_btnProfileEnforce.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnProfileEnforce.Name = "m_btnProfileEnforce";
-			this.m_btnProfileEnforce.Size = new System.Drawing.Size(25, 23);
+			this.m_btnProfileEnforce.Size = new System.Drawing.Size(57, 48);
 			this.m_btnProfileEnforce.TabIndex = 4;
 			this.m_btnProfileEnforce.UseVisualStyleBackColor = true;
 			this.m_btnProfileEnforce.Click += new System.EventHandler(this.OnBtnProfileEnforce);
@@ -452,111 +487,122 @@
 			this.m_tabAdvanced.Controls.Add(this.m_cbExcludeLookAlike);
 			this.m_tabAdvanced.Controls.Add(this.m_cbNoRepeat);
 			this.m_tabAdvanced.Controls.Add(this.m_lblSecRedInfo);
-			this.m_tabAdvanced.Location = new System.Drawing.Point(4, 22);
+			this.m_tabAdvanced.Location = new System.Drawing.Point(4, 38);
+			this.m_tabAdvanced.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tabAdvanced.Name = "m_tabAdvanced";
-			this.m_tabAdvanced.Size = new System.Drawing.Size(457, 413);
+			this.m_tabAdvanced.Size = new System.Drawing.Size(1039, 870);
 			this.m_tabAdvanced.TabIndex = 2;
 			this.m_tabAdvanced.Text = "Advanced";
 			this.m_tabAdvanced.UseVisualStyleBackColor = true;
 			// 
 			// m_tbExcludeChars
 			// 
-			this.m_tbExcludeChars.Location = new System.Drawing.Point(12, 84);
+			this.m_tbExcludeChars.Location = new System.Drawing.Point(27, 174);
+			this.m_tbExcludeChars.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tbExcludeChars.Name = "m_tbExcludeChars";
-			this.m_tbExcludeChars.Size = new System.Drawing.Size(432, 20);
+			this.m_tbExcludeChars.Size = new System.Drawing.Size(967, 33);
 			this.m_tbExcludeChars.TabIndex = 3;
 			// 
 			// m_lblExcludeChars
 			// 
 			this.m_lblExcludeChars.AutoSize = true;
-			this.m_lblExcludeChars.Location = new System.Drawing.Point(9, 68);
+			this.m_lblExcludeChars.Location = new System.Drawing.Point(21, 141);
+			this.m_lblExcludeChars.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblExcludeChars.Name = "m_lblExcludeChars";
-			this.m_lblExcludeChars.Size = new System.Drawing.Size(163, 13);
+			this.m_lblExcludeChars.Size = new System.Drawing.Size(364, 29);
 			this.m_lblExcludeChars.TabIndex = 2;
 			this.m_lblExcludeChars.Text = "Ex&clude the following characters:";
 			// 
 			// m_cbNoRepeat
 			// 
 			this.m_cbNoRepeat.AutoSize = true;
-			this.m_cbNoRepeat.Location = new System.Drawing.Point(12, 16);
+			this.m_cbNoRepeat.Location = new System.Drawing.Point(27, 33);
+			this.m_cbNoRepeat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbNoRepeat.Name = "m_cbNoRepeat";
-			this.m_cbNoRepeat.Size = new System.Drawing.Size(218, 17);
+			this.m_cbNoRepeat.Size = new System.Drawing.Size(462, 33);
 			this.m_cbNoRepeat.TabIndex = 0;
 			this.m_cbNoRepeat.Text = "&Each character must occur at most once";
 			this.m_cbNoRepeat.UseVisualStyleBackColor = true;
 			// 
 			// m_lblSecRedInfo
 			// 
-			this.m_lblSecRedInfo.Location = new System.Drawing.Point(9, 362);
+			this.m_lblSecRedInfo.Location = new System.Drawing.Point(21, 752);
+			this.m_lblSecRedInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblSecRedInfo.Name = "m_lblSecRedInfo";
-			this.m_lblSecRedInfo.Size = new System.Drawing.Size(445, 41);
+			this.m_lblSecRedInfo.Size = new System.Drawing.Size(1002, 86);
 			this.m_lblSecRedInfo.TabIndex = 4;
 			this.m_lblSecRedInfo.Text = "Options/rules marked with an asterisk reduce the security of generated passwords." +
-				" Only enable them if you are forced to follow such rules by the website, applica" +
-				"tion or password policy.";
+	" Only enable them if you are forced to follow such rules by the website, applica" +
+	"tion or password policy.";
 			// 
 			// m_tabPreview
 			// 
 			this.m_tabPreview.Controls.Add(this.m_pbPreview);
 			this.m_tabPreview.Controls.Add(this.m_tbPreview);
 			this.m_tabPreview.Controls.Add(this.m_lblPreview);
-			this.m_tabPreview.Location = new System.Drawing.Point(4, 22);
+			this.m_tabPreview.Location = new System.Drawing.Point(4, 38);
+			this.m_tabPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tabPreview.Name = "m_tabPreview";
-			this.m_tabPreview.Padding = new System.Windows.Forms.Padding(3);
-			this.m_tabPreview.Size = new System.Drawing.Size(457, 413);
+			this.m_tabPreview.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabPreview.Size = new System.Drawing.Size(1039, 870);
 			this.m_tabPreview.TabIndex = 1;
 			this.m_tabPreview.Text = "Preview";
 			this.m_tabPreview.UseVisualStyleBackColor = true;
 			// 
 			// m_pbPreview
 			// 
-			this.m_pbPreview.Location = new System.Drawing.Point(9, 30);
+			this.m_pbPreview.Location = new System.Drawing.Point(21, 63);
+			this.m_pbPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_pbPreview.Name = "m_pbPreview";
-			this.m_pbPreview.Size = new System.Drawing.Size(437, 15);
+			this.m_pbPreview.Size = new System.Drawing.Size(984, 32);
 			this.m_pbPreview.TabIndex = 1;
 			// 
 			// m_tbPreview
 			// 
 			this.m_tbPreview.AcceptsReturn = true;
-			this.m_tbPreview.Location = new System.Drawing.Point(9, 51);
+			this.m_tbPreview.Location = new System.Drawing.Point(21, 106);
+			this.m_tbPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tbPreview.Multiline = true;
 			this.m_tbPreview.Name = "m_tbPreview";
 			this.m_tbPreview.ReadOnly = true;
 			this.m_tbPreview.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.m_tbPreview.Size = new System.Drawing.Size(437, 350);
+			this.m_tbPreview.Size = new System.Drawing.Size(979, 722);
 			this.m_tbPreview.TabIndex = 2;
 			this.m_tbPreview.WordWrap = false;
 			// 
 			// m_lblPreview
 			// 
-			this.m_lblPreview.Location = new System.Drawing.Point(6, 12);
+			this.m_lblPreview.Location = new System.Drawing.Point(14, 26);
+			this.m_lblPreview.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblPreview.Name = "m_lblPreview";
-			this.m_lblPreview.Size = new System.Drawing.Size(445, 15);
+			this.m_lblPreview.Size = new System.Drawing.Size(1002, 32);
 			this.m_lblPreview.TabIndex = 0;
 			this.m_lblPreview.Text = "Here you see a few sample passwords matching the rules specified on the first tab" +
-				" pages.";
+	" pages.";
 			// 
 			// PwGeneratorForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(489, 550);
+			this.ClientSize = new System.Drawing.Size(1101, 1143);
 			this.Controls.Add(this.m_tabMain);
 			this.Controls.Add(this.m_btnHelp);
 			this.Controls.Add(this.m_bannerImage);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_btnOK);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "PwGeneratorForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Password Generator";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.m_numGenChars)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
 			this.m_grpCurOpt.ResumeLayout(false);

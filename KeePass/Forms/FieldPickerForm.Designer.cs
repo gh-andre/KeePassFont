@@ -42,11 +42,12 @@
 			this.m_lvFields.HideSelection = false;
 			this.m_lvFields.HotTracking = true;
 			this.m_lvFields.HoverSelection = true;
-			this.m_lvFields.Location = new System.Drawing.Point(12, 72);
+			this.m_lvFields.Location = new System.Drawing.Point(27, 150);
+			this.m_lvFields.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_lvFields.MultiSelect = false;
 			this.m_lvFields.Name = "m_lvFields";
 			this.m_lvFields.ShowItemToolTips = true;
-			this.m_lvFields.Size = new System.Drawing.Size(422, 358);
+			this.m_lvFields.Size = new System.Drawing.Size(944, 739);
 			this.m_lvFields.TabIndex = 0;
 			this.m_lvFields.UseCompatibleStateImageBehavior = false;
 			this.m_lvFields.View = System.Windows.Forms.View.Details;
@@ -56,9 +57,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(359, 436);
+			this.m_btnCancel.Location = new System.Drawing.Point(807, 906);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
 			this.m_btnCancel.TabIndex = 1;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -67,28 +69,31 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(446, 60);
+			this.m_bannerImage.Size = new System.Drawing.Size(1004, 124);
 			this.m_bannerImage.TabIndex = 3;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// FieldPickerForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(446, 471);
+			this.ClientSize = new System.Drawing.Size(1004, 978);
 			this.Controls.Add(this.m_bannerImage);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_lvFields);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "FieldPickerForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "<>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
 			this.ResumeLayout(false);
 
