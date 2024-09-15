@@ -51,60 +51,67 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(409, 60);
+			this.m_bannerImage.Size = new System.Drawing.Size(921, 124);
 			this.m_bannerImage.TabIndex = 0;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_lblStringValueDesc
 			// 
 			this.m_lblStringValueDesc.AutoSize = true;
-			this.m_lblStringValueDesc.Location = new System.Drawing.Point(12, 156);
+			this.m_lblStringValueDesc.Location = new System.Drawing.Point(27, 324);
+			this.m_lblStringValueDesc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblStringValueDesc.Name = "m_lblStringValueDesc";
-			this.m_lblStringValueDesc.Size = new System.Drawing.Size(37, 13);
+			this.m_lblStringValueDesc.Size = new System.Drawing.Size(80, 29);
 			this.m_lblStringValueDesc.TabIndex = 4;
 			this.m_lblStringValueDesc.Text = "&Value:";
 			// 
 			// m_lblStringIdDesc
 			// 
 			this.m_lblStringIdDesc.AutoSize = true;
-			this.m_lblStringIdDesc.Location = new System.Drawing.Point(12, 116);
+			this.m_lblStringIdDesc.Location = new System.Drawing.Point(27, 242);
+			this.m_lblStringIdDesc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblStringIdDesc.Name = "m_lblStringIdDesc";
-			this.m_lblStringIdDesc.Size = new System.Drawing.Size(38, 13);
+			this.m_lblStringIdDesc.Size = new System.Drawing.Size(84, 29);
 			this.m_lblStringIdDesc.TabIndex = 1;
 			this.m_lblStringIdDesc.Text = "&Name:";
 			// 
 			// m_lblIDIntro
 			// 
-			this.m_lblIDIntro.Location = new System.Drawing.Point(12, 67);
+			this.m_lblIDIntro.Location = new System.Drawing.Point(27, 140);
+			this.m_lblIDIntro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblIDIntro.Name = "m_lblIDIntro";
-			this.m_lblIDIntro.Size = new System.Drawing.Size(385, 40);
+			this.m_lblIDIntro.Size = new System.Drawing.Size(867, 82);
 			this.m_lblIDIntro.TabIndex = 0;
 			this.m_lblIDIntro.Text = resources.GetString("m_lblIDIntro.Text");
 			// 
 			// m_rtbValue
 			// 
-			this.m_rtbValue.Location = new System.Drawing.Point(56, 154);
+			this.m_rtbValue.Location = new System.Drawing.Point(126, 320);
+			this.m_rtbValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_rtbValue.Name = "m_rtbValue";
 			this.m_rtbValue.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-			this.m_rtbValue.Size = new System.Drawing.Size(341, 78);
+			this.m_rtbValue.Size = new System.Drawing.Size(763, 157);
 			this.m_rtbValue.TabIndex = 5;
 			this.m_rtbValue.Text = "";
 			// 
 			// m_lblSeparator
 			// 
 			this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.m_lblSeparator.Location = new System.Drawing.Point(0, 271);
+			this.m_lblSeparator.Location = new System.Drawing.Point(0, 562);
+			this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblSeparator.Name = "m_lblSeparator";
-			this.m_lblSeparator.Size = new System.Drawing.Size(409, 2);
+			this.m_lblSeparator.Size = new System.Drawing.Size(921, 4);
 			this.m_lblSeparator.TabIndex = 8;
 			// 
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(241, 282);
+			this.m_btnOK.Location = new System.Drawing.Point(543, 585);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
 			this.m_btnOK.TabIndex = 10;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -113,9 +120,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(322, 282);
+			this.m_btnCancel.Location = new System.Drawing.Point(724, 585);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
 			this.m_btnCancel.TabIndex = 11;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -123,9 +131,10 @@
 			// 
 			// m_btnHelp
 			// 
-			this.m_btnHelp.Location = new System.Drawing.Point(12, 282);
+			this.m_btnHelp.Location = new System.Drawing.Point(27, 585);
+			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnHelp.Name = "m_btnHelp";
-			this.m_btnHelp.Size = new System.Drawing.Size(75, 23);
+			this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
 			this.m_btnHelp.TabIndex = 9;
 			this.m_btnHelp.Text = "&Help";
 			this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -134,9 +143,10 @@
 			// m_cbProtect
 			// 
 			this.m_cbProtect.AutoSize = true;
-			this.m_cbProtect.Location = new System.Drawing.Point(56, 242);
+			this.m_cbProtect.Location = new System.Drawing.Point(126, 502);
+			this.m_cbProtect.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbProtect.Name = "m_cbProtect";
-			this.m_cbProtect.Size = new System.Drawing.Size(179, 17);
+			this.m_cbProtect.Size = new System.Drawing.Size(388, 33);
 			this.m_cbProtect.TabIndex = 6;
 			this.m_cbProtect.Text = "&Protect value in process memory";
 			this.m_cbProtect.UseVisualStyleBackColor = true;
@@ -144,36 +154,39 @@
 			// m_lblValidationInfo
 			// 
 			this.m_lblValidationInfo.ForeColor = System.Drawing.Color.Crimson;
-			this.m_lblValidationInfo.Location = new System.Drawing.Point(53, 137);
+			this.m_lblValidationInfo.Location = new System.Drawing.Point(120, 285);
+			this.m_lblValidationInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblValidationInfo.Name = "m_lblValidationInfo";
-			this.m_lblValidationInfo.Size = new System.Drawing.Size(344, 14);
+			this.m_lblValidationInfo.Size = new System.Drawing.Size(774, 28);
 			this.m_lblValidationInfo.TabIndex = 3;
 			this.m_lblValidationInfo.Text = "<>";
 			// 
 			// m_cmbName
 			// 
 			this.m_cmbName.FormattingEnabled = true;
-			this.m_cmbName.Location = new System.Drawing.Point(56, 113);
+			this.m_cmbName.Location = new System.Drawing.Point(126, 234);
+			this.m_cmbName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cmbName.Name = "m_cmbName";
-			this.m_cmbName.Size = new System.Drawing.Size(341, 21);
+			this.m_cmbName.Size = new System.Drawing.Size(763, 37);
 			this.m_cmbName.TabIndex = 2;
 			this.m_cmbName.TextChanged += new System.EventHandler(this.OnNameTextChanged);
 			// 
 			// m_btnGenPw
 			// 
-			this.m_btnGenPw.Location = new System.Drawing.Point(365, 238);
+			this.m_btnGenPw.Location = new System.Drawing.Point(822, 495);
+			this.m_btnGenPw.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnGenPw.Name = "m_btnGenPw";
-			this.m_btnGenPw.Size = new System.Drawing.Size(32, 23);
+			this.m_btnGenPw.Size = new System.Drawing.Size(72, 48);
 			this.m_btnGenPw.TabIndex = 7;
 			this.m_btnGenPw.UseVisualStyleBackColor = true;
 			// 
 			// EditStringForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(409, 317);
+			this.ClientSize = new System.Drawing.Size(921, 658);
 			this.Controls.Add(this.m_btnGenPw);
 			this.Controls.Add(this.m_cmbName);
 			this.Controls.Add(this.m_lblValidationInfo);
@@ -187,15 +200,17 @@
 			this.Controls.Add(this.m_lblStringIdDesc);
 			this.Controls.Add(this.m_lblStringValueDesc);
 			this.Controls.Add(this.m_bannerImage);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "EditStringForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Edit Entry String";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

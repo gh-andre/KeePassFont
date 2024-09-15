@@ -65,17 +65,19 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(404, 60);
+			this.m_bannerImage.Size = new System.Drawing.Size(909, 124);
 			this.m_bannerImage.TabIndex = 0;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(236, 494);
+			this.m_btnOK.Location = new System.Drawing.Point(531, 1026);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
 			this.m_btnOK.TabIndex = 0;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -84,9 +86,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(317, 494);
+			this.m_btnCancel.Location = new System.Drawing.Point(714, 1026);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
 			this.m_btnCancel.TabIndex = 1;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -95,9 +98,11 @@
 			// m_grpFormat
 			// 
 			this.m_grpFormat.Controls.Add(this.m_lvFormats);
-			this.m_grpFormat.Location = new System.Drawing.Point(6, 6);
+			this.m_grpFormat.Location = new System.Drawing.Point(14, 12);
+			this.m_grpFormat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_grpFormat.Name = "m_grpFormat";
-			this.m_grpFormat.Size = new System.Drawing.Size(359, 310);
+			this.m_grpFormat.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_grpFormat.Size = new System.Drawing.Size(807, 644);
 			this.m_grpFormat.TabIndex = 0;
 			this.m_grpFormat.TabStop = false;
 			this.m_grpFormat.Text = "Format";
@@ -107,10 +112,11 @@
 			this.m_lvFormats.FullRowSelect = true;
 			this.m_lvFormats.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
 			this.m_lvFormats.HideSelection = false;
-			this.m_lvFormats.Location = new System.Drawing.Point(9, 18);
+			this.m_lvFormats.Location = new System.Drawing.Point(21, 38);
+			this.m_lvFormats.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_lvFormats.MultiSelect = false;
 			this.m_lvFormats.Name = "m_lvFormats";
-			this.m_lvFormats.Size = new System.Drawing.Size(341, 282);
+			this.m_lvFormats.Size = new System.Drawing.Size(763, 582);
 			this.m_lvFormats.TabIndex = 0;
 			this.m_lvFormats.UseCompatibleStateImageBehavior = false;
 			this.m_lvFormats.View = System.Windows.Forms.View.Details;
@@ -123,9 +129,11 @@
 			this.m_grpFiles.Controls.Add(this.m_btnSelFile);
 			this.m_grpFiles.Controls.Add(this.m_tbFile);
 			this.m_grpFiles.Controls.Add(this.m_lblFiles);
-			this.m_grpFiles.Location = new System.Drawing.Point(6, 322);
+			this.m_grpFiles.Location = new System.Drawing.Point(14, 669);
+			this.m_grpFiles.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_grpFiles.Name = "m_grpFiles";
-			this.m_grpFiles.Size = new System.Drawing.Size(359, 68);
+			this.m_grpFiles.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_grpFiles.Size = new System.Drawing.Size(807, 141);
 			this.m_grpFiles.TabIndex = 1;
 			this.m_grpFiles.TabStop = false;
 			this.m_grpFiles.Text = "<>";
@@ -133,9 +141,10 @@
 			// m_lnkFileFormats
 			// 
 			this.m_lnkFileFormats.AutoSize = true;
-			this.m_lnkFileFormats.Location = new System.Drawing.Point(46, 45);
+			this.m_lnkFileFormats.Location = new System.Drawing.Point(104, 93);
+			this.m_lnkFileFormats.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lnkFileFormats.Name = "m_lnkFileFormats";
-			this.m_lnkFileFormats.Size = new System.Drawing.Size(182, 13);
+			this.m_lnkFileFormats.Size = new System.Drawing.Size(414, 29);
 			this.m_lnkFileFormats.TabIndex = 3;
 			this.m_lnkFileFormats.TabStop = true;
 			this.m_lnkFileFormats.Text = "Help: Configuring source applications";
@@ -143,27 +152,30 @@
 			// 
 			// m_btnSelFile
 			// 
-			this.m_btnSelFile.Location = new System.Drawing.Point(319, 17);
+			this.m_btnSelFile.Location = new System.Drawing.Point(717, 36);
+			this.m_btnSelFile.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_btnSelFile.Name = "m_btnSelFile";
-			this.m_btnSelFile.Size = new System.Drawing.Size(32, 23);
+			this.m_btnSelFile.Size = new System.Drawing.Size(72, 48);
 			this.m_btnSelFile.TabIndex = 2;
 			this.m_btnSelFile.UseVisualStyleBackColor = true;
 			this.m_btnSelFile.Click += new System.EventHandler(this.OnBtnSelFile);
 			// 
 			// m_tbFile
 			// 
-			this.m_tbFile.Location = new System.Drawing.Point(49, 19);
+			this.m_tbFile.Location = new System.Drawing.Point(111, 39);
+			this.m_tbFile.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tbFile.Name = "m_tbFile";
-			this.m_tbFile.Size = new System.Drawing.Size(264, 20);
+			this.m_tbFile.Size = new System.Drawing.Size(589, 33);
 			this.m_tbFile.TabIndex = 1;
 			this.m_tbFile.TextChanged += new System.EventHandler(this.OnImportFileTextChanged);
 			// 
 			// m_lblFiles
 			// 
 			this.m_lblFiles.AutoSize = true;
-			this.m_lblFiles.Location = new System.Drawing.Point(6, 22);
+			this.m_lblFiles.Location = new System.Drawing.Point(14, 45);
+			this.m_lblFiles.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblFiles.Name = "m_lblFiles";
-			this.m_lblFiles.Size = new System.Drawing.Size(37, 13);
+			this.m_lblFiles.Size = new System.Drawing.Size(88, 29);
 			this.m_lblFiles.TabIndex = 0;
 			this.m_lblFiles.Text = "File(s):";
 			// 
@@ -171,20 +183,22 @@
 			// 
 			this.m_tabMain.Controls.Add(this.m_tabGeneral);
 			this.m_tabMain.Controls.Add(this.m_tabOptions);
-			this.m_tabMain.Location = new System.Drawing.Point(12, 66);
+			this.m_tabMain.Location = new System.Drawing.Point(27, 136);
+			this.m_tabMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tabMain.Name = "m_tabMain";
 			this.m_tabMain.SelectedIndex = 0;
-			this.m_tabMain.Size = new System.Drawing.Size(381, 422);
+			this.m_tabMain.Size = new System.Drawing.Size(858, 876);
 			this.m_tabMain.TabIndex = 2;
 			// 
 			// m_tabGeneral
 			// 
 			this.m_tabGeneral.Controls.Add(this.m_grpFormat);
 			this.m_tabGeneral.Controls.Add(this.m_grpFiles);
-			this.m_tabGeneral.Location = new System.Drawing.Point(4, 22);
+			this.m_tabGeneral.Location = new System.Drawing.Point(4, 38);
+			this.m_tabGeneral.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tabGeneral.Name = "m_tabGeneral";
-			this.m_tabGeneral.Padding = new System.Windows.Forms.Padding(3);
-			this.m_tabGeneral.Size = new System.Drawing.Size(373, 396);
+			this.m_tabGeneral.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabGeneral.Size = new System.Drawing.Size(850, 834);
 			this.m_tabGeneral.TabIndex = 0;
 			this.m_tabGeneral.Text = "General";
 			this.m_tabGeneral.UseVisualStyleBackColor = true;
@@ -193,10 +207,11 @@
 			// 
 			this.m_tabOptions.Controls.Add(this.m_grpExport);
 			this.m_tabOptions.Controls.Add(this.m_grpExportPost);
-			this.m_tabOptions.Location = new System.Drawing.Point(4, 22);
+			this.m_tabOptions.Location = new System.Drawing.Point(4, 38);
+			this.m_tabOptions.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_tabOptions.Name = "m_tabOptions";
-			this.m_tabOptions.Padding = new System.Windows.Forms.Padding(3);
-			this.m_tabOptions.Size = new System.Drawing.Size(373, 396);
+			this.m_tabOptions.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabOptions.Size = new System.Drawing.Size(850, 834);
 			this.m_tabOptions.TabIndex = 1;
 			this.m_tabOptions.Text = "Options";
 			this.m_tabOptions.UseVisualStyleBackColor = true;
@@ -207,18 +222,21 @@
 			this.m_grpExport.Controls.Add(this.m_cbExportMasterKeySpec);
 			this.m_grpExport.Controls.Add(this.m_lnkExportParentGroups);
 			this.m_grpExport.Controls.Add(this.m_cbExportParentGroups);
-			this.m_grpExport.Location = new System.Drawing.Point(6, 6);
+			this.m_grpExport.Location = new System.Drawing.Point(14, 12);
+			this.m_grpExport.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_grpExport.Name = "m_grpExport";
-			this.m_grpExport.Size = new System.Drawing.Size(359, 128);
+			this.m_grpExport.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_grpExport.Size = new System.Drawing.Size(807, 266);
 			this.m_grpExport.TabIndex = 0;
 			this.m_grpExport.TabStop = false;
 			this.m_grpExport.Text = "Export";
 			// 
 			// m_lblExportMasterKeySpec
 			// 
-			this.m_lblExportMasterKeySpec.Location = new System.Drawing.Point(25, 39);
+			this.m_lblExportMasterKeySpec.Location = new System.Drawing.Point(57, 81);
+			this.m_lblExportMasterKeySpec.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblExportMasterKeySpec.Name = "m_lblExportMasterKeySpec";
-			this.m_lblExportMasterKeySpec.Size = new System.Drawing.Size(328, 42);
+			this.m_lblExportMasterKeySpec.Size = new System.Drawing.Size(738, 87);
 			this.m_lblExportMasterKeySpec.TabIndex = 1;
 			this.m_lblExportMasterKeySpec.Text = "If activated, a dialog will be shown that allows to specify a master key for prot" +
 				"ecting the exported data. If deactivated, the master key of the current database" +
@@ -227,9 +245,10 @@
 			// m_cbExportMasterKeySpec
 			// 
 			this.m_cbExportMasterKeySpec.AutoSize = true;
-			this.m_cbExportMasterKeySpec.Location = new System.Drawing.Point(9, 19);
+			this.m_cbExportMasterKeySpec.Location = new System.Drawing.Point(21, 39);
+			this.m_cbExportMasterKeySpec.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbExportMasterKeySpec.Name = "m_cbExportMasterKeySpec";
-			this.m_cbExportMasterKeySpec.Size = new System.Drawing.Size(149, 17);
+			this.m_cbExportMasterKeySpec.Size = new System.Drawing.Size(316, 33);
 			this.m_cbExportMasterKeySpec.TabIndex = 0;
 			this.m_cbExportMasterKeySpec.Text = "&Use a different master key";
 			this.m_cbExportMasterKeySpec.UseVisualStyleBackColor = true;
@@ -237,9 +256,10 @@
 			// m_lnkExportParentGroups
 			// 
 			this.m_lnkExportParentGroups.AutoSize = true;
-			this.m_lnkExportParentGroups.Location = new System.Drawing.Point(25, 105);
+			this.m_lnkExportParentGroups.Location = new System.Drawing.Point(57, 218);
+			this.m_lnkExportParentGroups.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lnkExportParentGroups.Name = "m_lnkExportParentGroups";
-			this.m_lnkExportParentGroups.Size = new System.Drawing.Size(85, 13);
+			this.m_lnkExportParentGroups.Size = new System.Drawing.Size(194, 29);
 			this.m_lnkExportParentGroups.TabIndex = 3;
 			this.m_lnkExportParentGroups.TabStop = true;
 			this.m_lnkExportParentGroups.Text = "More information";
@@ -248,9 +268,10 @@
 			// m_cbExportParentGroups
 			// 
 			this.m_cbExportParentGroups.AutoSize = true;
-			this.m_cbExportParentGroups.Location = new System.Drawing.Point(9, 85);
+			this.m_cbExportParentGroups.Location = new System.Drawing.Point(21, 177);
+			this.m_cbExportParentGroups.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbExportParentGroups.Name = "m_cbExportParentGroups";
-			this.m_cbExportParentGroups.Size = new System.Drawing.Size(179, 17);
+			this.m_cbExportParentGroups.Size = new System.Drawing.Size(391, 33);
 			this.m_cbExportParentGroups.TabIndex = 2;
 			this.m_cbExportParentGroups.Text = "&Additionally export parent groups";
 			this.m_cbExportParentGroups.UseVisualStyleBackColor = true;
@@ -259,9 +280,11 @@
 			// 
 			this.m_grpExportPost.Controls.Add(this.m_cbExportPostShow);
 			this.m_grpExportPost.Controls.Add(this.m_cbExportPostOpen);
-			this.m_grpExportPost.Location = new System.Drawing.Point(6, 140);
+			this.m_grpExportPost.Location = new System.Drawing.Point(14, 291);
+			this.m_grpExportPost.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_grpExportPost.Name = "m_grpExportPost";
-			this.m_grpExportPost.Size = new System.Drawing.Size(359, 66);
+			this.m_grpExportPost.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_grpExportPost.Size = new System.Drawing.Size(807, 136);
 			this.m_grpExportPost.TabIndex = 1;
 			this.m_grpExportPost.TabStop = false;
 			this.m_grpExportPost.Text = "After exporting";
@@ -269,9 +292,10 @@
 			// m_cbExportPostShow
 			// 
 			this.m_cbExportPostShow.AutoSize = true;
-			this.m_cbExportPostShow.Location = new System.Drawing.Point(9, 42);
+			this.m_cbExportPostShow.Location = new System.Drawing.Point(21, 87);
+			this.m_cbExportPostShow.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbExportPostShow.Name = "m_cbExportPostShow";
-			this.m_cbExportPostShow.Size = new System.Drawing.Size(201, 17);
+			this.m_cbExportPostShow.Size = new System.Drawing.Size(443, 33);
 			this.m_cbExportPostShow.TabIndex = 1;
 			this.m_cbExportPostShow.Text = "&Show exported file (with file manager)";
 			this.m_cbExportPostShow.UseVisualStyleBackColor = true;
@@ -279,9 +303,10 @@
 			// m_cbExportPostOpen
 			// 
 			this.m_cbExportPostOpen.AutoSize = true;
-			this.m_cbExportPostOpen.Location = new System.Drawing.Point(9, 19);
+			this.m_cbExportPostOpen.Location = new System.Drawing.Point(21, 39);
+			this.m_cbExportPostOpen.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.m_cbExportPostOpen.Name = "m_cbExportPostOpen";
-			this.m_cbExportPostOpen.Size = new System.Drawing.Size(248, 17);
+			this.m_cbExportPostOpen.Size = new System.Drawing.Size(548, 33);
 			this.m_cbExportPostOpen.TabIndex = 0;
 			this.m_cbExportPostOpen.Text = "&Open exported file (with associated application)";
 			this.m_cbExportPostOpen.UseVisualStyleBackColor = true;
@@ -289,15 +314,17 @@
 			// ExchangeDataForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(404, 529);
+			this.ClientSize = new System.Drawing.Size(909, 1098);
 			this.Controls.Add(this.m_tabMain);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_btnOK);
 			this.Controls.Add(this.m_bannerImage);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "ExchangeDataForm";
@@ -305,8 +332,8 @@
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "<DYN>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
 			this.m_grpFormat.ResumeLayout(false);
 			this.m_grpFiles.ResumeLayout(false);
