@@ -51,7 +51,7 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6);
 			this.m_bannerImage.Name = "m_bannerImage";
 			this.m_bannerImage.Size = new System.Drawing.Size(921, 124);
 			this.m_bannerImage.TabIndex = 0;
@@ -82,14 +82,14 @@
 			this.m_lblIDIntro.Location = new System.Drawing.Point(27, 140);
 			this.m_lblIDIntro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblIDIntro.Name = "m_lblIDIntro";
-			this.m_lblIDIntro.Size = new System.Drawing.Size(867, 82);
+			this.m_lblIDIntro.Size = new System.Drawing.Size(867, 88);
 			this.m_lblIDIntro.TabIndex = 0;
 			this.m_lblIDIntro.Text = resources.GetString("m_lblIDIntro.Text");
 			// 
 			// m_rtbValue
 			// 
 			this.m_rtbValue.Location = new System.Drawing.Point(126, 320);
-			this.m_rtbValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_rtbValue.Margin = new System.Windows.Forms.Padding(6);
 			this.m_rtbValue.Name = "m_rtbValue";
 			this.m_rtbValue.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
 			this.m_rtbValue.Size = new System.Drawing.Size(763, 157);
@@ -109,7 +109,7 @@
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
 			this.m_btnOK.Location = new System.Drawing.Point(543, 585);
-			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6);
 			this.m_btnOK.Name = "m_btnOK";
 			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
 			this.m_btnOK.TabIndex = 10;
@@ -121,7 +121,7 @@
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.m_btnCancel.Location = new System.Drawing.Point(724, 585);
-			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6);
 			this.m_btnCancel.Name = "m_btnCancel";
 			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
 			this.m_btnCancel.TabIndex = 11;
@@ -132,7 +132,7 @@
 			// m_btnHelp
 			// 
 			this.m_btnHelp.Location = new System.Drawing.Point(27, 585);
-			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6);
 			this.m_btnHelp.Name = "m_btnHelp";
 			this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
 			this.m_btnHelp.TabIndex = 9;
@@ -144,7 +144,7 @@
 			// 
 			this.m_cbProtect.AutoSize = true;
 			this.m_cbProtect.Location = new System.Drawing.Point(126, 502);
-			this.m_cbProtect.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_cbProtect.Margin = new System.Windows.Forms.Padding(6);
 			this.m_cbProtect.Name = "m_cbProtect";
 			this.m_cbProtect.Size = new System.Drawing.Size(388, 33);
 			this.m_cbProtect.TabIndex = 6;
@@ -165,7 +165,7 @@
 			// 
 			this.m_cmbName.FormattingEnabled = true;
 			this.m_cmbName.Location = new System.Drawing.Point(126, 234);
-			this.m_cmbName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_cmbName.Margin = new System.Windows.Forms.Padding(6);
 			this.m_cmbName.Name = "m_cmbName";
 			this.m_cmbName.Size = new System.Drawing.Size(763, 37);
 			this.m_cmbName.TabIndex = 2;
@@ -174,7 +174,7 @@
 			// m_btnGenPw
 			// 
 			this.m_btnGenPw.Location = new System.Drawing.Point(822, 495);
-			this.m_btnGenPw.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnGenPw.Margin = new System.Windows.Forms.Padding(6);
 			this.m_btnGenPw.Name = "m_btnGenPw";
 			this.m_btnGenPw.Size = new System.Drawing.Size(72, 48);
 			this.m_btnGenPw.TabIndex = 7;
@@ -202,7 +202,7 @@
 			this.Controls.Add(this.m_bannerImage);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "EditStringForm";

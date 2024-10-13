@@ -46,7 +46,7 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6);
 			this.m_bannerImage.Name = "m_bannerImage";
 			this.m_bannerImage.Size = new System.Drawing.Size(954, 124);
 			this.m_bannerImage.TabIndex = 0;
@@ -75,7 +75,7 @@
 			this.m_lblGpl.Location = new System.Drawing.Point(22, 244);
 			this.m_lblGpl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.m_lblGpl.Name = "m_lblGpl";
-			this.m_lblGpl.Size = new System.Drawing.Size(904, 56);
+			this.m_lblGpl.Size = new System.Drawing.Size(904, 62);
 			this.m_lblGpl.TabIndex = 2;
 			this.m_lblGpl.Text = "The program is distributed under the terms of the GNU General Public License v2 o" +
 				"r later.";
@@ -144,7 +144,7 @@
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
 			this.m_btnOK.Location = new System.Drawing.Point(759, 654);
-			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6);
 			this.m_btnOK.Name = "m_btnOK";
 			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
 			this.m_btnOK.TabIndex = 9;
@@ -157,7 +157,7 @@
 			this.m_lvComponents.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvComponents.HideSelection = false;
 			this.m_lvComponents.Location = new System.Drawing.Point(30, 420);
-			this.m_lvComponents.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_lvComponents.Margin = new System.Windows.Forms.Padding(6);
 			this.m_lvComponents.MultiSelect = false;
 			this.m_lvComponents.Name = "m_lvComponents";
 			this.m_lvComponents.ShowItemToolTips = true;
@@ -187,7 +187,7 @@
 			this.Controls.Add(this.m_bannerImage);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(6);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "AboutForm";
