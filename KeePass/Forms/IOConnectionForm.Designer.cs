@@ -57,19 +57,19 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(1005, 124);
+			this.m_bannerImage.Size = new System.Drawing.Size(1340, 166);
 			this.m_bannerImage.TabIndex = 0;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(627, 654);
-			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6);
+			this.m_btnOK.Location = new System.Drawing.Point(836, 872);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+			this.m_btnOK.Size = new System.Drawing.Size(224, 64);
 			this.m_btnOK.TabIndex = 0;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(810, 654);
-			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6);
+			this.m_btnCancel.Location = new System.Drawing.Point(1080, 872);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+			this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
 			this.m_btnCancel.TabIndex = 1;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -90,65 +90,65 @@
 			// m_lblUrl
 			// 
 			this.m_lblUrl.AutoSize = true;
-			this.m_lblUrl.Location = new System.Drawing.Point(14, 32);
-			this.m_lblUrl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblUrl.Location = new System.Drawing.Point(18, 42);
+			this.m_lblUrl.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblUrl.Name = "m_lblUrl";
-			this.m_lblUrl.Size = new System.Drawing.Size(66, 29);
+			this.m_lblUrl.Size = new System.Drawing.Size(84, 36);
 			this.m_lblUrl.TabIndex = 0;
 			this.m_lblUrl.Text = "UR&L:";
 			// 
 			// m_tbUrl
 			// 
-			this.m_tbUrl.Location = new System.Drawing.Point(186, 26);
-			this.m_tbUrl.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tbUrl.Location = new System.Drawing.Point(248, 34);
+			this.m_tbUrl.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbUrl.Name = "m_tbUrl";
-			this.m_tbUrl.Size = new System.Drawing.Size(715, 33);
+			this.m_tbUrl.Size = new System.Drawing.Size(952, 41);
 			this.m_tbUrl.TabIndex = 1;
 			// 
 			// m_lblUserName
 			// 
 			this.m_lblUserName.AutoSize = true;
-			this.m_lblUserName.Location = new System.Drawing.Point(14, 195);
-			this.m_lblUserName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblUserName.Location = new System.Drawing.Point(18, 260);
+			this.m_lblUserName.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblUserName.Name = "m_lblUserName";
-			this.m_lblUserName.Size = new System.Drawing.Size(136, 29);
+			this.m_lblUserName.Size = new System.Drawing.Size(166, 36);
 			this.m_lblUserName.TabIndex = 4;
 			this.m_lblUserName.Text = "&User name:";
 			// 
 			// m_tbUserName
 			// 
-			this.m_tbUserName.Location = new System.Drawing.Point(186, 189);
-			this.m_tbUserName.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tbUserName.Location = new System.Drawing.Point(248, 252);
+			this.m_tbUserName.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbUserName.Name = "m_tbUserName";
-			this.m_tbUserName.Size = new System.Drawing.Size(268, 33);
+			this.m_tbUserName.Size = new System.Drawing.Size(356, 41);
 			this.m_tbUserName.TabIndex = 5;
 			// 
 			// m_lblPassword
 			// 
 			this.m_lblPassword.AutoSize = true;
-			this.m_lblPassword.Location = new System.Drawing.Point(477, 195);
-			this.m_lblPassword.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblPassword.Location = new System.Drawing.Point(636, 260);
+			this.m_lblPassword.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblPassword.Name = "m_lblPassword";
-			this.m_lblPassword.Size = new System.Drawing.Size(126, 29);
+			this.m_lblPassword.Size = new System.Drawing.Size(155, 36);
 			this.m_lblPassword.TabIndex = 6;
 			this.m_lblPassword.Text = "&Password:";
 			// 
 			// m_lblCredNote
 			// 
-			this.m_lblCredNote.Location = new System.Drawing.Point(14, 255);
-			this.m_lblCredNote.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblCredNote.Location = new System.Drawing.Point(18, 340);
+			this.m_lblCredNote.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblCredNote.Name = "m_lblCredNote";
-			this.m_lblCredNote.Size = new System.Drawing.Size(894, 58);
+			this.m_lblCredNote.Size = new System.Drawing.Size(1192, 72);
 			this.m_lblCredNote.TabIndex = 8;
 			this.m_lblCredNote.Text = "The credentials you enter here are used to authenticate you against the server. D" +
 				"o not enter your KeePass database master password.";
 			// 
 			// m_btnHelp
 			// 
-			this.m_btnHelp.Location = new System.Drawing.Point(27, 654);
-			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6);
+			this.m_btnHelp.Location = new System.Drawing.Point(36, 872);
+			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnHelp.Name = "m_btnHelp";
-			this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
+			this.m_btnHelp.Size = new System.Drawing.Size(224, 64);
 			this.m_btnHelp.TabIndex = 3;
 			this.m_btnHelp.Text = "&Help";
 			this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -158,38 +158,38 @@
 			// 
 			this.m_cmbCredSaveMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.m_cmbCredSaveMode.FormattingEnabled = true;
-			this.m_cmbCredSaveMode.Location = new System.Drawing.Point(186, 334);
-			this.m_cmbCredSaveMode.Margin = new System.Windows.Forms.Padding(6);
+			this.m_cmbCredSaveMode.Location = new System.Drawing.Point(248, 446);
+			this.m_cmbCredSaveMode.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_cmbCredSaveMode.Name = "m_cmbCredSaveMode";
-			this.m_cmbCredSaveMode.Size = new System.Drawing.Size(715, 37);
+			this.m_cmbCredSaveMode.Size = new System.Drawing.Size(952, 44);
 			this.m_cmbCredSaveMode.TabIndex = 10;
 			// 
 			// m_lblRemember
 			// 
 			this.m_lblRemember.AutoSize = true;
-			this.m_lblRemember.Location = new System.Drawing.Point(14, 340);
-			this.m_lblRemember.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblRemember.Location = new System.Drawing.Point(18, 454);
+			this.m_lblRemember.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblRemember.Name = "m_lblRemember";
-			this.m_lblRemember.Size = new System.Drawing.Size(140, 29);
+			this.m_lblRemember.Size = new System.Drawing.Size(166, 36);
 			this.m_lblRemember.TabIndex = 9;
 			this.m_lblRemember.Text = "&Remember:";
 			// 
 			// m_lblUrlExamples
 			// 
 			this.m_lblUrlExamples.AutoSize = true;
-			this.m_lblUrlExamples.Location = new System.Drawing.Point(180, 134);
-			this.m_lblUrlExamples.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblUrlExamples.Location = new System.Drawing.Point(240, 178);
+			this.m_lblUrlExamples.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblUrlExamples.Name = "m_lblUrlExamples";
-			this.m_lblUrlExamples.Size = new System.Drawing.Size(555, 29);
+			this.m_lblUrlExamples.Size = new System.Drawing.Size(680, 36);
 			this.m_lblUrlExamples.TabIndex = 3;
 			this.m_lblUrlExamples.Text = "Example: ftp://ftp.example.com/pub/Database.kdbx";
 			// 
 			// m_lblUrlHints
 			// 
-			this.m_lblUrlHints.Location = new System.Drawing.Point(180, 72);
-			this.m_lblUrlHints.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblUrlHints.Location = new System.Drawing.Point(240, 96);
+			this.m_lblUrlHints.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblUrlHints.Name = "m_lblUrlHints";
-			this.m_lblUrlHints.Size = new System.Drawing.Size(723, 60);
+			this.m_lblUrlHints.Size = new System.Drawing.Size(964, 80);
 			this.m_lblUrlHints.TabIndex = 2;
 			this.m_lblUrlHints.Text = "The complete URL must be specified, including protocol, server and full path to t" +
 				"he file.";
@@ -198,11 +198,11 @@
 			// 
 			this.m_tabMain.Controls.Add(this.m_tabConn);
 			this.m_tabMain.Controls.Add(this.m_tabAdv);
-			this.m_tabMain.Location = new System.Drawing.Point(30, 152);
-			this.m_tabMain.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tabMain.Location = new System.Drawing.Point(40, 202);
+			this.m_tabMain.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabMain.Name = "m_tabMain";
 			this.m_tabMain.SelectedIndex = 0;
-			this.m_tabMain.Size = new System.Drawing.Size(951, 488);
+			this.m_tabMain.Size = new System.Drawing.Size(1268, 650);
 			this.m_tabMain.TabIndex = 2;
 			// 
 			// m_tabConn
@@ -218,32 +218,32 @@
 			this.m_tabConn.Controls.Add(this.m_lblPassword);
 			this.m_tabConn.Controls.Add(this.m_tbPassword);
 			this.m_tabConn.Controls.Add(this.m_lblCredNote);
-			this.m_tabConn.Location = new System.Drawing.Point(4, 38);
-			this.m_tabConn.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tabConn.Location = new System.Drawing.Point(8, 50);
+			this.m_tabConn.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabConn.Name = "m_tabConn";
-			this.m_tabConn.Padding = new System.Windows.Forms.Padding(6);
-			this.m_tabConn.Size = new System.Drawing.Size(943, 446);
+			this.m_tabConn.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_tabConn.Size = new System.Drawing.Size(1252, 592);
 			this.m_tabConn.TabIndex = 0;
 			this.m_tabConn.Text = "Connection";
 			this.m_tabConn.UseVisualStyleBackColor = true;
 			// 
 			// m_tbPassword
 			// 
-			this.m_tbPassword.Location = new System.Drawing.Point(634, 189);
-			this.m_tbPassword.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tbPassword.Location = new System.Drawing.Point(846, 252);
+			this.m_tbPassword.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbPassword.Name = "m_tbPassword";
-			this.m_tbPassword.Size = new System.Drawing.Size(268, 33);
+			this.m_tbPassword.Size = new System.Drawing.Size(356, 41);
 			this.m_tbPassword.TabIndex = 7;
 			this.m_tbPassword.UseSystemPasswordChar = true;
 			// 
 			// m_tabAdv
 			// 
 			this.m_tabAdv.Controls.Add(this.m_pnlAdv);
-			this.m_tabAdv.Location = new System.Drawing.Point(4, 38);
-			this.m_tabAdv.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tabAdv.Location = new System.Drawing.Point(8, 50);
+			this.m_tabAdv.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabAdv.Name = "m_tabAdv";
-			this.m_tabAdv.Padding = new System.Windows.Forms.Padding(6);
-			this.m_tabAdv.Size = new System.Drawing.Size(943, 446);
+			this.m_tabAdv.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_tabAdv.Size = new System.Drawing.Size(1252, 592);
 			this.m_tabAdv.TabIndex = 1;
 			this.m_tabAdv.Text = "Advanced";
 			this.m_tabAdv.UseVisualStyleBackColor = true;
@@ -252,19 +252,19 @@
 			// 
 			this.m_pnlAdv.AutoScroll = true;
 			this.m_pnlAdv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.m_pnlAdv.Location = new System.Drawing.Point(9, 12);
-			this.m_pnlAdv.Margin = new System.Windows.Forms.Padding(6);
+			this.m_pnlAdv.Location = new System.Drawing.Point(12, 16);
+			this.m_pnlAdv.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_pnlAdv.Name = "m_pnlAdv";
-			this.m_pnlAdv.Size = new System.Drawing.Size(908, 408);
+			this.m_pnlAdv.Size = new System.Drawing.Size(1210, 544);
 			this.m_pnlAdv.TabIndex = 0;
 			// 
 			// IOConnectionForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(1005, 728);
+			this.ClientSize = new System.Drawing.Size(1340, 970);
 			this.Controls.Add(this.m_tabMain);
 			this.Controls.Add(this.m_btnHelp);
 			this.Controls.Add(this.m_btnCancel);
@@ -272,7 +272,7 @@
 			this.Controls.Add(this.m_bannerImage);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "IOConnectionForm";

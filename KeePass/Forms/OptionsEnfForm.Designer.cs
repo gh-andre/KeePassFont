@@ -44,10 +44,10 @@
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
 			this.m_btnOK.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.m_btnOK.Location = new System.Drawing.Point(831, 854);
-			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnOK.Location = new System.Drawing.Point(1108, 1138);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+			this.m_btnOK.Size = new System.Drawing.Size(224, 64);
 			this.m_btnOK.TabIndex = 6;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -57,10 +57,10 @@
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.m_btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.m_btnCancel.Location = new System.Drawing.Point(1012, 854);
-			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnCancel.Location = new System.Drawing.Point(1350, 1138);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+			this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
 			this.m_btnCancel.TabIndex = 7;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -69,19 +69,19 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(1209, 124);
+			this.m_bannerImage.Size = new System.Drawing.Size(1612, 166);
 			this.m_bannerImage.TabIndex = 2;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_lblEnforce
 			// 
 			this.m_lblEnforce.AutoSize = true;
-			this.m_lblEnforce.Location = new System.Drawing.Point(21, 152);
-			this.m_lblEnforce.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblEnforce.Location = new System.Drawing.Point(28, 202);
+			this.m_lblEnforce.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblEnforce.Name = "m_lblEnforce";
-			this.m_lblEnforce.Size = new System.Drawing.Size(41, 29);
+			this.m_lblEnforce.Size = new System.Drawing.Size(49, 36);
 			this.m_lblEnforce.TabIndex = 0;
 			this.m_lblEnforce.Text = "<>";
 			// 
@@ -91,31 +91,31 @@
 			this.m_lvMain.FullRowSelect = true;
 			this.m_lvMain.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvMain.HideSelection = false;
-			this.m_lvMain.Location = new System.Drawing.Point(27, 195);
-			this.m_lvMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_lvMain.Location = new System.Drawing.Point(36, 260);
+			this.m_lvMain.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvMain.Name = "m_lvMain";
 			this.m_lvMain.ShowItemToolTips = true;
-			this.m_lvMain.Size = new System.Drawing.Size(1150, 522);
+			this.m_lvMain.Size = new System.Drawing.Size(1532, 694);
 			this.m_lvMain.TabIndex = 1;
 			this.m_lvMain.UseCompatibleStateImageBehavior = false;
 			this.m_lvMain.View = System.Windows.Forms.View.Details;
 			// 
 			// m_lblInfo
 			// 
-			this.m_lblInfo.Location = new System.Drawing.Point(21, 747);
-			this.m_lblInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblInfo.Location = new System.Drawing.Point(28, 996);
+			this.m_lblInfo.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblInfo.Name = "m_lblInfo";
-			this.m_lblInfo.Size = new System.Drawing.Size(1161, 27);
+			this.m_lblInfo.Size = new System.Drawing.Size(1548, 36);
 			this.m_lblInfo.TabIndex = 4;
 			this.m_lblInfo.Text = "<>";
 			// 
 			// m_lnkConfigEnf
 			// 
 			this.m_lnkConfigEnf.AutoSize = true;
-			this.m_lnkConfigEnf.Location = new System.Drawing.Point(21, 801);
-			this.m_lnkConfigEnf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lnkConfigEnf.Location = new System.Drawing.Point(28, 1068);
+			this.m_lnkConfigEnf.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lnkConfigEnf.Name = "m_lnkConfigEnf";
-			this.m_lnkConfigEnf.Size = new System.Drawing.Size(41, 29);
+			this.m_lnkConfigEnf.Size = new System.Drawing.Size(49, 36);
 			this.m_lnkConfigEnf.TabIndex = 5;
 			this.m_lnkConfigEnf.TabStop = true;
 			this.m_lnkConfigEnf.Text = "<>";
@@ -124,10 +124,10 @@
 			// m_lnkEnfAll
 			// 
 			this.m_lnkEnfAll.AutoSize = true;
-			this.m_lnkEnfAll.Location = new System.Drawing.Point(1053, 152);
-			this.m_lnkEnfAll.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lnkEnfAll.Location = new System.Drawing.Point(1404, 202);
+			this.m_lnkEnfAll.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lnkEnfAll.Name = "m_lnkEnfAll";
-			this.m_lnkEnfAll.Size = new System.Drawing.Size(40, 29);
+			this.m_lnkEnfAll.Size = new System.Drawing.Size(50, 36);
 			this.m_lnkEnfAll.TabIndex = 2;
 			this.m_lnkEnfAll.TabStop = true;
 			this.m_lnkEnfAll.Text = "All";
@@ -136,10 +136,10 @@
 			// m_lnkEnfNone
 			// 
 			this.m_lnkEnfNone.AutoSize = true;
-			this.m_lnkEnfNone.Location = new System.Drawing.Point(1107, 152);
-			this.m_lnkEnfNone.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lnkEnfNone.Location = new System.Drawing.Point(1476, 202);
+			this.m_lnkEnfNone.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lnkEnfNone.Name = "m_lnkEnfNone";
-			this.m_lnkEnfNone.Size = new System.Drawing.Size(72, 29);
+			this.m_lnkEnfNone.Size = new System.Drawing.Size(87, 36);
 			this.m_lnkEnfNone.TabIndex = 3;
 			this.m_lnkEnfNone.TabStop = true;
 			this.m_lnkEnfNone.Text = "None";
@@ -148,10 +148,10 @@
 			// OptionsEnfForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(1209, 927);
+			this.ClientSize = new System.Drawing.Size(1612, 1236);
 			this.Controls.Add(this.m_lnkEnfNone);
 			this.Controls.Add(this.m_lnkEnfAll);
 			this.Controls.Add(this.m_lnkConfigEnf);
@@ -163,7 +163,7 @@
 			this.Controls.Add(this.m_btnOK);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "OptionsEnfForm";

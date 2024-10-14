@@ -46,36 +46,36 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(954, 124);
+			this.m_bannerImage.Size = new System.Drawing.Size(1272, 166);
 			this.m_bannerImage.TabIndex = 0;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_lblCopyright
 			// 
-			this.m_lblCopyright.Location = new System.Drawing.Point(22, 150);
-			this.m_lblCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblCopyright.Location = new System.Drawing.Point(30, 200);
+			this.m_lblCopyright.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblCopyright.Name = "m_lblCopyright";
-			this.m_lblCopyright.Size = new System.Drawing.Size(904, 32);
+			this.m_lblCopyright.Size = new System.Drawing.Size(1206, 42);
 			this.m_lblCopyright.TabIndex = 0;
 			this.m_lblCopyright.Text = "<>";
 			// 
 			// m_lblOsi
 			// 
-			this.m_lblOsi.Location = new System.Drawing.Point(22, 198);
-			this.m_lblOsi.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblOsi.Location = new System.Drawing.Point(30, 264);
+			this.m_lblOsi.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblOsi.Name = "m_lblOsi";
-			this.m_lblOsi.Size = new System.Drawing.Size(904, 32);
+			this.m_lblOsi.Size = new System.Drawing.Size(1206, 42);
 			this.m_lblOsi.TabIndex = 1;
 			this.m_lblOsi.Text = "KeePass is OSI Certified Open Source Software.";
 			// 
 			// m_lblGpl
 			// 
-			this.m_lblGpl.Location = new System.Drawing.Point(22, 244);
-			this.m_lblGpl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblGpl.Location = new System.Drawing.Point(30, 326);
+			this.m_lblGpl.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblGpl.Name = "m_lblGpl";
-			this.m_lblGpl.Size = new System.Drawing.Size(904, 62);
+			this.m_lblGpl.Size = new System.Drawing.Size(1206, 74);
 			this.m_lblGpl.TabIndex = 2;
 			this.m_lblGpl.Text = "The program is distributed under the terms of the GNU General Public License v2 o" +
 				"r later.";
@@ -83,10 +83,10 @@
 			// m_linkHomepage
 			// 
 			this.m_linkHomepage.AutoSize = true;
-			this.m_linkHomepage.Location = new System.Drawing.Point(22, 320);
-			this.m_linkHomepage.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_linkHomepage.Location = new System.Drawing.Point(30, 426);
+			this.m_linkHomepage.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_linkHomepage.Name = "m_linkHomepage";
-			this.m_linkHomepage.Size = new System.Drawing.Size(204, 29);
+			this.m_linkHomepage.Size = new System.Drawing.Size(249, 36);
 			this.m_linkHomepage.TabIndex = 3;
 			this.m_linkHomepage.TabStop = true;
 			this.m_linkHomepage.Text = "KeePass Website";
@@ -95,10 +95,10 @@
 			// m_linkHelp
 			// 
 			this.m_linkHelp.AutoSize = true;
-			this.m_linkHelp.Location = new System.Drawing.Point(480, 320);
-			this.m_linkHelp.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_linkHelp.Location = new System.Drawing.Point(640, 426);
+			this.m_linkHelp.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_linkHelp.Name = "m_linkHelp";
-			this.m_linkHelp.Size = new System.Drawing.Size(64, 29);
+			this.m_linkHelp.Size = new System.Drawing.Size(76, 36);
 			this.m_linkHelp.TabIndex = 5;
 			this.m_linkHelp.TabStop = true;
 			this.m_linkHelp.Text = "Help";
@@ -107,10 +107,10 @@
 			// m_linkLicense
 			// 
 			this.m_linkLicense.AutoSize = true;
-			this.m_linkLicense.Location = new System.Drawing.Point(22, 366);
-			this.m_linkLicense.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_linkLicense.Location = new System.Drawing.Point(30, 488);
+			this.m_linkLicense.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_linkLicense.Name = "m_linkLicense";
-			this.m_linkLicense.Size = new System.Drawing.Size(97, 29);
+			this.m_linkLicense.Size = new System.Drawing.Size(118, 36);
 			this.m_linkLicense.TabIndex = 6;
 			this.m_linkLicense.TabStop = true;
 			this.m_linkLicense.Text = "License";
@@ -119,10 +119,10 @@
 			// m_linkAcknowledgements
 			// 
 			this.m_linkAcknowledgements.AutoSize = true;
-			this.m_linkAcknowledgements.Location = new System.Drawing.Point(240, 320);
-			this.m_linkAcknowledgements.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_linkAcknowledgements.Location = new System.Drawing.Point(320, 426);
+			this.m_linkAcknowledgements.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_linkAcknowledgements.Name = "m_linkAcknowledgements";
-			this.m_linkAcknowledgements.Size = new System.Drawing.Size(224, 29);
+			this.m_linkAcknowledgements.Size = new System.Drawing.Size(274, 36);
 			this.m_linkAcknowledgements.TabIndex = 4;
 			this.m_linkAcknowledgements.TabStop = true;
 			this.m_linkAcknowledgements.Text = "Acknowledgements";
@@ -131,10 +131,10 @@
 			// m_linkDonate
 			// 
 			this.m_linkDonate.AutoSize = true;
-			this.m_linkDonate.Location = new System.Drawing.Point(240, 366);
-			this.m_linkDonate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_linkDonate.Location = new System.Drawing.Point(320, 488);
+			this.m_linkDonate.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_linkDonate.Name = "m_linkDonate";
-			this.m_linkDonate.Size = new System.Drawing.Size(90, 29);
+			this.m_linkDonate.Size = new System.Drawing.Size(110, 36);
 			this.m_linkDonate.TabIndex = 7;
 			this.m_linkDonate.TabStop = true;
 			this.m_linkDonate.Text = "Donate";
@@ -143,10 +143,10 @@
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(759, 654);
-			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6);
+			this.m_btnOK.Location = new System.Drawing.Point(1012, 872);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+			this.m_btnOK.Size = new System.Drawing.Size(224, 64);
 			this.m_btnOK.TabIndex = 9;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -156,12 +156,12 @@
 			this.m_lvComponents.FullRowSelect = true;
 			this.m_lvComponents.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvComponents.HideSelection = false;
-			this.m_lvComponents.Location = new System.Drawing.Point(30, 420);
-			this.m_lvComponents.Margin = new System.Windows.Forms.Padding(6);
+			this.m_lvComponents.Location = new System.Drawing.Point(40, 560);
+			this.m_lvComponents.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvComponents.MultiSelect = false;
 			this.m_lvComponents.Name = "m_lvComponents";
 			this.m_lvComponents.ShowItemToolTips = true;
-			this.m_lvComponents.Size = new System.Drawing.Size(890, 208);
+			this.m_lvComponents.Size = new System.Drawing.Size(1186, 276);
 			this.m_lvComponents.TabIndex = 8;
 			this.m_lvComponents.UseCompatibleStateImageBehavior = false;
 			this.m_lvComponents.View = System.Windows.Forms.View.Details;
@@ -170,10 +170,10 @@
 			// AboutForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnOK;
-			this.ClientSize = new System.Drawing.Size(954, 728);
+			this.ClientSize = new System.Drawing.Size(1272, 970);
 			this.Controls.Add(this.m_lvComponents);
 			this.Controls.Add(this.m_btnOK);
 			this.Controls.Add(this.m_linkDonate);
@@ -187,7 +187,7 @@
 			this.Controls.Add(this.m_bannerImage);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "AboutForm";

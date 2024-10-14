@@ -37,10 +37,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(882, 573);
-			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnCancel.Location = new System.Drawing.Point(1176, 764);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+			this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
 			this.m_btnCancel.TabIndex = 0;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -51,11 +51,11 @@
 			this.m_lvMessages.FullRowSelect = true;
 			this.m_lvMessages.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
 			this.m_lvMessages.HideSelection = false;
-			this.m_lvMessages.Location = new System.Drawing.Point(27, 26);
-			this.m_lvMessages.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_lvMessages.Location = new System.Drawing.Point(36, 34);
+			this.m_lvMessages.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvMessages.MultiSelect = false;
 			this.m_lvMessages.Name = "m_lvMessages";
-			this.m_lvMessages.Size = new System.Drawing.Size(1018, 274);
+			this.m_lvMessages.Size = new System.Drawing.Size(1356, 364);
 			this.m_lvMessages.TabIndex = 1;
 			this.m_lvMessages.UseCompatibleStateImageBehavior = false;
 			this.m_lvMessages.View = System.Windows.Forms.View.Details;
@@ -63,37 +63,37 @@
 			// 
 			// m_pbProgress
 			// 
-			this.m_pbProgress.Location = new System.Drawing.Point(27, 315);
-			this.m_pbProgress.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_pbProgress.Location = new System.Drawing.Point(36, 420);
+			this.m_pbProgress.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_pbProgress.Name = "m_pbProgress";
-			this.m_pbProgress.Size = new System.Drawing.Size(1023, 36);
+			this.m_pbProgress.Size = new System.Drawing.Size(1364, 48);
 			this.m_pbProgress.TabIndex = 2;
 			// 
 			// m_tbDetails
 			// 
-			this.m_tbDetails.Location = new System.Drawing.Point(27, 363);
-			this.m_tbDetails.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tbDetails.Location = new System.Drawing.Point(36, 484);
+			this.m_tbDetails.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbDetails.Multiline = true;
 			this.m_tbDetails.Name = "m_tbDetails";
 			this.m_tbDetails.ReadOnly = true;
 			this.m_tbDetails.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.m_tbDetails.Size = new System.Drawing.Size(1018, 193);
+			this.m_tbDetails.Size = new System.Drawing.Size(1356, 256);
 			this.m_tbDetails.TabIndex = 3;
 			// 
 			// StatusLoggerForm
 			// 
 			this.AcceptButton = this.m_btnCancel;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(1077, 646);
+			this.ClientSize = new System.Drawing.Size(1436, 862);
 			this.Controls.Add(this.m_tbDetails);
 			this.Controls.Add(this.m_pbProgress);
 			this.Controls.Add(this.m_lvMessages);
 			this.Controls.Add(this.m_btnCancel);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "StatusLoggerForm";

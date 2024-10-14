@@ -82,19 +82,19 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(1336, 124);
+			this.m_bannerImage.Size = new System.Drawing.Size(1782, 166);
 			this.m_bannerImage.TabIndex = 0;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(958, 808);
-			this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnOK.Location = new System.Drawing.Point(1278, 1078);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+			this.m_btnOK.Size = new System.Drawing.Size(224, 64);
 			this.m_btnOK.TabIndex = 0;
 			this.m_btnOK.Text = "&Finish";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -103,10 +103,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(1140, 808);
-			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnCancel.Location = new System.Drawing.Point(1520, 1078);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+			this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
 			this.m_btnCancel.TabIndex = 1;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -114,10 +114,10 @@
 			// 
 			// m_btnPrev
 			// 
-			this.m_btnPrev.Location = new System.Drawing.Point(580, 808);
-			this.m_btnPrev.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnPrev.Location = new System.Drawing.Point(774, 1078);
+			this.m_btnPrev.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnPrev.Name = "m_btnPrev";
-			this.m_btnPrev.Size = new System.Drawing.Size(168, 48);
+			this.m_btnPrev.Size = new System.Drawing.Size(224, 64);
 			this.m_btnPrev.TabIndex = 4;
 			this.m_btnPrev.Text = "< &Back";
 			this.m_btnPrev.UseVisualStyleBackColor = true;
@@ -125,10 +125,10 @@
 			// 
 			// m_btnNext
 			// 
-			this.m_btnNext.Location = new System.Drawing.Point(750, 808);
-			this.m_btnNext.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnNext.Location = new System.Drawing.Point(1000, 1078);
+			this.m_btnNext.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnNext.Name = "m_btnNext";
-			this.m_btnNext.Size = new System.Drawing.Size(168, 48);
+			this.m_btnNext.Size = new System.Drawing.Size(224, 64);
 			this.m_btnNext.TabIndex = 5;
 			this.m_btnNext.Text = "&Next >";
 			this.m_btnNext.UseVisualStyleBackColor = true;
@@ -140,11 +140,11 @@
 			this.m_tabMain.Controls.Add(this.m_tabEvents);
 			this.m_tabMain.Controls.Add(this.m_tabConditions);
 			this.m_tabMain.Controls.Add(this.m_tabActions);
-			this.m_tabMain.Location = new System.Drawing.Point(27, 144);
-			this.m_tabMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabMain.Location = new System.Drawing.Point(36, 192);
+			this.m_tabMain.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabMain.Name = "m_tabMain";
 			this.m_tabMain.SelectedIndex = 0;
-			this.m_tabMain.Size = new System.Drawing.Size(1282, 652);
+			this.m_tabMain.Size = new System.Drawing.Size(1710, 870);
 			this.m_tabMain.TabIndex = 2;
 			this.m_tabMain.SelectedIndexChanged += new System.EventHandler(this.OnTabMainSelectedIndexChanged);
 			// 
@@ -159,11 +159,11 @@
 			this.m_tabProps.Controls.Add(this.m_cbEnabled);
 			this.m_tabProps.Controls.Add(this.m_tbName);
 			this.m_tabProps.Controls.Add(this.m_lblTriggerName);
-			this.m_tabProps.Location = new System.Drawing.Point(4, 38);
-			this.m_tabProps.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabProps.Location = new System.Drawing.Point(8, 50);
+			this.m_tabProps.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabProps.Name = "m_tabProps";
-			this.m_tabProps.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-			this.m_tabProps.Size = new System.Drawing.Size(1274, 610);
+			this.m_tabProps.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_tabProps.Size = new System.Drawing.Size(1694, 812);
 			this.m_tabProps.TabIndex = 0;
 			this.m_tabProps.Text = "Properties";
 			this.m_tabProps.UseVisualStyleBackColor = true;
@@ -171,20 +171,20 @@
 			// m_lblEnabledDesc
 			// 
 			this.m_lblEnabledDesc.AutoSize = true;
-			this.m_lblEnabledDesc.Location = new System.Drawing.Point(58, 168);
-			this.m_lblEnabledDesc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblEnabledDesc.Location = new System.Drawing.Point(78, 224);
+			this.m_lblEnabledDesc.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblEnabledDesc.Name = "m_lblEnabledDesc";
-			this.m_lblEnabledDesc.Size = new System.Drawing.Size(451, 29);
+			this.m_lblEnabledDesc.Size = new System.Drawing.Size(565, 36);
 			this.m_lblEnabledDesc.TabIndex = 3;
 			this.m_lblEnabledDesc.Text = "If not enabled, the trigger has no function.";
 			// 
 			// m_cbTurnOffAfterAction
 			// 
 			this.m_cbTurnOffAfterAction.AutoSize = true;
-			this.m_cbTurnOffAfterAction.Location = new System.Drawing.Point(21, 546);
-			this.m_cbTurnOffAfterAction.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_cbTurnOffAfterAction.Location = new System.Drawing.Point(28, 728);
+			this.m_cbTurnOffAfterAction.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_cbTurnOffAfterAction.Name = "m_cbTurnOffAfterAction";
-			this.m_cbTurnOffAfterAction.Size = new System.Drawing.Size(480, 33);
+			this.m_cbTurnOffAfterAction.Size = new System.Drawing.Size(600, 40);
 			this.m_cbTurnOffAfterAction.TabIndex = 8;
 			this.m_cbTurnOffAfterAction.Text = "&Turn off after executing actions (run once)";
 			this.m_cbTurnOffAfterAction.UseVisualStyleBackColor = true;
@@ -192,41 +192,41 @@
 			// m_tbComments
 			// 
 			this.m_tbComments.AcceptsReturn = true;
-			this.m_tbComments.Location = new System.Drawing.Point(21, 340);
-			this.m_tbComments.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tbComments.Location = new System.Drawing.Point(28, 454);
+			this.m_tbComments.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbComments.Multiline = true;
 			this.m_tbComments.Name = "m_tbComments";
 			this.m_tbComments.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.m_tbComments.Size = new System.Drawing.Size(1216, 168);
+			this.m_tbComments.Size = new System.Drawing.Size(1620, 222);
 			this.m_tbComments.TabIndex = 7;
 			// 
 			// m_lblTriggerComments
 			// 
 			this.m_lblTriggerComments.AutoSize = true;
-			this.m_lblTriggerComments.Location = new System.Drawing.Point(14, 308);
-			this.m_lblTriggerComments.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblTriggerComments.Location = new System.Drawing.Point(18, 410);
+			this.m_lblTriggerComments.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblTriggerComments.Name = "m_lblTriggerComments";
-			this.m_lblTriggerComments.Size = new System.Drawing.Size(135, 29);
+			this.m_lblTriggerComments.Size = new System.Drawing.Size(163, 36);
 			this.m_lblTriggerComments.TabIndex = 6;
 			this.m_lblTriggerComments.Text = "&Comments:";
 			// 
 			// m_lblInitiallyOnDesc
 			// 
 			this.m_lblInitiallyOnDesc.AutoSize = true;
-			this.m_lblInitiallyOnDesc.Location = new System.Drawing.Point(58, 261);
-			this.m_lblInitiallyOnDesc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblInitiallyOnDesc.Location = new System.Drawing.Point(78, 348);
+			this.m_lblInitiallyOnDesc.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblInitiallyOnDesc.Name = "m_lblInitiallyOnDesc";
-			this.m_lblInitiallyOnDesc.Size = new System.Drawing.Size(717, 29);
+			this.m_lblInitiallyOnDesc.Size = new System.Drawing.Size(890, 36);
 			this.m_lblInitiallyOnDesc.TabIndex = 5;
 			this.m_lblInitiallyOnDesc.Text = "When checked, the trigger will initially be on when KeePass starts.";
 			// 
 			// m_cbInitiallyOn
 			// 
 			this.m_cbInitiallyOn.AutoSize = true;
-			this.m_cbInitiallyOn.Location = new System.Drawing.Point(21, 220);
-			this.m_cbInitiallyOn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_cbInitiallyOn.Location = new System.Drawing.Point(28, 294);
+			this.m_cbInitiallyOn.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_cbInitiallyOn.Name = "m_cbInitiallyOn";
-			this.m_cbInitiallyOn.Size = new System.Drawing.Size(145, 33);
+			this.m_cbInitiallyOn.Size = new System.Drawing.Size(181, 40);
 			this.m_cbInitiallyOn.TabIndex = 4;
 			this.m_cbInitiallyOn.Text = "Initially &on";
 			this.m_cbInitiallyOn.UseVisualStyleBackColor = true;
@@ -234,29 +234,29 @@
 			// m_cbEnabled
 			// 
 			this.m_cbEnabled.AutoSize = true;
-			this.m_cbEnabled.Location = new System.Drawing.Point(21, 126);
-			this.m_cbEnabled.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_cbEnabled.Location = new System.Drawing.Point(28, 168);
+			this.m_cbEnabled.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_cbEnabled.Name = "m_cbEnabled";
-			this.m_cbEnabled.Size = new System.Drawing.Size(129, 33);
+			this.m_cbEnabled.Size = new System.Drawing.Size(157, 40);
 			this.m_cbEnabled.TabIndex = 2;
 			this.m_cbEnabled.Text = "&Enabled";
 			this.m_cbEnabled.UseVisualStyleBackColor = true;
 			// 
 			// m_tbName
 			// 
-			this.m_tbName.Location = new System.Drawing.Point(21, 54);
-			this.m_tbName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tbName.Location = new System.Drawing.Point(28, 72);
+			this.m_tbName.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbName.Name = "m_tbName";
-			this.m_tbName.Size = new System.Drawing.Size(1216, 33);
+			this.m_tbName.Size = new System.Drawing.Size(1620, 41);
 			this.m_tbName.TabIndex = 1;
 			// 
 			// m_lblTriggerName
 			// 
 			this.m_lblTriggerName.AutoSize = true;
-			this.m_lblTriggerName.Location = new System.Drawing.Point(14, 21);
-			this.m_lblTriggerName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblTriggerName.Location = new System.Drawing.Point(18, 28);
+			this.m_lblTriggerName.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblTriggerName.Name = "m_lblTriggerName";
-			this.m_lblTriggerName.Size = new System.Drawing.Size(84, 29);
+			this.m_lblTriggerName.Size = new System.Drawing.Size(100, 36);
 			this.m_lblTriggerName.TabIndex = 0;
 			this.m_lblTriggerName.Text = "N&ame:";
 			// 
@@ -269,11 +269,11 @@
 			this.m_tabEvents.Controls.Add(this.m_btnEventAdd);
 			this.m_tabEvents.Controls.Add(this.m_lblEventsIntro);
 			this.m_tabEvents.Controls.Add(this.m_lvEvents);
-			this.m_tabEvents.Location = new System.Drawing.Point(4, 38);
-			this.m_tabEvents.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabEvents.Location = new System.Drawing.Point(8, 50);
+			this.m_tabEvents.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabEvents.Name = "m_tabEvents";
-			this.m_tabEvents.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-			this.m_tabEvents.Size = new System.Drawing.Size(1274, 610);
+			this.m_tabEvents.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_tabEvents.Size = new System.Drawing.Size(1694, 812);
 			this.m_tabEvents.TabIndex = 1;
 			this.m_tabEvents.Text = "Events";
 			this.m_tabEvents.UseVisualStyleBackColor = true;
@@ -281,10 +281,10 @@
 			// m_btnEventMoveDown
 			// 
 			this.m_btnEventMoveDown.Image = global::KeePass.Properties.Resources.B16x16_1DownArrow;
-			this.m_btnEventMoveDown.Location = new System.Drawing.Point(1076, 334);
-			this.m_btnEventMoveDown.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnEventMoveDown.Location = new System.Drawing.Point(1434, 446);
+			this.m_btnEventMoveDown.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnEventMoveDown.Name = "m_btnEventMoveDown";
-			this.m_btnEventMoveDown.Size = new System.Drawing.Size(168, 48);
+			this.m_btnEventMoveDown.Size = new System.Drawing.Size(224, 64);
 			this.m_btnEventMoveDown.TabIndex = 6;
 			this.m_btnEventMoveDown.UseVisualStyleBackColor = true;
 			this.m_btnEventMoveDown.Click += new System.EventHandler(this.OnBtnEventMoveDown);
@@ -292,20 +292,20 @@
 			// m_btnEventMoveUp
 			// 
 			this.m_btnEventMoveUp.Image = global::KeePass.Properties.Resources.B16x16_1UpArrow;
-			this.m_btnEventMoveUp.Location = new System.Drawing.Point(1076, 274);
-			this.m_btnEventMoveUp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnEventMoveUp.Location = new System.Drawing.Point(1434, 366);
+			this.m_btnEventMoveUp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnEventMoveUp.Name = "m_btnEventMoveUp";
-			this.m_btnEventMoveUp.Size = new System.Drawing.Size(168, 48);
+			this.m_btnEventMoveUp.Size = new System.Drawing.Size(224, 64);
 			this.m_btnEventMoveUp.TabIndex = 5;
 			this.m_btnEventMoveUp.UseVisualStyleBackColor = true;
 			this.m_btnEventMoveUp.Click += new System.EventHandler(this.OnBtnEventMoveUp);
 			// 
 			// m_btnEventEdit
 			// 
-			this.m_btnEventEdit.Location = new System.Drawing.Point(1076, 114);
-			this.m_btnEventEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnEventEdit.Location = new System.Drawing.Point(1434, 152);
+			this.m_btnEventEdit.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnEventEdit.Name = "m_btnEventEdit";
-			this.m_btnEventEdit.Size = new System.Drawing.Size(168, 48);
+			this.m_btnEventEdit.Size = new System.Drawing.Size(224, 64);
 			this.m_btnEventEdit.TabIndex = 3;
 			this.m_btnEventEdit.Text = "&Edit...";
 			this.m_btnEventEdit.UseVisualStyleBackColor = true;
@@ -313,10 +313,10 @@
 			// 
 			// m_btnEventDelete
 			// 
-			this.m_btnEventDelete.Location = new System.Drawing.Point(1076, 174);
-			this.m_btnEventDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnEventDelete.Location = new System.Drawing.Point(1434, 232);
+			this.m_btnEventDelete.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnEventDelete.Name = "m_btnEventDelete";
-			this.m_btnEventDelete.Size = new System.Drawing.Size(168, 48);
+			this.m_btnEventDelete.Size = new System.Drawing.Size(224, 64);
 			this.m_btnEventDelete.TabIndex = 4;
 			this.m_btnEventDelete.Text = "&Delete";
 			this.m_btnEventDelete.UseVisualStyleBackColor = true;
@@ -324,10 +324,10 @@
 			// 
 			// m_btnEventAdd
 			// 
-			this.m_btnEventAdd.Location = new System.Drawing.Point(1076, 54);
-			this.m_btnEventAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnEventAdd.Location = new System.Drawing.Point(1434, 72);
+			this.m_btnEventAdd.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnEventAdd.Name = "m_btnEventAdd";
-			this.m_btnEventAdd.Size = new System.Drawing.Size(168, 48);
+			this.m_btnEventAdd.Size = new System.Drawing.Size(224, 64);
 			this.m_btnEventAdd.TabIndex = 2;
 			this.m_btnEventAdd.Text = "&Add...";
 			this.m_btnEventAdd.UseVisualStyleBackColor = true;
@@ -336,10 +336,10 @@
 			// m_lblEventsIntro
 			// 
 			this.m_lblEventsIntro.AutoSize = true;
-			this.m_lblEventsIntro.Location = new System.Drawing.Point(14, 21);
-			this.m_lblEventsIntro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblEventsIntro.Location = new System.Drawing.Point(18, 28);
+			this.m_lblEventsIntro.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblEventsIntro.Name = "m_lblEventsIntro";
-			this.m_lblEventsIntro.Size = new System.Drawing.Size(669, 29);
+			this.m_lblEventsIntro.Size = new System.Drawing.Size(827, 36);
 			this.m_lblEventsIntro.TabIndex = 0;
 			this.m_lblEventsIntro.Text = "&The trigger will fire when any of the events listed below occur.";
 			// 
@@ -348,11 +348,11 @@
 			this.m_lvEvents.FullRowSelect = true;
 			this.m_lvEvents.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvEvents.HideSelection = false;
-			this.m_lvEvents.Location = new System.Drawing.Point(21, 54);
-			this.m_lvEvents.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_lvEvents.Location = new System.Drawing.Point(28, 72);
+			this.m_lvEvents.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvEvents.Name = "m_lvEvents";
 			this.m_lvEvents.ShowItemToolTips = true;
-			this.m_lvEvents.Size = new System.Drawing.Size(1036, 522);
+			this.m_lvEvents.Size = new System.Drawing.Size(1380, 694);
 			this.m_lvEvents.TabIndex = 1;
 			this.m_lvEvents.UseCompatibleStateImageBehavior = false;
 			this.m_lvEvents.View = System.Windows.Forms.View.Details;
@@ -369,10 +369,10 @@
 			this.m_tabConditions.Controls.Add(this.m_btnConditionAdd);
 			this.m_tabConditions.Controls.Add(this.m_lblConditionsIntro);
 			this.m_tabConditions.Controls.Add(this.m_lvConditions);
-			this.m_tabConditions.Location = new System.Drawing.Point(4, 38);
-			this.m_tabConditions.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabConditions.Location = new System.Drawing.Point(8, 50);
+			this.m_tabConditions.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabConditions.Name = "m_tabConditions";
-			this.m_tabConditions.Size = new System.Drawing.Size(1274, 610);
+			this.m_tabConditions.Size = new System.Drawing.Size(1694, 812);
 			this.m_tabConditions.TabIndex = 2;
 			this.m_tabConditions.Text = "Conditions";
 			this.m_tabConditions.UseVisualStyleBackColor = true;
@@ -380,10 +380,10 @@
 			// m_btnConditionMoveDown
 			// 
 			this.m_btnConditionMoveDown.Image = global::KeePass.Properties.Resources.B16x16_1DownArrow;
-			this.m_btnConditionMoveDown.Location = new System.Drawing.Point(1076, 334);
-			this.m_btnConditionMoveDown.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnConditionMoveDown.Location = new System.Drawing.Point(1434, 446);
+			this.m_btnConditionMoveDown.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnConditionMoveDown.Name = "m_btnConditionMoveDown";
-			this.m_btnConditionMoveDown.Size = new System.Drawing.Size(168, 48);
+			this.m_btnConditionMoveDown.Size = new System.Drawing.Size(224, 64);
 			this.m_btnConditionMoveDown.TabIndex = 6;
 			this.m_btnConditionMoveDown.UseVisualStyleBackColor = true;
 			this.m_btnConditionMoveDown.Click += new System.EventHandler(this.OnBtnConditionMoveDown);
@@ -391,20 +391,20 @@
 			// m_btnConditionMoveUp
 			// 
 			this.m_btnConditionMoveUp.Image = global::KeePass.Properties.Resources.B16x16_1UpArrow;
-			this.m_btnConditionMoveUp.Location = new System.Drawing.Point(1076, 274);
-			this.m_btnConditionMoveUp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnConditionMoveUp.Location = new System.Drawing.Point(1434, 366);
+			this.m_btnConditionMoveUp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnConditionMoveUp.Name = "m_btnConditionMoveUp";
-			this.m_btnConditionMoveUp.Size = new System.Drawing.Size(168, 48);
+			this.m_btnConditionMoveUp.Size = new System.Drawing.Size(224, 64);
 			this.m_btnConditionMoveUp.TabIndex = 5;
 			this.m_btnConditionMoveUp.UseVisualStyleBackColor = true;
 			this.m_btnConditionMoveUp.Click += new System.EventHandler(this.OnBtnConditionMoveUp);
 			// 
 			// m_btnConditionEdit
 			// 
-			this.m_btnConditionEdit.Location = new System.Drawing.Point(1076, 114);
-			this.m_btnConditionEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnConditionEdit.Location = new System.Drawing.Point(1434, 152);
+			this.m_btnConditionEdit.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnConditionEdit.Name = "m_btnConditionEdit";
-			this.m_btnConditionEdit.Size = new System.Drawing.Size(168, 48);
+			this.m_btnConditionEdit.Size = new System.Drawing.Size(224, 64);
 			this.m_btnConditionEdit.TabIndex = 3;
 			this.m_btnConditionEdit.Text = "&Edit...";
 			this.m_btnConditionEdit.UseVisualStyleBackColor = true;
@@ -413,19 +413,19 @@
 			// m_lblConditionsEmptyHint
 			// 
 			this.m_lblConditionsEmptyHint.AutoSize = true;
-			this.m_lblConditionsEmptyHint.Location = new System.Drawing.Point(14, 552);
-			this.m_lblConditionsEmptyHint.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblConditionsEmptyHint.Location = new System.Drawing.Point(18, 736);
+			this.m_lblConditionsEmptyHint.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblConditionsEmptyHint.Name = "m_lblConditionsEmptyHint";
-			this.m_lblConditionsEmptyHint.Size = new System.Drawing.Size(690, 29);
+			this.m_lblConditionsEmptyHint.Size = new System.Drawing.Size(853, 36);
 			this.m_lblConditionsEmptyHint.TabIndex = 7;
 			this.m_lblConditionsEmptyHint.Text = "If no conditions are specified, the actions are always performed.";
 			// 
 			// m_btnConditionDelete
 			// 
-			this.m_btnConditionDelete.Location = new System.Drawing.Point(1076, 174);
-			this.m_btnConditionDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnConditionDelete.Location = new System.Drawing.Point(1434, 232);
+			this.m_btnConditionDelete.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnConditionDelete.Name = "m_btnConditionDelete";
-			this.m_btnConditionDelete.Size = new System.Drawing.Size(168, 48);
+			this.m_btnConditionDelete.Size = new System.Drawing.Size(224, 64);
 			this.m_btnConditionDelete.TabIndex = 4;
 			this.m_btnConditionDelete.Text = "&Delete";
 			this.m_btnConditionDelete.UseVisualStyleBackColor = true;
@@ -433,10 +433,10 @@
 			// 
 			// m_btnConditionAdd
 			// 
-			this.m_btnConditionAdd.Location = new System.Drawing.Point(1076, 54);
-			this.m_btnConditionAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnConditionAdd.Location = new System.Drawing.Point(1434, 72);
+			this.m_btnConditionAdd.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnConditionAdd.Name = "m_btnConditionAdd";
-			this.m_btnConditionAdd.Size = new System.Drawing.Size(168, 48);
+			this.m_btnConditionAdd.Size = new System.Drawing.Size(224, 64);
 			this.m_btnConditionAdd.TabIndex = 2;
 			this.m_btnConditionAdd.Text = "&Add...";
 			this.m_btnConditionAdd.UseVisualStyleBackColor = true;
@@ -445,10 +445,10 @@
 			// m_lblConditionsIntro
 			// 
 			this.m_lblConditionsIntro.AutoSize = true;
-			this.m_lblConditionsIntro.Location = new System.Drawing.Point(14, 21);
-			this.m_lblConditionsIntro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblConditionsIntro.Location = new System.Drawing.Point(18, 28);
+			this.m_lblConditionsIntro.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblConditionsIntro.Name = "m_lblConditionsIntro";
-			this.m_lblConditionsIntro.Size = new System.Drawing.Size(753, 29);
+			this.m_lblConditionsIntro.Size = new System.Drawing.Size(924, 36);
 			this.m_lblConditionsIntro.TabIndex = 0;
 			this.m_lblConditionsIntro.Text = "&The trigger actions are only performed if all conditions below are met.";
 			// 
@@ -457,11 +457,11 @@
 			this.m_lvConditions.FullRowSelect = true;
 			this.m_lvConditions.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvConditions.HideSelection = false;
-			this.m_lvConditions.Location = new System.Drawing.Point(21, 54);
-			this.m_lvConditions.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_lvConditions.Location = new System.Drawing.Point(28, 72);
+			this.m_lvConditions.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvConditions.Name = "m_lvConditions";
 			this.m_lvConditions.ShowItemToolTips = true;
-			this.m_lvConditions.Size = new System.Drawing.Size(1036, 488);
+			this.m_lvConditions.Size = new System.Drawing.Size(1380, 650);
 			this.m_lvConditions.TabIndex = 1;
 			this.m_lvConditions.UseCompatibleStateImageBehavior = false;
 			this.m_lvConditions.View = System.Windows.Forms.View.Details;
@@ -477,10 +477,10 @@
 			this.m_tabActions.Controls.Add(this.m_btnActionAdd);
 			this.m_tabActions.Controls.Add(this.m_lvActions);
 			this.m_tabActions.Controls.Add(this.m_lblActionsIntro);
-			this.m_tabActions.Location = new System.Drawing.Point(4, 38);
-			this.m_tabActions.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_tabActions.Location = new System.Drawing.Point(8, 50);
+			this.m_tabActions.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabActions.Name = "m_tabActions";
-			this.m_tabActions.Size = new System.Drawing.Size(1274, 610);
+			this.m_tabActions.Size = new System.Drawing.Size(1694, 812);
 			this.m_tabActions.TabIndex = 3;
 			this.m_tabActions.Text = "Actions";
 			this.m_tabActions.UseVisualStyleBackColor = true;
@@ -488,10 +488,10 @@
 			// m_btnActionMoveDown
 			// 
 			this.m_btnActionMoveDown.Image = global::KeePass.Properties.Resources.B16x16_1DownArrow;
-			this.m_btnActionMoveDown.Location = new System.Drawing.Point(1076, 334);
-			this.m_btnActionMoveDown.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnActionMoveDown.Location = new System.Drawing.Point(1434, 446);
+			this.m_btnActionMoveDown.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnActionMoveDown.Name = "m_btnActionMoveDown";
-			this.m_btnActionMoveDown.Size = new System.Drawing.Size(168, 48);
+			this.m_btnActionMoveDown.Size = new System.Drawing.Size(224, 64);
 			this.m_btnActionMoveDown.TabIndex = 6;
 			this.m_btnActionMoveDown.UseVisualStyleBackColor = true;
 			this.m_btnActionMoveDown.Click += new System.EventHandler(this.OnBtnActionMoveDown);
@@ -499,20 +499,20 @@
 			// m_btnActionMoveUp
 			// 
 			this.m_btnActionMoveUp.Image = global::KeePass.Properties.Resources.B16x16_1UpArrow;
-			this.m_btnActionMoveUp.Location = new System.Drawing.Point(1076, 274);
-			this.m_btnActionMoveUp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnActionMoveUp.Location = new System.Drawing.Point(1434, 366);
+			this.m_btnActionMoveUp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnActionMoveUp.Name = "m_btnActionMoveUp";
-			this.m_btnActionMoveUp.Size = new System.Drawing.Size(168, 48);
+			this.m_btnActionMoveUp.Size = new System.Drawing.Size(224, 64);
 			this.m_btnActionMoveUp.TabIndex = 5;
 			this.m_btnActionMoveUp.UseVisualStyleBackColor = true;
 			this.m_btnActionMoveUp.Click += new System.EventHandler(this.OnBtnActionMoveUp);
 			// 
 			// m_btnActionEdit
 			// 
-			this.m_btnActionEdit.Location = new System.Drawing.Point(1076, 114);
-			this.m_btnActionEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnActionEdit.Location = new System.Drawing.Point(1434, 152);
+			this.m_btnActionEdit.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnActionEdit.Name = "m_btnActionEdit";
-			this.m_btnActionEdit.Size = new System.Drawing.Size(168, 48);
+			this.m_btnActionEdit.Size = new System.Drawing.Size(224, 64);
 			this.m_btnActionEdit.TabIndex = 3;
 			this.m_btnActionEdit.Text = "&Edit...";
 			this.m_btnActionEdit.UseVisualStyleBackColor = true;
@@ -520,10 +520,10 @@
 			// 
 			// m_btnActionDelete
 			// 
-			this.m_btnActionDelete.Location = new System.Drawing.Point(1076, 174);
-			this.m_btnActionDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnActionDelete.Location = new System.Drawing.Point(1434, 232);
+			this.m_btnActionDelete.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnActionDelete.Name = "m_btnActionDelete";
-			this.m_btnActionDelete.Size = new System.Drawing.Size(168, 48);
+			this.m_btnActionDelete.Size = new System.Drawing.Size(224, 64);
 			this.m_btnActionDelete.TabIndex = 4;
 			this.m_btnActionDelete.Text = "&Delete";
 			this.m_btnActionDelete.UseVisualStyleBackColor = true;
@@ -531,10 +531,10 @@
 			// 
 			// m_btnActionAdd
 			// 
-			this.m_btnActionAdd.Location = new System.Drawing.Point(1076, 54);
-			this.m_btnActionAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnActionAdd.Location = new System.Drawing.Point(1434, 72);
+			this.m_btnActionAdd.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnActionAdd.Name = "m_btnActionAdd";
-			this.m_btnActionAdd.Size = new System.Drawing.Size(168, 48);
+			this.m_btnActionAdd.Size = new System.Drawing.Size(224, 64);
 			this.m_btnActionAdd.TabIndex = 2;
 			this.m_btnActionAdd.Text = "&Add...";
 			this.m_btnActionAdd.UseVisualStyleBackColor = true;
@@ -545,11 +545,11 @@
 			this.m_lvActions.FullRowSelect = true;
 			this.m_lvActions.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvActions.HideSelection = false;
-			this.m_lvActions.Location = new System.Drawing.Point(21, 54);
-			this.m_lvActions.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_lvActions.Location = new System.Drawing.Point(28, 72);
+			this.m_lvActions.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvActions.Name = "m_lvActions";
 			this.m_lvActions.ShowItemToolTips = true;
-			this.m_lvActions.Size = new System.Drawing.Size(1036, 522);
+			this.m_lvActions.Size = new System.Drawing.Size(1380, 694);
 			this.m_lvActions.TabIndex = 1;
 			this.m_lvActions.UseCompatibleStateImageBehavior = false;
 			this.m_lvActions.View = System.Windows.Forms.View.Details;
@@ -559,19 +559,19 @@
 			// m_lblActionsIntro
 			// 
 			this.m_lblActionsIntro.AutoSize = true;
-			this.m_lblActionsIntro.Location = new System.Drawing.Point(14, 21);
-			this.m_lblActionsIntro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblActionsIntro.Location = new System.Drawing.Point(18, 28);
+			this.m_lblActionsIntro.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblActionsIntro.Name = "m_lblActionsIntro";
-			this.m_lblActionsIntro.Size = new System.Drawing.Size(519, 29);
+			this.m_lblActionsIntro.Size = new System.Drawing.Size(633, 36);
 			this.m_lblActionsIntro.TabIndex = 0;
 			this.m_lblActionsIntro.Text = "&The trigger will perform all actions listed below.";
 			// 
 			// m_btnHelp
 			// 
-			this.m_btnHelp.Location = new System.Drawing.Point(27, 808);
-			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnHelp.Location = new System.Drawing.Point(36, 1078);
+			this.m_btnHelp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnHelp.Name = "m_btnHelp";
-			this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
+			this.m_btnHelp.Size = new System.Drawing.Size(224, 64);
 			this.m_btnHelp.TabIndex = 3;
 			this.m_btnHelp.Text = "&Help";
 			this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -580,10 +580,10 @@
 			// EcasTriggerForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(1336, 880);
+			this.ClientSize = new System.Drawing.Size(1782, 1174);
 			this.Controls.Add(this.m_btnHelp);
 			this.Controls.Add(this.m_tabMain);
 			this.Controls.Add(this.m_btnNext);
@@ -593,7 +593,7 @@
 			this.Controls.Add(this.m_bannerImage);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "EcasTriggerForm";

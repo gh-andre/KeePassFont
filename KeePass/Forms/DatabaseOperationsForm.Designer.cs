@@ -60,10 +60,10 @@
 			// m_btnClose
 			// 
 			this.m_btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnClose.Location = new System.Drawing.Point(846, 735);
-			this.m_btnClose.Margin = new System.Windows.Forms.Padding(6);
+			this.m_btnClose.Location = new System.Drawing.Point(1128, 980);
+			this.m_btnClose.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnClose.Name = "m_btnClose";
-			this.m_btnClose.Size = new System.Drawing.Size(168, 48);
+			this.m_btnClose.Size = new System.Drawing.Size(224, 64);
 			this.m_btnClose.TabIndex = 0;
 			this.m_btnClose.Text = "Close";
 			this.m_btnClose.UseVisualStyleBackColor = true;
@@ -73,9 +73,9 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(1041, 124);
+			this.m_bannerImage.Size = new System.Drawing.Size(1388, 166);
 			this.m_bannerImage.TabIndex = 1;
 			this.m_bannerImage.TabStop = false;
 			// 
@@ -87,31 +87,31 @@
 			this.m_grpHistoryDelete.Controls.Add(this.m_lblHistoryEntriesDays);
 			this.m_grpHistoryDelete.Controls.Add(this.m_lblDeleteHistoryEntries);
 			this.m_grpHistoryDelete.Controls.Add(this.m_lblTrashIcon);
-			this.m_grpHistoryDelete.Location = new System.Drawing.Point(14, 12);
-			this.m_grpHistoryDelete.Margin = new System.Windows.Forms.Padding(6);
+			this.m_grpHistoryDelete.Location = new System.Drawing.Point(18, 16);
+			this.m_grpHistoryDelete.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_grpHistoryDelete.Name = "m_grpHistoryDelete";
-			this.m_grpHistoryDelete.Padding = new System.Windows.Forms.Padding(6);
-			this.m_grpHistoryDelete.Size = new System.Drawing.Size(939, 244);
+			this.m_grpHistoryDelete.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_grpHistoryDelete.Size = new System.Drawing.Size(1252, 326);
 			this.m_grpHistoryDelete.TabIndex = 0;
 			this.m_grpHistoryDelete.TabStop = false;
 			this.m_grpHistoryDelete.Text = "Entry history";
 			// 
 			// m_lblEntryHistoryWarning
 			// 
-			this.m_lblEntryHistoryWarning.Location = new System.Drawing.Point(99, 168);
-			this.m_lblEntryHistoryWarning.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblEntryHistoryWarning.Location = new System.Drawing.Point(132, 224);
+			this.m_lblEntryHistoryWarning.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblEntryHistoryWarning.Name = "m_lblEntryHistoryWarning";
-			this.m_lblEntryHistoryWarning.Size = new System.Drawing.Size(825, 60);
+			this.m_lblEntryHistoryWarning.Size = new System.Drawing.Size(1100, 80);
 			this.m_lblEntryHistoryWarning.TabIndex = 5;
 			this.m_lblEntryHistoryWarning.Text = "Clicking the \'Delete\' button will remove all history entries older than the speci" +
 				"fied number of days. There is no way to get them back.";
 			// 
 			// m_btnHistoryEntriesDelete
 			// 
-			this.m_btnHistoryEntriesDelete.Location = new System.Drawing.Point(753, 108);
-			this.m_btnHistoryEntriesDelete.Margin = new System.Windows.Forms.Padding(6);
+			this.m_btnHistoryEntriesDelete.Location = new System.Drawing.Point(1004, 144);
+			this.m_btnHistoryEntriesDelete.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnHistoryEntriesDelete.Name = "m_btnHistoryEntriesDelete";
-			this.m_btnHistoryEntriesDelete.Size = new System.Drawing.Size(168, 48);
+			this.m_btnHistoryEntriesDelete.Size = new System.Drawing.Size(224, 64);
 			this.m_btnHistoryEntriesDelete.TabIndex = 4;
 			this.m_btnHistoryEntriesDelete.Text = "&Delete";
 			this.m_btnHistoryEntriesDelete.UseVisualStyleBackColor = true;
@@ -119,39 +119,39 @@
 			// 
 			// m_numHistoryDays
 			// 
-			this.m_numHistoryDays.Location = new System.Drawing.Point(537, 112);
-			this.m_numHistoryDays.Margin = new System.Windows.Forms.Padding(6);
+			this.m_numHistoryDays.Location = new System.Drawing.Point(716, 150);
+			this.m_numHistoryDays.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_numHistoryDays.Maximum = new decimal(new int[] {
-			3650,
-			0,
-			0,
-			0});
+            3650,
+            0,
+            0,
+            0});
 			this.m_numHistoryDays.Name = "m_numHistoryDays";
-			this.m_numHistoryDays.Size = new System.Drawing.Size(132, 33);
+			this.m_numHistoryDays.Size = new System.Drawing.Size(176, 41);
 			this.m_numHistoryDays.TabIndex = 3;
 			this.m_numHistoryDays.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.m_numHistoryDays.Value = new decimal(new int[] {
-			365,
-			0,
-			0,
-			0});
+            365,
+            0,
+            0,
+            0});
 			// 
 			// m_lblHistoryEntriesDays
 			// 
 			this.m_lblHistoryEntriesDays.AutoSize = true;
-			this.m_lblHistoryEntriesDays.Location = new System.Drawing.Point(99, 117);
-			this.m_lblHistoryEntriesDays.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblHistoryEntriesDays.Location = new System.Drawing.Point(132, 156);
+			this.m_lblHistoryEntriesDays.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblHistoryEntriesDays.Name = "m_lblHistoryEntriesDays";
-			this.m_lblHistoryEntriesDays.Size = new System.Drawing.Size(430, 29);
+			this.m_lblHistoryEntriesDays.Size = new System.Drawing.Size(533, 36);
 			this.m_lblHistoryEntriesDays.TabIndex = 2;
 			this.m_lblHistoryEntriesDays.Text = "Delete &history entries older than (days):";
 			// 
 			// m_lblDeleteHistoryEntries
 			// 
-			this.m_lblDeleteHistoryEntries.Location = new System.Drawing.Point(99, 36);
-			this.m_lblDeleteHistoryEntries.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblDeleteHistoryEntries.Location = new System.Drawing.Point(132, 48);
+			this.m_lblDeleteHistoryEntries.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblDeleteHistoryEntries.Name = "m_lblDeleteHistoryEntries";
-			this.m_lblDeleteHistoryEntries.Size = new System.Drawing.Size(825, 64);
+			this.m_lblDeleteHistoryEntries.Size = new System.Drawing.Size(1100, 86);
 			this.m_lblDeleteHistoryEntries.TabIndex = 1;
 			this.m_lblDeleteHistoryEntries.Text = "History entries (shown on the \'History\' tab page of the entry dialog) can be dele" +
 				"ted. This will decrease the database size a bit.";
@@ -159,32 +159,32 @@
 			// m_lblTrashIcon
 			// 
 			this.m_lblTrashIcon.Image = global::KeePass.Properties.Resources.B32x32_Trashcan_Full;
-			this.m_lblTrashIcon.Location = new System.Drawing.Point(14, 33);
-			this.m_lblTrashIcon.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblTrashIcon.Location = new System.Drawing.Point(18, 44);
+			this.m_lblTrashIcon.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblTrashIcon.Name = "m_lblTrashIcon";
-			this.m_lblTrashIcon.Size = new System.Drawing.Size(72, 66);
+			this.m_lblTrashIcon.Size = new System.Drawing.Size(96, 88);
 			this.m_lblTrashIcon.TabIndex = 0;
 			// 
 			// m_tabMain
 			// 
 			this.m_tabMain.Controls.Add(this.m_tabCleanUp);
 			this.m_tabMain.Controls.Add(this.m_tabCustomData);
-			this.m_tabMain.Location = new System.Drawing.Point(27, 136);
-			this.m_tabMain.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tabMain.Location = new System.Drawing.Point(36, 182);
+			this.m_tabMain.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabMain.Name = "m_tabMain";
 			this.m_tabMain.SelectedIndex = 0;
-			this.m_tabMain.Size = new System.Drawing.Size(987, 573);
+			this.m_tabMain.Size = new System.Drawing.Size(1316, 764);
 			this.m_tabMain.TabIndex = 1;
 			// 
 			// m_tabCleanUp
 			// 
 			this.m_tabCleanUp.Controls.Add(this.m_grpDeletedObjectsInfo);
 			this.m_tabCleanUp.Controls.Add(this.m_grpHistoryDelete);
-			this.m_tabCleanUp.Location = new System.Drawing.Point(4, 38);
-			this.m_tabCleanUp.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tabCleanUp.Location = new System.Drawing.Point(8, 50);
+			this.m_tabCleanUp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabCleanUp.Name = "m_tabCleanUp";
-			this.m_tabCleanUp.Padding = new System.Windows.Forms.Padding(6);
-			this.m_tabCleanUp.Size = new System.Drawing.Size(979, 531);
+			this.m_tabCleanUp.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_tabCleanUp.Size = new System.Drawing.Size(1300, 706);
 			this.m_tabCleanUp.TabIndex = 0;
 			this.m_tabCleanUp.Text = "Clean Up";
 			this.m_tabCleanUp.UseVisualStyleBackColor = true;
@@ -195,21 +195,21 @@
 			this.m_grpDeletedObjectsInfo.Controls.Add(this.m_btnRemoveDelObjInfo);
 			this.m_grpDeletedObjectsInfo.Controls.Add(this.m_lblTrashIcon2);
 			this.m_grpDeletedObjectsInfo.Controls.Add(this.m_lblDelObjInfoIntro);
-			this.m_grpDeletedObjectsInfo.Location = new System.Drawing.Point(14, 270);
-			this.m_grpDeletedObjectsInfo.Margin = new System.Windows.Forms.Padding(6);
+			this.m_grpDeletedObjectsInfo.Location = new System.Drawing.Point(18, 360);
+			this.m_grpDeletedObjectsInfo.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_grpDeletedObjectsInfo.Name = "m_grpDeletedObjectsInfo";
-			this.m_grpDeletedObjectsInfo.Padding = new System.Windows.Forms.Padding(6);
-			this.m_grpDeletedObjectsInfo.Size = new System.Drawing.Size(939, 237);
+			this.m_grpDeletedObjectsInfo.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_grpDeletedObjectsInfo.Size = new System.Drawing.Size(1252, 316);
 			this.m_grpDeletedObjectsInfo.TabIndex = 1;
 			this.m_grpDeletedObjectsInfo.TabStop = false;
 			this.m_grpDeletedObjectsInfo.Text = "Deleted objects information";
 			// 
 			// m_lblDelObjInfoWarning
 			// 
-			this.m_lblDelObjInfoWarning.Location = new System.Drawing.Point(99, 140);
-			this.m_lblDelObjInfoWarning.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblDelObjInfoWarning.Location = new System.Drawing.Point(132, 186);
+			this.m_lblDelObjInfoWarning.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblDelObjInfoWarning.Name = "m_lblDelObjInfoWarning";
-			this.m_lblDelObjInfoWarning.Size = new System.Drawing.Size(825, 91);
+			this.m_lblDelObjInfoWarning.Size = new System.Drawing.Size(1100, 114);
 			this.m_lblDelObjInfoWarning.TabIndex = 3;
 			this.m_lblDelObjInfoWarning.Text = "Warning! After removing this information, deleted objects (groups, entries, ...) " +
 				"may reappear when synchronizing the current database with another one (which sti" +
@@ -217,10 +217,10 @@
 			// 
 			// m_btnRemoveDelObjInfo
 			// 
-			this.m_btnRemoveDelObjInfo.Location = new System.Drawing.Point(753, 33);
-			this.m_btnRemoveDelObjInfo.Margin = new System.Windows.Forms.Padding(6);
+			this.m_btnRemoveDelObjInfo.Location = new System.Drawing.Point(1004, 44);
+			this.m_btnRemoveDelObjInfo.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnRemoveDelObjInfo.Name = "m_btnRemoveDelObjInfo";
-			this.m_btnRemoveDelObjInfo.Size = new System.Drawing.Size(168, 48);
+			this.m_btnRemoveDelObjInfo.Size = new System.Drawing.Size(224, 64);
 			this.m_btnRemoveDelObjInfo.TabIndex = 2;
 			this.m_btnRemoveDelObjInfo.Text = "D&elete";
 			this.m_btnRemoveDelObjInfo.UseVisualStyleBackColor = true;
@@ -229,18 +229,18 @@
 			// m_lblTrashIcon2
 			// 
 			this.m_lblTrashIcon2.Image = global::KeePass.Properties.Resources.B32x32_Trashcan_Full;
-			this.m_lblTrashIcon2.Location = new System.Drawing.Point(14, 33);
-			this.m_lblTrashIcon2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblTrashIcon2.Location = new System.Drawing.Point(18, 44);
+			this.m_lblTrashIcon2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblTrashIcon2.Name = "m_lblTrashIcon2";
-			this.m_lblTrashIcon2.Size = new System.Drawing.Size(72, 66);
+			this.m_lblTrashIcon2.Size = new System.Drawing.Size(96, 88);
 			this.m_lblTrashIcon2.TabIndex = 0;
 			// 
 			// m_lblDelObjInfoIntro
 			// 
-			this.m_lblDelObjInfoIntro.Location = new System.Drawing.Point(99, 36);
-			this.m_lblDelObjInfoIntro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblDelObjInfoIntro.Location = new System.Drawing.Point(132, 48);
+			this.m_lblDelObjInfoIntro.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblDelObjInfoIntro.Name = "m_lblDelObjInfoIntro";
-			this.m_lblDelObjInfoIntro.Size = new System.Drawing.Size(642, 86);
+			this.m_lblDelObjInfoIntro.Size = new System.Drawing.Size(856, 114);
 			this.m_lblDelObjInfoIntro.TabIndex = 1;
 			this.m_lblDelObjInfoIntro.Text = "KeePass keeps some information about deleted objects. This information can be rem" +
 				"oved in order to reduce the size of the database.";
@@ -249,20 +249,20 @@
 			// 
 			this.m_tabCustomData.Controls.Add(this.m_btnCDDel);
 			this.m_tabCustomData.Controls.Add(this.m_lvCustomData);
-			this.m_tabCustomData.Location = new System.Drawing.Point(4, 38);
-			this.m_tabCustomData.Margin = new System.Windows.Forms.Padding(6);
+			this.m_tabCustomData.Location = new System.Drawing.Point(8, 50);
+			this.m_tabCustomData.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tabCustomData.Name = "m_tabCustomData";
-			this.m_tabCustomData.Size = new System.Drawing.Size(979, 531);
+			this.m_tabCustomData.Size = new System.Drawing.Size(1300, 706);
 			this.m_tabCustomData.TabIndex = 1;
 			this.m_tabCustomData.Text = "Plugin Data";
 			this.m_tabCustomData.UseVisualStyleBackColor = true;
 			// 
 			// m_btnCDDel
 			// 
-			this.m_btnCDDel.Location = new System.Drawing.Point(786, 458);
-			this.m_btnCDDel.Margin = new System.Windows.Forms.Padding(6);
+			this.m_btnCDDel.Location = new System.Drawing.Point(1048, 610);
+			this.m_btnCDDel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCDDel.Name = "m_btnCDDel";
-			this.m_btnCDDel.Size = new System.Drawing.Size(168, 48);
+			this.m_btnCDDel.Size = new System.Drawing.Size(224, 64);
 			this.m_btnCDDel.TabIndex = 1;
 			this.m_btnCDDel.Text = "&Delete";
 			this.m_btnCDDel.UseVisualStyleBackColor = true;
@@ -273,11 +273,11 @@
 			this.m_lvCustomData.FullRowSelect = true;
 			this.m_lvCustomData.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvCustomData.HideSelection = false;
-			this.m_lvCustomData.Location = new System.Drawing.Point(14, 26);
-			this.m_lvCustomData.Margin = new System.Windows.Forms.Padding(6);
+			this.m_lvCustomData.Location = new System.Drawing.Point(18, 34);
+			this.m_lvCustomData.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvCustomData.Name = "m_lvCustomData";
 			this.m_lvCustomData.ShowItemToolTips = true;
-			this.m_lvCustomData.Size = new System.Drawing.Size(934, 415);
+			this.m_lvCustomData.Size = new System.Drawing.Size(1244, 552);
 			this.m_lvCustomData.TabIndex = 0;
 			this.m_lvCustomData.UseCompatibleStateImageBehavior = false;
 			this.m_lvCustomData.View = System.Windows.Forms.View.Details;
@@ -285,27 +285,27 @@
 			// 
 			// m_pbStatus
 			// 
-			this.m_pbStatus.Location = new System.Drawing.Point(27, 746);
-			this.m_pbStatus.Margin = new System.Windows.Forms.Padding(6);
+			this.m_pbStatus.Location = new System.Drawing.Point(36, 994);
+			this.m_pbStatus.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_pbStatus.Name = "m_pbStatus";
-			this.m_pbStatus.Size = new System.Drawing.Size(768, 27);
+			this.m_pbStatus.Size = new System.Drawing.Size(1024, 36);
 			this.m_pbStatus.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 			this.m_pbStatus.TabIndex = 2;
 			// 
 			// DatabaseOperationsForm
 			// 
 			this.AcceptButton = this.m_btnClose;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnClose;
-			this.ClientSize = new System.Drawing.Size(1041, 808);
+			this.ClientSize = new System.Drawing.Size(1388, 1078);
 			this.Controls.Add(this.m_pbStatus);
 			this.Controls.Add(this.m_tabMain);
 			this.Controls.Add(this.m_bannerImage);
 			this.Controls.Add(this.m_btnClose);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "DatabaseOperationsForm";

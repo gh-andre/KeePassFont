@@ -40,19 +40,19 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(1593, 124);
+			this.m_bannerImage.Size = new System.Drawing.Size(2124, 166);
 			this.m_bannerImage.TabIndex = 0;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_btnClose
 			// 
 			this.m_btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnClose.Location = new System.Drawing.Point(1398, 666);
-			this.m_btnClose.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnClose.Location = new System.Drawing.Point(1864, 888);
+			this.m_btnClose.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnClose.Name = "m_btnClose";
-			this.m_btnClose.Size = new System.Drawing.Size(168, 48);
+			this.m_btnClose.Size = new System.Drawing.Size(224, 64);
 			this.m_btnClose.TabIndex = 3;
 			this.m_btnClose.Text = "Close";
 			this.m_btnClose.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@
 			// 
 			// m_btnMore
 			// 
-			this.m_btnMore.Location = new System.Drawing.Point(30, 666);
-			this.m_btnMore.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnMore.Location = new System.Drawing.Point(40, 888);
+			this.m_btnMore.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnMore.Name = "m_btnMore";
-			this.m_btnMore.Size = new System.Drawing.Size(302, 48);
+			this.m_btnMore.Size = new System.Drawing.Size(402, 64);
 			this.m_btnMore.TabIndex = 1;
 			this.m_btnMore.Text = "&Get More Languages...";
 			this.m_btnMore.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@
 			// 
 			// m_btnOpenFolder
 			// 
-			this.m_btnOpenFolder.Location = new System.Drawing.Point(345, 666);
-			this.m_btnOpenFolder.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnOpenFolder.Location = new System.Drawing.Point(460, 888);
+			this.m_btnOpenFolder.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOpenFolder.Name = "m_btnOpenFolder";
-			this.m_btnOpenFolder.Size = new System.Drawing.Size(186, 48);
+			this.m_btnOpenFolder.Size = new System.Drawing.Size(248, 64);
 			this.m_btnOpenFolder.TabIndex = 2;
 			this.m_btnOpenFolder.Text = "Open &Folder";
 			this.m_btnOpenFolder.UseVisualStyleBackColor = true;
@@ -86,12 +86,12 @@
 			this.m_lvLanguages.FullRowSelect = true;
 			this.m_lvLanguages.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvLanguages.HideSelection = false;
-			this.m_lvLanguages.Location = new System.Drawing.Point(30, 140);
-			this.m_lvLanguages.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_lvLanguages.Location = new System.Drawing.Point(40, 186);
+			this.m_lvLanguages.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_lvLanguages.MultiSelect = false;
 			this.m_lvLanguages.Name = "m_lvLanguages";
 			this.m_lvLanguages.ShowItemToolTips = true;
-			this.m_lvLanguages.Size = new System.Drawing.Size(1531, 511);
+			this.m_lvLanguages.Size = new System.Drawing.Size(2040, 680);
 			this.m_lvLanguages.TabIndex = 0;
 			this.m_lvLanguages.UseCompatibleStateImageBehavior = false;
 			this.m_lvLanguages.View = System.Windows.Forms.View.Details;
@@ -99,10 +99,10 @@
 			// 
 			// LanguageForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnClose;
-			this.ClientSize = new System.Drawing.Size(1593, 740);
+			this.ClientSize = new System.Drawing.Size(2124, 986);
 			this.Controls.Add(this.m_btnOpenFolder);
 			this.Controls.Add(this.m_btnMore);
 			this.Controls.Add(this.m_btnClose);
@@ -110,7 +110,7 @@
 			this.Controls.Add(this.m_bannerImage);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "LanguageForm";

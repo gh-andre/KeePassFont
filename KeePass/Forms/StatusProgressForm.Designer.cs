@@ -35,20 +35,20 @@
 			// 
 			// m_pbTotal
 			// 
-			this.m_pbTotal.Location = new System.Drawing.Point(27, 60);
-			this.m_pbTotal.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_pbTotal.Location = new System.Drawing.Point(36, 80);
+			this.m_pbTotal.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_pbTotal.Name = "m_pbTotal";
-			this.m_pbTotal.Size = new System.Drawing.Size(850, 33);
+			this.m_pbTotal.Size = new System.Drawing.Size(1134, 44);
 			this.m_pbTotal.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 			this.m_pbTotal.TabIndex = 2;
 			// 
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(711, 123);
-			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.m_btnCancel.Location = new System.Drawing.Point(948, 164);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+			this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
 			this.m_btnCancel.TabIndex = 0;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -56,25 +56,25 @@
 			// 
 			// m_lblTotal
 			// 
-			this.m_lblTotal.Location = new System.Drawing.Point(21, 18);
-			this.m_lblTotal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.m_lblTotal.Location = new System.Drawing.Point(28, 24);
+			this.m_lblTotal.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblTotal.Name = "m_lblTotal";
-			this.m_lblTotal.Size = new System.Drawing.Size(860, 36);
+			this.m_lblTotal.Size = new System.Drawing.Size(1146, 48);
 			this.m_lblTotal.TabIndex = 1;
 			// 
 			// StatusProgressForm
 			// 
 			this.AcceptButton = this.m_btnCancel;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(906, 195);
+			this.ClientSize = new System.Drawing.Size(1208, 260);
 			this.Controls.Add(this.m_lblTotal);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_pbTotal);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "StatusProgressForm";
