@@ -333,6 +333,18 @@ of these fields down a few pixels to show the entire sentences.
 * KeyCreationForm.Designer.cs
 * PwGeneratorForm.Designer.cs
 
+All forms may be reset to their original versions via this command.
+Note that in order to use this command in a batch script, `%p` should
+be changed to `%%p`.
+
+    for /F %p in ('dir /B KeePass\Forms\*.Designer.cs') do (
+        git show keepass-2-57-1:KeePass/Forms/%p > KeePass\Forms\%p
+    )
+
+The best form to experiment on is `KeyCreationForm.Designer.cs`,
+and if font changes applied against this form render properly, then
+all other forms will likely work just as well.
+
 ## Issues
 
 This repository has nothing to do with KeePass functionality and application
