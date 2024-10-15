@@ -257,9 +257,9 @@ What is worse, is that DPI scaling implemented by Visual Studio is not
 consistent, so if the app is built for the display scaled at 150%, then
 running this app on a primary display scaled at 200% will compute all
 multi-line text boxes, such as those in the _Change Master Key_ form,
-will be computed to grow by 50%, even though the form will not be, so
-the text in those text boxes will be rendered as if the form is 50%
-wider and the middle part of it will not be visible.
+to grow by 50%, even though the form will not be, so the text in those
+text boxes will be rendered as if the form is 50% wider and the middle
+part of it will not be visible.
 
 This means that at the time of this writing, you would need to run
 KeePass built from this repository on the exact same display scaling
