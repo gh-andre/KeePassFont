@@ -44,6 +44,15 @@ https://keepass.info/help/base/faq_tech.html#guifont
 This repository is an attempt to address the need for larger fonts
 in KeePass for those who feel comfortable building it from the source.
 
+A bug was created for Visual Studio in that automatic form scaling
+does not compute form layout correctly when display scaling changes
+at application run time from what it was when Visual Studio was
+running, but it was closed with an unusable suggested work-around.
+Add a _No_ vote in this thread if you agree that this problem should
+be addressed in Visual Studio.
+
+https://developercommunity.visualstudio.com/t/Net-form-scaling-does-not-work-in-Visua/10768347#T-N10774244
+
 ### XSL Template to Export All Fields and History
 
 KeePass comes with excellent data export capabilities, but the bundled XSL
