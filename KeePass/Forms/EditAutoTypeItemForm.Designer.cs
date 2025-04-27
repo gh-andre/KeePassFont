@@ -49,19 +49,19 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1532, 166);
+            this.m_bannerImage.Size = new System.Drawing.Size(1149, 124);
             this.m_bannerImage.TabIndex = 0;
             this.m_bannerImage.TabStop = false;
             // 
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(1028, 1176);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnOK.Location = new System.Drawing.Point(771, 882);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(224, 64);
+            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
             this.m_btnOK.TabIndex = 11;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -70,10 +70,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(1272, 1176);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnCancel.Location = new System.Drawing.Point(954, 882);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
+            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
             this.m_btnCancel.TabIndex = 12;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -81,10 +81,10 @@
             // 
             // m_btnHelp
             // 
-            this.m_btnHelp.Location = new System.Drawing.Point(36, 1176);
-            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnHelp.Location = new System.Drawing.Point(27, 882);
+            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnHelp.Name = "m_btnHelp";
-            this.m_btnHelp.Size = new System.Drawing.Size(224, 64);
+            this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
             this.m_btnHelp.TabIndex = 10;
             this.m_btnHelp.Text = "&Help";
             this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -93,49 +93,49 @@
             // m_lblTargetWindow
             // 
             this.m_lblTargetWindow.AutoSize = true;
-            this.m_lblTargetWindow.Location = new System.Drawing.Point(28, 208);
-            this.m_lblTargetWindow.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTargetWindow.Location = new System.Drawing.Point(21, 156);
+            this.m_lblTargetWindow.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTargetWindow.Name = "m_lblTargetWindow";
-            this.m_lblTargetWindow.Size = new System.Drawing.Size(218, 36);
+            this.m_lblTargetWindow.Size = new System.Drawing.Size(179, 29);
             this.m_lblTargetWindow.TabIndex = 0;
             this.m_lblTargetWindow.Text = "&Target window:";
             // 
             // m_lblKeySeqInsertInfo
             // 
             this.m_lblKeySeqInsertInfo.AutoSize = true;
-            this.m_lblKeySeqInsertInfo.Location = new System.Drawing.Point(88, 592);
-            this.m_lblKeySeqInsertInfo.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblKeySeqInsertInfo.Location = new System.Drawing.Point(66, 444);
+            this.m_lblKeySeqInsertInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblKeySeqInsertInfo.Name = "m_lblKeySeqInsertInfo";
-            this.m_lblKeySeqInsertInfo.Size = new System.Drawing.Size(260, 36);
+            this.m_lblKeySeqInsertInfo.Size = new System.Drawing.Size(212, 29);
             this.m_lblKeySeqInsertInfo.TabIndex = 7;
             this.m_lblKeySeqInsertInfo.Text = "&Insert placeholder:";
             // 
             // m_lblSeparator
             // 
             this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSeparator.Location = new System.Drawing.Point(0, 1152);
-            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblSeparator.Location = new System.Drawing.Point(0, 864);
+            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblSeparator.Name = "m_lblSeparator";
-            this.m_lblSeparator.Size = new System.Drawing.Size(1532, 6);
+            this.m_lblSeparator.Size = new System.Drawing.Size(1149, 4);
             this.m_lblSeparator.TabIndex = 9;
             // 
             // m_lblOpenHint
             // 
             this.m_lblOpenHint.AutoSize = true;
-            this.m_lblOpenHint.Location = new System.Drawing.Point(276, 274);
-            this.m_lblOpenHint.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblOpenHint.Location = new System.Drawing.Point(207, 206);
+            this.m_lblOpenHint.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblOpenHint.Name = "m_lblOpenHint";
-            this.m_lblOpenHint.Size = new System.Drawing.Size(950, 36);
+            this.m_lblOpenHint.Size = new System.Drawing.Size(762, 29);
             this.m_lblOpenHint.TabIndex = 2;
             this.m_lblOpenHint.Text = "Click the drop-down button on the right to see currently open windows.";
             // 
             // m_lnkWildcardRegexHint
             // 
             this.m_lnkWildcardRegexHint.AutoSize = true;
-            this.m_lnkWildcardRegexHint.Location = new System.Drawing.Point(276, 322);
-            this.m_lnkWildcardRegexHint.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lnkWildcardRegexHint.Location = new System.Drawing.Point(207, 242);
+            this.m_lnkWildcardRegexHint.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lnkWildcardRegexHint.Name = "m_lnkWildcardRegexHint";
-            this.m_lnkWildcardRegexHint.Size = new System.Drawing.Size(766, 36);
+            this.m_lnkWildcardRegexHint.Size = new System.Drawing.Size(624, 29);
             this.m_lnkWildcardRegexHint.TabIndex = 3;
             this.m_lnkWildcardRegexHint.TabStop = true;
             this.m_lnkWildcardRegexHint.Text = "Simple wildcards and regular expressions are supported.";
@@ -144,10 +144,10 @@
             // m_rbSeqDefault
             // 
             this.m_rbSeqDefault.AutoSize = true;
-            this.m_rbSeqDefault.Location = new System.Drawing.Point(36, 394);
-            this.m_rbSeqDefault.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_rbSeqDefault.Location = new System.Drawing.Point(27, 296);
+            this.m_rbSeqDefault.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_rbSeqDefault.Name = "m_rbSeqDefault";
-            this.m_rbSeqDefault.Size = new System.Drawing.Size(624, 40);
+            this.m_rbSeqDefault.Size = new System.Drawing.Size(503, 33);
             this.m_rbSeqDefault.TabIndex = 4;
             this.m_rbSeqDefault.TabStop = true;
             this.m_rbSeqDefault.Text = "Use &default keystroke sequence of the entry";
@@ -157,10 +157,10 @@
             // m_rbSeqCustom
             // 
             this.m_rbSeqCustom.AutoSize = true;
-            this.m_rbSeqCustom.Location = new System.Drawing.Point(36, 454);
-            this.m_rbSeqCustom.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_rbSeqCustom.Location = new System.Drawing.Point(27, 340);
+            this.m_rbSeqCustom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_rbSeqCustom.Name = "m_rbSeqCustom";
-            this.m_rbSeqCustom.Size = new System.Drawing.Size(482, 40);
+            this.m_rbSeqCustom.Size = new System.Drawing.Size(391, 33);
             this.m_rbSeqCustom.TabIndex = 5;
             this.m_rbSeqCustom.TabStop = true;
             this.m_rbSeqCustom.Text = "Use &custom keystroke sequence:";
@@ -170,10 +170,10 @@
             // m_cmbWindow
             // 
             this.m_cmbWindow.IntegralHeight = false;
-            this.m_cmbWindow.Location = new System.Drawing.Point(284, 200);
-            this.m_cmbWindow.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbWindow.Location = new System.Drawing.Point(213, 150);
+            this.m_cmbWindow.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbWindow.Name = "m_cmbWindow";
-            this.m_cmbWindow.Size = new System.Drawing.Size(1204, 44);
+            this.m_cmbWindow.Size = new System.Drawing.Size(904, 37);
             this.m_cmbWindow.TabIndex = 1;
             this.m_cmbWindow.SelectedIndexChanged += new System.EventHandler(this.OnWindowSelectedIndexChanged);
             this.m_cmbWindow.TextUpdate += new System.EventHandler(this.OnWindowTextUpdate);
@@ -182,12 +182,12 @@
             // 
             this.m_rtbPlaceholders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.m_rtbPlaceholders.DetectUrls = false;
-            this.m_rtbPlaceholders.Location = new System.Drawing.Point(96, 636);
-            this.m_rtbPlaceholders.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_rtbPlaceholders.Location = new System.Drawing.Point(72, 477);
+            this.m_rtbPlaceholders.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_rtbPlaceholders.Name = "m_rtbPlaceholders";
             this.m_rtbPlaceholders.ReadOnly = true;
             this.m_rtbPlaceholders.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.m_rtbPlaceholders.Size = new System.Drawing.Size(1392, 466);
+            this.m_rtbPlaceholders.Size = new System.Drawing.Size(1045, 350);
             this.m_rtbPlaceholders.TabIndex = 8;
             this.m_rtbPlaceholders.Text = "";
             this.m_rtbPlaceholders.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.OnPlaceholdersLinkClicked);
@@ -197,11 +197,11 @@
             this.m_rbKeySeq.DetectUrls = false;
             this.m_rbKeySeq.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.m_rbKeySeq.HideSelection = false;
-            this.m_rbKeySeq.Location = new System.Drawing.Point(96, 518);
-            this.m_rbKeySeq.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_rbKeySeq.Location = new System.Drawing.Point(72, 388);
+            this.m_rbKeySeq.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_rbKeySeq.Multiline = false;
             this.m_rbKeySeq.Name = "m_rbKeySeq";
-            this.m_rbKeySeq.Size = new System.Drawing.Size(1392, 52);
+            this.m_rbKeySeq.Size = new System.Drawing.Size(1045, 40);
             this.m_rbKeySeq.TabIndex = 6;
             this.m_rbKeySeq.Text = "";
             this.m_rbKeySeq.TextChanged += new System.EventHandler(this.OnTextChangedKeySeq);
@@ -209,10 +209,10 @@
             // EditAutoTypeItemForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1532, 1274);
+            this.ClientSize = new System.Drawing.Size(1149, 956);
             this.Controls.Add(this.m_rbSeqCustom);
             this.Controls.Add(this.m_rbSeqDefault);
             this.Controls.Add(this.m_lnkWildcardRegexHint);
@@ -229,7 +229,7 @@
             this.Controls.Add(this.m_bannerImage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EditAutoTypeItemForm";

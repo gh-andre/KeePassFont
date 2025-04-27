@@ -47,10 +47,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(1208, 1172);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnOK.Location = new System.Drawing.Point(906, 879);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(224, 64);
+            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
             this.m_btnOK.TabIndex = 8;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(1452, 1172);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnCancel.Location = new System.Drawing.Point(1089, 879);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
+            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
             this.m_btnCancel.TabIndex = 9;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -72,39 +72,39 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1712, 166);
+            this.m_bannerImage.Size = new System.Drawing.Size(1284, 124);
             this.m_bannerImage.TabIndex = 2;
             this.m_bannerImage.TabStop = false;
             // 
             // m_lblIntro
             // 
-            this.m_lblIntro.Location = new System.Drawing.Point(28, 252);
-            this.m_lblIntro.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblIntro.Location = new System.Drawing.Point(21, 189);
+            this.m_lblIntro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblIntro.Name = "m_lblIntro";
-            this.m_lblIntro.Size = new System.Drawing.Size(1650, 80);
+            this.m_lblIntro.Size = new System.Drawing.Size(1238, 60);
             this.m_lblIntro.TabIndex = 1;
             this.m_lblIntro.Text = resources.GetString("m_lblIntro.Text");
             // 
             // m_tbTANs
             // 
             this.m_tbTANs.AcceptsReturn = true;
-            this.m_tbTANs.Location = new System.Drawing.Point(36, 344);
-            this.m_tbTANs.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbTANs.Location = new System.Drawing.Point(27, 258);
+            this.m_tbTANs.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbTANs.Multiline = true;
             this.m_tbTANs.Name = "m_tbTANs";
             this.m_tbTANs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.m_tbTANs.Size = new System.Drawing.Size(1632, 568);
+            this.m_tbTANs.Size = new System.Drawing.Size(1225, 427);
             this.m_tbTANs.TabIndex = 2;
             // 
             // m_cbNumberTans
             // 
             this.m_cbNumberTans.AutoSize = true;
-            this.m_cbNumberTans.Location = new System.Drawing.Point(36, 952);
-            this.m_cbNumberTans.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cbNumberTans.Location = new System.Drawing.Point(27, 714);
+            this.m_cbNumberTans.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cbNumberTans.Name = "m_cbNumberTans";
-            this.m_cbNumberTans.Size = new System.Drawing.Size(746, 40);
+            this.m_cbNumberTans.Size = new System.Drawing.Size(599, 33);
             this.m_cbNumberTans.TabIndex = 3;
             this.m_cbNumberTans.Text = "&Number TANs consecutively, starting from this value:";
             this.m_cbNumberTans.UseVisualStyleBackColor = true;
@@ -113,60 +113,60 @@
             // m_lblSeparator
             // 
             this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSeparator.Location = new System.Drawing.Point(0, 1152);
-            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblSeparator.Location = new System.Drawing.Point(0, 864);
+            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblSeparator.Name = "m_lblSeparator";
-            this.m_lblSeparator.Size = new System.Drawing.Size(1712, 6);
+            this.m_lblSeparator.Size = new System.Drawing.Size(1284, 4);
             this.m_lblSeparator.TabIndex = 7;
             // 
             // m_numTANsIndex
             // 
-            this.m_numTANsIndex.Location = new System.Drawing.Point(880, 950);
-            this.m_numTANsIndex.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_numTANsIndex.Location = new System.Drawing.Point(660, 712);
+            this.m_numTANsIndex.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_numTANsIndex.Maximum = new decimal(new int[] {
             65535,
             0,
             0,
             0});
             this.m_numTANsIndex.Name = "m_numTANsIndex";
-            this.m_numTANsIndex.Size = new System.Drawing.Size(216, 41);
+            this.m_numTANsIndex.Size = new System.Drawing.Size(162, 33);
             this.m_numTANsIndex.TabIndex = 4;
             this.m_numTANsIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // m_lblTanChars
             // 
             this.m_lblTanChars.AutoSize = true;
-            this.m_lblTanChars.Location = new System.Drawing.Point(28, 1020);
-            this.m_lblTanChars.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTanChars.Location = new System.Drawing.Point(21, 765);
+            this.m_lblTanChars.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTanChars.Name = "m_lblTanChars";
-            this.m_lblTanChars.Size = new System.Drawing.Size(556, 36);
+            this.m_lblTanChars.Size = new System.Drawing.Size(446, 29);
             this.m_lblTanChars.TabIndex = 5;
             this.m_lblTanChars.Text = "TANs &consist of the following characters:";
             // 
             // m_tbTanChars
             // 
-            this.m_tbTanChars.Location = new System.Drawing.Point(36, 1064);
-            this.m_tbTanChars.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbTanChars.Location = new System.Drawing.Point(27, 798);
+            this.m_tbTanChars.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbTanChars.Name = "m_tbTanChars";
-            this.m_tbTanChars.Size = new System.Drawing.Size(1632, 41);
+            this.m_tbTanChars.Size = new System.Drawing.Size(1225, 33);
             this.m_tbTanChars.TabIndex = 6;
             // 
             // m_lblToGroup
             // 
-            this.m_lblToGroup.Location = new System.Drawing.Point(28, 196);
-            this.m_lblToGroup.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblToGroup.Location = new System.Drawing.Point(21, 147);
+            this.m_lblToGroup.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblToGroup.Name = "m_lblToGroup";
-            this.m_lblToGroup.Size = new System.Drawing.Size(1650, 42);
+            this.m_lblToGroup.Size = new System.Drawing.Size(1238, 32);
             this.m_lblToGroup.TabIndex = 0;
             this.m_lblToGroup.Text = "TANs are imported into the currently selected group";
             // 
             // TanWizardForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1712, 1268);
+            this.ClientSize = new System.Drawing.Size(1284, 951);
             this.Controls.Add(this.m_lblToGroup);
             this.Controls.Add(this.m_tbTanChars);
             this.Controls.Add(this.m_lblTanChars);
@@ -180,7 +180,7 @@
             this.Controls.Add(this.m_btnOK);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TanWizardForm";

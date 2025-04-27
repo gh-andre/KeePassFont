@@ -84,11 +84,11 @@
             this.m_tabMain.Controls.Add(this.m_tabEnc);
             this.m_tabMain.Controls.Add(this.m_tabStructure);
             this.m_tabMain.Controls.Add(this.m_tabPreview);
-            this.m_tabMain.Location = new System.Drawing.Point(40, 200);
-            this.m_tabMain.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tabMain.Location = new System.Drawing.Point(30, 150);
+            this.m_tabMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tabMain.Name = "m_tabMain";
             this.m_tabMain.SelectedIndex = 0;
-            this.m_tabMain.Size = new System.Drawing.Size(2052, 1280);
+            this.m_tabMain.Size = new System.Drawing.Size(1539, 960);
             this.m_tabMain.TabIndex = 3;
             this.m_tabMain.SelectedIndexChanged += new System.EventHandler(this.OnTabMainSelectedIndexChanged);
             // 
@@ -98,11 +98,11 @@
             this.m_tabEnc.Controls.Add(this.m_lblEncPreview);
             this.m_tabEnc.Controls.Add(this.m_cmbEnc);
             this.m_tabEnc.Controls.Add(this.m_lblEnc);
-            this.m_tabEnc.Location = new System.Drawing.Point(8, 50);
-            this.m_tabEnc.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tabEnc.Location = new System.Drawing.Point(4, 38);
+            this.m_tabEnc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tabEnc.Name = "m_tabEnc";
-            this.m_tabEnc.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.m_tabEnc.Size = new System.Drawing.Size(2036, 1222);
+            this.m_tabEnc.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabEnc.Size = new System.Drawing.Size(1531, 918);
             this.m_tabEnc.TabIndex = 0;
             this.m_tabEnc.Text = "Encoding";
             this.m_tabEnc.UseVisualStyleBackColor = true;
@@ -111,22 +111,22 @@
             // 
             this.m_rtbEncPreview.AcceptsTab = true;
             this.m_rtbEncPreview.DetectUrls = false;
-            this.m_rtbEncPreview.Location = new System.Drawing.Point(24, 164);
-            this.m_rtbEncPreview.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_rtbEncPreview.Location = new System.Drawing.Point(18, 123);
+            this.m_rtbEncPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_rtbEncPreview.Name = "m_rtbEncPreview";
             this.m_rtbEncPreview.ReadOnly = true;
             this.m_rtbEncPreview.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.m_rtbEncPreview.Size = new System.Drawing.Size(1968, 1012);
+            this.m_rtbEncPreview.Size = new System.Drawing.Size(1477, 760);
             this.m_rtbEncPreview.TabIndex = 3;
             this.m_rtbEncPreview.Text = "";
             // 
             // m_lblEncPreview
             // 
             this.m_lblEncPreview.AutoSize = true;
-            this.m_lblEncPreview.Location = new System.Drawing.Point(16, 120);
-            this.m_lblEncPreview.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblEncPreview.Location = new System.Drawing.Point(12, 90);
+            this.m_lblEncPreview.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblEncPreview.Name = "m_lblEncPreview";
-            this.m_lblEncPreview.Size = new System.Drawing.Size(191, 36);
+            this.m_lblEncPreview.Size = new System.Drawing.Size(157, 29);
             this.m_lblEncPreview.TabIndex = 2;
             this.m_lblEncPreview.Text = "&Text preview:";
             // 
@@ -134,20 +134,20 @@
             // 
             this.m_cmbEnc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cmbEnc.FormattingEnabled = true;
-            this.m_cmbEnc.Location = new System.Drawing.Point(270, 34);
-            this.m_cmbEnc.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbEnc.Location = new System.Drawing.Point(202, 26);
+            this.m_cmbEnc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbEnc.Name = "m_cmbEnc";
-            this.m_cmbEnc.Size = new System.Drawing.Size(886, 44);
+            this.m_cmbEnc.Size = new System.Drawing.Size(666, 37);
             this.m_cmbEnc.TabIndex = 1;
             this.m_cmbEnc.SelectedIndexChanged += new System.EventHandler(this.OnEncSelectedIndexChanged);
             // 
             // m_lblEnc
             // 
             this.m_lblEnc.AutoSize = true;
-            this.m_lblEnc.Location = new System.Drawing.Point(16, 42);
-            this.m_lblEnc.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblEnc.Location = new System.Drawing.Point(12, 32);
+            this.m_lblEnc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblEnc.Name = "m_lblEnc";
-            this.m_lblEnc.Size = new System.Drawing.Size(211, 36);
+            this.m_lblEnc.Size = new System.Drawing.Size(172, 29);
             this.m_lblEnc.TabIndex = 0;
             this.m_lblEnc.Text = "Text &encoding:";
             // 
@@ -155,11 +155,11 @@
             // 
             this.m_tabStructure.Controls.Add(this.m_grpSem);
             this.m_tabStructure.Controls.Add(this.m_grpSyntax);
-            this.m_tabStructure.Location = new System.Drawing.Point(8, 50);
-            this.m_tabStructure.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tabStructure.Location = new System.Drawing.Point(4, 38);
+            this.m_tabStructure.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tabStructure.Name = "m_tabStructure";
-            this.m_tabStructure.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.m_tabStructure.Size = new System.Drawing.Size(2036, 1222);
+            this.m_tabStructure.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabStructure.Size = new System.Drawing.Size(1531, 918);
             this.m_tabStructure.TabIndex = 1;
             this.m_tabStructure.Text = "Structure";
             this.m_tabStructure.UseVisualStyleBackColor = true;
@@ -172,11 +172,11 @@
             this.m_grpSem.Controls.Add(this.m_btnFieldDel);
             this.m_grpSem.Controls.Add(this.m_lblFields);
             this.m_grpSem.Controls.Add(this.m_lvFields);
-            this.m_grpSem.Location = new System.Drawing.Point(18, 376);
-            this.m_grpSem.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_grpSem.Location = new System.Drawing.Point(14, 282);
+            this.m_grpSem.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_grpSem.Name = "m_grpSem";
-            this.m_grpSem.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.m_grpSem.Size = new System.Drawing.Size(1986, 814);
+            this.m_grpSem.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_grpSem.Size = new System.Drawing.Size(1490, 610);
             this.m_grpSem.TabIndex = 1;
             this.m_grpSem.TabStop = false;
             this.m_grpSem.Text = "Semantics";
@@ -191,21 +191,21 @@
             this.m_grpFieldAdd.Controls.Add(this.m_lblFieldName);
             this.m_grpFieldAdd.Controls.Add(this.m_cmbFieldType);
             this.m_grpFieldAdd.Controls.Add(this.m_lblFieldType);
-            this.m_grpFieldAdd.Location = new System.Drawing.Point(1140, 408);
-            this.m_grpFieldAdd.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_grpFieldAdd.Location = new System.Drawing.Point(855, 306);
+            this.m_grpFieldAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_grpFieldAdd.Name = "m_grpFieldAdd";
-            this.m_grpFieldAdd.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.m_grpFieldAdd.Size = new System.Drawing.Size(816, 380);
+            this.m_grpFieldAdd.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_grpFieldAdd.Size = new System.Drawing.Size(612, 285);
             this.m_grpFieldAdd.TabIndex = 5;
             this.m_grpFieldAdd.TabStop = false;
             this.m_grpFieldAdd.Text = "Add field";
             // 
             // m_btnFieldAdd
             // 
-            this.m_btnFieldAdd.Location = new System.Drawing.Point(564, 286);
-            this.m_btnFieldAdd.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnFieldAdd.Location = new System.Drawing.Point(423, 214);
+            this.m_btnFieldAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnFieldAdd.Name = "m_btnFieldAdd";
-            this.m_btnFieldAdd.Size = new System.Drawing.Size(224, 64);
+            this.m_btnFieldAdd.Size = new System.Drawing.Size(168, 48);
             this.m_btnFieldAdd.TabIndex = 7;
             this.m_btnFieldAdd.Text = "&Add";
             this.m_btnFieldAdd.UseVisualStyleBackColor = true;
@@ -214,10 +214,10 @@
             // m_linkFieldFormat
             // 
             this.m_linkFieldFormat.AutoSize = true;
-            this.m_linkFieldFormat.Location = new System.Drawing.Point(702, 208);
-            this.m_linkFieldFormat.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_linkFieldFormat.Location = new System.Drawing.Point(526, 156);
+            this.m_linkFieldFormat.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_linkFieldFormat.Name = "m_linkFieldFormat";
-            this.m_linkFieldFormat.Size = new System.Drawing.Size(76, 36);
+            this.m_linkFieldFormat.Size = new System.Drawing.Size(64, 29);
             this.m_linkFieldFormat.TabIndex = 6;
             this.m_linkFieldFormat.TabStop = true;
             this.m_linkFieldFormat.Text = "Help";
@@ -226,37 +226,37 @@
             // m_cmbFieldFormat
             // 
             this.m_cmbFieldFormat.FormattingEnabled = true;
-            this.m_cmbFieldFormat.Location = new System.Drawing.Point(222, 200);
-            this.m_cmbFieldFormat.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbFieldFormat.Location = new System.Drawing.Point(166, 150);
+            this.m_cmbFieldFormat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbFieldFormat.Name = "m_cmbFieldFormat";
-            this.m_cmbFieldFormat.Size = new System.Drawing.Size(454, 44);
+            this.m_cmbFieldFormat.Size = new System.Drawing.Size(342, 37);
             this.m_cmbFieldFormat.TabIndex = 5;
             // 
             // m_lblFieldFormat
             // 
             this.m_lblFieldFormat.AutoSize = true;
-            this.m_lblFieldFormat.Location = new System.Drawing.Point(18, 208);
-            this.m_lblFieldFormat.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblFieldFormat.Location = new System.Drawing.Point(14, 156);
+            this.m_lblFieldFormat.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblFieldFormat.Name = "m_lblFieldFormat";
-            this.m_lblFieldFormat.Size = new System.Drawing.Size(49, 36);
+            this.m_lblFieldFormat.Size = new System.Drawing.Size(41, 29);
             this.m_lblFieldFormat.TabIndex = 4;
             this.m_lblFieldFormat.Text = "<>";
             // 
             // m_tbFieldName
             // 
-            this.m_tbFieldName.Location = new System.Drawing.Point(222, 128);
-            this.m_tbFieldName.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbFieldName.Location = new System.Drawing.Point(166, 96);
+            this.m_tbFieldName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbFieldName.Name = "m_tbFieldName";
-            this.m_tbFieldName.Size = new System.Drawing.Size(556, 41);
+            this.m_tbFieldName.Size = new System.Drawing.Size(418, 33);
             this.m_tbFieldName.TabIndex = 3;
             // 
             // m_lblFieldName
             // 
             this.m_lblFieldName.AutoSize = true;
-            this.m_lblFieldName.Location = new System.Drawing.Point(18, 136);
-            this.m_lblFieldName.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblFieldName.Location = new System.Drawing.Point(14, 102);
+            this.m_lblFieldName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblFieldName.Name = "m_lblFieldName";
-            this.m_lblFieldName.Size = new System.Drawing.Size(100, 36);
+            this.m_lblFieldName.Size = new System.Drawing.Size(84, 29);
             this.m_lblFieldName.TabIndex = 2;
             this.m_lblFieldName.Text = "Na&me:";
             // 
@@ -264,30 +264,30 @@
             // 
             this.m_cmbFieldType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cmbFieldType.FormattingEnabled = true;
-            this.m_cmbFieldType.Location = new System.Drawing.Point(222, 52);
-            this.m_cmbFieldType.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbFieldType.Location = new System.Drawing.Point(166, 39);
+            this.m_cmbFieldType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbFieldType.Name = "m_cmbFieldType";
-            this.m_cmbFieldType.Size = new System.Drawing.Size(556, 44);
+            this.m_cmbFieldType.Size = new System.Drawing.Size(418, 37);
             this.m_cmbFieldType.TabIndex = 1;
             this.m_cmbFieldType.SelectedIndexChanged += new System.EventHandler(this.OnFieldTypeSelectedIndexChanged);
             // 
             // m_lblFieldType
             // 
             this.m_lblFieldType.AutoSize = true;
-            this.m_lblFieldType.Location = new System.Drawing.Point(18, 60);
-            this.m_lblFieldType.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblFieldType.Location = new System.Drawing.Point(14, 45);
+            this.m_lblFieldType.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblFieldType.Name = "m_lblFieldType";
-            this.m_lblFieldType.Size = new System.Drawing.Size(89, 36);
+            this.m_lblFieldType.Size = new System.Drawing.Size(74, 29);
             this.m_lblFieldType.TabIndex = 0;
             this.m_lblFieldType.Text = "Typ&e:";
             // 
             // m_btnFieldMoveDown
             // 
             this.m_btnFieldMoveDown.Image = global::KeePass.Properties.Resources.B16x16_1DownArrow;
-            this.m_btnFieldMoveDown.Location = new System.Drawing.Point(1140, 264);
-            this.m_btnFieldMoveDown.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnFieldMoveDown.Location = new System.Drawing.Point(855, 198);
+            this.m_btnFieldMoveDown.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnFieldMoveDown.Name = "m_btnFieldMoveDown";
-            this.m_btnFieldMoveDown.Size = new System.Drawing.Size(224, 64);
+            this.m_btnFieldMoveDown.Size = new System.Drawing.Size(168, 48);
             this.m_btnFieldMoveDown.TabIndex = 4;
             this.m_btnFieldMoveDown.UseVisualStyleBackColor = true;
             this.m_btnFieldMoveDown.Click += new System.EventHandler(this.OnBtnFieldMoveDown);
@@ -295,20 +295,20 @@
             // m_btnFieldMoveUp
             // 
             this.m_btnFieldMoveUp.Image = global::KeePass.Properties.Resources.B16x16_1UpArrow;
-            this.m_btnFieldMoveUp.Location = new System.Drawing.Point(1140, 182);
-            this.m_btnFieldMoveUp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnFieldMoveUp.Location = new System.Drawing.Point(855, 136);
+            this.m_btnFieldMoveUp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnFieldMoveUp.Name = "m_btnFieldMoveUp";
-            this.m_btnFieldMoveUp.Size = new System.Drawing.Size(224, 64);
+            this.m_btnFieldMoveUp.Size = new System.Drawing.Size(168, 48);
             this.m_btnFieldMoveUp.TabIndex = 3;
             this.m_btnFieldMoveUp.UseVisualStyleBackColor = true;
             this.m_btnFieldMoveUp.Click += new System.EventHandler(this.OnBtnFieldMoveUp);
             // 
             // m_btnFieldDel
             // 
-            this.m_btnFieldDel.Location = new System.Drawing.Point(1140, 102);
-            this.m_btnFieldDel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnFieldDel.Location = new System.Drawing.Point(855, 76);
+            this.m_btnFieldDel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnFieldDel.Name = "m_btnFieldDel";
-            this.m_btnFieldDel.Size = new System.Drawing.Size(224, 64);
+            this.m_btnFieldDel.Size = new System.Drawing.Size(168, 48);
             this.m_btnFieldDel.TabIndex = 2;
             this.m_btnFieldDel.Text = "&Delete";
             this.m_btnFieldDel.UseVisualStyleBackColor = true;
@@ -317,10 +317,10 @@
             // m_lblFields
             // 
             this.m_lblFields.AutoSize = true;
-            this.m_lblFields.Location = new System.Drawing.Point(18, 60);
-            this.m_lblFields.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblFields.Location = new System.Drawing.Point(14, 45);
+            this.m_lblFields.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblFields.Name = "m_lblFields";
-            this.m_lblFields.Size = new System.Drawing.Size(756, 36);
+            this.m_lblFields.Size = new System.Drawing.Size(606, 29);
             this.m_lblFields.TabIndex = 0;
             this.m_lblFields.Text = "Spe&cify the layout (fields and their order) of the CSV file:";
             // 
@@ -329,11 +329,11 @@
             this.m_lvFields.FullRowSelect = true;
             this.m_lvFields.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvFields.HideSelection = false;
-            this.m_lvFields.Location = new System.Drawing.Point(30, 106);
-            this.m_lvFields.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_lvFields.Location = new System.Drawing.Point(22, 80);
+            this.m_lvFields.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_lvFields.Name = "m_lvFields";
             this.m_lvFields.ShowItemToolTips = true;
-            this.m_lvFields.Size = new System.Drawing.Size(1084, 672);
+            this.m_lvFields.Size = new System.Drawing.Size(814, 505);
             this.m_lvFields.TabIndex = 1;
             this.m_lvFields.UseCompatibleStateImageBehavior = false;
             this.m_lvFields.View = System.Windows.Forms.View.Details;
@@ -350,11 +350,11 @@
             this.m_grpSyntax.Controls.Add(this.m_cmbFieldSep);
             this.m_grpSyntax.Controls.Add(this.m_cmbRecSep);
             this.m_grpSyntax.Controls.Add(this.m_lblRecSep);
-            this.m_grpSyntax.Location = new System.Drawing.Point(18, 24);
-            this.m_grpSyntax.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_grpSyntax.Location = new System.Drawing.Point(14, 18);
+            this.m_grpSyntax.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_grpSyntax.Name = "m_grpSyntax";
-            this.m_grpSyntax.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.m_grpSyntax.Size = new System.Drawing.Size(1986, 336);
+            this.m_grpSyntax.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_grpSyntax.Size = new System.Drawing.Size(1490, 252);
             this.m_grpSyntax.TabIndex = 0;
             this.m_grpSyntax.TabStop = false;
             this.m_grpSyntax.Text = "Syntax";
@@ -362,10 +362,10 @@
             // m_cbIgnoreFirst
             // 
             this.m_cbIgnoreFirst.AutoSize = true;
-            this.m_cbIgnoreFirst.Location = new System.Drawing.Point(28, 202);
-            this.m_cbIgnoreFirst.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cbIgnoreFirst.Location = new System.Drawing.Point(21, 152);
+            this.m_cbIgnoreFirst.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cbIgnoreFirst.Name = "m_cbIgnoreFirst";
-            this.m_cbIgnoreFirst.Size = new System.Drawing.Size(245, 40);
+            this.m_cbIgnoreFirst.Size = new System.Drawing.Size(198, 33);
             this.m_cbIgnoreFirst.TabIndex = 7;
             this.m_cbIgnoreFirst.Text = "&Ignore first row";
             this.m_cbIgnoreFirst.UseVisualStyleBackColor = true;
@@ -375,10 +375,10 @@
             this.m_cbTrim.AutoSize = true;
             this.m_cbTrim.Checked = true;
             this.m_cbTrim.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.m_cbTrim.Location = new System.Drawing.Point(28, 266);
-            this.m_cbTrim.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cbTrim.Location = new System.Drawing.Point(21, 200);
+            this.m_cbTrim.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cbTrim.Name = "m_cbTrim";
-            this.m_cbTrim.Size = new System.Drawing.Size(891, 40);
+            this.m_cbTrim.Size = new System.Drawing.Size(724, 33);
             this.m_cbTrim.TabIndex = 8;
             this.m_cbTrim.Text = "Remove &white space characters from the beginning/end of fields";
             this.m_cbTrim.UseVisualStyleBackColor = true;
@@ -386,10 +386,10 @@
             // m_cmbTextQual
             // 
             this.m_cmbTextQual.FormattingEnabled = true;
-            this.m_cmbTextQual.Location = new System.Drawing.Point(272, 128);
-            this.m_cmbTextQual.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbTextQual.Location = new System.Drawing.Point(204, 96);
+            this.m_cmbTextQual.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbTextQual.Name = "m_cmbTextQual";
-            this.m_cmbTextQual.Size = new System.Drawing.Size(328, 44);
+            this.m_cmbTextQual.Size = new System.Drawing.Size(247, 37);
             this.m_cmbTextQual.TabIndex = 5;
             this.m_cmbTextQual.SelectedIndexChanged += new System.EventHandler(this.OnTextQualSelectedIndexChanged);
             this.m_cmbTextQual.TextUpdate += new System.EventHandler(this.OnTextQualTextUpdate);
@@ -397,10 +397,10 @@
             // m_lblTextQual
             // 
             this.m_lblTextQual.AutoSize = true;
-            this.m_lblTextQual.Location = new System.Drawing.Point(18, 136);
-            this.m_lblTextQual.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTextQual.Location = new System.Drawing.Point(14, 102);
+            this.m_lblTextQual.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTextQual.Name = "m_lblTextQual";
-            this.m_lblTextQual.Size = new System.Drawing.Size(193, 36);
+            this.m_lblTextQual.Size = new System.Drawing.Size(158, 29);
             this.m_lblTextQual.TabIndex = 4;
             this.m_lblTextQual.Text = "&Text qualifier:";
             // 
@@ -409,10 +409,10 @@
             this.m_cbBackEscape.AutoSize = true;
             this.m_cbBackEscape.Checked = true;
             this.m_cbBackEscape.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.m_cbBackEscape.Location = new System.Drawing.Point(744, 132);
-            this.m_cbBackEscape.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cbBackEscape.Location = new System.Drawing.Point(558, 99);
+            this.m_cbBackEscape.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cbBackEscape.Name = "m_cbBackEscape";
-            this.m_cbBackEscape.Size = new System.Drawing.Size(499, 40);
+            this.m_cbBackEscape.Size = new System.Drawing.Size(402, 33);
             this.m_cbBackEscape.TabIndex = 6;
             this.m_cbBackEscape.Text = "Inter&pret \'\\\' as an escape character";
             this.m_cbBackEscape.UseVisualStyleBackColor = true;
@@ -420,20 +420,20 @@
             // m_lblFieldSep
             // 
             this.m_lblFieldSep.AutoSize = true;
-            this.m_lblFieldSep.Location = new System.Drawing.Point(18, 60);
-            this.m_lblFieldSep.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblFieldSep.Location = new System.Drawing.Point(14, 45);
+            this.m_lblFieldSep.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblFieldSep.Name = "m_lblFieldSep";
-            this.m_lblFieldSep.Size = new System.Drawing.Size(221, 36);
+            this.m_lblFieldSep.Size = new System.Drawing.Size(182, 29);
             this.m_lblFieldSep.TabIndex = 0;
             this.m_lblFieldSep.Text = "Field &separator:";
             // 
             // m_cmbFieldSep
             // 
             this.m_cmbFieldSep.FormattingEnabled = true;
-            this.m_cmbFieldSep.Location = new System.Drawing.Point(272, 52);
-            this.m_cmbFieldSep.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbFieldSep.Location = new System.Drawing.Point(204, 39);
+            this.m_cmbFieldSep.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbFieldSep.Name = "m_cmbFieldSep";
-            this.m_cmbFieldSep.Size = new System.Drawing.Size(328, 44);
+            this.m_cmbFieldSep.Size = new System.Drawing.Size(247, 37);
             this.m_cmbFieldSep.TabIndex = 1;
             this.m_cmbFieldSep.SelectedIndexChanged += new System.EventHandler(this.OnFieldSepSelectedIndexChanged);
             this.m_cmbFieldSep.TextUpdate += new System.EventHandler(this.OnFieldSepTextUpdate);
@@ -441,10 +441,10 @@
             // m_cmbRecSep
             // 
             this.m_cmbRecSep.FormattingEnabled = true;
-            this.m_cmbRecSep.Location = new System.Drawing.Point(1028, 52);
-            this.m_cmbRecSep.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbRecSep.Location = new System.Drawing.Point(771, 39);
+            this.m_cmbRecSep.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbRecSep.Name = "m_cmbRecSep";
-            this.m_cmbRecSep.Size = new System.Drawing.Size(328, 44);
+            this.m_cmbRecSep.Size = new System.Drawing.Size(247, 37);
             this.m_cmbRecSep.TabIndex = 3;
             this.m_cmbRecSep.SelectedIndexChanged += new System.EventHandler(this.OnRecSepSelectedIndexChanged);
             this.m_cmbRecSep.TextUpdate += new System.EventHandler(this.OnRecSepTextUpdate);
@@ -452,10 +452,10 @@
             // m_lblRecSep
             // 
             this.m_lblRecSep.AutoSize = true;
-            this.m_lblRecSep.Location = new System.Drawing.Point(736, 60);
-            this.m_lblRecSep.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblRecSep.Location = new System.Drawing.Point(552, 45);
+            this.m_lblRecSep.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblRecSep.Name = "m_lblRecSep";
-            this.m_lblRecSep.Size = new System.Drawing.Size(253, 36);
+            this.m_lblRecSep.Size = new System.Drawing.Size(206, 29);
             this.m_lblRecSep.TabIndex = 2;
             this.m_lblRecSep.Text = "&Record separator:";
             // 
@@ -463,10 +463,10 @@
             // 
             this.m_tabPreview.Controls.Add(this.m_cbMergeGroups);
             this.m_tabPreview.Controls.Add(this.m_lvImportPreview);
-            this.m_tabPreview.Location = new System.Drawing.Point(8, 50);
-            this.m_tabPreview.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tabPreview.Location = new System.Drawing.Point(4, 38);
+            this.m_tabPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tabPreview.Name = "m_tabPreview";
-            this.m_tabPreview.Size = new System.Drawing.Size(2036, 1222);
+            this.m_tabPreview.Size = new System.Drawing.Size(1531, 918);
             this.m_tabPreview.TabIndex = 2;
             this.m_tabPreview.Text = "Preview";
             this.m_tabPreview.UseVisualStyleBackColor = true;
@@ -474,10 +474,10 @@
             // m_cbMergeGroups
             // 
             this.m_cbMergeGroups.AutoSize = true;
-            this.m_cbMergeGroups.Location = new System.Drawing.Point(20, 1146);
-            this.m_cbMergeGroups.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cbMergeGroups.Location = new System.Drawing.Point(15, 860);
+            this.m_cbMergeGroups.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cbMergeGroups.Name = "m_cbMergeGroups";
-            this.m_cbMergeGroups.Size = new System.Drawing.Size(943, 40);
+            this.m_cbMergeGroups.Size = new System.Drawing.Size(764, 33);
             this.m_cbMergeGroups.TabIndex = 1;
             this.m_cbMergeGroups.Text = "&Merge imported groups with groups already existing in the database";
             this.m_cbMergeGroups.UseVisualStyleBackColor = true;
@@ -487,11 +487,11 @@
             this.m_lvImportPreview.FullRowSelect = true;
             this.m_lvImportPreview.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvImportPreview.HideSelection = false;
-            this.m_lvImportPreview.Location = new System.Drawing.Point(20, 28);
-            this.m_lvImportPreview.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_lvImportPreview.Location = new System.Drawing.Point(15, 21);
+            this.m_lvImportPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_lvImportPreview.Name = "m_lvImportPreview";
             this.m_lvImportPreview.ShowItemToolTips = true;
-            this.m_lvImportPreview.Size = new System.Drawing.Size(1972, 1092);
+            this.m_lvImportPreview.Size = new System.Drawing.Size(1480, 820);
             this.m_lvImportPreview.TabIndex = 0;
             this.m_lvImportPreview.UseCompatibleStateImageBehavior = false;
             this.m_lvImportPreview.View = System.Windows.Forms.View.Details;
@@ -499,10 +499,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(1620, 1496);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnOK.Location = new System.Drawing.Point(1215, 1122);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(224, 64);
+            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
             this.m_btnOK.TabIndex = 1;
             this.m_btnOK.Text = "&Finish";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -511,20 +511,20 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(1864, 1496);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnCancel.Location = new System.Drawing.Point(1398, 1122);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
+            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
             this.m_btnCancel.TabIndex = 2;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
             // 
             // m_btnTabBack
             // 
-            this.m_btnTabBack.Location = new System.Drawing.Point(1152, 1496);
-            this.m_btnTabBack.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnTabBack.Location = new System.Drawing.Point(864, 1122);
+            this.m_btnTabBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnTabBack.Name = "m_btnTabBack";
-            this.m_btnTabBack.Size = new System.Drawing.Size(224, 64);
+            this.m_btnTabBack.Size = new System.Drawing.Size(168, 48);
             this.m_btnTabBack.TabIndex = 5;
             this.m_btnTabBack.Text = "< &Back";
             this.m_btnTabBack.UseVisualStyleBackColor = true;
@@ -532,10 +532,10 @@
             // 
             // m_btnTabNext
             // 
-            this.m_btnTabNext.Location = new System.Drawing.Point(1376, 1496);
-            this.m_btnTabNext.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnTabNext.Location = new System.Drawing.Point(1032, 1122);
+            this.m_btnTabNext.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnTabNext.Name = "m_btnTabNext";
-            this.m_btnTabNext.Size = new System.Drawing.Size(224, 64);
+            this.m_btnTabNext.Size = new System.Drawing.Size(168, 48);
             this.m_btnTabNext.TabIndex = 0;
             this.m_btnTabNext.Text = "&Next >";
             this.m_btnTabNext.UseVisualStyleBackColor = true;
@@ -543,10 +543,10 @@
             // 
             // m_btnHelp
             // 
-            this.m_btnHelp.Location = new System.Drawing.Point(36, 1496);
-            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnHelp.Location = new System.Drawing.Point(27, 1122);
+            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnHelp.Name = "m_btnHelp";
-            this.m_btnHelp.Size = new System.Drawing.Size(224, 64);
+            this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
             this.m_btnHelp.TabIndex = 4;
             this.m_btnHelp.Text = "&Help";
             this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -556,19 +556,19 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(2124, 166);
+            this.m_bannerImage.Size = new System.Drawing.Size(1593, 124);
             this.m_bannerImage.TabIndex = 6;
             this.m_bannerImage.TabStop = false;
             // 
             // CsvImportForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(2124, 1592);
+            this.ClientSize = new System.Drawing.Size(1593, 1194);
             this.Controls.Add(this.m_bannerImage);
             this.Controls.Add(this.m_btnHelp);
             this.Controls.Add(this.m_btnTabNext);
@@ -578,7 +578,7 @@
             this.Controls.Add(this.m_tabMain);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CsvImportForm";
