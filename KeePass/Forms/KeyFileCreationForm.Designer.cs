@@ -50,19 +50,19 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1026, 124);
+            this.m_bannerImage.Size = new System.Drawing.Size(855, 104);
             this.m_bannerImage.TabIndex = 0;
             this.m_bannerImage.TabStop = false;
             // 
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(648, 771);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(540, 642);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(140, 40);
             this.m_btnOK.TabIndex = 12;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(831, 771);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(692, 642);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCancel.TabIndex = 13;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@
             // m_rbCreate
             // 
             this.m_rbCreate.AutoSize = true;
-            this.m_rbCreate.Location = new System.Drawing.Point(30, 147);
-            this.m_rbCreate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbCreate.Location = new System.Drawing.Point(25, 122);
+            this.m_rbCreate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbCreate.Name = "m_rbCreate";
-            this.m_rbCreate.Size = new System.Drawing.Size(408, 33);
+            this.m_rbCreate.Size = new System.Drawing.Size(320, 28);
             this.m_rbCreate.TabIndex = 0;
             this.m_rbCreate.TabStop = true;
             this.m_rbCreate.Text = "&Create a new key file (random key)";
@@ -94,10 +94,10 @@
             // m_lblNewFormat
             // 
             this.m_lblNewFormat.AutoSize = true;
-            this.m_lblNewFormat.Location = new System.Drawing.Point(66, 198);
-            this.m_lblNewFormat.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblNewFormat.Location = new System.Drawing.Point(55, 165);
+            this.m_lblNewFormat.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblNewFormat.Name = "m_lblNewFormat";
-            this.m_lblNewFormat.Size = new System.Drawing.Size(179, 29);
+            this.m_lblNewFormat.Size = new System.Drawing.Size(140, 24);
             this.m_lblNewFormat.TabIndex = 1;
             this.m_lblNewFormat.Text = "&Format version:";
             // 
@@ -105,19 +105,19 @@
             // 
             this.m_cmbNewFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cmbNewFormat.FormattingEnabled = true;
-            this.m_cmbNewFormat.Location = new System.Drawing.Point(72, 234);
-            this.m_cmbNewFormat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cmbNewFormat.Location = new System.Drawing.Point(60, 195);
+            this.m_cmbNewFormat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cmbNewFormat.Name = "m_cmbNewFormat";
-            this.m_cmbNewFormat.Size = new System.Drawing.Size(919, 37);
+            this.m_cmbNewFormat.Size = new System.Drawing.Size(766, 32);
             this.m_cmbNewFormat.TabIndex = 2;
             // 
             // m_cbNewEntropy
             // 
             this.m_cbNewEntropy.AutoSize = true;
-            this.m_cbNewEntropy.Location = new System.Drawing.Point(72, 298);
-            this.m_cbNewEntropy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbNewEntropy.Location = new System.Drawing.Point(60, 249);
+            this.m_cbNewEntropy.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbNewEntropy.Name = "m_cbNewEntropy";
-            this.m_cbNewEntropy.Size = new System.Drawing.Size(655, 33);
+            this.m_cbNewEntropy.Size = new System.Drawing.Size(512, 28);
             this.m_cbNewEntropy.TabIndex = 3;
             this.m_cbNewEntropy.Text = "&Show dialog for collecting user input as additional entropy";
             this.m_cbNewEntropy.UseVisualStyleBackColor = true;
@@ -125,10 +125,10 @@
             // m_rbRecreate
             // 
             this.m_rbRecreate.AutoSize = true;
-            this.m_rbRecreate.Location = new System.Drawing.Point(30, 351);
-            this.m_rbRecreate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbRecreate.Location = new System.Drawing.Point(25, 292);
+            this.m_rbRecreate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbRecreate.Name = "m_rbRecreate";
-            this.m_rbRecreate.Size = new System.Drawing.Size(474, 33);
+            this.m_rbRecreate.Size = new System.Drawing.Size(371, 28);
             this.m_rbRecreate.TabIndex = 4;
             this.m_rbRecreate.TabStop = true;
             this.m_rbRecreate.Text = "&Recreate a key file from a printed backup";
@@ -137,10 +137,10 @@
             // m_lblRecFormat
             // 
             this.m_lblRecFormat.AutoSize = true;
-            this.m_lblRecFormat.Location = new System.Drawing.Point(66, 400);
-            this.m_lblRecFormat.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblRecFormat.Location = new System.Drawing.Point(55, 334);
+            this.m_lblRecFormat.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblRecFormat.Name = "m_lblRecFormat";
-            this.m_lblRecFormat.Size = new System.Drawing.Size(387, 29);
+            this.m_lblRecFormat.Size = new System.Drawing.Size(306, 24);
             this.m_lblRecFormat.TabIndex = 5;
             this.m_lblRecFormat.Text = "F&ormat version (in the \'Meta\' node):";
             // 
@@ -148,67 +148,67 @@
             // 
             this.m_cmbRecFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cmbRecFormat.FormattingEnabled = true;
-            this.m_cmbRecFormat.Location = new System.Drawing.Point(72, 438);
-            this.m_cmbRecFormat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cmbRecFormat.Location = new System.Drawing.Point(60, 365);
+            this.m_cmbRecFormat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cmbRecFormat.Name = "m_cmbRecFormat";
-            this.m_cmbRecFormat.Size = new System.Drawing.Size(919, 37);
+            this.m_cmbRecFormat.Size = new System.Drawing.Size(766, 32);
             this.m_cmbRecFormat.TabIndex = 6;
             // 
             // m_lblRecKeyHash
             // 
             this.m_lblRecKeyHash.AutoSize = true;
-            this.m_lblRecKeyHash.Location = new System.Drawing.Point(66, 504);
-            this.m_lblRecKeyHash.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblRecKeyHash.Location = new System.Drawing.Point(55, 420);
+            this.m_lblRecKeyHash.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblRecKeyHash.Name = "m_lblRecKeyHash";
-            this.m_lblRecKeyHash.Size = new System.Drawing.Size(508, 29);
+            this.m_lblRecKeyHash.Size = new System.Drawing.Size(399, 24);
             this.m_lblRecKeyHash.TabIndex = 7;
             this.m_lblRecKeyHash.Text = "Key data &hash (in the \'Hash\' attribute, optional):";
             // 
             // m_tbRecKeyHash
             // 
-            this.m_tbRecKeyHash.Location = new System.Drawing.Point(72, 542);
-            this.m_tbRecKeyHash.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbRecKeyHash.Location = new System.Drawing.Point(60, 451);
+            this.m_tbRecKeyHash.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbRecKeyHash.Name = "m_tbRecKeyHash";
-            this.m_tbRecKeyHash.Size = new System.Drawing.Size(919, 33);
+            this.m_tbRecKeyHash.Size = new System.Drawing.Size(766, 29);
             this.m_tbRecKeyHash.TabIndex = 8;
             // 
             // m_lblRecKey
             // 
             this.m_lblRecKey.AutoSize = true;
-            this.m_lblRecKey.Location = new System.Drawing.Point(66, 606);
-            this.m_lblRecKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblRecKey.Location = new System.Drawing.Point(55, 505);
+            this.m_lblRecKey.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblRecKey.Name = "m_lblRecKey";
-            this.m_lblRecKey.Size = new System.Drawing.Size(316, 29);
+            this.m_lblRecKey.Size = new System.Drawing.Size(249, 24);
             this.m_lblRecKey.TabIndex = 9;
             this.m_lblRecKey.Text = "&Key data (in the \'Data\' node):";
             // 
             // m_tbRecKey
             // 
             this.m_tbRecKey.AcceptsReturn = true;
-            this.m_tbRecKey.Location = new System.Drawing.Point(72, 644);
-            this.m_tbRecKey.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbRecKey.Location = new System.Drawing.Point(60, 536);
+            this.m_tbRecKey.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbRecKey.Multiline = true;
             this.m_tbRecKey.Name = "m_tbRecKey";
             this.m_tbRecKey.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.m_tbRecKey.Size = new System.Drawing.Size(919, 73);
+            this.m_tbRecKey.Size = new System.Drawing.Size(766, 62);
             this.m_tbRecKey.TabIndex = 10;
             // 
             // m_lblSeparator
             // 
             this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSeparator.Location = new System.Drawing.Point(0, 747);
-            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblSeparator.Location = new System.Drawing.Point(0, 622);
+            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblSeparator.Name = "m_lblSeparator";
-            this.m_lblSeparator.Size = new System.Drawing.Size(1026, 4);
+            this.m_lblSeparator.Size = new System.Drawing.Size(855, 4);
             this.m_lblSeparator.TabIndex = 11;
             // 
             // KeyFileCreationForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1026, 843);
+            this.ClientSize = new System.Drawing.Size(855, 702);
             this.Controls.Add(this.m_lblSeparator);
             this.Controls.Add(this.m_tbRecKey);
             this.Controls.Add(this.m_lblRecKey);
@@ -226,7 +226,7 @@
             this.Controls.Add(this.m_bannerImage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "KeyFileCreationForm";

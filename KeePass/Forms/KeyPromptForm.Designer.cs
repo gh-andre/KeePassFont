@@ -49,10 +49,10 @@
             // m_cbUserAccount
             // 
             this.m_cbUserAccount.AutoSize = true;
-            this.m_cbUserAccount.Location = new System.Drawing.Point(27, 266);
-            this.m_cbUserAccount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbUserAccount.Location = new System.Drawing.Point(22, 221);
+            this.m_cbUserAccount.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbUserAccount.Name = "m_cbUserAccount";
-            this.m_cbUserAccount.Size = new System.Drawing.Size(280, 33);
+            this.m_cbUserAccount.Size = new System.Drawing.Size(224, 28);
             this.m_cbUserAccount.TabIndex = 8;
             this.m_cbUserAccount.Text = "&Windows user account";
             this.m_cbUserAccount.UseVisualStyleBackColor = true;
@@ -61,10 +61,10 @@
             // m_btnOpenKeyFile
             // 
             this.m_btnOpenKeyFile.Image = global::KeePass.Properties.Resources.B16x16_Folder_Blue_Open;
-            this.m_btnOpenKeyFile.Location = new System.Drawing.Point(840, 206);
-            this.m_btnOpenKeyFile.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOpenKeyFile.Location = new System.Drawing.Point(700, 171);
+            this.m_btnOpenKeyFile.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOpenKeyFile.Name = "m_btnOpenKeyFile";
-            this.m_btnOpenKeyFile.Size = new System.Drawing.Size(72, 48);
+            this.m_btnOpenKeyFile.Size = new System.Drawing.Size(60, 40);
             this.m_btnOpenKeyFile.TabIndex = 7;
             this.m_btnOpenKeyFile.UseVisualStyleBackColor = true;
             this.m_btnOpenKeyFile.Click += new System.EventHandler(this.OnClickKeyFileBrowse);
@@ -72,10 +72,10 @@
             // m_cbKeyFile
             // 
             this.m_cbKeyFile.AutoSize = true;
-            this.m_cbKeyFile.Location = new System.Drawing.Point(27, 212);
-            this.m_cbKeyFile.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbKeyFile.Location = new System.Drawing.Point(22, 176);
+            this.m_cbKeyFile.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbKeyFile.Name = "m_cbKeyFile";
-            this.m_cbKeyFile.Size = new System.Drawing.Size(220, 33);
+            this.m_cbKeyFile.Size = new System.Drawing.Size(171, 28);
             this.m_cbKeyFile.TabIndex = 5;
             this.m_cbKeyFile.Text = "&Key file/provider:";
             this.m_cbKeyFile.UseVisualStyleBackColor = true;
@@ -84,10 +84,10 @@
             // m_cbPassword
             // 
             this.m_cbPassword.AutoSize = true;
-            this.m_cbPassword.Location = new System.Drawing.Point(27, 158);
-            this.m_cbPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbPassword.Location = new System.Drawing.Point(22, 131);
+            this.m_cbPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbPassword.Name = "m_cbPassword";
-            this.m_cbPassword.Size = new System.Drawing.Size(229, 33);
+            this.m_cbPassword.Size = new System.Drawing.Size(179, 28);
             this.m_cbPassword.TabIndex = 2;
             this.m_cbPassword.Text = "&Master password:";
             this.m_cbPassword.UseVisualStyleBackColor = true;
@@ -96,10 +96,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(561, 356);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(468, 296);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(140, 40);
             this.m_btnOK.TabIndex = 0;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(742, 356);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(619, 296);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCancel.TabIndex = 1;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -121,19 +121,19 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(939, 124);
+            this.m_bannerImage.Size = new System.Drawing.Size(782, 104);
             this.m_bannerImage.TabIndex = 24;
             this.m_bannerImage.TabStop = false;
             // 
             // m_cbHidePassword
             // 
             this.m_cbHidePassword.Appearance = System.Windows.Forms.Appearance.Button;
-            this.m_cbHidePassword.Location = new System.Drawing.Point(840, 150);
-            this.m_cbHidePassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbHidePassword.Location = new System.Drawing.Point(700, 125);
+            this.m_cbHidePassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbHidePassword.Name = "m_cbHidePassword";
-            this.m_cbHidePassword.Size = new System.Drawing.Size(72, 48);
+            this.m_cbHidePassword.Size = new System.Drawing.Size(60, 40);
             this.m_cbHidePassword.TabIndex = 4;
             this.m_cbHidePassword.Text = "***";
             this.m_cbHidePassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,10 +146,10 @@
             // 
             // m_btnHelp
             // 
-            this.m_btnHelp.Location = new System.Drawing.Point(27, 356);
-            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnHelp.Location = new System.Drawing.Point(22, 296);
+            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnHelp.Name = "m_btnHelp";
-            this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
+            this.m_btnHelp.Size = new System.Drawing.Size(140, 40);
             this.m_btnHelp.TabIndex = 10;
             this.m_btnHelp.Text = "&Help";
             this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -158,30 +158,30 @@
             // m_lblSeparator
             // 
             this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSeparator.Location = new System.Drawing.Point(0, 328);
-            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblSeparator.Location = new System.Drawing.Point(0, 274);
+            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblSeparator.Name = "m_lblSeparator";
-            this.m_lblSeparator.Size = new System.Drawing.Size(939, 4);
+            this.m_lblSeparator.Size = new System.Drawing.Size(782, 4);
             this.m_lblSeparator.TabIndex = 9;
             // 
             // m_cmbKeyFile
             // 
             this.m_cmbKeyFile.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cmbKeyFile.FormattingEnabled = true;
-            this.m_cmbKeyFile.Location = new System.Drawing.Point(285, 207);
-            this.m_cmbKeyFile.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cmbKeyFile.Location = new System.Drawing.Point(238, 172);
+            this.m_cmbKeyFile.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cmbKeyFile.Name = "m_cmbKeyFile";
-            this.m_cmbKeyFile.Size = new System.Drawing.Size(535, 37);
+            this.m_cmbKeyFile.Size = new System.Drawing.Size(446, 32);
             this.m_cmbKeyFile.TabIndex = 6;
             this.m_cmbKeyFile.SelectedIndexChanged += new System.EventHandler(this.OnKeyFileSelectedIndexChanged);
             // 
             // m_btnExit
             // 
             this.m_btnExit.DialogResult = System.Windows.Forms.DialogResult.Abort;
-            this.m_btnExit.Location = new System.Drawing.Point(210, 356);
-            this.m_btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnExit.Location = new System.Drawing.Point(175, 296);
+            this.m_btnExit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnExit.Name = "m_btnExit";
-            this.m_btnExit.Size = new System.Drawing.Size(168, 48);
+            this.m_btnExit.Size = new System.Drawing.Size(140, 40);
             this.m_btnExit.TabIndex = 11;
             this.m_btnExit.Text = "E&xit";
             this.m_btnExit.UseVisualStyleBackColor = true;
@@ -189,20 +189,20 @@
             // 
             // m_tbPassword
             // 
-            this.m_tbPassword.Location = new System.Drawing.Point(285, 153);
-            this.m_tbPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbPassword.Location = new System.Drawing.Point(238, 128);
+            this.m_tbPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbPassword.Name = "m_tbPassword";
-            this.m_tbPassword.Size = new System.Drawing.Size(535, 33);
+            this.m_tbPassword.Size = new System.Drawing.Size(446, 29);
             this.m_tbPassword.TabIndex = 3;
             this.m_tbPassword.UseSystemPasswordChar = true;
             // 
             // KeyPromptForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(939, 428);
+            this.ClientSize = new System.Drawing.Size(782, 356);
             this.Controls.Add(this.m_btnExit);
             this.Controls.Add(this.m_cmbKeyFile);
             this.Controls.Add(this.m_lblSeparator);
@@ -218,7 +218,7 @@
             this.Controls.Add(this.m_cbPassword);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "KeyPromptForm";
