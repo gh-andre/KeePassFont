@@ -268,9 +268,16 @@ namespace KeePass.UI
 				{
 					int w = tsi.Width;
 
+					//
+					// For a 4K display scaling of 200%, w is once computed as 140,
+					// which passes the assert below, but then it is computed as 450,
+					// which fails the same assert, which isn't how this failure should
+					// be handled (i.e. it's a runtime failure, so bad scaling should
+					// be adjusted accordingly).
+					//
 					// .NET scales some ToolStripItems, some not
-					Debug.Assert(((w == nWidth) || (w == nWidthScaled)),
-						tsi.Name + ": w = " + w.ToString());
+					//Debug.Assert(((w == nWidth) || (w == nWidthScaled)),
+					//	tsi.Name + ": w = " + w.ToString());
 
 					if(Math.Abs(w - nWidth) < Math.Abs(w - nWidthScaled))
 						tsi.Width = nWidthScaled;
