@@ -58,6 +58,7 @@ jobs:
         msbuild /nologo /target:Rebuild /property:Configuration=Release;Platform="Any CPU" /nr:false KeePass.sln
 
       # collect and package only files that can be dropped into the installation folder
+      # run 7z with high compression (-mx9) to avoid patterns that Microsoft Defender erroneously reports as a virus
     - name: Create package
       run: |
         mkdir KeePassFont-${{ env.VERSION }}
@@ -66,7 +67,7 @@ jobs:
         copy /y Build\KeePass\Release\KeePass.XmlSerializers.dll KeePassFont-${{ env.VERSION }}\
         copy /y Ext\XSL\KDBX_Dump_HTML.xsl KeePassFont-${{ env.VERSION }}\XSL\
         copy /y README.md KeePassFont-${{ env.VERSION }}\
-        7z a KeePassFont-${{ env.VERSION }}+${{ env.BUILD_NUMBER }}.windows.x64.${{ matrix.display-scaling }}.zip KeePassFont-${{ env.VERSION }}\
+        7z a -mx9 KeePassFont-${{ env.VERSION }}+${{ env.BUILD_NUMBER }}.windows.x64.${{ matrix.display-scaling }}.zip KeePassFont-${{ env.VERSION }}\
 
     - name: Upload packages
       uses: actions/upload-artifact@v4
