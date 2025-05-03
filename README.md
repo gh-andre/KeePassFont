@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.57.1 source, with a few changes described in
+This is a copy of KeePass v2.58 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -134,6 +134,9 @@ New KeePass source is imported using following steps.
 
 * Upgrade solution to Visual Studio 2022, remove `UpgradeLog.htm`
   and commit changes.
+
+  Note that starting from v2.58, there is an upgraded solution in
+  the source distribution - `KeePass_2.sln`, which may be used instead.
 * Retarget all projects to use the .Net Framework v4.8. The original
   .Net v4.0 is no longer installed on GitHub runners. Note, however,
   that very little testing was done with running a mix of original
@@ -191,6 +194,13 @@ of the `KeePass` project.
 
 Change the solution configuration to `Release`, platform to `Any CPU`,
 startup project to `KeePass` and build the solution.
+
+Versions of KeePass from around v2.58.0 require a new configuration
+file `KeePass.exe.config` in the directory where `KeePass.exe` is
+located or the program would terminate with a debug assertion for
+debug builds. The initial copy of this file may be obtained from a
+portable download of KeePass for development environments and it will
+be installed by the official KeePass installer on Windows.
 
 ## GitHub Releases
 
@@ -347,7 +357,7 @@ Note that in order to use this command in a batch script, `%p` should
 be changed to `%%p`.
 
     for /F %p in ('dir /B KeePass\Forms\*.Designer.cs') do (
-        git show keepass-2-57-1:KeePass/Forms/%p > KeePass\Forms\%p
+        git show keepass-2-58-0:KeePass/Forms/%p > KeePass\Forms\%p
     )
 
 The best form to experiment on is `KeyCreationForm.Designer.cs`,
