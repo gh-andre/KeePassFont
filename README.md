@@ -220,34 +220,27 @@ repository from the application website:
 
 https://keepass.info/download.html
 
-Before opening the actual password file with the application built above, launch
-the installed KeePass application and create a test database with a few passwords.
-Do not open your actual password file until you tested the new application.
-
-Once you have a test database, launch the application you just built from this
-directory:
-
-    KeePass\Build\KeePass\Release\KeePass.exe
-
-Open the test database and make sure the functionality you typically use still
-works and you can see all buttons in the forms.
-
-Backup your actual password file before you open it with the new application.
+Make sure KeePass is not running and make a copy of your password
+database file.
 
 Open the KeePass installation directory, which will be one of these:
 
     C:\Program Files (x86)\KeePass Password Safe 2
     C:\Program Files\KeePass Password Safe 2
 
-, and rename the original `KeePass.exe` and `KeePass.XmlSerializers.dll` files.
-Do not delete them. Copy the new files you just built and tested into the
+, and rename the original `KeePass.exe` and `KeePass.XmlSerializers.dll`
+files. Do not delete them. Copy the new files from the downloaded archive
+to replace the ones you just renamed.
+
+If you would like to add the new XSL template for exporting passwords,
+copy `XSL\KDBX_Dump_HTML.xsl` file into the `XSL` directory in the
 installation directory.
 
-It's worth noting that this step replaces only the executable and not the KeePass
-encryption library, which implements encryption and other secure algorithms.
+It's worth noting that this step replaces only the executable and not
+the KeePass encryption library, which implements encryption and other
+secure algorithms.
 
-Launch the new KeePass application and test that it works in every way in how
-you normally use the application.
+Open the new KeePass application and test it based on your typical usage.
 
 Before installing a new version of KeePass, restore the original `KeePass.exe`
 and `KeePass.XmlSerializers.dll` files.
