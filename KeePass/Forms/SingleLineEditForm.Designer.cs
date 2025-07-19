@@ -40,10 +40,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(591, 288);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(492, 240);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(140, 40);
             this.m_btnOK.TabIndex = 3;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -52,10 +52,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(774, 288);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(645, 240);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCancel.TabIndex = 4;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -65,26 +65,26 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(969, 124);
+            this.m_bannerImage.Size = new System.Drawing.Size(808, 104);
             this.m_bannerImage.TabIndex = 2;
             this.m_bannerImage.TabStop = false;
             // 
             // m_tbEdit
             // 
-            this.m_tbEdit.Location = new System.Drawing.Point(27, 220);
-            this.m_tbEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbEdit.Location = new System.Drawing.Point(22, 184);
+            this.m_tbEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbEdit.Name = "m_tbEdit";
-            this.m_tbEdit.Size = new System.Drawing.Size(910, 33);
+            this.m_tbEdit.Size = new System.Drawing.Size(759, 29);
             this.m_tbEdit.TabIndex = 1;
             // 
             // m_lblLongDesc
             // 
-            this.m_lblLongDesc.Location = new System.Drawing.Point(21, 150);
-            this.m_lblLongDesc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblLongDesc.Location = new System.Drawing.Point(18, 125);
+            this.m_lblLongDesc.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblLongDesc.Name = "m_lblLongDesc";
-            this.m_lblLongDesc.Size = new System.Drawing.Size(922, 58);
+            this.m_lblLongDesc.Size = new System.Drawing.Size(769, 49);
             this.m_lblLongDesc.TabIndex = 0;
             this.m_lblLongDesc.Text = "<>";
             // 
@@ -93,19 +93,19 @@
             this.m_cmbEdit.DropDownHeight = 400;
             this.m_cmbEdit.FormattingEnabled = true;
             this.m_cmbEdit.IntegralHeight = false;
-            this.m_cmbEdit.Location = new System.Drawing.Point(27, 220);
-            this.m_cmbEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cmbEdit.Location = new System.Drawing.Point(22, 184);
+            this.m_cmbEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cmbEdit.Name = "m_cmbEdit";
-            this.m_cmbEdit.Size = new System.Drawing.Size(910, 37);
+            this.m_cmbEdit.Size = new System.Drawing.Size(759, 32);
             this.m_cmbEdit.TabIndex = 2;
             // 
             // SingleLineEditForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(969, 362);
+            this.ClientSize = new System.Drawing.Size(808, 301);
             this.Controls.Add(this.m_cmbEdit);
             this.Controls.Add(this.m_lblLongDesc);
             this.Controls.Add(this.m_tbEdit);
@@ -114,7 +114,7 @@
             this.Controls.Add(this.m_btnOK);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SingleLineEditForm";

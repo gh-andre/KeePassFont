@@ -45,10 +45,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(760, 908);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(634, 756);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(140, 40);
             this.m_btnOK.TabIndex = 10;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -57,10 +57,10 @@
             // m_radioStandard
             // 
             this.m_radioStandard.AutoSize = true;
-            this.m_radioStandard.Location = new System.Drawing.Point(27, 22);
-            this.m_radioStandard.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_radioStandard.Location = new System.Drawing.Point(22, 19);
+            this.m_radioStandard.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_radioStandard.Name = "m_radioStandard";
-            this.m_radioStandard.Size = new System.Drawing.Size(237, 33);
+            this.m_radioStandard.Size = new System.Drawing.Size(187, 28);
             this.m_radioStandard.TabIndex = 0;
             this.m_radioStandard.TabStop = true;
             this.m_radioStandard.Text = "Use &standard icon:";
@@ -70,10 +70,10 @@
             // m_radioCustom
             // 
             this.m_radioCustom.AutoSize = true;
-            this.m_radioCustom.Location = new System.Drawing.Point(27, 501);
-            this.m_radioCustom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_radioCustom.Location = new System.Drawing.Point(22, 418);
+            this.m_radioCustom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_radioCustom.Name = "m_radioCustom";
-            this.m_radioCustom.Size = new System.Drawing.Size(560, 33);
+            this.m_radioCustom.Size = new System.Drawing.Size(441, 28);
             this.m_radioCustom.TabIndex = 2;
             this.m_radioCustom.TabStop = true;
             this.m_radioCustom.Text = "Use &custom icon (stored in the current database):";
@@ -82,18 +82,18 @@
             // m_lblSeparator
             // 
             this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSeparator.Location = new System.Drawing.Point(-3, 892);
-            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblSeparator.Location = new System.Drawing.Point(-2, 744);
+            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblSeparator.Name = "m_lblSeparator";
-            this.m_lblSeparator.Size = new System.Drawing.Size(1140, 4);
+            this.m_lblSeparator.Size = new System.Drawing.Size(950, 4);
             this.m_lblSeparator.TabIndex = 9;
             // 
             // m_btnCustomAdd
             // 
-            this.m_btnCustomAdd.Location = new System.Drawing.Point(69, 826);
-            this.m_btnCustomAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCustomAdd.Location = new System.Drawing.Point(58, 689);
+            this.m_btnCustomAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCustomAdd.Name = "m_btnCustomAdd";
-            this.m_btnCustomAdd.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCustomAdd.Size = new System.Drawing.Size(140, 40);
             this.m_btnCustomAdd.TabIndex = 4;
             this.m_btnCustomAdd.Text = "&Add...";
             this.m_btnCustomAdd.UseVisualStyleBackColor = true;
@@ -101,10 +101,10 @@
             // 
             // m_btnCustomDelete
             // 
-            this.m_btnCustomDelete.Location = new System.Drawing.Point(252, 826);
-            this.m_btnCustomDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCustomDelete.Location = new System.Drawing.Point(210, 689);
+            this.m_btnCustomDelete.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCustomDelete.Name = "m_btnCustomDelete";
-            this.m_btnCustomDelete.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCustomDelete.Size = new System.Drawing.Size(140, 40);
             this.m_btnCustomDelete.TabIndex = 5;
             this.m_btnCustomDelete.Text = "&Delete";
             this.m_btnCustomDelete.UseVisualStyleBackColor = true;
@@ -112,10 +112,10 @@
             // 
             // m_btnCustomMore
             // 
-            this.m_btnCustomMore.Location = new System.Drawing.Point(435, 826);
-            this.m_btnCustomMore.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCustomMore.Location = new System.Drawing.Point(362, 689);
+            this.m_btnCustomMore.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCustomMore.Name = "m_btnCustomMore";
-            this.m_btnCustomMore.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCustomMore.Size = new System.Drawing.Size(140, 40);
             this.m_btnCustomMore.TabIndex = 6;
             this.m_btnCustomMore.Text = "&More...";
             this.m_btnCustomMore.UseVisualStyleBackColor = true;
@@ -124,10 +124,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(942, 908);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(785, 756);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCancel.TabIndex = 11;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -135,30 +135,30 @@
             // m_lblFind
             // 
             this.m_lblFind.AutoSize = true;
-            this.m_lblFind.Location = new System.Drawing.Point(681, 837);
-            this.m_lblFind.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblFind.Location = new System.Drawing.Point(568, 698);
+            this.m_lblFind.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblFind.Name = "m_lblFind";
-            this.m_lblFind.Size = new System.Drawing.Size(67, 29);
+            this.m_lblFind.Size = new System.Drawing.Size(53, 24);
             this.m_lblFind.TabIndex = 7;
             this.m_lblFind.Text = "&Find:";
             // 
             // m_tbFind
             // 
-            this.m_tbFind.Location = new System.Drawing.Point(762, 831);
-            this.m_tbFind.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbFind.Location = new System.Drawing.Point(635, 692);
+            this.m_tbFind.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbFind.Name = "m_tbFind";
-            this.m_tbFind.Size = new System.Drawing.Size(342, 33);
+            this.m_tbFind.Size = new System.Drawing.Size(285, 29);
             this.m_tbFind.TabIndex = 8;
             // 
             // m_lvCustomIcons
             // 
             this.m_lvCustomIcons.HideSelection = false;
             this.m_lvCustomIcons.LabelEdit = true;
-            this.m_lvCustomIcons.Location = new System.Drawing.Point(72, 549);
-            this.m_lvCustomIcons.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvCustomIcons.Location = new System.Drawing.Point(60, 458);
+            this.m_lvCustomIcons.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvCustomIcons.Name = "m_lvCustomIcons";
             this.m_lvCustomIcons.ShowItemToolTips = true;
-            this.m_lvCustomIcons.Size = new System.Drawing.Size(1033, 262);
+            this.m_lvCustomIcons.Size = new System.Drawing.Size(862, 219);
             this.m_lvCustomIcons.TabIndex = 3;
             this.m_lvCustomIcons.UseCompatibleStateImageBehavior = false;
             this.m_lvCustomIcons.View = System.Windows.Forms.View.List;
@@ -170,11 +170,11 @@
             // m_lvIcons
             // 
             this.m_lvIcons.HideSelection = false;
-            this.m_lvIcons.Location = new System.Drawing.Point(72, 70);
-            this.m_lvIcons.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvIcons.Location = new System.Drawing.Point(60, 59);
+            this.m_lvIcons.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvIcons.MultiSelect = false;
             this.m_lvIcons.Name = "m_lvIcons";
-            this.m_lvIcons.Size = new System.Drawing.Size(1033, 403);
+            this.m_lvIcons.Size = new System.Drawing.Size(862, 336);
             this.m_lvIcons.TabIndex = 1;
             this.m_lvIcons.UseCompatibleStateImageBehavior = false;
             this.m_lvIcons.View = System.Windows.Forms.View.List;
@@ -184,10 +184,10 @@
             // IconPickerForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1138, 981);
+            this.ClientSize = new System.Drawing.Size(949, 818);
             this.Controls.Add(this.m_tbFind);
             this.Controls.Add(this.m_lblFind);
             this.Controls.Add(this.m_btnCancel);
@@ -202,7 +202,7 @@
             this.Controls.Add(this.m_lvIcons);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "IconPickerForm";

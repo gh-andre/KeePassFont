@@ -42,10 +42,10 @@
             // m_lblEvent
             // 
             this.m_lblEvent.AutoSize = true;
-            this.m_lblEvent.Location = new System.Drawing.Point(21, 28);
-            this.m_lblEvent.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblEvent.Location = new System.Drawing.Point(18, 24);
+            this.m_lblEvent.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblEvent.Name = "m_lblEvent";
-            this.m_lblEvent.Size = new System.Drawing.Size(79, 29);
+            this.m_lblEvent.Size = new System.Drawing.Size(63, 24);
             this.m_lblEvent.TabIndex = 0;
             this.m_lblEvent.Text = "&Event:";
             // 
@@ -53,20 +53,20 @@
             // 
             this.m_cmbEvents.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cmbEvents.FormattingEnabled = true;
-            this.m_cmbEvents.Location = new System.Drawing.Point(27, 63);
-            this.m_cmbEvents.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cmbEvents.Location = new System.Drawing.Point(22, 52);
+            this.m_cmbEvents.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cmbEvents.Name = "m_cmbEvents";
-            this.m_cmbEvents.Size = new System.Drawing.Size(1142, 37);
+            this.m_cmbEvents.Size = new System.Drawing.Size(953, 32);
             this.m_cmbEvents.TabIndex = 1;
             this.m_cmbEvents.SelectedIndexChanged += new System.EventHandler(this.OnEventsSelectedIndexChanged);
             // 
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(824, 600);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(686, 500);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(140, 40);
             this.m_btnOK.TabIndex = 6;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -75,10 +75,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(1005, 600);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(838, 500);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCancel.TabIndex = 7;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -90,37 +90,37 @@
             this.m_dgvParams.AllowUserToDeleteRows = false;
             this.m_dgvParams.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.m_dgvParams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.m_dgvParams.Location = new System.Drawing.Point(27, 118);
-            this.m_dgvParams.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_dgvParams.Location = new System.Drawing.Point(22, 99);
+            this.m_dgvParams.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_dgvParams.Name = "m_dgvParams";
-            this.m_dgvParams.RowHeadersWidth = 62;
-            this.m_dgvParams.Size = new System.Drawing.Size(1148, 374);
+            this.m_dgvParams.RowHeadersWidth = 51;
+            this.m_dgvParams.Size = new System.Drawing.Size(956, 311);
             this.m_dgvParams.TabIndex = 2;
             // 
             // m_lblParamHint
             // 
-            this.m_lblParamHint.Location = new System.Drawing.Point(21, 518);
-            this.m_lblParamHint.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblParamHint.Location = new System.Drawing.Point(18, 431);
+            this.m_lblParamHint.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblParamHint.Name = "m_lblParamHint";
-            this.m_lblParamHint.Size = new System.Drawing.Size(1155, 32);
+            this.m_lblParamHint.Size = new System.Drawing.Size(962, 26);
             this.m_lblParamHint.TabIndex = 3;
             this.m_lblParamHint.Text = "<>";
             // 
             // m_lblSep
             // 
             this.m_lblSep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSep.Location = new System.Drawing.Point(0, 582);
-            this.m_lblSep.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblSep.Location = new System.Drawing.Point(0, 485);
+            this.m_lblSep.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblSep.Name = "m_lblSep";
-            this.m_lblSep.Size = new System.Drawing.Size(1203, 4);
+            this.m_lblSep.Size = new System.Drawing.Size(1002, 4);
             this.m_lblSep.TabIndex = 4;
             // 
             // m_btnHelp
             // 
-            this.m_btnHelp.Location = new System.Drawing.Point(27, 600);
-            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnHelp.Location = new System.Drawing.Point(22, 500);
+            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnHelp.Name = "m_btnHelp";
-            this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
+            this.m_btnHelp.Size = new System.Drawing.Size(140, 40);
             this.m_btnHelp.TabIndex = 5;
             this.m_btnHelp.Text = "&Help";
             this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -129,10 +129,10 @@
             // EcasEventForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1202, 674);
+            this.ClientSize = new System.Drawing.Size(1001, 561);
             this.Controls.Add(this.m_btnHelp);
             this.Controls.Add(this.m_lblSep);
             this.Controls.Add(this.m_lblParamHint);
@@ -143,7 +143,7 @@
             this.Controls.Add(this.m_cmbEvents);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EcasEventForm";

@@ -39,10 +39,10 @@
             // m_btnClose
             // 
             this.m_btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnClose.Location = new System.Drawing.Point(1146, 644);
-            this.m_btnClose.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnClose.Location = new System.Drawing.Point(955, 536);
+            this.m_btnClose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnClose.Name = "m_btnClose";
-            this.m_btnClose.Size = new System.Drawing.Size(168, 48);
+            this.m_btnClose.Size = new System.Drawing.Size(140, 40);
             this.m_btnClose.TabIndex = 3;
             this.m_btnClose.Text = "Close";
             this.m_btnClose.UseVisualStyleBackColor = true;
@@ -51,9 +51,9 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1341, 124);
+            this.m_bannerImage.Size = new System.Drawing.Size(1118, 104);
             this.m_bannerImage.TabIndex = 1;
             this.m_bannerImage.TabStop = false;
             // 
@@ -62,12 +62,12 @@
             this.m_lvInfo.FullRowSelect = true;
             this.m_lvInfo.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvInfo.HideSelection = false;
-            this.m_lvInfo.Location = new System.Drawing.Point(27, 147);
-            this.m_lvInfo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvInfo.Location = new System.Drawing.Point(22, 122);
+            this.m_lvInfo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvInfo.MultiSelect = false;
             this.m_lvInfo.Name = "m_lvInfo";
             this.m_lvInfo.ShowItemToolTips = true;
-            this.m_lvInfo.Size = new System.Drawing.Size(1282, 480);
+            this.m_lvInfo.Size = new System.Drawing.Size(1069, 400);
             this.m_lvInfo.TabIndex = 0;
             this.m_lvInfo.UseCompatibleStateImageBehavior = false;
             this.m_lvInfo.View = System.Windows.Forms.View.Details;
@@ -76,10 +76,10 @@
             // m_linkWeb
             // 
             this.m_linkWeb.AutoSize = true;
-            this.m_linkWeb.Location = new System.Drawing.Point(21, 654);
-            this.m_linkWeb.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_linkWeb.Location = new System.Drawing.Point(18, 545);
+            this.m_linkWeb.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_linkWeb.Name = "m_linkWeb";
-            this.m_linkWeb.Size = new System.Drawing.Size(204, 29);
+            this.m_linkWeb.Size = new System.Drawing.Size(157, 24);
             this.m_linkWeb.TabIndex = 1;
             this.m_linkWeb.TabStop = true;
             this.m_linkWeb.Text = "KeePass Website";
@@ -88,10 +88,10 @@
             // m_linkPlugins
             // 
             this.m_linkPlugins.AutoSize = true;
-            this.m_linkPlugins.Location = new System.Drawing.Point(238, 654);
-            this.m_linkPlugins.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_linkPlugins.Location = new System.Drawing.Point(199, 545);
+            this.m_linkPlugins.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_linkPlugins.Name = "m_linkPlugins";
-            this.m_linkPlugins.Size = new System.Drawing.Size(156, 29);
+            this.m_linkPlugins.Size = new System.Drawing.Size(121, 24);
             this.m_linkPlugins.TabIndex = 2;
             this.m_linkPlugins.TabStop = true;
             this.m_linkPlugins.Text = "Plugins Page";
@@ -100,10 +100,10 @@
             // UpdateCheckForm
             // 
             this.AcceptButton = this.m_btnClose;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnClose;
-            this.ClientSize = new System.Drawing.Size(1341, 717);
+            this.ClientSize = new System.Drawing.Size(1118, 598);
             this.Controls.Add(this.m_linkPlugins);
             this.Controls.Add(this.m_linkWeb);
             this.Controls.Add(this.m_lvInfo);
@@ -111,7 +111,7 @@
             this.Controls.Add(this.m_btnClose);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UpdateCheckForm";

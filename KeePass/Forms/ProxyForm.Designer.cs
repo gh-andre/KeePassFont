@@ -53,10 +53,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(411, 616);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(342, 514);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(140, 40);
             this.m_btnOK.TabIndex = 2;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -65,10 +65,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(594, 616);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(495, 514);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCancel.TabIndex = 3;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -82,59 +82,59 @@
             this.m_grpServer.Controls.Add(this.m_rbManualProxy);
             this.m_grpServer.Controls.Add(this.m_rbSystemProxy);
             this.m_grpServer.Controls.Add(this.m_rbNoProxy);
-            this.m_grpServer.Location = new System.Drawing.Point(27, 26);
-            this.m_grpServer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_grpServer.Location = new System.Drawing.Point(22, 21);
+            this.m_grpServer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_grpServer.Name = "m_grpServer";
-            this.m_grpServer.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.m_grpServer.Size = new System.Drawing.Size(735, 249);
+            this.m_grpServer.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.m_grpServer.Size = new System.Drawing.Size(612, 208);
             this.m_grpServer.TabIndex = 0;
             this.m_grpServer.TabStop = false;
             this.m_grpServer.Text = "Server";
             // 
             // m_tbPort
             // 
-            this.m_tbPort.Location = new System.Drawing.Point(598, 183);
-            this.m_tbPort.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbPort.Location = new System.Drawing.Point(499, 152);
+            this.m_tbPort.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbPort.Name = "m_tbPort";
-            this.m_tbPort.Size = new System.Drawing.Size(108, 33);
+            this.m_tbPort.Size = new System.Drawing.Size(90, 29);
             this.m_tbPort.TabIndex = 6;
             // 
             // m_lblPort
             // 
             this.m_lblPort.AutoSize = true;
-            this.m_lblPort.Location = new System.Drawing.Point(519, 189);
-            this.m_lblPort.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblPort.Location = new System.Drawing.Point(432, 158);
+            this.m_lblPort.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblPort.Name = "m_lblPort";
-            this.m_lblPort.Size = new System.Drawing.Size(63, 29);
+            this.m_lblPort.Size = new System.Drawing.Size(48, 24);
             this.m_lblPort.TabIndex = 5;
             this.m_lblPort.Text = "Po&rt:";
             // 
             // m_tbAddress
             // 
-            this.m_tbAddress.Location = new System.Drawing.Point(177, 183);
-            this.m_tbAddress.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbAddress.Location = new System.Drawing.Point(148, 152);
+            this.m_tbAddress.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbAddress.Name = "m_tbAddress";
-            this.m_tbAddress.Size = new System.Drawing.Size(322, 33);
+            this.m_tbAddress.Size = new System.Drawing.Size(269, 29);
             this.m_tbAddress.TabIndex = 4;
             this.m_tbAddress.TextChanged += new System.EventHandler(this.OnAddressTextChanged);
             // 
             // m_lblAddress
             // 
             this.m_lblAddress.AutoSize = true;
-            this.m_lblAddress.Location = new System.Drawing.Point(57, 189);
-            this.m_lblAddress.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblAddress.Location = new System.Drawing.Point(48, 158);
+            this.m_lblAddress.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblAddress.Name = "m_lblAddress";
-            this.m_lblAddress.Size = new System.Drawing.Size(108, 29);
+            this.m_lblAddress.Size = new System.Drawing.Size(85, 24);
             this.m_lblAddress.TabIndex = 3;
             this.m_lblAddress.Text = "&Address:";
             // 
             // m_rbManualProxy
             // 
             this.m_rbManualProxy.AutoSize = true;
-            this.m_rbManualProxy.Location = new System.Drawing.Point(21, 135);
-            this.m_rbManualProxy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbManualProxy.Location = new System.Drawing.Point(18, 112);
+            this.m_rbManualProxy.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbManualProxy.Name = "m_rbManualProxy";
-            this.m_rbManualProxy.Size = new System.Drawing.Size(330, 33);
+            this.m_rbManualProxy.Size = new System.Drawing.Size(263, 28);
             this.m_rbManualProxy.TabIndex = 2;
             this.m_rbManualProxy.TabStop = true;
             this.m_rbManualProxy.Text = "&Manual proxy configuration:";
@@ -144,10 +144,10 @@
             // m_rbSystemProxy
             // 
             this.m_rbSystemProxy.AutoSize = true;
-            this.m_rbSystemProxy.Location = new System.Drawing.Point(21, 87);
-            this.m_rbSystemProxy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbSystemProxy.Location = new System.Drawing.Point(18, 72);
+            this.m_rbSystemProxy.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbSystemProxy.Name = "m_rbSystemProxy";
-            this.m_rbSystemProxy.Size = new System.Drawing.Size(315, 33);
+            this.m_rbSystemProxy.Size = new System.Drawing.Size(247, 28);
             this.m_rbSystemProxy.TabIndex = 1;
             this.m_rbSystemProxy.TabStop = true;
             this.m_rbSystemProxy.Text = "Use &system proxy settings";
@@ -157,10 +157,10 @@
             // m_rbNoProxy
             // 
             this.m_rbNoProxy.AutoSize = true;
-            this.m_rbNoProxy.Location = new System.Drawing.Point(21, 39);
-            this.m_rbNoProxy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbNoProxy.Location = new System.Drawing.Point(18, 32);
+            this.m_rbNoProxy.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbNoProxy.Name = "m_rbNoProxy";
-            this.m_rbNoProxy.Size = new System.Drawing.Size(134, 33);
+            this.m_rbNoProxy.Size = new System.Drawing.Size(108, 28);
             this.m_rbNoProxy.TabIndex = 0;
             this.m_rbNoProxy.TabStop = true;
             this.m_rbNoProxy.Text = "&No proxy";
@@ -176,11 +176,11 @@
             this.m_grpAuth.Controls.Add(this.m_lblPassword);
             this.m_grpAuth.Controls.Add(this.m_tbUser);
             this.m_grpAuth.Controls.Add(this.m_lblUser);
-            this.m_grpAuth.Location = new System.Drawing.Point(27, 286);
-            this.m_grpAuth.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_grpAuth.Location = new System.Drawing.Point(22, 239);
+            this.m_grpAuth.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_grpAuth.Name = "m_grpAuth";
-            this.m_grpAuth.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.m_grpAuth.Size = new System.Drawing.Size(735, 303);
+            this.m_grpAuth.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.m_grpAuth.Size = new System.Drawing.Size(612, 252);
             this.m_grpAuth.TabIndex = 1;
             this.m_grpAuth.TabStop = false;
             this.m_grpAuth.Text = "Authentication";
@@ -188,10 +188,10 @@
             // m_rbAuthManual
             // 
             this.m_rbAuthManual.AutoSize = true;
-            this.m_rbAuthManual.Location = new System.Drawing.Point(21, 135);
-            this.m_rbAuthManual.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbAuthManual.Location = new System.Drawing.Point(18, 112);
+            this.m_rbAuthManual.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbAuthManual.Name = "m_rbAuthManual";
-            this.m_rbAuthManual.Size = new System.Drawing.Size(353, 33);
+            this.m_rbAuthManual.Size = new System.Drawing.Size(275, 28);
             this.m_rbAuthManual.TabIndex = 2;
             this.m_rbAuthManual.TabStop = true;
             this.m_rbAuthManual.Text = "Use the following &credentials:";
@@ -201,10 +201,10 @@
             // m_rbAuthDefault
             // 
             this.m_rbAuthDefault.AutoSize = true;
-            this.m_rbAuthDefault.Location = new System.Drawing.Point(21, 87);
-            this.m_rbAuthDefault.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbAuthDefault.Location = new System.Drawing.Point(18, 72);
+            this.m_rbAuthDefault.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbAuthDefault.Name = "m_rbAuthDefault";
-            this.m_rbAuthDefault.Size = new System.Drawing.Size(237, 33);
+            this.m_rbAuthDefault.Size = new System.Drawing.Size(184, 28);
             this.m_rbAuthDefault.TabIndex = 1;
             this.m_rbAuthDefault.TabStop = true;
             this.m_rbAuthDefault.Text = "&Default credentials";
@@ -214,10 +214,10 @@
             // m_rbAuthNone
             // 
             this.m_rbAuthNone.AutoSize = true;
-            this.m_rbAuthNone.Location = new System.Drawing.Point(21, 39);
-            this.m_rbAuthNone.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbAuthNone.Location = new System.Drawing.Point(18, 32);
+            this.m_rbAuthNone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbAuthNone.Name = "m_rbAuthNone";
-            this.m_rbAuthNone.Size = new System.Drawing.Size(194, 33);
+            this.m_rbAuthNone.Size = new System.Drawing.Size(152, 28);
             this.m_rbAuthNone.TabIndex = 0;
             this.m_rbAuthNone.TabStop = true;
             this.m_rbAuthNone.Text = "N&o credentials";
@@ -226,55 +226,55 @@
             // 
             // m_tbPassword
             // 
-            this.m_tbPassword.Location = new System.Drawing.Point(207, 237);
-            this.m_tbPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbPassword.Location = new System.Drawing.Point(172, 198);
+            this.m_tbPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbPassword.Name = "m_tbPassword";
-            this.m_tbPassword.Size = new System.Drawing.Size(499, 33);
+            this.m_tbPassword.Size = new System.Drawing.Size(416, 29);
             this.m_tbPassword.TabIndex = 6;
             this.m_tbPassword.UseSystemPasswordChar = true;
             // 
             // m_lblPassword
             // 
             this.m_lblPassword.AutoSize = true;
-            this.m_lblPassword.Location = new System.Drawing.Point(57, 243);
-            this.m_lblPassword.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblPassword.Location = new System.Drawing.Point(48, 202);
+            this.m_lblPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblPassword.Name = "m_lblPassword";
-            this.m_lblPassword.Size = new System.Drawing.Size(126, 29);
+            this.m_lblPassword.Size = new System.Drawing.Size(97, 24);
             this.m_lblPassword.TabIndex = 5;
             this.m_lblPassword.Text = "&Password:";
             // 
             // m_tbUser
             // 
-            this.m_tbUser.Location = new System.Drawing.Point(207, 183);
-            this.m_tbUser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbUser.Location = new System.Drawing.Point(172, 152);
+            this.m_tbUser.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbUser.Name = "m_tbUser";
-            this.m_tbUser.Size = new System.Drawing.Size(499, 33);
+            this.m_tbUser.Size = new System.Drawing.Size(416, 29);
             this.m_tbUser.TabIndex = 4;
             // 
             // m_lblUser
             // 
             this.m_lblUser.AutoSize = true;
-            this.m_lblUser.Location = new System.Drawing.Point(57, 189);
-            this.m_lblUser.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblUser.Location = new System.Drawing.Point(48, 158);
+            this.m_lblUser.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblUser.Name = "m_lblUser";
-            this.m_lblUser.Size = new System.Drawing.Size(136, 29);
+            this.m_lblUser.Size = new System.Drawing.Size(107, 24);
             this.m_lblUser.TabIndex = 3;
             this.m_lblUser.Text = "&User name:";
             // 
             // ProxyForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(789, 690);
+            this.ClientSize = new System.Drawing.Size(658, 575);
             this.Controls.Add(this.m_grpAuth);
             this.Controls.Add(this.m_grpServer);
             this.Controls.Add(this.m_btnCancel);
             this.Controls.Add(this.m_btnOK);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ProxyForm";

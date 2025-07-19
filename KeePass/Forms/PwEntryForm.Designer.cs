@@ -201,87 +201,87 @@
             // m_lblUserName
             // 
             this.m_lblUserName.AutoSize = true;
-            this.m_lblUserName.Location = new System.Drawing.Point(14, 82);
-            this.m_lblUserName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblUserName.Location = new System.Drawing.Point(11, 69);
+            this.m_lblUserName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblUserName.Name = "m_lblUserName";
-            this.m_lblUserName.Size = new System.Drawing.Size(136, 29);
+            this.m_lblUserName.Size = new System.Drawing.Size(107, 24);
             this.m_lblUserName.TabIndex = 4;
             this.m_lblUserName.Text = "&User name:";
             // 
             // m_lblPassword
             // 
             this.m_lblPassword.AutoSize = true;
-            this.m_lblPassword.Location = new System.Drawing.Point(14, 140);
-            this.m_lblPassword.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblPassword.Location = new System.Drawing.Point(11, 116);
+            this.m_lblPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblPassword.Name = "m_lblPassword";
-            this.m_lblPassword.Size = new System.Drawing.Size(126, 29);
+            this.m_lblPassword.Size = new System.Drawing.Size(97, 24);
             this.m_lblPassword.TabIndex = 6;
             this.m_lblPassword.Text = "&Password:";
             // 
             // m_lblTitle
             // 
             this.m_lblTitle.AutoSize = true;
-            this.m_lblTitle.Location = new System.Drawing.Point(14, 27);
-            this.m_lblTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblTitle.Location = new System.Drawing.Point(11, 22);
+            this.m_lblTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblTitle.Name = "m_lblTitle";
-            this.m_lblTitle.Size = new System.Drawing.Size(67, 29);
+            this.m_lblTitle.Size = new System.Drawing.Size(50, 24);
             this.m_lblTitle.TabIndex = 0;
             this.m_lblTitle.Text = "&Title:";
             // 
             // m_lblPasswordRepeat
             // 
             this.m_lblPasswordRepeat.AutoSize = true;
-            this.m_lblPasswordRepeat.Location = new System.Drawing.Point(14, 195);
-            this.m_lblPasswordRepeat.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblPasswordRepeat.Location = new System.Drawing.Point(11, 162);
+            this.m_lblPasswordRepeat.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblPasswordRepeat.Name = "m_lblPasswordRepeat";
-            this.m_lblPasswordRepeat.Size = new System.Drawing.Size(97, 29);
+            this.m_lblPasswordRepeat.Size = new System.Drawing.Size(75, 24);
             this.m_lblPasswordRepeat.TabIndex = 9;
             this.m_lblPasswordRepeat.Text = "&Repeat:";
             // 
             // m_lblUrl
             // 
             this.m_lblUrl.AutoSize = true;
-            this.m_lblUrl.Location = new System.Drawing.Point(14, 298);
-            this.m_lblUrl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblUrl.Location = new System.Drawing.Point(11, 249);
+            this.m_lblUrl.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblUrl.Name = "m_lblUrl";
-            this.m_lblUrl.Size = new System.Drawing.Size(66, 29);
+            this.m_lblUrl.Size = new System.Drawing.Size(51, 24);
             this.m_lblUrl.TabIndex = 16;
             this.m_lblUrl.Text = "UR&L:";
             // 
             // m_lblNotes
             // 
             this.m_lblNotes.AutoSize = true;
-            this.m_lblNotes.Location = new System.Drawing.Point(14, 356);
-            this.m_lblNotes.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblNotes.Location = new System.Drawing.Point(11, 296);
+            this.m_lblNotes.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblNotes.Name = "m_lblNotes";
-            this.m_lblNotes.Size = new System.Drawing.Size(83, 29);
+            this.m_lblNotes.Size = new System.Drawing.Size(64, 24);
             this.m_lblNotes.TabIndex = 18;
             this.m_lblNotes.Text = "&Notes:";
             // 
             // m_lblQuality
             // 
             this.m_lblQuality.AutoSize = true;
-            this.m_lblQuality.Location = new System.Drawing.Point(14, 248);
-            this.m_lblQuality.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblQuality.Location = new System.Drawing.Point(11, 206);
+            this.m_lblQuality.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblQuality.Name = "m_lblQuality";
-            this.m_lblQuality.Size = new System.Drawing.Size(93, 29);
+            this.m_lblQuality.Size = new System.Drawing.Size(72, 24);
             this.m_lblQuality.TabIndex = 12;
             this.m_lblQuality.Text = "Quality:";
             // 
             // m_tbTitle
             // 
-            this.m_tbTitle.Location = new System.Drawing.Point(183, 21);
-            this.m_tbTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbTitle.Location = new System.Drawing.Point(152, 18);
+            this.m_tbTitle.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbTitle.Name = "m_tbTitle";
-            this.m_tbTitle.Size = new System.Drawing.Size(656, 33);
+            this.m_tbTitle.Size = new System.Drawing.Size(548, 29);
             this.m_tbTitle.TabIndex = 1;
             // 
             // m_btnIcon
             // 
-            this.m_btnIcon.Location = new System.Drawing.Point(954, 16);
-            this.m_btnIcon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnIcon.Location = new System.Drawing.Point(795, 14);
+            this.m_btnIcon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnIcon.Name = "m_btnIcon";
-            this.m_btnIcon.Size = new System.Drawing.Size(72, 48);
+            this.m_btnIcon.Size = new System.Drawing.Size(60, 40);
             this.m_btnIcon.TabIndex = 3;
             this.m_btnIcon.UseVisualStyleBackColor = true;
             this.m_btnIcon.Click += new System.EventHandler(this.OnBtnPickIcon);
@@ -289,37 +289,37 @@
             // m_lblIcon
             // 
             this.m_lblIcon.AutoSize = true;
-            this.m_lblIcon.Location = new System.Drawing.Point(870, 27);
-            this.m_lblIcon.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblIcon.Location = new System.Drawing.Point(725, 22);
+            this.m_lblIcon.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblIcon.Name = "m_lblIcon";
-            this.m_lblIcon.Size = new System.Drawing.Size(64, 29);
+            this.m_lblIcon.Size = new System.Drawing.Size(51, 24);
             this.m_lblIcon.TabIndex = 2;
             this.m_lblIcon.Text = "&Icon:";
             // 
             // m_tbUserName
             // 
-            this.m_tbUserName.Location = new System.Drawing.Point(183, 76);
-            this.m_tbUserName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbUserName.Location = new System.Drawing.Point(152, 64);
+            this.m_tbUserName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbUserName.Name = "m_tbUserName";
-            this.m_tbUserName.Size = new System.Drawing.Size(836, 33);
+            this.m_tbUserName.Size = new System.Drawing.Size(698, 29);
             this.m_tbUserName.TabIndex = 5;
             // 
             // m_tbUrl
             // 
-            this.m_tbUrl.Location = new System.Drawing.Point(183, 292);
-            this.m_tbUrl.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbUrl.Location = new System.Drawing.Point(152, 244);
+            this.m_tbUrl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbUrl.Name = "m_tbUrl";
-            this.m_tbUrl.Size = new System.Drawing.Size(836, 33);
+            this.m_tbUrl.Size = new System.Drawing.Size(698, 29);
             this.m_tbUrl.TabIndex = 17;
             this.m_tbUrl.TextChanged += new System.EventHandler(this.OnUrlTextChanged);
             // 
             // m_cbExpires
             // 
             this.m_cbExpires.AutoSize = true;
-            this.m_cbExpires.Location = new System.Drawing.Point(21, 654);
-            this.m_cbExpires.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbExpires.Location = new System.Drawing.Point(18, 545);
+            this.m_cbExpires.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbExpires.Name = "m_cbExpires";
-            this.m_cbExpires.Size = new System.Drawing.Size(126, 33);
+            this.m_cbExpires.Size = new System.Drawing.Size(101, 28);
             this.m_cbExpires.TabIndex = 20;
             this.m_cbExpires.Text = "&Expires:";
             this.m_cbExpires.UseVisualStyleBackColor = true;
@@ -327,19 +327,19 @@
             // m_dtExpireDateTime
             // 
             this.m_dtExpireDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dtExpireDateTime.Location = new System.Drawing.Point(183, 650);
-            this.m_dtExpireDateTime.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_dtExpireDateTime.Location = new System.Drawing.Point(152, 541);
+            this.m_dtExpireDateTime.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_dtExpireDateTime.Name = "m_dtExpireDateTime";
-            this.m_dtExpireDateTime.Size = new System.Drawing.Size(751, 33);
+            this.m_dtExpireDateTime.Size = new System.Drawing.Size(626, 29);
             this.m_dtExpireDateTime.TabIndex = 21;
             // 
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(705, 940);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(588, 784);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(180, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(150, 40);
             this.m_btnOK.TabIndex = 0;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -348,10 +348,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(897, 940);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(748, 784);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(180, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(150, 40);
             this.m_btnCancel.TabIndex = 1;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -359,30 +359,30 @@
             // 
             // m_lblQualityInfo
             // 
-            this.m_lblQualityInfo.Location = new System.Drawing.Point(834, 248);
-            this.m_lblQualityInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblQualityInfo.Location = new System.Drawing.Point(695, 206);
+            this.m_lblQualityInfo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblQualityInfo.Name = "m_lblQualityInfo";
-            this.m_lblQualityInfo.Size = new System.Drawing.Size(112, 27);
+            this.m_lblQualityInfo.Size = new System.Drawing.Size(94, 22);
             this.m_lblQualityInfo.TabIndex = 14;
             this.m_lblQualityInfo.Text = "0 ch.";
             this.m_lblQualityInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // m_btnGenPw
             // 
-            this.m_btnGenPw.Location = new System.Drawing.Point(954, 184);
-            this.m_btnGenPw.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnGenPw.Location = new System.Drawing.Point(795, 154);
+            this.m_btnGenPw.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnGenPw.Name = "m_btnGenPw";
-            this.m_btnGenPw.Size = new System.Drawing.Size(72, 48);
+            this.m_btnGenPw.Size = new System.Drawing.Size(60, 40);
             this.m_btnGenPw.TabIndex = 11;
             this.m_btnGenPw.UseVisualStyleBackColor = true;
             // 
             // m_cbHidePassword
             // 
             this.m_cbHidePassword.Appearance = System.Windows.Forms.Appearance.Button;
-            this.m_cbHidePassword.Location = new System.Drawing.Point(954, 129);
-            this.m_cbHidePassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbHidePassword.Location = new System.Drawing.Point(795, 108);
+            this.m_cbHidePassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbHidePassword.Name = "m_cbHidePassword";
-            this.m_cbHidePassword.Size = new System.Drawing.Size(72, 48);
+            this.m_cbHidePassword.Size = new System.Drawing.Size(60, 40);
             this.m_cbHidePassword.TabIndex = 8;
             this.m_cbHidePassword.Text = "***";
             this.m_cbHidePassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -391,10 +391,10 @@
             // m_lblSeparator
             // 
             this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSeparator.Location = new System.Drawing.Point(0, 924);
-            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblSeparator.Location = new System.Drawing.Point(0, 770);
+            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblSeparator.Name = "m_lblSeparator";
-            this.m_lblSeparator.Size = new System.Drawing.Size(1101, 4);
+            this.m_lblSeparator.Size = new System.Drawing.Size(918, 4);
             this.m_lblSeparator.TabIndex = 3;
             // 
             // m_ttBalloon
@@ -408,11 +408,11 @@
             this.m_tabMain.Controls.Add(this.m_tabProperties);
             this.m_tabMain.Controls.Add(this.m_tabAutoType);
             this.m_tabMain.Controls.Add(this.m_tabHistory);
-            this.m_tabMain.Location = new System.Drawing.Point(18, 136);
-            this.m_tabMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabMain.Location = new System.Drawing.Point(15, 114);
+            this.m_tabMain.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tabMain.Name = "m_tabMain";
             this.m_tabMain.SelectedIndex = 0;
-            this.m_tabMain.Size = new System.Drawing.Size(1068, 765);
+            this.m_tabMain.Size = new System.Drawing.Size(890, 638);
             this.m_tabMain.TabIndex = 2;
             this.m_tabMain.SelectedIndexChanged += new System.EventHandler(this.OnTabMainSelectedIndexChanged);
             // 
@@ -441,11 +441,11 @@
             this.m_tabEntry.Controls.Add(this.m_lblPasswordRepeat);
             this.m_tabEntry.Controls.Add(this.m_lblUserName);
             this.m_tabEntry.Controls.Add(this.m_tbUserName);
-            this.m_tabEntry.Location = new System.Drawing.Point(4, 38);
-            this.m_tabEntry.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabEntry.Location = new System.Drawing.Point(4, 33);
+            this.m_tabEntry.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tabEntry.Name = "m_tabEntry";
-            this.m_tabEntry.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.m_tabEntry.Size = new System.Drawing.Size(1060, 723);
+            this.m_tabEntry.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.m_tabEntry.Size = new System.Drawing.Size(882, 601);
             this.m_tabEntry.TabIndex = 0;
             this.m_tabEntry.Text = "General";
             this.m_tabEntry.UseVisualStyleBackColor = true;
@@ -453,10 +453,10 @@
             // m_cbQualityCheck
             // 
             this.m_cbQualityCheck.Appearance = System.Windows.Forms.Appearance.Button;
-            this.m_cbQualityCheck.Location = new System.Drawing.Point(954, 242);
-            this.m_cbQualityCheck.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbQualityCheck.Location = new System.Drawing.Point(795, 201);
+            this.m_cbQualityCheck.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbQualityCheck.Name = "m_cbQualityCheck";
-            this.m_cbQualityCheck.Size = new System.Drawing.Size(72, 42);
+            this.m_cbQualityCheck.Size = new System.Drawing.Size(60, 35);
             this.m_cbQualityCheck.TabIndex = 15;
             this.m_cbQualityCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.m_cbQualityCheck.UseVisualStyleBackColor = true;
@@ -464,53 +464,53 @@
             // 
             // m_rtNotes
             // 
-            this.m_rtNotes.Location = new System.Drawing.Point(183, 350);
-            this.m_rtNotes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rtNotes.Location = new System.Drawing.Point(152, 291);
+            this.m_rtNotes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rtNotes.Name = "m_rtNotes";
             this.m_rtNotes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.m_rtNotes.Size = new System.Drawing.Size(838, 284);
+            this.m_rtNotes.Size = new System.Drawing.Size(699, 238);
             this.m_rtNotes.TabIndex = 19;
             this.m_rtNotes.Text = "";
             // 
             // m_pbQuality
             // 
-            this.m_pbQuality.Location = new System.Drawing.Point(183, 244);
-            this.m_pbQuality.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_pbQuality.Location = new System.Drawing.Point(152, 204);
+            this.m_pbQuality.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_pbQuality.Name = "m_pbQuality";
-            this.m_pbQuality.Size = new System.Drawing.Size(645, 33);
+            this.m_pbQuality.Size = new System.Drawing.Size(538, 28);
             this.m_pbQuality.TabIndex = 13;
             this.m_pbQuality.TabStop = false;
             // 
             // m_tbRepeatPassword
             // 
-            this.m_tbRepeatPassword.Location = new System.Drawing.Point(183, 189);
-            this.m_tbRepeatPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbRepeatPassword.Location = new System.Drawing.Point(152, 158);
+            this.m_tbRepeatPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbRepeatPassword.Name = "m_tbRepeatPassword";
-            this.m_tbRepeatPassword.Size = new System.Drawing.Size(754, 33);
+            this.m_tbRepeatPassword.Size = new System.Drawing.Size(629, 29);
             this.m_tbRepeatPassword.TabIndex = 10;
             // 
             // m_tbPassword
             // 
-            this.m_tbPassword.Location = new System.Drawing.Point(183, 134);
-            this.m_tbPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbPassword.Location = new System.Drawing.Point(152, 111);
+            this.m_tbPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbPassword.Name = "m_tbPassword";
-            this.m_tbPassword.Size = new System.Drawing.Size(754, 33);
+            this.m_tbPassword.Size = new System.Drawing.Size(629, 29);
             this.m_tbPassword.TabIndex = 7;
             // 
             // m_btnStandardExpires
             // 
             this.m_btnStandardExpires.ContextMenuStrip = this.m_ctxDefaultTimes;
-            this.m_btnStandardExpires.Location = new System.Drawing.Point(954, 646);
-            this.m_btnStandardExpires.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnStandardExpires.Location = new System.Drawing.Point(795, 539);
+            this.m_btnStandardExpires.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnStandardExpires.Name = "m_btnStandardExpires";
-            this.m_btnStandardExpires.Size = new System.Drawing.Size(72, 48);
+            this.m_btnStandardExpires.Size = new System.Drawing.Size(60, 40);
             this.m_btnStandardExpires.TabIndex = 22;
             this.m_btnStandardExpires.UseVisualStyleBackColor = true;
             this.m_btnStandardExpires.Click += new System.EventHandler(this.OnBtnStandardExpiresClick);
             // 
             // m_ctxDefaultTimes
             // 
-            this.m_ctxDefaultTimes.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.m_ctxDefaultTimes.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.m_ctxDefaultTimes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_menuExpireNow,
             this.m_menuExpireSep0,
@@ -523,69 +523,69 @@
             this.m_menuExpireSep2,
             this.m_menuExpire1Year});
             this.m_ctxDefaultTimes.Name = "m_ctxDefaultTimes";
-            this.m_ctxDefaultTimes.Size = new System.Drawing.Size(175, 274);
+            this.m_ctxDefaultTimes.Size = new System.Drawing.Size(153, 218);
             // 
             // m_menuExpireNow
             // 
             this.m_menuExpireNow.Name = "m_menuExpireNow";
-            this.m_menuExpireNow.Size = new System.Drawing.Size(174, 36);
+            this.m_menuExpireNow.Size = new System.Drawing.Size(152, 28);
             this.m_menuExpireNow.Text = "&Now";
             this.m_menuExpireNow.Click += new System.EventHandler(this.OnMenuExpireNow);
             // 
             // m_menuExpireSep0
             // 
             this.m_menuExpireSep0.Name = "m_menuExpireSep0";
-            this.m_menuExpireSep0.Size = new System.Drawing.Size(171, 6);
+            this.m_menuExpireSep0.Size = new System.Drawing.Size(149, 6);
             // 
             // m_menuExpire1Week
             // 
             this.m_menuExpire1Week.Name = "m_menuExpire1Week";
-            this.m_menuExpire1Week.Size = new System.Drawing.Size(174, 36);
+            this.m_menuExpire1Week.Size = new System.Drawing.Size(152, 28);
             this.m_menuExpire1Week.Text = "&1 Week";
             this.m_menuExpire1Week.Click += new System.EventHandler(this.OnMenuExpire1Week);
             // 
             // m_menuExpire2Weeks
             // 
             this.m_menuExpire2Weeks.Name = "m_menuExpire2Weeks";
-            this.m_menuExpire2Weeks.Size = new System.Drawing.Size(174, 36);
+            this.m_menuExpire2Weeks.Size = new System.Drawing.Size(152, 28);
             this.m_menuExpire2Weeks.Text = "&2 Weeks";
             this.m_menuExpire2Weeks.Click += new System.EventHandler(this.OnMenuExpire2Weeks);
             // 
             // m_menuExpireSep1
             // 
             this.m_menuExpireSep1.Name = "m_menuExpireSep1";
-            this.m_menuExpireSep1.Size = new System.Drawing.Size(171, 6);
+            this.m_menuExpireSep1.Size = new System.Drawing.Size(149, 6);
             // 
             // m_menuExpire1Month
             // 
             this.m_menuExpire1Month.Name = "m_menuExpire1Month";
-            this.m_menuExpire1Month.Size = new System.Drawing.Size(174, 36);
+            this.m_menuExpire1Month.Size = new System.Drawing.Size(152, 28);
             this.m_menuExpire1Month.Text = "1 &Month";
             this.m_menuExpire1Month.Click += new System.EventHandler(this.OnMenuExpire1Month);
             // 
             // m_menuExpire3Months
             // 
             this.m_menuExpire3Months.Name = "m_menuExpire3Months";
-            this.m_menuExpire3Months.Size = new System.Drawing.Size(174, 36);
+            this.m_menuExpire3Months.Size = new System.Drawing.Size(152, 28);
             this.m_menuExpire3Months.Text = "&3 Months";
             this.m_menuExpire3Months.Click += new System.EventHandler(this.OnMenuExpire3Months);
             // 
             // m_menuExpire6Months
             // 
             this.m_menuExpire6Months.Name = "m_menuExpire6Months";
-            this.m_menuExpire6Months.Size = new System.Drawing.Size(174, 36);
+            this.m_menuExpire6Months.Size = new System.Drawing.Size(152, 28);
             this.m_menuExpire6Months.Text = "&6 Months";
             this.m_menuExpire6Months.Click += new System.EventHandler(this.OnMenuExpire6Months);
             // 
             // m_menuExpireSep2
             // 
             this.m_menuExpireSep2.Name = "m_menuExpireSep2";
-            this.m_menuExpireSep2.Size = new System.Drawing.Size(171, 6);
+            this.m_menuExpireSep2.Size = new System.Drawing.Size(149, 6);
             // 
             // m_menuExpire1Year
             // 
             this.m_menuExpire1Year.Name = "m_menuExpire1Year";
-            this.m_menuExpire1Year.Size = new System.Drawing.Size(174, 36);
+            this.m_menuExpire1Year.Size = new System.Drawing.Size(152, 28);
             this.m_menuExpire1Year.Text = "1 &Year";
             this.m_menuExpire1Year.Click += new System.EventHandler(this.OnMenuExpire1Year);
             // 
@@ -593,11 +593,11 @@
             // 
             this.m_tabAdvanced.Controls.Add(this.m_grpAttachments);
             this.m_tabAdvanced.Controls.Add(this.m_grpStringFields);
-            this.m_tabAdvanced.Location = new System.Drawing.Point(4, 38);
-            this.m_tabAdvanced.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabAdvanced.Location = new System.Drawing.Point(4, 33);
+            this.m_tabAdvanced.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tabAdvanced.Name = "m_tabAdvanced";
-            this.m_tabAdvanced.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.m_tabAdvanced.Size = new System.Drawing.Size(1060, 723);
+            this.m_tabAdvanced.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.m_tabAdvanced.Size = new System.Drawing.Size(882, 601);
             this.m_tabAdvanced.TabIndex = 1;
             this.m_tabAdvanced.Text = "Advanced";
             this.m_tabAdvanced.UseVisualStyleBackColor = true;
@@ -609,21 +609,21 @@
             this.m_grpAttachments.Controls.Add(this.m_btnBinDelete);
             this.m_grpAttachments.Controls.Add(this.m_btnBinAdd);
             this.m_grpAttachments.Controls.Add(this.m_lvBinaries);
-            this.m_grpAttachments.Location = new System.Drawing.Point(14, 362);
-            this.m_grpAttachments.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_grpAttachments.Location = new System.Drawing.Point(11, 301);
+            this.m_grpAttachments.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_grpAttachments.Name = "m_grpAttachments";
-            this.m_grpAttachments.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.m_grpAttachments.Size = new System.Drawing.Size(1023, 336);
+            this.m_grpAttachments.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.m_grpAttachments.Size = new System.Drawing.Size(852, 280);
             this.m_grpAttachments.TabIndex = 1;
             this.m_grpAttachments.TabStop = false;
             this.m_grpAttachments.Text = "File attachments";
             // 
             // m_btnBinOpen
             // 
-            this.m_btnBinOpen.Location = new System.Drawing.Point(842, 216);
-            this.m_btnBinOpen.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnBinOpen.Location = new System.Drawing.Point(701, 180);
+            this.m_btnBinOpen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnBinOpen.Name = "m_btnBinOpen";
-            this.m_btnBinOpen.Size = new System.Drawing.Size(168, 48);
+            this.m_btnBinOpen.Size = new System.Drawing.Size(140, 40);
             this.m_btnBinOpen.TabIndex = 3;
             this.m_btnBinOpen.Text = "Ope&n";
             this.m_btnBinOpen.UseVisualStyleBackColor = true;
@@ -631,10 +631,10 @@
             // 
             // m_btnBinSave
             // 
-            this.m_btnBinSave.Location = new System.Drawing.Point(842, 276);
-            this.m_btnBinSave.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnBinSave.Location = new System.Drawing.Point(701, 230);
+            this.m_btnBinSave.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnBinSave.Name = "m_btnBinSave";
-            this.m_btnBinSave.Size = new System.Drawing.Size(168, 48);
+            this.m_btnBinSave.Size = new System.Drawing.Size(140, 40);
             this.m_btnBinSave.TabIndex = 4;
             this.m_btnBinSave.Text = "&Save";
             this.m_btnBinSave.UseVisualStyleBackColor = true;
@@ -642,10 +642,10 @@
             // 
             // m_btnBinDelete
             // 
-            this.m_btnBinDelete.Location = new System.Drawing.Point(842, 99);
-            this.m_btnBinDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnBinDelete.Location = new System.Drawing.Point(701, 82);
+            this.m_btnBinDelete.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnBinDelete.Name = "m_btnBinDelete";
-            this.m_btnBinDelete.Size = new System.Drawing.Size(168, 48);
+            this.m_btnBinDelete.Size = new System.Drawing.Size(140, 40);
             this.m_btnBinDelete.TabIndex = 2;
             this.m_btnBinDelete.Text = "De&lete";
             this.m_btnBinDelete.UseVisualStyleBackColor = true;
@@ -653,10 +653,10 @@
             // 
             // m_btnBinAdd
             // 
-            this.m_btnBinAdd.Location = new System.Drawing.Point(842, 39);
-            this.m_btnBinAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnBinAdd.Location = new System.Drawing.Point(701, 32);
+            this.m_btnBinAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnBinAdd.Name = "m_btnBinAdd";
-            this.m_btnBinAdd.Size = new System.Drawing.Size(168, 48);
+            this.m_btnBinAdd.Size = new System.Drawing.Size(140, 40);
             this.m_btnBinAdd.TabIndex = 1;
             this.m_btnBinAdd.Text = "A&ttach";
             this.m_btnBinAdd.UseVisualStyleBackColor = true;
@@ -669,11 +669,11 @@
             this.m_lvBinaries.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvBinaries.HideSelection = false;
             this.m_lvBinaries.LabelEdit = true;
-            this.m_lvBinaries.Location = new System.Drawing.Point(14, 42);
-            this.m_lvBinaries.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvBinaries.Location = new System.Drawing.Point(11, 35);
+            this.m_lvBinaries.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvBinaries.Name = "m_lvBinaries";
             this.m_lvBinaries.ShowItemToolTips = true;
-            this.m_lvBinaries.Size = new System.Drawing.Size(810, 276);
+            this.m_lvBinaries.Size = new System.Drawing.Size(675, 230);
             this.m_lvBinaries.TabIndex = 0;
             this.m_lvBinaries.UseCompatibleStateImageBehavior = false;
             this.m_lvBinaries.View = System.Windows.Forms.View.Details;
@@ -691,21 +691,21 @@
             this.m_grpStringFields.Controls.Add(this.m_btnStrEdit);
             this.m_grpStringFields.Controls.Add(this.m_btnStrDelete);
             this.m_grpStringFields.Controls.Add(this.m_lvStrings);
-            this.m_grpStringFields.Location = new System.Drawing.Point(14, 12);
-            this.m_grpStringFields.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_grpStringFields.Location = new System.Drawing.Point(11, 10);
+            this.m_grpStringFields.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_grpStringFields.Name = "m_grpStringFields";
-            this.m_grpStringFields.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.m_grpStringFields.Size = new System.Drawing.Size(1023, 336);
+            this.m_grpStringFields.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.m_grpStringFields.Size = new System.Drawing.Size(852, 280);
             this.m_grpStringFields.TabIndex = 0;
             this.m_grpStringFields.TabStop = false;
             this.m_grpStringFields.Text = "String fields";
             // 
             // m_btnStrMore
             // 
-            this.m_btnStrMore.Location = new System.Drawing.Point(842, 276);
-            this.m_btnStrMore.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnStrMore.Location = new System.Drawing.Point(701, 230);
+            this.m_btnStrMore.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnStrMore.Name = "m_btnStrMore";
-            this.m_btnStrMore.Size = new System.Drawing.Size(168, 48);
+            this.m_btnStrMore.Size = new System.Drawing.Size(140, 40);
             this.m_btnStrMore.TabIndex = 4;
             this.m_btnStrMore.Text = "&More";
             this.m_btnStrMore.UseVisualStyleBackColor = true;
@@ -713,10 +713,10 @@
             // 
             // m_btnStrAdd
             // 
-            this.m_btnStrAdd.Location = new System.Drawing.Point(842, 39);
-            this.m_btnStrAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnStrAdd.Location = new System.Drawing.Point(701, 32);
+            this.m_btnStrAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnStrAdd.Name = "m_btnStrAdd";
-            this.m_btnStrAdd.Size = new System.Drawing.Size(168, 48);
+            this.m_btnStrAdd.Size = new System.Drawing.Size(140, 40);
             this.m_btnStrAdd.TabIndex = 1;
             this.m_btnStrAdd.Text = "&Add";
             this.m_btnStrAdd.UseVisualStyleBackColor = true;
@@ -724,10 +724,10 @@
             // 
             // m_btnStrEdit
             // 
-            this.m_btnStrEdit.Location = new System.Drawing.Point(842, 99);
-            this.m_btnStrEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnStrEdit.Location = new System.Drawing.Point(701, 82);
+            this.m_btnStrEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnStrEdit.Name = "m_btnStrEdit";
-            this.m_btnStrEdit.Size = new System.Drawing.Size(168, 48);
+            this.m_btnStrEdit.Size = new System.Drawing.Size(140, 40);
             this.m_btnStrEdit.TabIndex = 2;
             this.m_btnStrEdit.Text = "&Edit";
             this.m_btnStrEdit.UseVisualStyleBackColor = true;
@@ -735,10 +735,10 @@
             // 
             // m_btnStrDelete
             // 
-            this.m_btnStrDelete.Location = new System.Drawing.Point(842, 160);
-            this.m_btnStrDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnStrDelete.Location = new System.Drawing.Point(701, 134);
+            this.m_btnStrDelete.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnStrDelete.Name = "m_btnStrDelete";
-            this.m_btnStrDelete.Size = new System.Drawing.Size(168, 48);
+            this.m_btnStrDelete.Size = new System.Drawing.Size(140, 40);
             this.m_btnStrDelete.TabIndex = 3;
             this.m_btnStrDelete.Text = "&Delete";
             this.m_btnStrDelete.UseVisualStyleBackColor = true;
@@ -750,11 +750,11 @@
             this.m_lvStrings.FullRowSelect = true;
             this.m_lvStrings.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvStrings.HideSelection = false;
-            this.m_lvStrings.Location = new System.Drawing.Point(14, 42);
-            this.m_lvStrings.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvStrings.Location = new System.Drawing.Point(11, 35);
+            this.m_lvStrings.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvStrings.Name = "m_lvStrings";
             this.m_lvStrings.ShowItemToolTips = true;
-            this.m_lvStrings.Size = new System.Drawing.Size(810, 276);
+            this.m_lvStrings.Size = new System.Drawing.Size(675, 230);
             this.m_lvStrings.TabIndex = 0;
             this.m_lvStrings.UseCompatibleStateImageBehavior = false;
             this.m_lvStrings.View = System.Windows.Forms.View.Details;
@@ -763,7 +763,7 @@
             // 
             // m_ctxStr
             // 
-            this.m_ctxStr.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.m_ctxStr.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.m_ctxStr.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_ctxStrCopyName,
             this.m_ctxStrCopyValue,
@@ -777,14 +777,14 @@
             this.m_ctxStrSep3,
             this.m_ctxStrOtpGen});
             this.m_ctxStr.Name = "m_ctxStr";
-            this.m_ctxStr.Size = new System.Drawing.Size(326, 280);
+            this.m_ctxStr.Size = new System.Drawing.Size(276, 224);
             this.m_ctxStr.Opening += new System.ComponentModel.CancelEventHandler(this.OnCtxStrOpening);
             // 
             // m_ctxStrCopyName
             // 
             this.m_ctxStrCopyName.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
             this.m_ctxStrCopyName.Name = "m_ctxStrCopyName";
-            this.m_ctxStrCopyName.Size = new System.Drawing.Size(325, 36);
+            this.m_ctxStrCopyName.Size = new System.Drawing.Size(275, 28);
             this.m_ctxStrCopyName.Text = "Copy &Name(s)";
             this.m_ctxStrCopyName.Click += new System.EventHandler(this.OnCtxStrCopyName);
             // 
@@ -792,20 +792,20 @@
             // 
             this.m_ctxStrCopyValue.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
             this.m_ctxStrCopyValue.Name = "m_ctxStrCopyValue";
-            this.m_ctxStrCopyValue.Size = new System.Drawing.Size(325, 36);
+            this.m_ctxStrCopyValue.Size = new System.Drawing.Size(275, 28);
             this.m_ctxStrCopyValue.Text = "Copy &Value(s)";
             this.m_ctxStrCopyValue.Click += new System.EventHandler(this.OnCtxStrCopyValue);
             // 
             // m_ctxStrSep0
             // 
             this.m_ctxStrSep0.Name = "m_ctxStrSep0";
-            this.m_ctxStrSep0.Size = new System.Drawing.Size(322, 6);
+            this.m_ctxStrSep0.Size = new System.Drawing.Size(272, 6);
             // 
             // m_ctxStrCopyItem
             // 
             this.m_ctxStrCopyItem.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
             this.m_ctxStrCopyItem.Name = "m_ctxStrCopyItem";
-            this.m_ctxStrCopyItem.Size = new System.Drawing.Size(325, 36);
+            this.m_ctxStrCopyItem.Size = new System.Drawing.Size(275, 28);
             this.m_ctxStrCopyItem.Text = "&Copy Item(s)";
             this.m_ctxStrCopyItem.Click += new System.EventHandler(this.OnCtxStrCopyItem);
             // 
@@ -813,26 +813,26 @@
             // 
             this.m_ctxStrPasteItem.Image = global::KeePass.Properties.Resources.B16x16_EditPaste;
             this.m_ctxStrPasteItem.Name = "m_ctxStrPasteItem";
-            this.m_ctxStrPasteItem.Size = new System.Drawing.Size(325, 36);
+            this.m_ctxStrPasteItem.Size = new System.Drawing.Size(275, 28);
             this.m_ctxStrPasteItem.Text = "&Paste Item(s)";
             this.m_ctxStrPasteItem.Click += new System.EventHandler(this.OnCtxStrPasteItem);
             // 
             // m_ctxStrSep1
             // 
             this.m_ctxStrSep1.Name = "m_ctxStrSep1";
-            this.m_ctxStrSep1.Size = new System.Drawing.Size(322, 6);
+            this.m_ctxStrSep1.Size = new System.Drawing.Size(272, 6);
             // 
             // m_ctxStrSelectAll
             // 
             this.m_ctxStrSelectAll.Name = "m_ctxStrSelectAll";
-            this.m_ctxStrSelectAll.Size = new System.Drawing.Size(325, 36);
+            this.m_ctxStrSelectAll.Size = new System.Drawing.Size(275, 28);
             this.m_ctxStrSelectAll.Text = "&Select All";
             this.m_ctxStrSelectAll.Click += new System.EventHandler(this.OnCtxStrSelectAll);
             // 
             // m_ctxStrSep2
             // 
             this.m_ctxStrSep2.Name = "m_ctxStrSep2";
-            this.m_ctxStrSep2.Size = new System.Drawing.Size(322, 6);
+            this.m_ctxStrSep2.Size = new System.Drawing.Size(272, 6);
             // 
             // m_ctxStrMoveTo
             // 
@@ -843,54 +843,54 @@
             this.m_ctxStrMoveToUrl,
             this.m_ctxStrMoveToNotes});
             this.m_ctxStrMoveTo.Name = "m_ctxStrMoveTo";
-            this.m_ctxStrMoveTo.Size = new System.Drawing.Size(325, 36);
+            this.m_ctxStrMoveTo.Size = new System.Drawing.Size(275, 28);
             this.m_ctxStrMoveTo.Text = "&Move To";
             // 
             // m_ctxStrMoveToTitle
             // 
             this.m_ctxStrMoveToTitle.Name = "m_ctxStrMoveToTitle";
-            this.m_ctxStrMoveToTitle.Size = new System.Drawing.Size(219, 38);
+            this.m_ctxStrMoveToTitle.Size = new System.Drawing.Size(179, 28);
             this.m_ctxStrMoveToTitle.Text = "&Title";
             this.m_ctxStrMoveToTitle.Click += new System.EventHandler(this.OnCtxStrMoveToTitle);
             // 
             // m_ctxStrMoveToUserName
             // 
             this.m_ctxStrMoveToUserName.Name = "m_ctxStrMoveToUserName";
-            this.m_ctxStrMoveToUserName.Size = new System.Drawing.Size(219, 38);
+            this.m_ctxStrMoveToUserName.Size = new System.Drawing.Size(179, 28);
             this.m_ctxStrMoveToUserName.Text = "&User Name";
             this.m_ctxStrMoveToUserName.Click += new System.EventHandler(this.OnCtxStrMoveToUserName);
             // 
             // m_ctxStrMoveToPassword
             // 
             this.m_ctxStrMoveToPassword.Name = "m_ctxStrMoveToPassword";
-            this.m_ctxStrMoveToPassword.Size = new System.Drawing.Size(219, 38);
+            this.m_ctxStrMoveToPassword.Size = new System.Drawing.Size(179, 28);
             this.m_ctxStrMoveToPassword.Text = "&Password";
             this.m_ctxStrMoveToPassword.Click += new System.EventHandler(this.OnCtxStrMoveToPassword);
             // 
             // m_ctxStrMoveToUrl
             // 
             this.m_ctxStrMoveToUrl.Name = "m_ctxStrMoveToUrl";
-            this.m_ctxStrMoveToUrl.Size = new System.Drawing.Size(219, 38);
+            this.m_ctxStrMoveToUrl.Size = new System.Drawing.Size(179, 28);
             this.m_ctxStrMoveToUrl.Text = "UR&L";
             this.m_ctxStrMoveToUrl.Click += new System.EventHandler(this.OnCtxStrMoveToUrl);
             // 
             // m_ctxStrMoveToNotes
             // 
             this.m_ctxStrMoveToNotes.Name = "m_ctxStrMoveToNotes";
-            this.m_ctxStrMoveToNotes.Size = new System.Drawing.Size(219, 38);
+            this.m_ctxStrMoveToNotes.Size = new System.Drawing.Size(179, 28);
             this.m_ctxStrMoveToNotes.Text = "&Notes";
             this.m_ctxStrMoveToNotes.Click += new System.EventHandler(this.OnCtxStrMoveToNotes);
             // 
             // m_ctxStrSep3
             // 
             this.m_ctxStrSep3.Name = "m_ctxStrSep3";
-            this.m_ctxStrSep3.Size = new System.Drawing.Size(322, 6);
+            this.m_ctxStrSep3.Size = new System.Drawing.Size(272, 6);
             // 
             // m_ctxStrOtpGen
             // 
             this.m_ctxStrOtpGen.Image = global::KeePass.Properties.Resources.B16x16_KGPG_Gen;
             this.m_ctxStrOtpGen.Name = "m_ctxStrOtpGen";
-            this.m_ctxStrOtpGen.Size = new System.Drawing.Size(325, 36);
+            this.m_ctxStrOtpGen.Size = new System.Drawing.Size(275, 28);
             this.m_ctxStrOtpGen.Text = "&OTP Generator Settings...";
             this.m_ctxStrOtpGen.Click += new System.EventHandler(this.OnCtxStrOtpGen);
             // 
@@ -911,29 +911,29 @@
             this.m_tabProperties.Controls.Add(this.m_cbCustomBackgroundColor);
             this.m_tabProperties.Controls.Add(this.m_btnPickBgColor);
             this.m_tabProperties.Controls.Add(this.m_cmbOverrideUrl);
-            this.m_tabProperties.Location = new System.Drawing.Point(4, 38);
-            this.m_tabProperties.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabProperties.Location = new System.Drawing.Point(4, 33);
+            this.m_tabProperties.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tabProperties.Name = "m_tabProperties";
-            this.m_tabProperties.Size = new System.Drawing.Size(1060, 723);
+            this.m_tabProperties.Size = new System.Drawing.Size(882, 601);
             this.m_tabProperties.TabIndex = 4;
             this.m_tabProperties.Text = "Properties";
             this.m_tabProperties.UseVisualStyleBackColor = true;
             // 
             // m_btnTags
             // 
-            this.m_btnTags.Location = new System.Drawing.Point(954, 188);
-            this.m_btnTags.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnTags.Location = new System.Drawing.Point(795, 156);
+            this.m_btnTags.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnTags.Name = "m_btnTags";
-            this.m_btnTags.Size = new System.Drawing.Size(72, 48);
+            this.m_btnTags.Size = new System.Drawing.Size(60, 40);
             this.m_btnTags.TabIndex = 7;
             this.m_btnTags.UseVisualStyleBackColor = true;
             // 
             // m_linkTagsInh
             // 
-            this.m_linkTagsInh.Location = new System.Drawing.Point(447, 153);
-            this.m_linkTagsInh.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_linkTagsInh.Location = new System.Drawing.Point(372, 128);
+            this.m_linkTagsInh.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_linkTagsInh.Name = "m_linkTagsInh";
-            this.m_linkTagsInh.Size = new System.Drawing.Size(585, 28);
+            this.m_linkTagsInh.Size = new System.Drawing.Size(488, 24);
             this.m_linkTagsInh.TabIndex = 4;
             this.m_linkTagsInh.TabStop = true;
             this.m_linkTagsInh.Text = "<DYN>";
@@ -942,19 +942,19 @@
             // m_lblCustomData
             // 
             this.m_lblCustomData.AutoSize = true;
-            this.m_lblCustomData.Location = new System.Drawing.Point(14, 363);
-            this.m_lblCustomData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblCustomData.Location = new System.Drawing.Point(11, 302);
+            this.m_lblCustomData.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblCustomData.Name = "m_lblCustomData";
-            this.m_lblCustomData.Size = new System.Drawing.Size(139, 29);
+            this.m_lblCustomData.Size = new System.Drawing.Size(108, 24);
             this.m_lblCustomData.TabIndex = 10;
             this.m_lblCustomData.Text = "&Plugin data:";
             // 
             // m_btnCDDel
             // 
-            this.m_btnCDDel.Location = new System.Drawing.Point(858, 399);
-            this.m_btnCDDel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCDDel.Location = new System.Drawing.Point(715, 332);
+            this.m_btnCDDel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCDDel.Name = "m_btnCDDel";
-            this.m_btnCDDel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCDDel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCDDel.TabIndex = 12;
             this.m_btnCDDel.Text = "&Delete";
             this.m_btnCDDel.UseVisualStyleBackColor = true;
@@ -965,11 +965,11 @@
             this.m_lvCustomData.FullRowSelect = true;
             this.m_lvCustomData.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.m_lvCustomData.HideSelection = false;
-            this.m_lvCustomData.Location = new System.Drawing.Point(21, 400);
-            this.m_lvCustomData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvCustomData.Location = new System.Drawing.Point(18, 334);
+            this.m_lvCustomData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvCustomData.Name = "m_lvCustomData";
             this.m_lvCustomData.ShowItemToolTips = true;
-            this.m_lvCustomData.Size = new System.Drawing.Size(818, 205);
+            this.m_lvCustomData.Size = new System.Drawing.Size(683, 172);
             this.m_lvCustomData.TabIndex = 11;
             this.m_lvCustomData.UseCompatibleStateImageBehavior = false;
             this.m_lvCustomData.View = System.Windows.Forms.View.Details;
@@ -977,38 +977,38 @@
             // 
             // m_tbTags
             // 
-            this.m_tbTags.Location = new System.Drawing.Point(21, 190);
-            this.m_tbTags.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbTags.Location = new System.Drawing.Point(18, 159);
+            this.m_tbTags.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbTags.Name = "m_tbTags";
-            this.m_tbTags.Size = new System.Drawing.Size(916, 33);
+            this.m_tbTags.Size = new System.Drawing.Size(764, 29);
             this.m_tbTags.TabIndex = 6;
             // 
             // m_lblTags
             // 
             this.m_lblTags.AutoSize = true;
-            this.m_lblTags.Location = new System.Drawing.Point(14, 153);
-            this.m_lblTags.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblTags.Location = new System.Drawing.Point(11, 128);
+            this.m_lblTags.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblTags.Name = "m_lblTags";
-            this.m_lblTags.Size = new System.Drawing.Size(74, 29);
+            this.m_lblTags.Size = new System.Drawing.Size(57, 24);
             this.m_lblTags.TabIndex = 5;
             this.m_lblTags.Text = "&Tags:";
             // 
             // m_btnPickFgColor
             // 
-            this.m_btnPickFgColor.Location = new System.Drawing.Point(372, 18);
-            this.m_btnPickFgColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnPickFgColor.Location = new System.Drawing.Point(310, 15);
+            this.m_btnPickFgColor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnPickFgColor.Name = "m_btnPickFgColor";
-            this.m_btnPickFgColor.Size = new System.Drawing.Size(108, 48);
+            this.m_btnPickFgColor.Size = new System.Drawing.Size(90, 40);
             this.m_btnPickFgColor.TabIndex = 1;
             this.m_btnPickFgColor.UseVisualStyleBackColor = true;
             // 
             // m_cbCustomForegroundColor
             // 
             this.m_cbCustomForegroundColor.AutoSize = true;
-            this.m_cbCustomForegroundColor.Location = new System.Drawing.Point(21, 27);
-            this.m_cbCustomForegroundColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbCustomForegroundColor.Location = new System.Drawing.Point(18, 22);
+            this.m_cbCustomForegroundColor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbCustomForegroundColor.Name = "m_cbCustomForegroundColor";
-            this.m_cbCustomForegroundColor.Size = new System.Drawing.Size(311, 33);
+            this.m_cbCustomForegroundColor.Size = new System.Drawing.Size(246, 28);
             this.m_cbCustomForegroundColor.TabIndex = 0;
             this.m_cbCustomForegroundColor.Text = "Custom &foreground color:";
             this.m_cbCustomForegroundColor.UseVisualStyleBackColor = true;
@@ -1016,40 +1016,40 @@
             // 
             // m_tbUuid
             // 
-            this.m_tbUuid.Location = new System.Drawing.Point(111, 642);
-            this.m_tbUuid.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbUuid.Location = new System.Drawing.Point(92, 535);
+            this.m_tbUuid.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbUuid.Name = "m_tbUuid";
             this.m_tbUuid.ReadOnly = true;
-            this.m_tbUuid.Size = new System.Drawing.Size(910, 33);
+            this.m_tbUuid.Size = new System.Drawing.Size(759, 29);
             this.m_tbUuid.TabIndex = 14;
             // 
             // m_lblUuid
             // 
             this.m_lblUuid.AutoSize = true;
-            this.m_lblUuid.Location = new System.Drawing.Point(14, 648);
-            this.m_lblUuid.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblUuid.Location = new System.Drawing.Point(11, 540);
+            this.m_lblUuid.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblUuid.Name = "m_lblUuid";
-            this.m_lblUuid.Size = new System.Drawing.Size(76, 29);
+            this.m_lblUuid.Size = new System.Drawing.Size(58, 24);
             this.m_lblUuid.TabIndex = 13;
             this.m_lblUuid.Text = "&UUID:";
             // 
             // m_lblOverrideUrl
             // 
             this.m_lblOverrideUrl.AutoSize = true;
-            this.m_lblOverrideUrl.Location = new System.Drawing.Point(14, 258);
-            this.m_lblOverrideUrl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblOverrideUrl.Location = new System.Drawing.Point(11, 215);
+            this.m_lblOverrideUrl.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblOverrideUrl.Name = "m_lblOverrideUrl";
-            this.m_lblOverrideUrl.Size = new System.Drawing.Size(500, 29);
+            this.m_lblOverrideUrl.Size = new System.Drawing.Size(390, 24);
             this.m_lblOverrideUrl.TabIndex = 8;
             this.m_lblOverrideUrl.Text = "O&verride URL (e.g. to use a specific browser):";
             // 
             // m_cbCustomBackgroundColor
             // 
             this.m_cbCustomBackgroundColor.AutoSize = true;
-            this.m_cbCustomBackgroundColor.Location = new System.Drawing.Point(21, 87);
-            this.m_cbCustomBackgroundColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbCustomBackgroundColor.Location = new System.Drawing.Point(18, 72);
+            this.m_cbCustomBackgroundColor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbCustomBackgroundColor.Name = "m_cbCustomBackgroundColor";
-            this.m_cbCustomBackgroundColor.Size = new System.Drawing.Size(320, 33);
+            this.m_cbCustomBackgroundColor.Size = new System.Drawing.Size(254, 28);
             this.m_cbCustomBackgroundColor.TabIndex = 2;
             this.m_cbCustomBackgroundColor.Text = "Custom &background color:";
             this.m_cbCustomBackgroundColor.UseVisualStyleBackColor = true;
@@ -1057,21 +1057,21 @@
             // 
             // m_btnPickBgColor
             // 
-            this.m_btnPickBgColor.Location = new System.Drawing.Point(372, 80);
-            this.m_btnPickBgColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnPickBgColor.Location = new System.Drawing.Point(310, 66);
+            this.m_btnPickBgColor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnPickBgColor.Name = "m_btnPickBgColor";
-            this.m_btnPickBgColor.Size = new System.Drawing.Size(108, 48);
+            this.m_btnPickBgColor.Size = new System.Drawing.Size(90, 40);
             this.m_btnPickBgColor.TabIndex = 3;
             this.m_btnPickBgColor.UseVisualStyleBackColor = true;
             // 
             // m_cmbOverrideUrl
             // 
             this.m_cmbOverrideUrl.IntegralHeight = false;
-            this.m_cmbOverrideUrl.Location = new System.Drawing.Point(21, 296);
-            this.m_cmbOverrideUrl.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cmbOverrideUrl.Location = new System.Drawing.Point(18, 246);
+            this.m_cmbOverrideUrl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cmbOverrideUrl.MaxDropDownItems = 16;
             this.m_cmbOverrideUrl.Name = "m_cmbOverrideUrl";
-            this.m_cmbOverrideUrl.Size = new System.Drawing.Size(1000, 37);
+            this.m_cmbOverrideUrl.Size = new System.Drawing.Size(834, 32);
             this.m_cmbOverrideUrl.TabIndex = 9;
             this.m_cmbOverrideUrl.TextChanged += new System.EventHandler(this.OnUrlOverrideTextChanged);
             // 
@@ -1092,20 +1092,20 @@
             this.m_tabAutoType.Controls.Add(this.m_btnAutoTypeAdd);
             this.m_tabAutoType.Controls.Add(this.m_btnAutoTypeDelete);
             this.m_tabAutoType.Controls.Add(this.m_lvAutoType);
-            this.m_tabAutoType.Location = new System.Drawing.Point(4, 38);
-            this.m_tabAutoType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabAutoType.Location = new System.Drawing.Point(4, 33);
+            this.m_tabAutoType.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tabAutoType.Name = "m_tabAutoType";
-            this.m_tabAutoType.Size = new System.Drawing.Size(1060, 723);
+            this.m_tabAutoType.Size = new System.Drawing.Size(882, 601);
             this.m_tabAutoType.TabIndex = 2;
             this.m_tabAutoType.Text = "Auto-Type";
             this.m_tabAutoType.UseVisualStyleBackColor = true;
             // 
             // m_btnAutoTypeMore
             // 
-            this.m_btnAutoTypeMore.Location = new System.Drawing.Point(860, 592);
-            this.m_btnAutoTypeMore.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnAutoTypeMore.Location = new System.Drawing.Point(716, 494);
+            this.m_btnAutoTypeMore.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnAutoTypeMore.Name = "m_btnAutoTypeMore";
-            this.m_btnAutoTypeMore.Size = new System.Drawing.Size(168, 48);
+            this.m_btnAutoTypeMore.Size = new System.Drawing.Size(140, 40);
             this.m_btnAutoTypeMore.TabIndex = 12;
             this.m_btnAutoTypeMore.Text = "&More";
             this.m_btnAutoTypeMore.UseVisualStyleBackColor = true;
@@ -1114,10 +1114,10 @@
             // m_btnAutoTypeDown
             // 
             this.m_btnAutoTypeDown.Image = global::KeePass.Properties.Resources.B16x16_1DownArrow;
-            this.m_btnAutoTypeDown.Location = new System.Drawing.Point(860, 518);
-            this.m_btnAutoTypeDown.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnAutoTypeDown.Location = new System.Drawing.Point(716, 431);
+            this.m_btnAutoTypeDown.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnAutoTypeDown.Name = "m_btnAutoTypeDown";
-            this.m_btnAutoTypeDown.Size = new System.Drawing.Size(168, 48);
+            this.m_btnAutoTypeDown.Size = new System.Drawing.Size(140, 40);
             this.m_btnAutoTypeDown.TabIndex = 11;
             this.m_btnAutoTypeDown.UseVisualStyleBackColor = true;
             this.m_btnAutoTypeDown.Click += new System.EventHandler(this.OnBtnAutoTypeDown);
@@ -1125,10 +1125,10 @@
             // m_btnAutoTypeUp
             // 
             this.m_btnAutoTypeUp.Image = global::KeePass.Properties.Resources.B16x16_1UpArrow;
-            this.m_btnAutoTypeUp.Location = new System.Drawing.Point(860, 458);
-            this.m_btnAutoTypeUp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnAutoTypeUp.Location = new System.Drawing.Point(716, 381);
+            this.m_btnAutoTypeUp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnAutoTypeUp.Name = "m_btnAutoTypeUp";
-            this.m_btnAutoTypeUp.Size = new System.Drawing.Size(168, 48);
+            this.m_btnAutoTypeUp.Size = new System.Drawing.Size(140, 40);
             this.m_btnAutoTypeUp.TabIndex = 10;
             this.m_btnAutoTypeUp.UseVisualStyleBackColor = true;
             this.m_btnAutoTypeUp.Click += new System.EventHandler(this.OnBtnAutoTypeUp);
@@ -1136,10 +1136,10 @@
             // m_linkAutoTypeObfuscation
             // 
             this.m_linkAutoTypeObfuscation.AutoSize = true;
-            this.m_linkAutoTypeObfuscation.Location = new System.Drawing.Point(468, 658);
-            this.m_linkAutoTypeObfuscation.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_linkAutoTypeObfuscation.Location = new System.Drawing.Point(390, 549);
+            this.m_linkAutoTypeObfuscation.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_linkAutoTypeObfuscation.Name = "m_linkAutoTypeObfuscation";
-            this.m_linkAutoTypeObfuscation.Size = new System.Drawing.Size(146, 29);
+            this.m_linkAutoTypeObfuscation.Size = new System.Drawing.Size(114, 24);
             this.m_linkAutoTypeObfuscation.TabIndex = 14;
             this.m_linkAutoTypeObfuscation.TabStop = true;
             this.m_linkAutoTypeObfuscation.Text = "What is this?";
@@ -1148,10 +1148,10 @@
             // m_cbAutoTypeObfuscation
             // 
             this.m_cbAutoTypeObfuscation.AutoSize = true;
-            this.m_cbAutoTypeObfuscation.Location = new System.Drawing.Point(21, 657);
-            this.m_cbAutoTypeObfuscation.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbAutoTypeObfuscation.Location = new System.Drawing.Point(18, 548);
+            this.m_cbAutoTypeObfuscation.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbAutoTypeObfuscation.Name = "m_cbAutoTypeObfuscation";
-            this.m_cbAutoTypeObfuscation.Size = new System.Drawing.Size(413, 33);
+            this.m_cbAutoTypeObfuscation.Size = new System.Drawing.Size(326, 28);
             this.m_cbAutoTypeObfuscation.TabIndex = 13;
             this.m_cbAutoTypeObfuscation.Text = "Two-&channel auto-type obfuscation";
             this.m_cbAutoTypeObfuscation.UseVisualStyleBackColor = true;
@@ -1159,10 +1159,10 @@
             // 
             // m_btnAutoTypeEditDefault
             // 
-            this.m_btnAutoTypeEditDefault.Location = new System.Drawing.Point(860, 171);
-            this.m_btnAutoTypeEditDefault.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnAutoTypeEditDefault.Location = new System.Drawing.Point(716, 142);
+            this.m_btnAutoTypeEditDefault.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnAutoTypeEditDefault.Name = "m_btnAutoTypeEditDefault";
-            this.m_btnAutoTypeEditDefault.Size = new System.Drawing.Size(168, 48);
+            this.m_btnAutoTypeEditDefault.Size = new System.Drawing.Size(140, 40);
             this.m_btnAutoTypeEditDefault.TabIndex = 4;
             this.m_btnAutoTypeEditDefault.Text = "Edi&t";
             this.m_btnAutoTypeEditDefault.UseVisualStyleBackColor = true;
@@ -1171,10 +1171,10 @@
             // m_rbAutoTypeOverride
             // 
             this.m_rbAutoTypeOverride.AutoSize = true;
-            this.m_rbAutoTypeOverride.Location = new System.Drawing.Point(21, 130);
-            this.m_rbAutoTypeOverride.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbAutoTypeOverride.Location = new System.Drawing.Point(18, 109);
+            this.m_rbAutoTypeOverride.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbAutoTypeOverride.Name = "m_rbAutoTypeOverride";
-            this.m_rbAutoTypeOverride.Size = new System.Drawing.Size(328, 33);
+            this.m_rbAutoTypeOverride.Size = new System.Drawing.Size(259, 28);
             this.m_rbAutoTypeOverride.TabIndex = 2;
             this.m_rbAutoTypeOverride.TabStop = true;
             this.m_rbAutoTypeOverride.Text = "O&verride default sequence:";
@@ -1183,10 +1183,10 @@
             // m_rbAutoTypeSeqInherit
             // 
             this.m_rbAutoTypeSeqInherit.AutoSize = true;
-            this.m_rbAutoTypeSeqInherit.Location = new System.Drawing.Point(21, 87);
-            this.m_rbAutoTypeSeqInherit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbAutoTypeSeqInherit.Location = new System.Drawing.Point(18, 72);
+            this.m_rbAutoTypeSeqInherit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbAutoTypeSeqInherit.Name = "m_rbAutoTypeSeqInherit";
-            this.m_rbAutoTypeSeqInherit.Size = new System.Drawing.Size(522, 33);
+            this.m_rbAutoTypeSeqInherit.Size = new System.Drawing.Size(411, 28);
             this.m_rbAutoTypeSeqInherit.TabIndex = 1;
             this.m_rbAutoTypeSeqInherit.TabStop = true;
             this.m_rbAutoTypeSeqInherit.Text = "&Inherit default auto-type sequence from group";
@@ -1196,20 +1196,20 @@
             // m_lblCustomAutoType
             // 
             this.m_lblCustomAutoType.AutoSize = true;
-            this.m_lblCustomAutoType.Location = new System.Drawing.Point(14, 244);
-            this.m_lblCustomAutoType.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblCustomAutoType.Location = new System.Drawing.Point(11, 204);
+            this.m_lblCustomAutoType.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblCustomAutoType.Name = "m_lblCustomAutoType";
-            this.m_lblCustomAutoType.Size = new System.Drawing.Size(492, 29);
+            this.m_lblCustomAutoType.Size = new System.Drawing.Size(386, 24);
             this.m_lblCustomAutoType.TabIndex = 5;
             this.m_lblCustomAutoType.Text = "&Use custom sequences for specific windows:";
             // 
             // m_cbAutoTypeEnabled
             // 
             this.m_cbAutoTypeEnabled.AutoSize = true;
-            this.m_cbAutoTypeEnabled.Location = new System.Drawing.Point(21, 27);
-            this.m_cbAutoTypeEnabled.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbAutoTypeEnabled.Location = new System.Drawing.Point(18, 22);
+            this.m_cbAutoTypeEnabled.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbAutoTypeEnabled.Name = "m_cbAutoTypeEnabled";
-            this.m_cbAutoTypeEnabled.Size = new System.Drawing.Size(355, 33);
+            this.m_cbAutoTypeEnabled.Size = new System.Drawing.Size(279, 28);
             this.m_cbAutoTypeEnabled.TabIndex = 0;
             this.m_cbAutoTypeEnabled.Text = "E&nable auto-type for this entry";
             this.m_cbAutoTypeEnabled.UseVisualStyleBackColor = true;
@@ -1217,18 +1217,18 @@
             // 
             // m_tbDefaultAutoTypeSeq
             // 
-            this.m_tbDefaultAutoTypeSeq.Location = new System.Drawing.Point(63, 174);
-            this.m_tbDefaultAutoTypeSeq.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbDefaultAutoTypeSeq.Location = new System.Drawing.Point(52, 145);
+            this.m_tbDefaultAutoTypeSeq.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbDefaultAutoTypeSeq.Name = "m_tbDefaultAutoTypeSeq";
-            this.m_tbDefaultAutoTypeSeq.Size = new System.Drawing.Size(778, 33);
+            this.m_tbDefaultAutoTypeSeq.Size = new System.Drawing.Size(649, 29);
             this.m_tbDefaultAutoTypeSeq.TabIndex = 3;
             // 
             // m_btnAutoTypeEdit
             // 
-            this.m_btnAutoTypeEdit.Location = new System.Drawing.Point(860, 336);
-            this.m_btnAutoTypeEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnAutoTypeEdit.Location = new System.Drawing.Point(716, 280);
+            this.m_btnAutoTypeEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnAutoTypeEdit.Name = "m_btnAutoTypeEdit";
-            this.m_btnAutoTypeEdit.Size = new System.Drawing.Size(168, 48);
+            this.m_btnAutoTypeEdit.Size = new System.Drawing.Size(140, 40);
             this.m_btnAutoTypeEdit.TabIndex = 8;
             this.m_btnAutoTypeEdit.Text = "&Edit";
             this.m_btnAutoTypeEdit.UseVisualStyleBackColor = true;
@@ -1236,10 +1236,10 @@
             // 
             // m_btnAutoTypeAdd
             // 
-            this.m_btnAutoTypeAdd.Location = new System.Drawing.Point(860, 276);
-            this.m_btnAutoTypeAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnAutoTypeAdd.Location = new System.Drawing.Point(716, 230);
+            this.m_btnAutoTypeAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnAutoTypeAdd.Name = "m_btnAutoTypeAdd";
-            this.m_btnAutoTypeAdd.Size = new System.Drawing.Size(168, 48);
+            this.m_btnAutoTypeAdd.Size = new System.Drawing.Size(140, 40);
             this.m_btnAutoTypeAdd.TabIndex = 7;
             this.m_btnAutoTypeAdd.Text = "&Add";
             this.m_btnAutoTypeAdd.UseVisualStyleBackColor = true;
@@ -1247,10 +1247,10 @@
             // 
             // m_btnAutoTypeDelete
             // 
-            this.m_btnAutoTypeDelete.Location = new System.Drawing.Point(860, 396);
-            this.m_btnAutoTypeDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnAutoTypeDelete.Location = new System.Drawing.Point(716, 330);
+            this.m_btnAutoTypeDelete.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnAutoTypeDelete.Name = "m_btnAutoTypeDelete";
-            this.m_btnAutoTypeDelete.Size = new System.Drawing.Size(168, 48);
+            this.m_btnAutoTypeDelete.Size = new System.Drawing.Size(140, 40);
             this.m_btnAutoTypeDelete.TabIndex = 9;
             this.m_btnAutoTypeDelete.Text = "&Delete";
             this.m_btnAutoTypeDelete.UseVisualStyleBackColor = true;
@@ -1262,11 +1262,11 @@
             this.m_lvAutoType.FullRowSelect = true;
             this.m_lvAutoType.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvAutoType.HideSelection = false;
-            this.m_lvAutoType.Location = new System.Drawing.Point(21, 279);
-            this.m_lvAutoType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvAutoType.Location = new System.Drawing.Point(18, 232);
+            this.m_lvAutoType.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvAutoType.Name = "m_lvAutoType";
             this.m_lvAutoType.ShowItemToolTips = true;
-            this.m_lvAutoType.Size = new System.Drawing.Size(820, 355);
+            this.m_lvAutoType.Size = new System.Drawing.Size(684, 296);
             this.m_lvAutoType.TabIndex = 6;
             this.m_lvAutoType.UseCompatibleStateImageBehavior = false;
             this.m_lvAutoType.View = System.Windows.Forms.View.Details;
@@ -1275,7 +1275,7 @@
             // 
             // m_ctxAutoType
             // 
-            this.m_ctxAutoType.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.m_ctxAutoType.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.m_ctxAutoType.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_ctxAutoTypeCopyWnd,
             this.m_ctxAutoTypeCopySeq,
@@ -1286,14 +1286,14 @@
             this.m_ctxAutoTypeSep1,
             this.m_ctxAutoTypeSelectAll});
             this.m_ctxAutoType.Name = "m_ctxAutoType";
-            this.m_ctxAutoType.Size = new System.Drawing.Size(308, 232);
+            this.m_ctxAutoType.Size = new System.Drawing.Size(260, 184);
             this.m_ctxAutoType.Opening += new System.ComponentModel.CancelEventHandler(this.OnCtxAutoTypeOpening);
             // 
             // m_ctxAutoTypeCopyWnd
             // 
             this.m_ctxAutoTypeCopyWnd.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
             this.m_ctxAutoTypeCopyWnd.Name = "m_ctxAutoTypeCopyWnd";
-            this.m_ctxAutoTypeCopyWnd.Size = new System.Drawing.Size(307, 36);
+            this.m_ctxAutoTypeCopyWnd.Size = new System.Drawing.Size(259, 28);
             this.m_ctxAutoTypeCopyWnd.Text = "Copy &Target Window(s)";
             this.m_ctxAutoTypeCopyWnd.Click += new System.EventHandler(this.OnCtxAutoTypeCopyWnd);
             // 
@@ -1301,20 +1301,20 @@
             // 
             this.m_ctxAutoTypeCopySeq.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
             this.m_ctxAutoTypeCopySeq.Name = "m_ctxAutoTypeCopySeq";
-            this.m_ctxAutoTypeCopySeq.Size = new System.Drawing.Size(307, 36);
+            this.m_ctxAutoTypeCopySeq.Size = new System.Drawing.Size(259, 28);
             this.m_ctxAutoTypeCopySeq.Text = "Copy &Sequence(s)";
             this.m_ctxAutoTypeCopySeq.Click += new System.EventHandler(this.OnCtxAutoTypeCopySeq);
             // 
             // m_ctxAutoTypeSep0
             // 
             this.m_ctxAutoTypeSep0.Name = "m_ctxAutoTypeSep0";
-            this.m_ctxAutoTypeSep0.Size = new System.Drawing.Size(304, 6);
+            this.m_ctxAutoTypeSep0.Size = new System.Drawing.Size(256, 6);
             // 
             // m_ctxAutoTypeCopyItem
             // 
             this.m_ctxAutoTypeCopyItem.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
             this.m_ctxAutoTypeCopyItem.Name = "m_ctxAutoTypeCopyItem";
-            this.m_ctxAutoTypeCopyItem.Size = new System.Drawing.Size(307, 36);
+            this.m_ctxAutoTypeCopyItem.Size = new System.Drawing.Size(259, 28);
             this.m_ctxAutoTypeCopyItem.Text = "&Copy Item(s)";
             this.m_ctxAutoTypeCopyItem.Click += new System.EventHandler(this.OnCtxAutoTypeCopyItem);
             // 
@@ -1322,7 +1322,7 @@
             // 
             this.m_ctxAutoTypePasteItem.Image = global::KeePass.Properties.Resources.B16x16_EditPaste;
             this.m_ctxAutoTypePasteItem.Name = "m_ctxAutoTypePasteItem";
-            this.m_ctxAutoTypePasteItem.Size = new System.Drawing.Size(307, 36);
+            this.m_ctxAutoTypePasteItem.Size = new System.Drawing.Size(259, 28);
             this.m_ctxAutoTypePasteItem.Text = "&Paste Item(s)";
             this.m_ctxAutoTypePasteItem.Click += new System.EventHandler(this.OnCtxAutoTypePasteItem);
             // 
@@ -1330,19 +1330,19 @@
             // 
             this.m_ctxAutoTypeDup.Image = global::KeePass.Properties.Resources.B16x16_EditShred;
             this.m_ctxAutoTypeDup.Name = "m_ctxAutoTypeDup";
-            this.m_ctxAutoTypeDup.Size = new System.Drawing.Size(307, 36);
+            this.m_ctxAutoTypeDup.Size = new System.Drawing.Size(259, 28);
             this.m_ctxAutoTypeDup.Text = "&Duplicate Item(s)";
             this.m_ctxAutoTypeDup.Click += new System.EventHandler(this.OnCtxAutoTypeDup);
             // 
             // m_ctxAutoTypeSep1
             // 
             this.m_ctxAutoTypeSep1.Name = "m_ctxAutoTypeSep1";
-            this.m_ctxAutoTypeSep1.Size = new System.Drawing.Size(304, 6);
+            this.m_ctxAutoTypeSep1.Size = new System.Drawing.Size(256, 6);
             // 
             // m_ctxAutoTypeSelectAll
             // 
             this.m_ctxAutoTypeSelectAll.Name = "m_ctxAutoTypeSelectAll";
-            this.m_ctxAutoTypeSelectAll.Size = new System.Drawing.Size(307, 36);
+            this.m_ctxAutoTypeSelectAll.Size = new System.Drawing.Size(259, 28);
             this.m_ctxAutoTypeSelectAll.Text = "Select &All";
             this.m_ctxAutoTypeSelectAll.Click += new System.EventHandler(this.OnCtxAutoTypeSelectAll);
             // 
@@ -1361,20 +1361,20 @@
             this.m_tabHistory.Controls.Add(this.m_btnHistoryView);
             this.m_tabHistory.Controls.Add(this.m_btnHistoryRestore);
             this.m_tabHistory.Controls.Add(this.m_lvHistory);
-            this.m_tabHistory.Location = new System.Drawing.Point(4, 38);
-            this.m_tabHistory.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabHistory.Location = new System.Drawing.Point(4, 33);
+            this.m_tabHistory.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tabHistory.Name = "m_tabHistory";
-            this.m_tabHistory.Size = new System.Drawing.Size(1060, 723);
+            this.m_tabHistory.Size = new System.Drawing.Size(882, 601);
             this.m_tabHistory.TabIndex = 3;
             this.m_tabHistory.Text = "History";
             this.m_tabHistory.UseVisualStyleBackColor = true;
             // 
             // m_btnHistoryMore
             // 
-            this.m_btnHistoryMore.Location = new System.Drawing.Point(564, 638);
-            this.m_btnHistoryMore.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnHistoryMore.Location = new System.Drawing.Point(470, 531);
+            this.m_btnHistoryMore.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnHistoryMore.Name = "m_btnHistoryMore";
-            this.m_btnHistoryMore.Size = new System.Drawing.Size(168, 48);
+            this.m_btnHistoryMore.Size = new System.Drawing.Size(140, 40);
             this.m_btnHistoryMore.TabIndex = 11;
             this.m_btnHistoryMore.Text = "&More";
             this.m_btnHistoryMore.UseVisualStyleBackColor = true;
@@ -1382,10 +1382,10 @@
             // 
             // m_btnHistoryCompare
             // 
-            this.m_btnHistoryCompare.Location = new System.Drawing.Point(201, 638);
-            this.m_btnHistoryCompare.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnHistoryCompare.Location = new System.Drawing.Point(168, 531);
+            this.m_btnHistoryCompare.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnHistoryCompare.Name = "m_btnHistoryCompare";
-            this.m_btnHistoryCompare.Size = new System.Drawing.Size(168, 48);
+            this.m_btnHistoryCompare.Size = new System.Drawing.Size(140, 40);
             this.m_btnHistoryCompare.TabIndex = 9;
             this.m_btnHistoryCompare.Text = "&Compare";
             this.m_btnHistoryCompare.UseVisualStyleBackColor = true;
@@ -1394,79 +1394,79 @@
             // m_lblPasswordModifiedData
             // 
             this.m_lblPasswordModifiedData.AutoSize = true;
-            this.m_lblPasswordModifiedData.Location = new System.Drawing.Point(248, 118);
-            this.m_lblPasswordModifiedData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblPasswordModifiedData.Location = new System.Drawing.Point(206, 99);
+            this.m_lblPasswordModifiedData.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblPasswordModifiedData.Name = "m_lblPasswordModifiedData";
-            this.m_lblPasswordModifiedData.Size = new System.Drawing.Size(41, 29);
+            this.m_lblPasswordModifiedData.Size = new System.Drawing.Size(32, 24);
             this.m_lblPasswordModifiedData.TabIndex = 5;
             this.m_lblPasswordModifiedData.Text = "<>";
             // 
             // m_lblPasswordModified
             // 
             this.m_lblPasswordModified.AutoSize = true;
-            this.m_lblPasswordModified.Location = new System.Drawing.Point(14, 118);
-            this.m_lblPasswordModified.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblPasswordModified.Location = new System.Drawing.Point(11, 99);
+            this.m_lblPasswordModified.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblPasswordModified.Name = "m_lblPasswordModified";
-            this.m_lblPasswordModified.Size = new System.Drawing.Size(226, 29);
+            this.m_lblPasswordModified.Size = new System.Drawing.Size(174, 24);
             this.m_lblPasswordModified.TabIndex = 4;
             this.m_lblPasswordModified.Text = "Password modified:";
             // 
             // m_lblVersions
             // 
             this.m_lblVersions.AutoSize = true;
-            this.m_lblVersions.Location = new System.Drawing.Point(14, 164);
-            this.m_lblVersions.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblVersions.Location = new System.Drawing.Point(11, 136);
+            this.m_lblVersions.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblVersions.Name = "m_lblVersions";
-            this.m_lblVersions.Size = new System.Drawing.Size(113, 29);
+            this.m_lblVersions.Size = new System.Drawing.Size(89, 24);
             this.m_lblVersions.TabIndex = 6;
             this.m_lblVersions.Text = "V&ersions:";
             // 
             // m_lblModifiedData
             // 
             this.m_lblModifiedData.AutoSize = true;
-            this.m_lblModifiedData.Location = new System.Drawing.Point(248, 72);
-            this.m_lblModifiedData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblModifiedData.Location = new System.Drawing.Point(206, 60);
+            this.m_lblModifiedData.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblModifiedData.Name = "m_lblModifiedData";
-            this.m_lblModifiedData.Size = new System.Drawing.Size(41, 29);
+            this.m_lblModifiedData.Size = new System.Drawing.Size(32, 24);
             this.m_lblModifiedData.TabIndex = 3;
             this.m_lblModifiedData.Text = "<>";
             // 
             // m_lblModified
             // 
             this.m_lblModified.AutoSize = true;
-            this.m_lblModified.Location = new System.Drawing.Point(14, 72);
-            this.m_lblModified.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblModified.Location = new System.Drawing.Point(11, 60);
+            this.m_lblModified.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblModified.Name = "m_lblModified";
-            this.m_lblModified.Size = new System.Drawing.Size(113, 29);
+            this.m_lblModified.Size = new System.Drawing.Size(87, 24);
             this.m_lblModified.TabIndex = 2;
             this.m_lblModified.Text = "Modified:";
             // 
             // m_lblCreatedData
             // 
             this.m_lblCreatedData.AutoSize = true;
-            this.m_lblCreatedData.Location = new System.Drawing.Point(248, 27);
-            this.m_lblCreatedData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblCreatedData.Location = new System.Drawing.Point(206, 22);
+            this.m_lblCreatedData.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblCreatedData.Name = "m_lblCreatedData";
-            this.m_lblCreatedData.Size = new System.Drawing.Size(41, 29);
+            this.m_lblCreatedData.Size = new System.Drawing.Size(32, 24);
             this.m_lblCreatedData.TabIndex = 1;
             this.m_lblCreatedData.Text = "<>";
             // 
             // m_lblCreated
             // 
             this.m_lblCreated.AutoSize = true;
-            this.m_lblCreated.Location = new System.Drawing.Point(14, 27);
-            this.m_lblCreated.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblCreated.Location = new System.Drawing.Point(11, 22);
+            this.m_lblCreated.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblCreated.Name = "m_lblCreated";
-            this.m_lblCreated.Size = new System.Drawing.Size(105, 29);
+            this.m_lblCreated.Size = new System.Drawing.Size(81, 24);
             this.m_lblCreated.TabIndex = 0;
             this.m_lblCreated.Text = "Created:";
             // 
             // m_btnHistoryDelete
             // 
-            this.m_btnHistoryDelete.Location = new System.Drawing.Point(382, 638);
-            this.m_btnHistoryDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnHistoryDelete.Location = new System.Drawing.Point(319, 531);
+            this.m_btnHistoryDelete.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnHistoryDelete.Name = "m_btnHistoryDelete";
-            this.m_btnHistoryDelete.Size = new System.Drawing.Size(168, 48);
+            this.m_btnHistoryDelete.Size = new System.Drawing.Size(140, 40);
             this.m_btnHistoryDelete.TabIndex = 10;
             this.m_btnHistoryDelete.Text = "&Delete";
             this.m_btnHistoryDelete.UseVisualStyleBackColor = true;
@@ -1474,10 +1474,10 @@
             // 
             // m_btnHistoryView
             // 
-            this.m_btnHistoryView.Location = new System.Drawing.Point(18, 638);
-            this.m_btnHistoryView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnHistoryView.Location = new System.Drawing.Point(15, 531);
+            this.m_btnHistoryView.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnHistoryView.Name = "m_btnHistoryView";
-            this.m_btnHistoryView.Size = new System.Drawing.Size(168, 48);
+            this.m_btnHistoryView.Size = new System.Drawing.Size(140, 40);
             this.m_btnHistoryView.TabIndex = 8;
             this.m_btnHistoryView.Text = "&View";
             this.m_btnHistoryView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1486,10 +1486,10 @@
             // 
             // m_btnHistoryRestore
             // 
-            this.m_btnHistoryRestore.Location = new System.Drawing.Point(860, 638);
-            this.m_btnHistoryRestore.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnHistoryRestore.Location = new System.Drawing.Point(716, 531);
+            this.m_btnHistoryRestore.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnHistoryRestore.Name = "m_btnHistoryRestore";
-            this.m_btnHistoryRestore.Size = new System.Drawing.Size(168, 48);
+            this.m_btnHistoryRestore.Size = new System.Drawing.Size(140, 40);
             this.m_btnHistoryRestore.TabIndex = 12;
             this.m_btnHistoryRestore.Text = "&Restore";
             this.m_btnHistoryRestore.UseVisualStyleBackColor = true;
@@ -1501,11 +1501,11 @@
             this.m_lvHistory.FullRowSelect = true;
             this.m_lvHistory.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvHistory.HideSelection = false;
-            this.m_lvHistory.Location = new System.Drawing.Point(21, 198);
-            this.m_lvHistory.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvHistory.Location = new System.Drawing.Point(18, 165);
+            this.m_lvHistory.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvHistory.Name = "m_lvHistory";
             this.m_lvHistory.ShowItemToolTips = true;
-            this.m_lvHistory.Size = new System.Drawing.Size(1000, 424);
+            this.m_lvHistory.Size = new System.Drawing.Size(834, 354);
             this.m_lvHistory.TabIndex = 7;
             this.m_lvHistory.UseCompatibleStateImageBehavior = false;
             this.m_lvHistory.View = System.Windows.Forms.View.Details;
@@ -1514,18 +1514,18 @@
             // 
             // m_ctxHst
             // 
-            this.m_ctxHst.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.m_ctxHst.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.m_ctxHst.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_ctxHstSelectAll,
             this.m_ctxHstDeleteAll});
             this.m_ctxHst.Name = "m_ctxHst";
-            this.m_ctxHst.Size = new System.Drawing.Size(329, 76);
+            this.m_ctxHst.Size = new System.Drawing.Size(276, 60);
             // 
             // m_ctxHstSelectAll
             // 
             this.m_ctxHstSelectAll.Image = global::KeePass.Properties.Resources.B16x16_Edit;
             this.m_ctxHstSelectAll.Name = "m_ctxHstSelectAll";
-            this.m_ctxHstSelectAll.Size = new System.Drawing.Size(328, 36);
+            this.m_ctxHstSelectAll.Size = new System.Drawing.Size(275, 28);
             this.m_ctxHstSelectAll.Text = "&Select All Historic Entries";
             this.m_ctxHstSelectAll.Click += new System.EventHandler(this.OnCtxHstSelectAll);
             // 
@@ -1533,16 +1533,16 @@
             // 
             this.m_ctxHstDeleteAll.Image = global::KeePass.Properties.Resources.B16x16_EditShred;
             this.m_ctxHstDeleteAll.Name = "m_ctxHstDeleteAll";
-            this.m_ctxHstDeleteAll.Size = new System.Drawing.Size(328, 36);
+            this.m_ctxHstDeleteAll.Size = new System.Drawing.Size(275, 28);
             this.m_ctxHstDeleteAll.Text = "&Delete All Historic Entries";
             this.m_ctxHstDeleteAll.Click += new System.EventHandler(this.OnCtxHstDeleteAll);
             // 
             // m_btnTools
             // 
-            this.m_btnTools.Location = new System.Drawing.Point(22, 940);
-            this.m_btnTools.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnTools.Location = new System.Drawing.Point(19, 784);
+            this.m_btnTools.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnTools.Name = "m_btnTools";
-            this.m_btnTools.Size = new System.Drawing.Size(180, 48);
+            this.m_btnTools.Size = new System.Drawing.Size(150, 40);
             this.m_btnTools.TabIndex = 4;
             this.m_btnTools.Text = "T&ools";
             this.m_btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1553,15 +1553,15 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1101, 124);
+            this.m_bannerImage.Size = new System.Drawing.Size(918, 104);
             this.m_bannerImage.TabIndex = 16;
             this.m_bannerImage.TabStop = false;
             // 
             // m_ctxTools
             // 
-            this.m_ctxTools.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.m_ctxTools.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.m_ctxTools.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_ctxToolsHelp,
             this.m_ctxToolsSep0,
@@ -1575,39 +1575,39 @@
             this.m_ctxToolsSep3,
             this.m_ctxToolsOtpGen});
             this.m_ctxTools.Name = "m_ctxTools";
-            this.m_ctxTools.Size = new System.Drawing.Size(373, 280);
+            this.m_ctxTools.Size = new System.Drawing.Size(312, 224);
             // 
             // m_ctxToolsHelp
             // 
             this.m_ctxToolsHelp.Image = global::KeePass.Properties.Resources.B16x16_Help;
             this.m_ctxToolsHelp.Name = "m_ctxToolsHelp";
-            this.m_ctxToolsHelp.Size = new System.Drawing.Size(372, 36);
+            this.m_ctxToolsHelp.Size = new System.Drawing.Size(311, 28);
             this.m_ctxToolsHelp.Text = "&Help";
             this.m_ctxToolsHelp.Click += new System.EventHandler(this.OnCtxToolsHelp);
             // 
             // m_ctxToolsSep0
             // 
             this.m_ctxToolsSep0.Name = "m_ctxToolsSep0";
-            this.m_ctxToolsSep0.Size = new System.Drawing.Size(369, 6);
+            this.m_ctxToolsSep0.Size = new System.Drawing.Size(308, 6);
             // 
             // m_ctxToolsCopyInitialPassword
             // 
             this.m_ctxToolsCopyInitialPassword.Image = global::KeePass.Properties.Resources.B16x16_KGPG_Info;
             this.m_ctxToolsCopyInitialPassword.Name = "m_ctxToolsCopyInitialPassword";
-            this.m_ctxToolsCopyInitialPassword.Size = new System.Drawing.Size(372, 36);
+            this.m_ctxToolsCopyInitialPassword.Size = new System.Drawing.Size(311, 28);
             this.m_ctxToolsCopyInitialPassword.Text = "Copy Initial &Password";
             this.m_ctxToolsCopyInitialPassword.Click += new System.EventHandler(this.OnCtxToolsCopyInitialPassword);
             // 
             // m_ctxToolsSep1
             // 
             this.m_ctxToolsSep1.Name = "m_ctxToolsSep1";
-            this.m_ctxToolsSep1.Size = new System.Drawing.Size(369, 6);
+            this.m_ctxToolsSep1.Size = new System.Drawing.Size(308, 6);
             // 
             // m_ctxToolsUrlHelp
             // 
             this.m_ctxToolsUrlHelp.Image = global::KeePass.Properties.Resources.B16x16_Help;
             this.m_ctxToolsUrlHelp.Name = "m_ctxToolsUrlHelp";
-            this.m_ctxToolsUrlHelp.Size = new System.Drawing.Size(372, 36);
+            this.m_ctxToolsUrlHelp.Size = new System.Drawing.Size(311, 28);
             this.m_ctxToolsUrlHelp.Text = "&URL Field: Help";
             this.m_ctxToolsUrlHelp.Click += new System.EventHandler(this.OnCtxUrlHelp);
             // 
@@ -1615,7 +1615,7 @@
             // 
             this.m_ctxToolsUrlSelApp.Image = global::KeePass.Properties.Resources.B16x16_View_Detailed;
             this.m_ctxToolsUrlSelApp.Name = "m_ctxToolsUrlSelApp";
-            this.m_ctxToolsUrlSelApp.Size = new System.Drawing.Size(372, 36);
+            this.m_ctxToolsUrlSelApp.Size = new System.Drawing.Size(311, 28);
             this.m_ctxToolsUrlSelApp.Text = "URL Field: Select &Application...";
             this.m_ctxToolsUrlSelApp.Click += new System.EventHandler(this.OnCtxUrlSelApp);
             // 
@@ -1623,14 +1623,14 @@
             // 
             this.m_ctxToolsUrlSelDoc.Image = global::KeePass.Properties.Resources.B16x16_CompFile;
             this.m_ctxToolsUrlSelDoc.Name = "m_ctxToolsUrlSelDoc";
-            this.m_ctxToolsUrlSelDoc.Size = new System.Drawing.Size(372, 36);
+            this.m_ctxToolsUrlSelDoc.Size = new System.Drawing.Size(311, 28);
             this.m_ctxToolsUrlSelDoc.Text = "URL Field: Select &Document...";
             this.m_ctxToolsUrlSelDoc.Click += new System.EventHandler(this.OnCtxUrlSelDoc);
             // 
             // m_ctxToolsSep2
             // 
             this.m_ctxToolsSep2.Name = "m_ctxToolsSep2";
-            this.m_ctxToolsSep2.Size = new System.Drawing.Size(369, 6);
+            this.m_ctxToolsSep2.Size = new System.Drawing.Size(308, 6);
             // 
             // m_ctxToolsFieldRefs
             // 
@@ -1641,95 +1641,95 @@
             this.m_ctxToolsFieldRefsInUrl,
             this.m_ctxToolsFieldRefsInNotes});
             this.m_ctxToolsFieldRefs.Name = "m_ctxToolsFieldRefs";
-            this.m_ctxToolsFieldRefs.Size = new System.Drawing.Size(372, 36);
+            this.m_ctxToolsFieldRefs.Size = new System.Drawing.Size(311, 28);
             this.m_ctxToolsFieldRefs.Text = "Insert Field &Reference";
             // 
             // m_ctxToolsFieldRefsInTitle
             // 
             this.m_ctxToolsFieldRefsInTitle.Name = "m_ctxToolsFieldRefsInTitle";
-            this.m_ctxToolsFieldRefsInTitle.Size = new System.Drawing.Size(292, 38);
+            this.m_ctxToolsFieldRefsInTitle.Size = new System.Drawing.Size(239, 28);
             this.m_ctxToolsFieldRefsInTitle.Text = "In &Title Field";
             this.m_ctxToolsFieldRefsInTitle.Click += new System.EventHandler(this.OnFieldRefInTitle);
             // 
             // m_ctxToolsFieldRefsInUserName
             // 
             this.m_ctxToolsFieldRefsInUserName.Name = "m_ctxToolsFieldRefsInUserName";
-            this.m_ctxToolsFieldRefsInUserName.Size = new System.Drawing.Size(292, 38);
+            this.m_ctxToolsFieldRefsInUserName.Size = new System.Drawing.Size(239, 28);
             this.m_ctxToolsFieldRefsInUserName.Text = "In &User Name Field";
             this.m_ctxToolsFieldRefsInUserName.Click += new System.EventHandler(this.OnFieldRefInUserName);
             // 
             // m_ctxToolsFieldRefsInPassword
             // 
             this.m_ctxToolsFieldRefsInPassword.Name = "m_ctxToolsFieldRefsInPassword";
-            this.m_ctxToolsFieldRefsInPassword.Size = new System.Drawing.Size(292, 38);
+            this.m_ctxToolsFieldRefsInPassword.Size = new System.Drawing.Size(239, 28);
             this.m_ctxToolsFieldRefsInPassword.Text = "In &Password Field";
             this.m_ctxToolsFieldRefsInPassword.Click += new System.EventHandler(this.OnFieldRefInPassword);
             // 
             // m_ctxToolsFieldRefsInUrl
             // 
             this.m_ctxToolsFieldRefsInUrl.Name = "m_ctxToolsFieldRefsInUrl";
-            this.m_ctxToolsFieldRefsInUrl.Size = new System.Drawing.Size(292, 38);
+            this.m_ctxToolsFieldRefsInUrl.Size = new System.Drawing.Size(239, 28);
             this.m_ctxToolsFieldRefsInUrl.Text = "In UR&L Field";
             this.m_ctxToolsFieldRefsInUrl.Click += new System.EventHandler(this.OnFieldRefInUrl);
             // 
             // m_ctxToolsFieldRefsInNotes
             // 
             this.m_ctxToolsFieldRefsInNotes.Name = "m_ctxToolsFieldRefsInNotes";
-            this.m_ctxToolsFieldRefsInNotes.Size = new System.Drawing.Size(292, 38);
+            this.m_ctxToolsFieldRefsInNotes.Size = new System.Drawing.Size(239, 28);
             this.m_ctxToolsFieldRefsInNotes.Text = "In &Notes Field";
             this.m_ctxToolsFieldRefsInNotes.Click += new System.EventHandler(this.OnFieldRefInNotes);
             // 
             // m_ctxToolsSep3
             // 
             this.m_ctxToolsSep3.Name = "m_ctxToolsSep3";
-            this.m_ctxToolsSep3.Size = new System.Drawing.Size(369, 6);
+            this.m_ctxToolsSep3.Size = new System.Drawing.Size(308, 6);
             // 
             // m_ctxToolsOtpGen
             // 
             this.m_ctxToolsOtpGen.Image = global::KeePass.Properties.Resources.B16x16_KGPG_Gen;
             this.m_ctxToolsOtpGen.Name = "m_ctxToolsOtpGen";
-            this.m_ctxToolsOtpGen.Size = new System.Drawing.Size(372, 36);
+            this.m_ctxToolsOtpGen.Size = new System.Drawing.Size(311, 28);
             this.m_ctxToolsOtpGen.Text = "&OTP Generator Settings...";
             this.m_ctxToolsOtpGen.Click += new System.EventHandler(this.OnCtxToolsOtpGen);
             // 
             // m_ctxBinAttach
             // 
-            this.m_ctxBinAttach.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.m_ctxBinAttach.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.m_ctxBinAttach.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_ctxBinImportFile,
             this.m_ctxBinSep0,
             this.m_ctxBinNew});
             this.m_ctxBinAttach.Name = "m_ctxBinAttach";
-            this.m_ctxBinAttach.Size = new System.Drawing.Size(334, 82);
+            this.m_ctxBinAttach.Size = new System.Drawing.Size(283, 66);
             // 
             // m_ctxBinImportFile
             // 
             this.m_ctxBinImportFile.Image = global::KeePass.Properties.Resources.B16x16_Folder_Yellow_Open;
             this.m_ctxBinImportFile.Name = "m_ctxBinImportFile";
-            this.m_ctxBinImportFile.Size = new System.Drawing.Size(333, 36);
+            this.m_ctxBinImportFile.Size = new System.Drawing.Size(282, 28);
             this.m_ctxBinImportFile.Text = "Attach &File(s)...";
             this.m_ctxBinImportFile.Click += new System.EventHandler(this.OnCtxBinImport);
             // 
             // m_ctxBinSep0
             // 
             this.m_ctxBinSep0.Name = "m_ctxBinSep0";
-            this.m_ctxBinSep0.Size = new System.Drawing.Size(330, 6);
+            this.m_ctxBinSep0.Size = new System.Drawing.Size(279, 6);
             // 
             // m_ctxBinNew
             // 
             this.m_ctxBinNew.Image = global::KeePass.Properties.Resources.B16x16_FileNew;
             this.m_ctxBinNew.Name = "m_ctxBinNew";
-            this.m_ctxBinNew.Size = new System.Drawing.Size(333, 36);
+            this.m_ctxBinNew.Size = new System.Drawing.Size(282, 28);
             this.m_ctxBinNew.Text = "&Create Empty Attachment";
             this.m_ctxBinNew.Click += new System.EventHandler(this.OnCtxBinNew);
             // 
             // PwEntryForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1101, 1010);
+            this.ClientSize = new System.Drawing.Size(918, 841);
             this.Controls.Add(this.m_tabMain);
             this.Controls.Add(this.m_lblSeparator);
             this.Controls.Add(this.m_bannerImage);
@@ -1738,7 +1738,7 @@
             this.Controls.Add(this.m_btnOK);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PwEntryForm";

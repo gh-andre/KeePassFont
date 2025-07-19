@@ -47,24 +47,24 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1562, 124);
+            this.m_bannerImage.Size = new System.Drawing.Size(1301, 104);
             this.m_bannerImage.TabIndex = 3;
             this.m_bannerImage.TabStop = false;
             // 
             // m_lblInfo
             // 
-            this.m_lblInfo.Location = new System.Drawing.Point(21, 188);
-            this.m_lblInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblInfo.Location = new System.Drawing.Point(18, 156);
+            this.m_lblInfo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblInfo.Name = "m_lblInfo";
-            this.m_lblInfo.Size = new System.Drawing.Size(1515, 60);
+            this.m_lblInfo.Size = new System.Drawing.Size(1262, 50);
             this.m_lblInfo.TabIndex = 2;
             this.m_lblInfo.Text = "<>";
             // 
             // m_tsMain
             // 
-            this.m_tsMain.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.m_tsMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.m_tsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_tsbPrint,
             this.m_tsbExport,
@@ -73,10 +73,10 @@
             this.m_tssSep1,
             this.m_tslFilter,
             this.m_tstFilter});
-            this.m_tsMain.Location = new System.Drawing.Point(0, 124);
+            this.m_tsMain.Location = new System.Drawing.Point(0, 104);
             this.m_tsMain.Name = "m_tsMain";
-            this.m_tsMain.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.m_tsMain.Size = new System.Drawing.Size(1562, 39);
+            this.m_tsMain.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.m_tsMain.Size = new System.Drawing.Size(1301, 30);
             this.m_tsMain.TabIndex = 1;
             this.m_tsMain.TabStop = true;
             // 
@@ -86,7 +86,7 @@
             this.m_tsbPrint.Image = global::KeePass.Properties.Resources.B16x16_FilePrint;
             this.m_tsbPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.m_tsbPrint.Name = "m_tsbPrint";
-            this.m_tsbPrint.Size = new System.Drawing.Size(34, 34);
+            this.m_tsbPrint.Size = new System.Drawing.Size(29, 27);
             this.m_tsbPrint.Click += new System.EventHandler(this.OnFilePrint);
             // 
             // m_tsbExport
@@ -95,13 +95,13 @@
             this.m_tsbExport.Image = global::KeePass.Properties.Resources.B16x16_Folder_Outbox;
             this.m_tsbExport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.m_tsbExport.Name = "m_tsbExport";
-            this.m_tsbExport.Size = new System.Drawing.Size(45, 34);
+            this.m_tsbExport.Size = new System.Drawing.Size(39, 27);
             this.m_tsbExport.ButtonClick += new System.EventHandler(this.OnFileExport);
             // 
             // m_tssSep0
             // 
             this.m_tssSep0.Name = "m_tssSep0";
-            this.m_tssSep0.Size = new System.Drawing.Size(6, 39);
+            this.m_tssSep0.Size = new System.Drawing.Size(6, 30);
             // 
             // m_tsbHideSensitive
             // 
@@ -109,25 +109,25 @@
             this.m_tsbHideSensitive.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.m_tsbHideSensitive.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.m_tsbHideSensitive.Name = "m_tsbHideSensitive";
-            this.m_tsbHideSensitive.Size = new System.Drawing.Size(45, 34);
+            this.m_tsbHideSensitive.Size = new System.Drawing.Size(38, 27);
             this.m_tsbHideSensitive.Text = "<>";
             // 
             // m_tssSep1
             // 
             this.m_tssSep1.Name = "m_tssSep1";
-            this.m_tssSep1.Size = new System.Drawing.Size(6, 39);
+            this.m_tssSep1.Size = new System.Drawing.Size(6, 30);
             // 
             // m_tslFilter
             // 
             this.m_tslFilter.Name = "m_tslFilter";
-            this.m_tslFilter.Size = new System.Drawing.Size(41, 34);
+            this.m_tslFilter.Size = new System.Drawing.Size(34, 27);
             this.m_tslFilter.Text = "<>";
             // 
             // m_tstFilter
             // 
-            this.m_tstFilter.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.m_tstFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.m_tstFilter.Name = "m_tstFilter";
-            this.m_tstFilter.Size = new System.Drawing.Size(268, 39);
+            this.m_tstFilter.Size = new System.Drawing.Size(224, 30);
             this.m_tstFilter.TextChanged += new System.EventHandler(this.OnFilterTextChanged);
             // 
             // m_lvMain
@@ -139,12 +139,12 @@
             this.m_lvMain.HideSelection = false;
             this.m_lvMain.HotTracking = true;
             this.m_lvMain.HoverSelection = true;
-            this.m_lvMain.Location = new System.Drawing.Point(27, 258);
-            this.m_lvMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvMain.Location = new System.Drawing.Point(22, 215);
+            this.m_lvMain.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvMain.MultiSelect = false;
             this.m_lvMain.Name = "m_lvMain";
             this.m_lvMain.ShowItemToolTips = true;
-            this.m_lvMain.Size = new System.Drawing.Size(1502, 823);
+            this.m_lvMain.Size = new System.Drawing.Size(1253, 686);
             this.m_lvMain.TabIndex = 0;
             this.m_lvMain.UseCompatibleStateImageBehavior = false;
             this.m_lvMain.View = System.Windows.Forms.View.Details;
@@ -153,16 +153,16 @@
             // 
             // ListViewForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1562, 1108);
+            this.ClientSize = new System.Drawing.Size(1301, 924);
             this.Controls.Add(this.m_tsMain);
             this.Controls.Add(this.m_bannerImage);
             this.Controls.Add(this.m_lblInfo);
             this.Controls.Add(this.m_lvMain);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ListViewForm";

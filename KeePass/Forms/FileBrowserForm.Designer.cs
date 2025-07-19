@@ -41,10 +41,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(1040, 828);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(866, 690);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(140, 40);
             this.m_btnOK.TabIndex = 4;
             this.m_btnOK.Text = "<>";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -53,10 +53,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(1221, 828);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(1018, 690);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCancel.TabIndex = 5;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -64,37 +64,37 @@
             // m_lblSeparator
             // 
             this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSeparator.Location = new System.Drawing.Point(0, 900);
-            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblSeparator.Location = new System.Drawing.Point(0, 750);
+            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblSeparator.Name = "m_lblSeparator";
-            this.m_lblSeparator.Size = new System.Drawing.Size(1418, 4);
+            this.m_lblSeparator.Size = new System.Drawing.Size(1181, 4);
             this.m_lblSeparator.TabIndex = 6;
             // 
             // m_lblHint
             // 
-            this.m_lblHint.Location = new System.Drawing.Point(21, 918);
-            this.m_lblHint.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblHint.Location = new System.Drawing.Point(18, 765);
+            this.m_lblHint.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblHint.Name = "m_lblHint";
-            this.m_lblHint.Size = new System.Drawing.Size(1371, 58);
+            this.m_lblHint.Size = new System.Drawing.Size(1142, 49);
             this.m_lblHint.TabIndex = 7;
             this.m_lblHint.Text = "<>";
             // 
             // m_lblFileName
             // 
-            this.m_lblFileName.Location = new System.Drawing.Point(27, 777);
-            this.m_lblFileName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblFileName.Location = new System.Drawing.Point(22, 648);
+            this.m_lblFileName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblFileName.Name = "m_lblFileName";
-            this.m_lblFileName.Size = new System.Drawing.Size(450, 33);
+            this.m_lblFileName.Size = new System.Drawing.Size(375, 28);
             this.m_lblFileName.TabIndex = 2;
             this.m_lblFileName.Text = "File &name:";
             this.m_lblFileName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // m_tbFileName
             // 
-            this.m_tbFileName.Location = new System.Drawing.Point(490, 774);
-            this.m_tbFileName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbFileName.Location = new System.Drawing.Point(409, 645);
+            this.m_tbFileName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbFileName.Name = "m_tbFileName";
-            this.m_tbFileName.Size = new System.Drawing.Size(895, 33);
+            this.m_tbFileName.Size = new System.Drawing.Size(746, 29);
             this.m_tbFileName.TabIndex = 3;
             this.m_tbFileName.TextChanged += new System.EventHandler(this.OnFileNameTextChanged);
             // 
@@ -103,13 +103,13 @@
             this.m_lvFiles.FullRowSelect = true;
             this.m_lvFiles.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvFiles.HideSelection = false;
-            this.m_lvFiles.Location = new System.Drawing.Point(490, 26);
-            this.m_lvFiles.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_lvFiles.Location = new System.Drawing.Point(409, 21);
+            this.m_lvFiles.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_lvFiles.MultiSelect = false;
             this.m_lvFiles.Name = "m_lvFiles";
             this.m_lvFiles.ShowGroups = false;
             this.m_lvFiles.ShowItemToolTips = true;
-            this.m_lvFiles.Size = new System.Drawing.Size(895, 733);
+            this.m_lvFiles.Size = new System.Drawing.Size(746, 612);
             this.m_lvFiles.TabIndex = 1;
             this.m_lvFiles.UseCompatibleStateImageBehavior = false;
             this.m_lvFiles.View = System.Windows.Forms.View.Details;
@@ -120,11 +120,11 @@
             // 
             this.m_tvFolders.HideSelection = false;
             this.m_tvFolders.HotTracking = true;
-            this.m_tvFolders.Location = new System.Drawing.Point(27, 26);
-            this.m_tvFolders.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tvFolders.Location = new System.Drawing.Point(22, 21);
+            this.m_tvFolders.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tvFolders.Name = "m_tvFolders";
             this.m_tvFolders.ShowNodeToolTips = true;
-            this.m_tvFolders.Size = new System.Drawing.Size(445, 733);
+            this.m_tvFolders.Size = new System.Drawing.Size(372, 612);
             this.m_tvFolders.TabIndex = 0;
             this.m_tvFolders.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.OnFoldersBeforeExpand);
             this.m_tvFolders.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.OnFoldersAfterSelect);
@@ -132,10 +132,10 @@
             // FileBrowserForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1418, 994);
+            this.ClientSize = new System.Drawing.Size(1181, 829);
             this.Controls.Add(this.m_tbFileName);
             this.Controls.Add(this.m_lblFileName);
             this.Controls.Add(this.m_lvFiles);
@@ -146,7 +146,7 @@
             this.Controls.Add(this.m_btnOK);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FileBrowserForm";

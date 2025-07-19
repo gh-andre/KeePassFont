@@ -59,10 +59,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(711, 806);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnOK.Location = new System.Drawing.Point(592, 671);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
+            this.m_btnOK.Size = new System.Drawing.Size(140, 40);
             this.m_btnOK.TabIndex = 9;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(894, 806);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnCancel.Location = new System.Drawing.Point(745, 671);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
+            this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
             this.m_btnCancel.TabIndex = 10;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -83,38 +83,38 @@
             // m_lblSelNodes
             // 
             this.m_lblSelNodes.AutoSize = true;
-            this.m_lblSelNodes.Location = new System.Drawing.Point(21, 204);
-            this.m_lblSelNodes.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblSelNodes.Location = new System.Drawing.Point(18, 170);
+            this.m_lblSelNodes.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblSelNodes.Name = "m_lblSelNodes";
-            this.m_lblSelNodes.Size = new System.Drawing.Size(247, 29);
+            this.m_lblSelNodes.Size = new System.Drawing.Size(193, 24);
             this.m_lblSelNodes.TabIndex = 1;
             this.m_lblSelNodes.Text = "&Select nodes (XPath):";
             // 
             // m_tbSelNodes
             // 
-            this.m_tbSelNodes.Location = new System.Drawing.Point(27, 237);
-            this.m_tbSelNodes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbSelNodes.Location = new System.Drawing.Point(22, 198);
+            this.m_tbSelNodes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbSelNodes.Name = "m_tbSelNodes";
-            this.m_tbSelNodes.Size = new System.Drawing.Size(1030, 33);
+            this.m_tbSelNodes.Size = new System.Drawing.Size(859, 29);
             this.m_tbSelNodes.TabIndex = 2;
             // 
             // m_lblData
             // 
             this.m_lblData.AutoSize = true;
-            this.m_lblData.Location = new System.Drawing.Point(6, 10);
-            this.m_lblData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblData.Location = new System.Drawing.Point(5, 9);
+            this.m_lblData.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblData.Name = "m_lblData";
-            this.m_lblData.Size = new System.Drawing.Size(68, 29);
+            this.m_lblData.Size = new System.Drawing.Size(52, 24);
             this.m_lblData.TabIndex = 0;
             this.m_lblData.Text = "Data:";
             // 
             // m_rbRemove
             // 
             this.m_rbRemove.AutoSize = true;
-            this.m_rbRemove.Location = new System.Drawing.Point(27, 340);
-            this.m_rbRemove.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbRemove.Location = new System.Drawing.Point(22, 284);
+            this.m_rbRemove.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbRemove.Name = "m_rbRemove";
-            this.m_rbRemove.Size = new System.Drawing.Size(201, 33);
+            this.m_rbRemove.Size = new System.Drawing.Size(160, 28);
             this.m_rbRemove.TabIndex = 4;
             this.m_rbRemove.TabStop = true;
             this.m_rbRemove.Text = "&Remove nodes";
@@ -124,10 +124,10 @@
             // m_rbReplace
             // 
             this.m_rbReplace.AutoSize = true;
-            this.m_rbReplace.Location = new System.Drawing.Point(27, 388);
-            this.m_rbReplace.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbReplace.Location = new System.Drawing.Point(22, 324);
+            this.m_rbReplace.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbReplace.Name = "m_rbReplace";
-            this.m_rbReplace.Size = new System.Drawing.Size(180, 33);
+            this.m_rbReplace.Size = new System.Drawing.Size(141, 28);
             this.m_rbReplace.TabIndex = 5;
             this.m_rbReplace.TabStop = true;
             this.m_rbReplace.Text = "Replace &data";
@@ -145,19 +145,19 @@
             this.m_pnlReplace.Controls.Add(this.m_rbInnerText);
             this.m_pnlReplace.Controls.Add(this.m_rbInnerXml);
             this.m_pnlReplace.Controls.Add(this.m_lblData);
-            this.m_pnlReplace.Location = new System.Drawing.Point(57, 430);
-            this.m_pnlReplace.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_pnlReplace.Location = new System.Drawing.Point(48, 359);
+            this.m_pnlReplace.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_pnlReplace.Name = "m_pnlReplace";
-            this.m_pnlReplace.Size = new System.Drawing.Size(1032, 350);
+            this.m_pnlReplace.Size = new System.Drawing.Size(860, 291);
             this.m_pnlReplace.TabIndex = 6;
             // 
             // m_rbOuterXml
             // 
             this.m_rbOuterXml.AutoSize = true;
-            this.m_rbOuterXml.Location = new System.Drawing.Point(444, 6);
-            this.m_rbOuterXml.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbOuterXml.Location = new System.Drawing.Point(370, 5);
+            this.m_rbOuterXml.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbOuterXml.Name = "m_rbOuterXml";
-            this.m_rbOuterXml.Size = new System.Drawing.Size(154, 33);
+            this.m_rbOuterXml.Size = new System.Drawing.Size(123, 28);
             this.m_rbOuterXml.TabIndex = 3;
             this.m_rbOuterXml.TabStop = true;
             this.m_rbOuterXml.Text = "&Outer XML";
@@ -166,10 +166,10 @@
             // m_cbRegex
             // 
             this.m_cbRegex.AutoSize = true;
-            this.m_cbRegex.Location = new System.Drawing.Point(14, 297);
-            this.m_cbRegex.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbRegex.Location = new System.Drawing.Point(11, 248);
+            this.m_cbRegex.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbRegex.Name = "m_cbRegex";
-            this.m_cbRegex.Size = new System.Drawing.Size(260, 33);
+            this.m_cbRegex.Size = new System.Drawing.Size(205, 28);
             this.m_cbRegex.TabIndex = 9;
             this.m_cbRegex.Text = "R&egular expressions";
             this.m_cbRegex.UseVisualStyleBackColor = true;
@@ -177,57 +177,57 @@
             // m_cbCase
             // 
             this.m_cbCase.AutoSize = true;
-            this.m_cbCase.Location = new System.Drawing.Point(14, 249);
-            this.m_cbCase.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_cbCase.Location = new System.Drawing.Point(11, 208);
+            this.m_cbCase.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_cbCase.Name = "m_cbCase";
-            this.m_cbCase.Size = new System.Drawing.Size(197, 33);
+            this.m_cbCase.Size = new System.Drawing.Size(153, 28);
             this.m_cbCase.TabIndex = 8;
             this.m_cbCase.Text = "&Case-sensitive";
             this.m_cbCase.UseVisualStyleBackColor = true;
             // 
             // m_tbReplace
             // 
-            this.m_tbReplace.Location = new System.Drawing.Point(14, 188);
-            this.m_tbReplace.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbReplace.Location = new System.Drawing.Point(11, 156);
+            this.m_tbReplace.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbReplace.Name = "m_tbReplace";
-            this.m_tbReplace.Size = new System.Drawing.Size(988, 33);
+            this.m_tbReplace.Size = new System.Drawing.Size(824, 29);
             this.m_tbReplace.TabIndex = 7;
             // 
             // m_lblReplace
             // 
             this.m_lblReplace.AutoSize = true;
-            this.m_lblReplace.Location = new System.Drawing.Point(6, 153);
-            this.m_lblReplace.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblReplace.Location = new System.Drawing.Point(5, 128);
+            this.m_lblReplace.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblReplace.Name = "m_lblReplace";
-            this.m_lblReplace.Size = new System.Drawing.Size(158, 29);
+            this.m_lblReplace.Size = new System.Drawing.Size(123, 24);
             this.m_lblReplace.TabIndex = 6;
             this.m_lblReplace.Text = "Replace &with:";
             // 
             // m_tbMatch
             // 
-            this.m_tbMatch.Location = new System.Drawing.Point(14, 92);
-            this.m_tbMatch.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tbMatch.Location = new System.Drawing.Point(11, 76);
+            this.m_tbMatch.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_tbMatch.Name = "m_tbMatch";
-            this.m_tbMatch.Size = new System.Drawing.Size(988, 33);
+            this.m_tbMatch.Size = new System.Drawing.Size(824, 29);
             this.m_tbMatch.TabIndex = 5;
             // 
             // m_lblMatch
             // 
             this.m_lblMatch.AutoSize = true;
-            this.m_lblMatch.Location = new System.Drawing.Point(6, 58);
-            this.m_lblMatch.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblMatch.Location = new System.Drawing.Point(5, 49);
+            this.m_lblMatch.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblMatch.Name = "m_lblMatch";
-            this.m_lblMatch.Size = new System.Drawing.Size(123, 29);
+            this.m_lblMatch.Size = new System.Drawing.Size(97, 24);
             this.m_lblMatch.TabIndex = 4;
             this.m_lblMatch.Text = "&Find what:";
             // 
             // m_rbInnerText
             // 
             this.m_rbInnerText.AutoSize = true;
-            this.m_rbInnerText.Location = new System.Drawing.Point(94, 6);
-            this.m_rbInnerText.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbInnerText.Location = new System.Drawing.Point(79, 5);
+            this.m_rbInnerText.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbInnerText.Name = "m_rbInnerText";
-            this.m_rbInnerText.Size = new System.Drawing.Size(135, 33);
+            this.m_rbInnerText.Size = new System.Drawing.Size(108, 28);
             this.m_rbInnerText.TabIndex = 1;
             this.m_rbInnerText.TabStop = true;
             this.m_rbInnerText.Text = "Inner &text";
@@ -236,10 +236,10 @@
             // m_rbInnerXml
             // 
             this.m_rbInnerXml.AutoSize = true;
-            this.m_rbInnerXml.Location = new System.Drawing.Point(264, 6);
-            this.m_rbInnerXml.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_rbInnerXml.Location = new System.Drawing.Point(220, 5);
+            this.m_rbInnerXml.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_rbInnerXml.Name = "m_rbInnerXml";
-            this.m_rbInnerXml.Size = new System.Drawing.Size(148, 33);
+            this.m_rbInnerXml.Size = new System.Drawing.Size(119, 28);
             this.m_rbInnerXml.TabIndex = 2;
             this.m_rbInnerXml.TabStop = true;
             this.m_rbInnerXml.Text = "Inner &XML";
@@ -249,28 +249,28 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1089, 124);
+            this.m_bannerImage.Size = new System.Drawing.Size(908, 104);
             this.m_bannerImage.TabIndex = 8;
             this.m_bannerImage.TabStop = false;
             // 
             // m_lblAction
             // 
             this.m_lblAction.AutoSize = true;
-            this.m_lblAction.Location = new System.Drawing.Point(21, 303);
-            this.m_lblAction.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblAction.Location = new System.Drawing.Point(18, 252);
+            this.m_lblAction.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblAction.Name = "m_lblAction";
-            this.m_lblAction.Size = new System.Drawing.Size(85, 29);
+            this.m_lblAction.Size = new System.Drawing.Size(68, 24);
             this.m_lblAction.TabIndex = 3;
             this.m_lblAction.Text = "Action:";
             // 
             // m_picWarning
             // 
-            this.m_picWarning.Location = new System.Drawing.Point(21, 147);
-            this.m_picWarning.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_picWarning.Location = new System.Drawing.Point(18, 122);
+            this.m_picWarning.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_picWarning.Name = "m_picWarning";
-            this.m_picWarning.Size = new System.Drawing.Size(36, 33);
+            this.m_picWarning.Size = new System.Drawing.Size(30, 28);
             this.m_picWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.m_picWarning.TabIndex = 10;
             this.m_picWarning.TabStop = false;
@@ -278,28 +278,28 @@
             // m_lblWarning
             // 
             this.m_lblWarning.AutoSize = true;
-            this.m_lblWarning.Location = new System.Drawing.Point(63, 150);
-            this.m_lblWarning.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblWarning.Location = new System.Drawing.Point(52, 125);
+            this.m_lblWarning.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblWarning.Name = "m_lblWarning";
-            this.m_lblWarning.Size = new System.Drawing.Size(594, 29);
+            this.m_lblWarning.Size = new System.Drawing.Size(465, 24);
             this.m_lblWarning.TabIndex = 0;
             this.m_lblWarning.Text = "XML Replace is a feature for experts. Use with caution!";
             // 
             // m_lblSeparator
             // 
             this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSeparator.Location = new System.Drawing.Point(0, 789);
-            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.m_lblSeparator.Location = new System.Drawing.Point(0, 658);
+            this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.m_lblSeparator.Name = "m_lblSeparator";
-            this.m_lblSeparator.Size = new System.Drawing.Size(1089, 4);
+            this.m_lblSeparator.Size = new System.Drawing.Size(908, 4);
             this.m_lblSeparator.TabIndex = 7;
             // 
             // m_btnHelp
             // 
-            this.m_btnHelp.Location = new System.Drawing.Point(27, 806);
-            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_btnHelp.Location = new System.Drawing.Point(22, 671);
+            this.m_btnHelp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.m_btnHelp.Name = "m_btnHelp";
-            this.m_btnHelp.Size = new System.Drawing.Size(168, 48);
+            this.m_btnHelp.Size = new System.Drawing.Size(140, 40);
             this.m_btnHelp.TabIndex = 8;
             this.m_btnHelp.Text = "&Help";
             this.m_btnHelp.UseVisualStyleBackColor = true;
@@ -308,10 +308,10 @@
             // XmlReplaceForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1089, 879);
+            this.ClientSize = new System.Drawing.Size(908, 732);
             this.Controls.Add(this.m_btnHelp);
             this.Controls.Add(this.m_lblSeparator);
             this.Controls.Add(this.m_lblWarning);
@@ -327,7 +327,7 @@
             this.Controls.Add(this.m_btnOK);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "XmlReplaceForm";
