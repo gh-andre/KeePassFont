@@ -73,10 +73,10 @@
             // m_btnOK
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(702, 934);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnOK.Location = new System.Drawing.Point(526, 700);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(224, 64);
+            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
             this.m_btnOK.TabIndex = 0;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -85,10 +85,10 @@
             // m_btnCancel
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(944, 934);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnCancel.Location = new System.Drawing.Point(708, 700);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
+            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
             this.m_btnCancel.TabIndex = 1;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1206, 166);
+            this.m_bannerImage.Size = new System.Drawing.Size(904, 124);
             this.m_bannerImage.TabIndex = 2;
             this.m_bannerImage.TabStop = false;
             // 
@@ -108,11 +108,11 @@
             // 
             this.m_tabMain.Controls.Add(this.m_tabHotp);
             this.m_tabMain.Controls.Add(this.m_tabTotp);
-            this.m_tabMain.Location = new System.Drawing.Point(36, 182);
-            this.m_tabMain.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tabMain.Location = new System.Drawing.Point(27, 136);
+            this.m_tabMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tabMain.Name = "m_tabMain";
             this.m_tabMain.SelectedIndex = 0;
-            this.m_tabMain.Size = new System.Drawing.Size(1140, 734);
+            this.m_tabMain.Size = new System.Drawing.Size(855, 550);
             this.m_tabMain.TabIndex = 2;
             // 
             // m_tabHotp
@@ -127,11 +127,11 @@
             this.m_tabHotp.Controls.Add(this.m_cmbHotpSecretEnc);
             this.m_tabHotp.Controls.Add(this.m_tbHotpSecret);
             this.m_tabHotp.Controls.Add(this.m_lblHotpSecret);
-            this.m_tabHotp.Location = new System.Drawing.Point(8, 50);
-            this.m_tabHotp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tabHotp.Location = new System.Drawing.Point(4, 38);
+            this.m_tabHotp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tabHotp.Name = "m_tabHotp";
-            this.m_tabHotp.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.m_tabHotp.Size = new System.Drawing.Size(1124, 676);
+            this.m_tabHotp.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabHotp.Size = new System.Drawing.Size(847, 508);
             this.m_tabHotp.TabIndex = 0;
             this.m_tabHotp.Text = "HMAC-Based (HOTP)";
             this.m_tabHotp.UseVisualStyleBackColor = true;
@@ -139,20 +139,20 @@
             // m_lblHotpCounterDefault
             // 
             this.m_lblHotpCounterDefault.AutoSize = true;
-            this.m_lblHotpCounterDefault.Location = new System.Drawing.Point(726, 150);
-            this.m_lblHotpCounterDefault.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblHotpCounterDefault.Location = new System.Drawing.Point(544, 112);
+            this.m_lblHotpCounterDefault.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblHotpCounterDefault.Name = "m_lblHotpCounterDefault";
-            this.m_lblHotpCounterDefault.Size = new System.Drawing.Size(49, 36);
+            this.m_lblHotpCounterDefault.Size = new System.Drawing.Size(41, 29);
             this.m_lblHotpCounterDefault.TabIndex = 5;
             this.m_lblHotpCounterDefault.Text = "<>";
             // 
             // m_lnkHotpPlh
             // 
             this.m_lnkHotpPlh.AutoSize = true;
-            this.m_lnkHotpPlh.Location = new System.Drawing.Point(18, 598);
-            this.m_lnkHotpPlh.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lnkHotpPlh.Location = new System.Drawing.Point(14, 448);
+            this.m_lnkHotpPlh.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lnkHotpPlh.Name = "m_lnkHotpPlh";
-            this.m_lnkHotpPlh.Size = new System.Drawing.Size(49, 36);
+            this.m_lnkHotpPlh.Size = new System.Drawing.Size(41, 29);
             this.m_lnkHotpPlh.TabIndex = 9;
             this.m_lnkHotpPlh.TabStop = true;
             this.m_lnkHotpPlh.Text = "<>";
@@ -160,48 +160,48 @@
             // 
             // m_lblHotpUsage
             // 
-            this.m_lblHotpUsage.Location = new System.Drawing.Point(18, 510);
-            this.m_lblHotpUsage.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblHotpUsage.Location = new System.Drawing.Point(14, 382);
+            this.m_lblHotpUsage.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblHotpUsage.Name = "m_lblHotpUsage";
-            this.m_lblHotpUsage.Size = new System.Drawing.Size(1074, 78);
+            this.m_lblHotpUsage.Size = new System.Drawing.Size(806, 58);
             this.m_lblHotpUsage.TabIndex = 8;
             this.m_lblHotpUsage.Text = "<>";
             // 
             // m_lblHotpPreviewValue
             // 
             this.m_lblHotpPreviewValue.AutoSize = true;
-            this.m_lblHotpPreviewValue.Location = new System.Drawing.Point(342, 402);
-            this.m_lblHotpPreviewValue.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblHotpPreviewValue.Location = new System.Drawing.Point(256, 302);
+            this.m_lblHotpPreviewValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblHotpPreviewValue.Name = "m_lblHotpPreviewValue";
-            this.m_lblHotpPreviewValue.Size = new System.Drawing.Size(49, 36);
+            this.m_lblHotpPreviewValue.Size = new System.Drawing.Size(41, 29);
             this.m_lblHotpPreviewValue.TabIndex = 7;
             this.m_lblHotpPreviewValue.Text = "<>";
             // 
             // m_lblHotpPreview
             // 
             this.m_lblHotpPreview.AutoSize = true;
-            this.m_lblHotpPreview.Location = new System.Drawing.Point(18, 402);
-            this.m_lblHotpPreview.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblHotpPreview.Location = new System.Drawing.Point(14, 302);
+            this.m_lblHotpPreview.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblHotpPreview.Name = "m_lblHotpPreview";
-            this.m_lblHotpPreview.Size = new System.Drawing.Size(129, 36);
+            this.m_lblHotpPreview.Size = new System.Drawing.Size(106, 29);
             this.m_lblHotpPreview.TabIndex = 6;
             this.m_lblHotpPreview.Text = "Preview:";
             // 
             // m_tbHotpCounter
             // 
-            this.m_tbHotpCounter.Location = new System.Drawing.Point(352, 142);
-            this.m_tbHotpCounter.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbHotpCounter.Location = new System.Drawing.Point(264, 106);
+            this.m_tbHotpCounter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbHotpCounter.Name = "m_tbHotpCounter";
-            this.m_tbHotpCounter.Size = new System.Drawing.Size(348, 41);
+            this.m_tbHotpCounter.Size = new System.Drawing.Size(262, 33);
             this.m_tbHotpCounter.TabIndex = 4;
             // 
             // m_lblHotpCounter
             // 
             this.m_lblHotpCounter.AutoSize = true;
-            this.m_lblHotpCounter.Location = new System.Drawing.Point(18, 150);
-            this.m_lblHotpCounter.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblHotpCounter.Location = new System.Drawing.Point(14, 112);
+            this.m_lblHotpCounter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblHotpCounter.Name = "m_lblHotpCounter";
-            this.m_lblHotpCounter.Size = new System.Drawing.Size(129, 36);
+            this.m_lblHotpCounter.Size = new System.Drawing.Size(104, 29);
             this.m_lblHotpCounter.TabIndex = 3;
             this.m_lblHotpCounter.Text = "&Counter:";
             // 
@@ -209,27 +209,27 @@
             // 
             this.m_cmbHotpSecretEnc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cmbHotpSecretEnc.FormattingEnabled = true;
-            this.m_cmbHotpSecretEnc.Location = new System.Drawing.Point(736, 66);
-            this.m_cmbHotpSecretEnc.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbHotpSecretEnc.Location = new System.Drawing.Point(552, 50);
+            this.m_cmbHotpSecretEnc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbHotpSecretEnc.Name = "m_cmbHotpSecretEnc";
-            this.m_cmbHotpSecretEnc.Size = new System.Drawing.Size(340, 44);
+            this.m_cmbHotpSecretEnc.Size = new System.Drawing.Size(256, 37);
             this.m_cmbHotpSecretEnc.TabIndex = 2;
             // 
             // m_tbHotpSecret
             // 
-            this.m_tbHotpSecret.Location = new System.Drawing.Point(28, 70);
-            this.m_tbHotpSecret.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbHotpSecret.Location = new System.Drawing.Point(21, 52);
+            this.m_tbHotpSecret.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbHotpSecret.Name = "m_tbHotpSecret";
-            this.m_tbHotpSecret.Size = new System.Drawing.Size(672, 41);
+            this.m_tbHotpSecret.Size = new System.Drawing.Size(505, 33);
             this.m_tbHotpSecret.TabIndex = 1;
             // 
             // m_lblHotpSecret
             // 
             this.m_lblHotpSecret.AutoSize = true;
-            this.m_lblHotpSecret.Location = new System.Drawing.Point(18, 24);
-            this.m_lblHotpSecret.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblHotpSecret.Location = new System.Drawing.Point(14, 18);
+            this.m_lblHotpSecret.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblHotpSecret.Name = "m_lblHotpSecret";
-            this.m_lblHotpSecret.Size = new System.Drawing.Size(207, 36);
+            this.m_lblHotpSecret.Size = new System.Drawing.Size(169, 29);
             this.m_lblHotpSecret.TabIndex = 0;
             this.m_lblHotpSecret.Text = "&Shared secret:";
             // 
@@ -251,11 +251,11 @@
             this.m_tabTotp.Controls.Add(this.m_cmbTotpSecretEnc);
             this.m_tabTotp.Controls.Add(this.m_tbTotpSecret);
             this.m_tabTotp.Controls.Add(this.m_lblTotpSecret);
-            this.m_tabTotp.Location = new System.Drawing.Point(8, 50);
-            this.m_tabTotp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tabTotp.Location = new System.Drawing.Point(4, 38);
+            this.m_tabTotp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tabTotp.Name = "m_tabTotp";
-            this.m_tabTotp.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.m_tabTotp.Size = new System.Drawing.Size(1124, 676);
+            this.m_tabTotp.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.m_tabTotp.Size = new System.Drawing.Size(847, 508);
             this.m_tabTotp.TabIndex = 1;
             this.m_tabTotp.Text = "Time-Based (TOTP)";
             this.m_tabTotp.UseVisualStyleBackColor = true;
@@ -263,10 +263,10 @@
             // m_lnkTotpPlh
             // 
             this.m_lnkTotpPlh.AutoSize = true;
-            this.m_lnkTotpPlh.Location = new System.Drawing.Point(18, 598);
-            this.m_lnkTotpPlh.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lnkTotpPlh.Location = new System.Drawing.Point(14, 448);
+            this.m_lnkTotpPlh.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lnkTotpPlh.Name = "m_lnkTotpPlh";
-            this.m_lnkTotpPlh.Size = new System.Drawing.Size(49, 36);
+            this.m_lnkTotpPlh.Size = new System.Drawing.Size(41, 29);
             this.m_lnkTotpPlh.TabIndex = 15;
             this.m_lnkTotpPlh.TabStop = true;
             this.m_lnkTotpPlh.Text = "<>";
@@ -274,115 +274,115 @@
             // 
             // m_lblTotpUsage
             // 
-            this.m_lblTotpUsage.Location = new System.Drawing.Point(18, 510);
-            this.m_lblTotpUsage.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpUsage.Location = new System.Drawing.Point(14, 382);
+            this.m_lblTotpUsage.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpUsage.Name = "m_lblTotpUsage";
-            this.m_lblTotpUsage.Size = new System.Drawing.Size(1074, 78);
+            this.m_lblTotpUsage.Size = new System.Drawing.Size(806, 58);
             this.m_lblTotpUsage.TabIndex = 14;
             this.m_lblTotpUsage.Text = "<>";
             // 
             // m_lblTotpPreviewValue
             // 
             this.m_lblTotpPreviewValue.AutoSize = true;
-            this.m_lblTotpPreviewValue.Location = new System.Drawing.Point(342, 402);
-            this.m_lblTotpPreviewValue.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpPreviewValue.Location = new System.Drawing.Point(256, 302);
+            this.m_lblTotpPreviewValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpPreviewValue.Name = "m_lblTotpPreviewValue";
-            this.m_lblTotpPreviewValue.Size = new System.Drawing.Size(49, 36);
+            this.m_lblTotpPreviewValue.Size = new System.Drawing.Size(41, 29);
             this.m_lblTotpPreviewValue.TabIndex = 13;
             this.m_lblTotpPreviewValue.Text = "<>";
             // 
             // m_lblTotpPreview
             // 
             this.m_lblTotpPreview.AutoSize = true;
-            this.m_lblTotpPreview.Location = new System.Drawing.Point(18, 402);
-            this.m_lblTotpPreview.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpPreview.Location = new System.Drawing.Point(14, 302);
+            this.m_lblTotpPreview.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpPreview.Name = "m_lblTotpPreview";
-            this.m_lblTotpPreview.Size = new System.Drawing.Size(129, 36);
+            this.m_lblTotpPreview.Size = new System.Drawing.Size(106, 29);
             this.m_lblTotpPreview.TabIndex = 12;
             this.m_lblTotpPreview.Text = "Preview:";
             // 
             // m_lblTotpAlgDefault
             // 
             this.m_lblTotpAlgDefault.AutoSize = true;
-            this.m_lblTotpAlgDefault.Location = new System.Drawing.Point(726, 294);
-            this.m_lblTotpAlgDefault.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpAlgDefault.Location = new System.Drawing.Point(544, 220);
+            this.m_lblTotpAlgDefault.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpAlgDefault.Name = "m_lblTotpAlgDefault";
-            this.m_lblTotpAlgDefault.Size = new System.Drawing.Size(49, 36);
+            this.m_lblTotpAlgDefault.Size = new System.Drawing.Size(41, 29);
             this.m_lblTotpAlgDefault.TabIndex = 11;
             this.m_lblTotpAlgDefault.Text = "<>";
             // 
             // m_cmbTotpAlg
             // 
             this.m_cmbTotpAlg.FormattingEnabled = true;
-            this.m_cmbTotpAlg.Location = new System.Drawing.Point(352, 286);
-            this.m_cmbTotpAlg.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbTotpAlg.Location = new System.Drawing.Point(264, 214);
+            this.m_cmbTotpAlg.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbTotpAlg.Name = "m_cmbTotpAlg";
-            this.m_cmbTotpAlg.Size = new System.Drawing.Size(348, 44);
+            this.m_cmbTotpAlg.Size = new System.Drawing.Size(262, 37);
             this.m_cmbTotpAlg.TabIndex = 10;
             // 
             // m_lblTotpAlg
             // 
             this.m_lblTotpAlg.AutoSize = true;
-            this.m_lblTotpAlg.Location = new System.Drawing.Point(18, 294);
-            this.m_lblTotpAlg.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpAlg.Location = new System.Drawing.Point(14, 220);
+            this.m_lblTotpAlg.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpAlg.Name = "m_lblTotpAlg";
-            this.m_lblTotpAlg.Size = new System.Drawing.Size(150, 36);
+            this.m_lblTotpAlg.Size = new System.Drawing.Size(121, 29);
             this.m_lblTotpAlg.TabIndex = 9;
             this.m_lblTotpAlg.Text = "&Algorithm:";
             // 
             // m_lblTotpPeriodDefault
             // 
             this.m_lblTotpPeriodDefault.AutoSize = true;
-            this.m_lblTotpPeriodDefault.Location = new System.Drawing.Point(726, 222);
-            this.m_lblTotpPeriodDefault.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpPeriodDefault.Location = new System.Drawing.Point(544, 166);
+            this.m_lblTotpPeriodDefault.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpPeriodDefault.Name = "m_lblTotpPeriodDefault";
-            this.m_lblTotpPeriodDefault.Size = new System.Drawing.Size(49, 36);
+            this.m_lblTotpPeriodDefault.Size = new System.Drawing.Size(41, 29);
             this.m_lblTotpPeriodDefault.TabIndex = 8;
             this.m_lblTotpPeriodDefault.Text = "<>";
             // 
             // m_tbTotpPeriod
             // 
-            this.m_tbTotpPeriod.Location = new System.Drawing.Point(352, 214);
-            this.m_tbTotpPeriod.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbTotpPeriod.Location = new System.Drawing.Point(264, 160);
+            this.m_tbTotpPeriod.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbTotpPeriod.Name = "m_tbTotpPeriod";
-            this.m_tbTotpPeriod.Size = new System.Drawing.Size(348, 41);
+            this.m_tbTotpPeriod.Size = new System.Drawing.Size(262, 33);
             this.m_tbTotpPeriod.TabIndex = 7;
             // 
             // m_lblTotpPeriod
             // 
             this.m_lblTotpPeriod.AutoSize = true;
-            this.m_lblTotpPeriod.Location = new System.Drawing.Point(18, 222);
-            this.m_lblTotpPeriod.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpPeriod.Location = new System.Drawing.Point(14, 166);
+            this.m_lblTotpPeriod.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpPeriod.Name = "m_lblTotpPeriod";
-            this.m_lblTotpPeriod.Size = new System.Drawing.Size(250, 36);
+            this.m_lblTotpPeriod.Size = new System.Drawing.Size(204, 29);
             this.m_lblTotpPeriod.TabIndex = 6;
             this.m_lblTotpPeriod.Text = "&Period (seconds):";
             // 
             // m_lblTotpLengthDefault
             // 
             this.m_lblTotpLengthDefault.AutoSize = true;
-            this.m_lblTotpLengthDefault.Location = new System.Drawing.Point(726, 150);
-            this.m_lblTotpLengthDefault.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpLengthDefault.Location = new System.Drawing.Point(544, 112);
+            this.m_lblTotpLengthDefault.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpLengthDefault.Name = "m_lblTotpLengthDefault";
-            this.m_lblTotpLengthDefault.Size = new System.Drawing.Size(49, 36);
+            this.m_lblTotpLengthDefault.Size = new System.Drawing.Size(41, 29);
             this.m_lblTotpLengthDefault.TabIndex = 5;
             this.m_lblTotpLengthDefault.Text = "<>";
             // 
             // m_tbTotpLength
             // 
-            this.m_tbTotpLength.Location = new System.Drawing.Point(352, 142);
-            this.m_tbTotpLength.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbTotpLength.Location = new System.Drawing.Point(264, 106);
+            this.m_tbTotpLength.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbTotpLength.Name = "m_tbTotpLength";
-            this.m_tbTotpLength.Size = new System.Drawing.Size(348, 41);
+            this.m_tbTotpLength.Size = new System.Drawing.Size(262, 33);
             this.m_tbTotpLength.TabIndex = 4;
             // 
             // m_lblTotpLength
             // 
             this.m_lblTotpLength.AutoSize = true;
-            this.m_lblTotpLength.Location = new System.Drawing.Point(18, 150);
-            this.m_lblTotpLength.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpLength.Location = new System.Drawing.Point(14, 112);
+            this.m_lblTotpLength.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpLength.Name = "m_lblTotpLength";
-            this.m_lblTotpLength.Size = new System.Drawing.Size(214, 36);
+            this.m_lblTotpLength.Size = new System.Drawing.Size(172, 29);
             this.m_lblTotpLength.TabIndex = 3;
             this.m_lblTotpLength.Text = "&Length (digits):";
             // 
@@ -390,36 +390,36 @@
             // 
             this.m_cmbTotpSecretEnc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cmbTotpSecretEnc.FormattingEnabled = true;
-            this.m_cmbTotpSecretEnc.Location = new System.Drawing.Point(736, 66);
-            this.m_cmbTotpSecretEnc.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cmbTotpSecretEnc.Location = new System.Drawing.Point(552, 50);
+            this.m_cmbTotpSecretEnc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cmbTotpSecretEnc.Name = "m_cmbTotpSecretEnc";
-            this.m_cmbTotpSecretEnc.Size = new System.Drawing.Size(340, 44);
+            this.m_cmbTotpSecretEnc.Size = new System.Drawing.Size(256, 37);
             this.m_cmbTotpSecretEnc.TabIndex = 2;
             // 
             // m_tbTotpSecret
             // 
-            this.m_tbTotpSecret.Location = new System.Drawing.Point(28, 70);
-            this.m_tbTotpSecret.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbTotpSecret.Location = new System.Drawing.Point(21, 52);
+            this.m_tbTotpSecret.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbTotpSecret.Name = "m_tbTotpSecret";
-            this.m_tbTotpSecret.Size = new System.Drawing.Size(672, 41);
+            this.m_tbTotpSecret.Size = new System.Drawing.Size(505, 33);
             this.m_tbTotpSecret.TabIndex = 1;
             // 
             // m_lblTotpSecret
             // 
             this.m_lblTotpSecret.AutoSize = true;
-            this.m_lblTotpSecret.Location = new System.Drawing.Point(18, 24);
-            this.m_lblTotpSecret.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblTotpSecret.Location = new System.Drawing.Point(14, 18);
+            this.m_lblTotpSecret.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblTotpSecret.Name = "m_lblTotpSecret";
-            this.m_lblTotpSecret.Size = new System.Drawing.Size(207, 36);
+            this.m_lblTotpSecret.Size = new System.Drawing.Size(169, 29);
             this.m_lblTotpSecret.TabIndex = 0;
             this.m_lblTotpSecret.Text = "&Shared secret:";
             // 
             // m_btnImportOtpAuthUri
             // 
-            this.m_btnImportOtpAuthUri.Location = new System.Drawing.Point(36, 934);
-            this.m_btnImportOtpAuthUri.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnImportOtpAuthUri.Location = new System.Drawing.Point(27, 700);
+            this.m_btnImportOtpAuthUri.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnImportOtpAuthUri.Name = "m_btnImportOtpAuthUri";
-            this.m_btnImportOtpAuthUri.Size = new System.Drawing.Size(440, 64);
+            this.m_btnImportOtpAuthUri.Size = new System.Drawing.Size(330, 48);
             this.m_btnImportOtpAuthUri.TabIndex = 3;
             this.m_btnImportOtpAuthUri.Text = "&Import \'otpauth://\' URI...";
             this.m_btnImportOtpAuthUri.UseVisualStyleBackColor = true;
@@ -433,10 +433,10 @@
             // OtpGeneratorForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1206, 1030);
+            this.ClientSize = new System.Drawing.Size(904, 772);
             this.Controls.Add(this.m_btnImportOtpAuthUri);
             this.Controls.Add(this.m_tabMain);
             this.Controls.Add(this.m_bannerImage);
@@ -444,7 +444,7 @@
             this.Controls.Add(this.m_btnOK);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OtpGeneratorForm";

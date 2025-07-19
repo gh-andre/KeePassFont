@@ -55,9 +55,9 @@
             // 
             this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_bannerImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Size = new System.Drawing.Size(1878, 166);
+            this.m_bannerImage.Size = new System.Drawing.Size(1408, 124);
             this.m_bannerImage.TabIndex = 0;
             this.m_bannerImage.TabStop = false;
             // 
@@ -65,10 +65,10 @@
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.m_btnOK.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.m_btnOK.Location = new System.Drawing.Point(1374, 1078);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnOK.Location = new System.Drawing.Point(1030, 808);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(224, 64);
+            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
             this.m_btnOK.TabIndex = 8;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.m_btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.m_btnCancel.Location = new System.Drawing.Point(1616, 1078);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnCancel.Location = new System.Drawing.Point(1212, 808);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
+            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
             this.m_btnCancel.TabIndex = 9;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -92,11 +92,11 @@
             this.m_lvTriggers.FullRowSelect = true;
             this.m_lvTriggers.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvTriggers.HideSelection = false;
-            this.m_lvTriggers.Location = new System.Drawing.Point(36, 266);
-            this.m_lvTriggers.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_lvTriggers.Location = new System.Drawing.Point(27, 200);
+            this.m_lvTriggers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_lvTriggers.Name = "m_lvTriggers";
             this.m_lvTriggers.ShowItemToolTips = true;
-            this.m_lvTriggers.Size = new System.Drawing.Size(1556, 736);
+            this.m_lvTriggers.Size = new System.Drawing.Size(1168, 553);
             this.m_lvTriggers.TabIndex = 0;
             this.m_lvTriggers.UseCompatibleStateImageBehavior = false;
             this.m_lvTriggers.View = System.Windows.Forms.View.Details;
@@ -105,10 +105,10 @@
             // 
             // m_btnAdd
             // 
-            this.m_btnAdd.Location = new System.Drawing.Point(1616, 264);
-            this.m_btnAdd.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnAdd.Location = new System.Drawing.Point(1212, 198);
+            this.m_btnAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnAdd.Name = "m_btnAdd";
-            this.m_btnAdd.Size = new System.Drawing.Size(224, 64);
+            this.m_btnAdd.Size = new System.Drawing.Size(168, 48);
             this.m_btnAdd.TabIndex = 1;
             this.m_btnAdd.Text = "&Add...";
             this.m_btnAdd.UseVisualStyleBackColor = true;
@@ -116,10 +116,10 @@
             // 
             // m_btnEdit
             // 
-            this.m_btnEdit.Location = new System.Drawing.Point(1616, 344);
-            this.m_btnEdit.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnEdit.Location = new System.Drawing.Point(1212, 258);
+            this.m_btnEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnEdit.Name = "m_btnEdit";
-            this.m_btnEdit.Size = new System.Drawing.Size(224, 64);
+            this.m_btnEdit.Size = new System.Drawing.Size(168, 48);
             this.m_btnEdit.TabIndex = 2;
             this.m_btnEdit.Text = "&Edit...";
             this.m_btnEdit.UseVisualStyleBackColor = true;
@@ -127,10 +127,10 @@
             // 
             // m_btnDelete
             // 
-            this.m_btnDelete.Location = new System.Drawing.Point(1616, 424);
-            this.m_btnDelete.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnDelete.Location = new System.Drawing.Point(1212, 318);
+            this.m_btnDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnDelete.Name = "m_btnDelete";
-            this.m_btnDelete.Size = new System.Drawing.Size(224, 64);
+            this.m_btnDelete.Size = new System.Drawing.Size(168, 48);
             this.m_btnDelete.TabIndex = 3;
             this.m_btnDelete.Text = "&Delete";
             this.m_btnDelete.UseVisualStyleBackColor = true;
@@ -139,19 +139,19 @@
             // m_lblSep
             // 
             this.m_lblSep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSep.Location = new System.Drawing.Point(0, 1046);
-            this.m_lblSep.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblSep.Location = new System.Drawing.Point(0, 784);
+            this.m_lblSep.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblSep.Name = "m_lblSep";
-            this.m_lblSep.Size = new System.Drawing.Size(1878, 6);
+            this.m_lblSep.Size = new System.Drawing.Size(1408, 4);
             this.m_lblSep.TabIndex = 6;
             // 
             // m_cbEnableTriggers
             // 
             this.m_cbEnableTriggers.AutoSize = true;
-            this.m_cbEnableTriggers.Location = new System.Drawing.Point(36, 202);
-            this.m_cbEnableTriggers.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cbEnableTriggers.Location = new System.Drawing.Point(27, 152);
+            this.m_cbEnableTriggers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cbEnableTriggers.Name = "m_cbEnableTriggers";
-            this.m_cbEnableTriggers.Size = new System.Drawing.Size(333, 40);
+            this.m_cbEnableTriggers.Size = new System.Drawing.Size(272, 33);
             this.m_cbEnableTriggers.TabIndex = 10;
             this.m_cbEnableTriggers.Text = "E&nable trigger system";
             this.m_cbEnableTriggers.UseVisualStyleBackColor = true;
@@ -160,10 +160,10 @@
             // m_btnMoveUp
             // 
             this.m_btnMoveUp.Image = global::KeePass.Properties.Resources.B16x16_1UpArrow;
-            this.m_btnMoveUp.Location = new System.Drawing.Point(1616, 552);
-            this.m_btnMoveUp.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnMoveUp.Location = new System.Drawing.Point(1212, 414);
+            this.m_btnMoveUp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnMoveUp.Name = "m_btnMoveUp";
-            this.m_btnMoveUp.Size = new System.Drawing.Size(224, 64);
+            this.m_btnMoveUp.Size = new System.Drawing.Size(168, 48);
             this.m_btnMoveUp.TabIndex = 4;
             this.m_btnMoveUp.UseVisualStyleBackColor = true;
             this.m_btnMoveUp.Click += new System.EventHandler(this.OnBtnMoveUp);
@@ -171,20 +171,20 @@
             // m_btnMoveDown
             // 
             this.m_btnMoveDown.Image = global::KeePass.Properties.Resources.B16x16_1DownArrow;
-            this.m_btnMoveDown.Location = new System.Drawing.Point(1616, 632);
-            this.m_btnMoveDown.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnMoveDown.Location = new System.Drawing.Point(1212, 474);
+            this.m_btnMoveDown.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnMoveDown.Name = "m_btnMoveDown";
-            this.m_btnMoveDown.Size = new System.Drawing.Size(224, 64);
+            this.m_btnMoveDown.Size = new System.Drawing.Size(168, 48);
             this.m_btnMoveDown.TabIndex = 5;
             this.m_btnMoveDown.UseVisualStyleBackColor = true;
             this.m_btnMoveDown.Click += new System.EventHandler(this.OnBtnMoveDown);
             // 
             // m_btnTools
             // 
-            this.m_btnTools.Location = new System.Drawing.Point(36, 1078);
-            this.m_btnTools.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnTools.Location = new System.Drawing.Point(27, 808);
+            this.m_btnTools.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnTools.Name = "m_btnTools";
-            this.m_btnTools.Size = new System.Drawing.Size(224, 64);
+            this.m_btnTools.Size = new System.Drawing.Size(168, 48);
             this.m_btnTools.TabIndex = 7;
             this.m_btnTools.Text = "&Tools";
             this.m_btnTools.UseVisualStyleBackColor = true;
@@ -192,7 +192,7 @@
             // 
             // m_ctxTools
             // 
-            this.m_ctxTools.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.m_ctxTools.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.m_ctxTools.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_ctxToolsHelp,
             this.m_ctxToolsSep0,
@@ -200,26 +200,26 @@
             this.m_ctxToolsCopySelectedTriggers,
             this.m_ctxToolsPasteTriggers});
             this.m_ctxTools.Name = "m_ctxTools";
-            this.m_ctxTools.Size = new System.Drawing.Size(554, 186);
+            this.m_ctxTools.Size = new System.Drawing.Size(424, 154);
             // 
             // m_ctxToolsHelp
             // 
             this.m_ctxToolsHelp.Image = global::KeePass.Properties.Resources.B16x16_Help;
             this.m_ctxToolsHelp.Name = "m_ctxToolsHelp";
-            this.m_ctxToolsHelp.Size = new System.Drawing.Size(553, 44);
+            this.m_ctxToolsHelp.Size = new System.Drawing.Size(423, 36);
             this.m_ctxToolsHelp.Text = "&Help";
             this.m_ctxToolsHelp.Click += new System.EventHandler(this.OnCtxToolsHelp);
             // 
             // m_ctxToolsSep0
             // 
             this.m_ctxToolsSep0.Name = "m_ctxToolsSep0";
-            this.m_ctxToolsSep0.Size = new System.Drawing.Size(550, 6);
+            this.m_ctxToolsSep0.Size = new System.Drawing.Size(420, 6);
             // 
             // m_ctxToolsCopyTriggers
             // 
             this.m_ctxToolsCopyTriggers.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
             this.m_ctxToolsCopyTriggers.Name = "m_ctxToolsCopyTriggers";
-            this.m_ctxToolsCopyTriggers.Size = new System.Drawing.Size(553, 44);
+            this.m_ctxToolsCopyTriggers.Size = new System.Drawing.Size(423, 36);
             this.m_ctxToolsCopyTriggers.Text = "&Copy Triggers to Clipboard";
             this.m_ctxToolsCopyTriggers.Click += new System.EventHandler(this.OnCtxToolsCopyTriggers);
             // 
@@ -227,7 +227,7 @@
             // 
             this.m_ctxToolsCopySelectedTriggers.Image = global::KeePass.Properties.Resources.B16x16_EditCopy;
             this.m_ctxToolsCopySelectedTriggers.Name = "m_ctxToolsCopySelectedTriggers";
-            this.m_ctxToolsCopySelectedTriggers.Size = new System.Drawing.Size(553, 44);
+            this.m_ctxToolsCopySelectedTriggers.Size = new System.Drawing.Size(423, 36);
             this.m_ctxToolsCopySelectedTriggers.Text = "Copy &Selected Triggers to Clipboard";
             this.m_ctxToolsCopySelectedTriggers.Click += new System.EventHandler(this.OnCtxToolsCopySelectedTriggers);
             // 
@@ -235,17 +235,17 @@
             // 
             this.m_ctxToolsPasteTriggers.Image = global::KeePass.Properties.Resources.B16x16_EditPaste;
             this.m_ctxToolsPasteTriggers.Name = "m_ctxToolsPasteTriggers";
-            this.m_ctxToolsPasteTriggers.Size = new System.Drawing.Size(553, 44);
+            this.m_ctxToolsPasteTriggers.Size = new System.Drawing.Size(423, 36);
             this.m_ctxToolsPasteTriggers.Text = "&Paste Triggers from Clipboard";
             this.m_ctxToolsPasteTriggers.Click += new System.EventHandler(this.OnCtxToolsPasteTriggers);
             // 
             // EcasTriggersForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1878, 1174);
+            this.ClientSize = new System.Drawing.Size(1408, 880);
             this.Controls.Add(this.m_btnTools);
             this.Controls.Add(this.m_btnMoveDown);
             this.Controls.Add(this.m_btnMoveUp);
@@ -260,7 +260,7 @@
             this.Controls.Add(this.m_bannerImage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EcasTriggersForm";

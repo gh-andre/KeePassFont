@@ -43,10 +43,10 @@
             // 
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.m_btnOK.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.m_btnOK.Location = new System.Drawing.Point(960, 898);
-            this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnOK.Location = new System.Drawing.Point(720, 674);
+            this.m_btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(224, 64);
+            this.m_btnOK.Size = new System.Drawing.Size(168, 48);
             this.m_btnOK.TabIndex = 7;
             this.m_btnOK.Text = "OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
@@ -56,10 +56,10 @@
             // 
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.m_btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.m_btnCancel.Location = new System.Drawing.Point(1204, 898);
-            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnCancel.Location = new System.Drawing.Point(903, 674);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
+            this.m_btnCancel.Size = new System.Drawing.Size(168, 48);
             this.m_btnCancel.TabIndex = 8;
             this.m_btnCancel.Text = "Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -70,11 +70,11 @@
             this.m_lvOverrides.FullRowSelect = true;
             this.m_lvOverrides.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.m_lvOverrides.HideSelection = false;
-            this.m_lvOverrides.Location = new System.Drawing.Point(36, 34);
-            this.m_lvOverrides.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_lvOverrides.Location = new System.Drawing.Point(27, 26);
+            this.m_lvOverrides.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_lvOverrides.Name = "m_lvOverrides";
             this.m_lvOverrides.ShowItemToolTips = true;
-            this.m_lvOverrides.Size = new System.Drawing.Size(1140, 702);
+            this.m_lvOverrides.Size = new System.Drawing.Size(856, 528);
             this.m_lvOverrides.TabIndex = 0;
             this.m_lvOverrides.UseCompatibleStateImageBehavior = false;
             this.m_lvOverrides.View = System.Windows.Forms.View.Details;
@@ -83,10 +83,10 @@
             // 
             // m_btnAdd
             // 
-            this.m_btnAdd.Location = new System.Drawing.Point(1204, 34);
-            this.m_btnAdd.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnAdd.Location = new System.Drawing.Point(903, 26);
+            this.m_btnAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnAdd.Name = "m_btnAdd";
-            this.m_btnAdd.Size = new System.Drawing.Size(224, 64);
+            this.m_btnAdd.Size = new System.Drawing.Size(168, 48);
             this.m_btnAdd.TabIndex = 1;
             this.m_btnAdd.Text = "&Add...";
             this.m_btnAdd.UseVisualStyleBackColor = true;
@@ -94,10 +94,10 @@
             // 
             // m_btnEdit
             // 
-            this.m_btnEdit.Location = new System.Drawing.Point(1204, 114);
-            this.m_btnEdit.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnEdit.Location = new System.Drawing.Point(903, 86);
+            this.m_btnEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnEdit.Name = "m_btnEdit";
-            this.m_btnEdit.Size = new System.Drawing.Size(224, 64);
+            this.m_btnEdit.Size = new System.Drawing.Size(168, 48);
             this.m_btnEdit.TabIndex = 2;
             this.m_btnEdit.Text = "&Edit...";
             this.m_btnEdit.UseVisualStyleBackColor = true;
@@ -105,10 +105,10 @@
             // 
             // m_btnDelete
             // 
-            this.m_btnDelete.Location = new System.Drawing.Point(1204, 194);
-            this.m_btnDelete.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_btnDelete.Location = new System.Drawing.Point(903, 146);
+            this.m_btnDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_btnDelete.Name = "m_btnDelete";
-            this.m_btnDelete.Size = new System.Drawing.Size(224, 64);
+            this.m_btnDelete.Size = new System.Drawing.Size(168, 48);
             this.m_btnDelete.TabIndex = 3;
             this.m_btnDelete.Text = "&Delete";
             this.m_btnDelete.UseVisualStyleBackColor = true;
@@ -117,19 +117,19 @@
             // m_lblSep
             // 
             this.m_lblSep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.m_lblSep.Location = new System.Drawing.Point(0, 872);
-            this.m_lblSep.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.m_lblSep.Location = new System.Drawing.Point(0, 654);
+            this.m_lblSep.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.m_lblSep.Name = "m_lblSep";
-            this.m_lblSep.Size = new System.Drawing.Size(1468, 6);
+            this.m_lblSep.Size = new System.Drawing.Size(1101, 4);
             this.m_lblSep.TabIndex = 6;
             // 
             // m_cbOverrideAll
             // 
             this.m_cbOverrideAll.AutoSize = true;
-            this.m_cbOverrideAll.Location = new System.Drawing.Point(36, 784);
-            this.m_cbOverrideAll.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_cbOverrideAll.Location = new System.Drawing.Point(27, 588);
+            this.m_cbOverrideAll.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_cbOverrideAll.Name = "m_cbOverrideAll";
-            this.m_cbOverrideAll.Size = new System.Drawing.Size(364, 40);
+            this.m_cbOverrideAll.Size = new System.Drawing.Size(293, 33);
             this.m_cbOverrideAll.TabIndex = 4;
             this.m_cbOverrideAll.Text = "&Override all entry URLs:";
             this.m_cbOverrideAll.UseVisualStyleBackColor = true;
@@ -137,19 +137,19 @@
             // 
             // m_tbOverrideAll
             // 
-            this.m_tbOverrideAll.Location = new System.Drawing.Point(468, 778);
-            this.m_tbOverrideAll.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.m_tbOverrideAll.Location = new System.Drawing.Point(351, 584);
+            this.m_tbOverrideAll.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.m_tbOverrideAll.Name = "m_tbOverrideAll";
-            this.m_tbOverrideAll.Size = new System.Drawing.Size(708, 41);
+            this.m_tbOverrideAll.Size = new System.Drawing.Size(532, 33);
             this.m_tbOverrideAll.TabIndex = 5;
             // 
             // UrlOverridesForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(1464, 994);
+            this.ClientSize = new System.Drawing.Size(1098, 746);
             this.Controls.Add(this.m_tbOverrideAll);
             this.Controls.Add(this.m_cbOverrideAll);
             this.Controls.Add(this.m_lblSep);
@@ -161,7 +161,7 @@
             this.Controls.Add(this.m_btnOK);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UrlOverridesForm";
