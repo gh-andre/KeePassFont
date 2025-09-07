@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of KeePass v2.58 source, with a few changes described in
+This is a copy of the KeePass v2.59 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -20,7 +20,7 @@ own risk.**
 
 ### Application Font Size
 
-All UI forms in this repository are updated to use `11pt` font size instead
+All UI forms in this repository are updated to use an `11pt` font size instead
 of the original `8pt`, which is very hard on the eyes, especially on high
 resolution displays.
 
@@ -35,7 +35,7 @@ scaling, which actually affects all applications, and if it is changed
 to make KeePass readable, it would render all other applications
 unusable because of the system-wide excessive scaling. In addition to
 this, the advice given with regards to not using the _Accessibility_
-settings is counterproductive, as these settings play very important
+settings is counterproductive, as these settings play a very important
 role in scaling font size in many applications, such as File Explorer
 or Chrome.
 
@@ -47,7 +47,7 @@ in KeePass for those who feel comfortable building it from the source.
 A bug was created for Visual Studio in that automatic form scaling
 does not compute form layout correctly when display scaling changes
 at application run time from what it was when Visual Studio was
-running, but it was closed with an unusable suggested work-around.
+running, but it was closed with an unusable suggested workaround.
 Add a _No_ vote in this thread if you agree that this problem should
 be addressed in Visual Studio.
 
@@ -78,7 +78,7 @@ top of the source file.
 `KDBX_Dump_HTML.xsl` may be used in two ways. You can copy this file into
 the XSL folder in the KeePass installation folder, where other XSL templates
 are, and use it via KeePass' export functionality. Alternatively, you can
-export KeePass XML file and use a standalone XSL processor to produce the
+export the KeePass XML file and use a standalone XSL processor to produce the
 HTML. For example, using `msxsl.exe`:
 
     msxsl MyKeePass.xml KDBX_Dump_HTML.xsl -o MyKeePass.html
@@ -92,7 +92,7 @@ BitLocker drive or a USB drive attached via a hardware encryption key.
 The original KeePass source is always committed on `main` and tagged
 with the original version number. All changes are maintained in version
 branches, which contain cherry-picked changes from the previous version
-and new changes. Current topology looks like this:
+and new changes. The current topology looks like this:
 
     
            VS2019    8pt/10pt        VS2019   8pt/10pt
@@ -108,15 +108,15 @@ of the original code, which is maintained in `main` and is tagged with
 `keepass-2-46-0`, `keepass-2-47-0` and `keepass-2-48-1`, respectively, for
 each new source drop.
 
-The `main` branch contains original KeePass source and two additional
+The `main` branch contains the original KeePass source and two additional
 files, `.gitignore` and `README.md`. The latter is required for GitHub to
-show README on the repository home page. `README.md` on `main` should
+show the README on the repository home page. `README.md` on `main` should
 be cherry-picked from the latest version branch for each new modified
 source drop.
 
 ### Importing KeePass Source
 
-New KeePass source is imported using following steps.
+New KeePass source is imported using the following steps.
 
 * Checkout `main`
 
@@ -126,36 +126,28 @@ New KeePass source is imported using following steps.
   and, perhaps, `.vs`.
 * Unzip the new source archive.
 * Add all new source, commit and tag with `keepass-x-y-z`, where `x-y-z`
-  would be the actual version, such as `keepass-2-48-1`.
+  would be the actual version, such as `keepass-2-59-0`.
 * Create a new branch for changes to the new version, with an actual
-  version instead of `x-y-z` (e.g. `v2-48-1`).
+  version instead of `x-y-z` (e.g. `v2-59-0`).
 
       git checkout -b vx-y-z
 
-* Upgrade solution to Visual Studio 2022, remove `UpgradeLog.htm`
-  and commit changes.
-
-  Note that starting from v2.58, there is an upgraded solution in
-  the source distribution - `KeePass_2.sln`, which may be used instead.
-* Retarget all projects to use the .Net Framework v4.8. The original
-  .Net v4.0 is no longer installed on GitHub runners. Note, however,
-  that very little testing was done with running a mix of original
-  KeePass DLLs built with .Net v4 with the UI component built with
-  .Net v4.8.
+* Open `KeePass_N48.sln`.
 * Cherry-pick non-conflicting changes from the previous version branch,
   which typically includes added files, such as the new XSL template.
   For example, if `12345678` represents a commit with the last
-  non-conflicting change for version 2.47.0, the cherry-pick command
-  for version 2.48.0 would look like this:
+  non-conflicting change for version 2.58.0, the cherry-pick command
+  for version 2.58.0 would look like this:
 
-      git cherry-pick keepass-2-47-0..12345678
+      git cherry-pick keepass-2-58-0..12345678
 
   If the first commit has conflicts, you will need to cherry-pick changes
   individually.
 * Trying to cherry-pick font size changes from the previous branch would
   be quite error-prone, given how Visual Studio maintains form layout
-  in the source, so font size changes should be applied manually at this
-  point.
+  in the source. Instead, try applying patches described in _Font change
+  patches_ and otherwise apply font size changes manually.
+
 * Once font size changes are applied, tested and committed, `README.md`
   should be updated to reflect the new application version and any
   additional changes and should be cherry-picked to `main`.
@@ -170,8 +162,8 @@ Clone this repository and check out the version branch you would like to build.
 
     git checkout v2-50-1
 
-Run `cmd.exe` and run `vcvarsall.bat` from Visual Studio installation to set
-up x64 build environment.
+Run `cmd.exe` and run `vcvarsall.bat` from the Visual Studio installation to set
+up the x64 build environment.
 
     vcvarsall.bat x64
 
@@ -186,11 +178,9 @@ if your **Smart Screen** is turned on, it may pop up a warning that the
 application is not signed. You will need to click _More info_ and then
 click the button to run the app anyway.
 
-Start Visual Studio from the the same command prompt, so it can find
-`sgen.exe`, which is referenced in the solution, in post build events
-of the `KeePass` project.
+Start Visual Studio from the same command prompt.
 
-    devenv KeePass.sln
+    devenv KeePass_N48.sln
 
 Change the solution configuration to `Release`, platform to `Any CPU`,
 startup project to `KeePass` and build the solution.
@@ -204,7 +194,7 @@ be installed by the official KeePass installer on Windows.
 
 ## GitHub Releases
 
-This repository is configured to build `KeyPass.exe` as described above
+This repository is configured to build `KeePass.exe` as described above
 and maintains release packages with relevant files, which can be used as
 the installation source instead of the local build output.
 
@@ -228,12 +218,12 @@ Open the KeePass installation directory, which will be one of these:
     C:\Program Files (x86)\KeePass Password Safe 2
     C:\Program Files\KeePass Password Safe 2
 
-, and rename the original `KeePass.exe` and `KeePass.XmlSerializers.dll`
-files. Do not delete them. Copy the new files from the downloaded archive
-to replace the ones you just renamed.
+, and rename the original `KeePass.exe` file. Do not delete it. Copy
+the new file from the downloaded archive to replace the one you just
+renamed.
 
 If you would like to add the new XSL template for exporting passwords,
-copy `XSL\KDBX_Dump_HTML.xsl` file into the `XSL` directory in the
+copy the `XSL\KDBX_Dump_HTML.xsl` file into the `XSL` directory in the
 installation directory.
 
 It's worth noting that this step replaces only the executable and not
@@ -243,7 +233,7 @@ secure algorithms.
 Open the new KeePass application and test it based on your typical usage.
 
 Before installing a new version of KeePass, restore the original `KeePass.exe`
-and `KeePass.XmlSerializers.dll` files.
+file.
 
 ## Changing Font Size
 
@@ -252,7 +242,7 @@ and `KeePass.XmlSerializers.dll` files.
 Visual Studio is buggy and inconsistent in handling forms and DPI settings
 and depending on the version of Visual Studio, it may not work as described.
 
-Note that on a two-display systems, the scaling of the primary display
+Note that on a two-display system, the scaling of the primary display
 is used by Visual Studio, even if it is running on the secondary display.
 This makes it very confusing and error-prone in reworking forms, as
 described below.
@@ -282,6 +272,48 @@ When testing the application built from this repository, try opening
 larger forms, such as _File > Change Master Key_, to check if all of
 the buttons are visible and also whether the text that wraps on the
 right contains incomplete sentences.
+
+### Font change patches
+
+This repository allows creating 3 patches for scaling values 125%,
+150% and 200%. It may be possible to apply these patches without
+having to go through tedious font update changes described in
+_Steps_ below.
+
+Note the 3 version-specific scaling tags in this repository, such
+as `2-58-150pct`. Use these tags to generate scaling patches via
+Git as follows:
+
+    git diff keepass-2-58-0 2-58-0-150pct -- KeePass/Forms/* > 2-58-0-150pct.patch
+
+The patch generated in this way may be applied using this command:
+
+    "%PROGRAMFILES%\Git\usr\bin\patch.exe" -p1 --binary --input 2-58-0-150pct.patch
+
+When applying these patches across versions (e.g. when applying
+font scaling changes to the source for the new version), apply
+a specific patch first. If you see any errors, those forms will
+need to be updated manually, as described in _Steps_ below.
+
+After applying the relevant patch, open all forms, as described
+in _Steps_, and verify each form's properties that the font size
+is 11 points. If there is any form that still has the original
+8 point setting, it will need to be updated manually.
+
+Finally, a patch may not apply cleanly, even if there were no
+errors reported during patching. Make sure to test all forms,
+whether they were patched or updated manually.
+
+If more than one font size patch is applied, reset forms to the
+original font size before applying the next patch with this
+command:
+
+    for /F %p in ('dir /B KeePass\Forms\*') do git show keepass-2-59-0:KeePass/Forms/%p > KeePass\Forms\%p
+
+Note that the KeePass version in this command must be the one
+being currently updated, even if patches from past versions
+are applied, such as in this case font size patches from `2.58.0`
+are applied against `2.59.0`.
 
 ### Steps
 
@@ -331,7 +363,7 @@ scaling mode.
   are rendered without controls overlapping and there is no truncated
   text.
 
-These steps make very little sense, but is required for forms to
+These steps make very little sense, but are required for forms to
 render correctly.
 
 The forms listed below have multi-line fields with long text, which
@@ -367,8 +399,8 @@ https://keepass.info/
 If you experience any issues with application forms display, simply switch back
 to the original application.
 
-If you find something missing from build instructions in this file, such as
-inappropriate mix of some .Net assemblies between installed and built application,
+If you find something missing from the build instructions in this file, such as
+an inappropriate mix of some .Net assemblies between installed and built application,
 create an issue here.
 
 Similarly, if you find bugs in `KDBX_Dump_HTML.xsl`, also create an issue here.
