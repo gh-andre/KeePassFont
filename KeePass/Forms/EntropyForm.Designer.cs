@@ -49,9 +49,10 @@
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(462, 388);
+			this.m_btnOK.Location = new System.Drawing.Point(1386, 1074);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(75, 23);
+			this.m_btnOK.Size = new System.Drawing.Size(224, 64);
 			this.m_btnOK.TabIndex = 2;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(543, 388);
+			this.m_btnCancel.Location = new System.Drawing.Point(1628, 1074);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
 			this.m_btnCancel.TabIndex = 3;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -71,27 +73,30 @@
 			// m_picRandom
 			// 
 			this.m_picRandom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.m_picRandom.Location = new System.Drawing.Point(10, 47);
+			this.m_picRandom.Location = new System.Drawing.Point(30, 130);
+			this.m_picRandom.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_picRandom.Name = "m_picRandom";
-			this.m_picRandom.Size = new System.Drawing.Size(282, 233);
+			this.m_picRandom.Size = new System.Drawing.Size(842, 642);
 			this.m_picRandom.TabIndex = 2;
 			this.m_picRandom.TabStop = false;
 			this.m_picRandom.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OnRandomMouseMove);
 			// 
 			// m_lblHint
 			// 
-			this.m_lblHint.Location = new System.Drawing.Point(6, 16);
+			this.m_lblHint.Location = new System.Drawing.Point(18, 44);
+			this.m_lblHint.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblHint.Name = "m_lblHint";
-			this.m_lblHint.Size = new System.Drawing.Size(289, 28);
+			this.m_lblHint.Size = new System.Drawing.Size(868, 78);
 			this.m_lblHint.TabIndex = 0;
 			this.m_lblHint.Text = "Move the mouse randomly in the following field to generate random bits:";
 			// 
 			// m_lblGeneratedHint
 			// 
 			this.m_lblGeneratedHint.AutoSize = true;
-			this.m_lblGeneratedHint.Location = new System.Drawing.Point(6, 289);
+			this.m_lblGeneratedHint.Location = new System.Drawing.Point(18, 800);
+			this.m_lblGeneratedHint.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblGeneratedHint.Name = "m_lblGeneratedHint";
-			this.m_lblGeneratedHint.Size = new System.Drawing.Size(79, 13);
+			this.m_lblGeneratedHint.Size = new System.Drawing.Size(217, 36);
 			this.m_lblGeneratedHint.TabIndex = 1;
 			this.m_lblGeneratedHint.Text = "Generated bits:";
 			// 
@@ -99,8 +104,9 @@
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(630, 60);
+			this.m_bannerImage.Size = new System.Drawing.Size(1890, 166);
 			this.m_bannerImage.TabIndex = 8;
 			this.m_bannerImage.TabStop = false;
 			// 
@@ -110,18 +116,21 @@
 			this.m_grpMouse.Controls.Add(this.m_picRandom);
 			this.m_grpMouse.Controls.Add(this.m_lblGeneratedHint);
 			this.m_grpMouse.Controls.Add(this.m_pbGenerated);
-			this.m_grpMouse.Location = new System.Drawing.Point(12, 66);
+			this.m_grpMouse.Location = new System.Drawing.Point(36, 182);
+			this.m_grpMouse.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_grpMouse.Name = "m_grpMouse";
-			this.m_grpMouse.Size = new System.Drawing.Size(302, 316);
+			this.m_grpMouse.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_grpMouse.Size = new System.Drawing.Size(906, 876);
 			this.m_grpMouse.TabIndex = 0;
 			this.m_grpMouse.TabStop = false;
 			this.m_grpMouse.Text = "Random mouse input";
 			// 
 			// m_pbGenerated
 			// 
-			this.m_pbGenerated.Location = new System.Drawing.Point(91, 288);
+			this.m_pbGenerated.Location = new System.Drawing.Point(272, 798);
+			this.m_pbGenerated.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_pbGenerated.Name = "m_pbGenerated";
-			this.m_pbGenerated.Size = new System.Drawing.Size(201, 16);
+			this.m_pbGenerated.Size = new System.Drawing.Size(604, 44);
 			this.m_pbGenerated.TabIndex = 2;
 			this.m_pbGenerated.TabStop = false;
 			// 
@@ -130,63 +139,70 @@
 			this.m_grpKeyboard.Controls.Add(this.m_lblKeysDesc);
 			this.m_grpKeyboard.Controls.Add(this.m_lblKeysIntro);
 			this.m_grpKeyboard.Controls.Add(this.m_tbEdit);
-			this.m_grpKeyboard.Location = new System.Drawing.Point(320, 66);
+			this.m_grpKeyboard.Location = new System.Drawing.Point(960, 182);
+			this.m_grpKeyboard.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_grpKeyboard.Name = "m_grpKeyboard";
-			this.m_grpKeyboard.Size = new System.Drawing.Size(298, 316);
+			this.m_grpKeyboard.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_grpKeyboard.Size = new System.Drawing.Size(894, 876);
 			this.m_grpKeyboard.TabIndex = 1;
 			this.m_grpKeyboard.TabStop = false;
 			this.m_grpKeyboard.Text = "Random keyboard input";
 			// 
 			// m_lblKeysDesc
 			// 
-			this.m_lblKeysDesc.Location = new System.Drawing.Point(6, 254);
+			this.m_lblKeysDesc.Location = new System.Drawing.Point(18, 704);
+			this.m_lblKeysDesc.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblKeysDesc.Name = "m_lblKeysDesc";
-			this.m_lblKeysDesc.Size = new System.Drawing.Size(286, 56);
+			this.m_lblKeysDesc.Size = new System.Drawing.Size(858, 156);
 			this.m_lblKeysDesc.TabIndex = 2;
 			this.m_lblKeysDesc.Text = "Just hack some random keys into the box above. You do not need to remember them. " +
-				"They are only used as a random seed for a cryptographically strong random number" +
-				" generator.";
+    "They are only used as a random seed for a cryptographically strong random number" +
+    " generator.";
 			// 
 			// m_lblKeysIntro
 			// 
 			this.m_lblKeysIntro.AutoSize = true;
-			this.m_lblKeysIntro.Location = new System.Drawing.Point(6, 16);
+			this.m_lblKeysIntro.Location = new System.Drawing.Point(18, 44);
+			this.m_lblKeysIntro.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
 			this.m_lblKeysIntro.Name = "m_lblKeysIntro";
-			this.m_lblKeysIntro.Size = new System.Drawing.Size(229, 13);
+			this.m_lblKeysIntro.Size = new System.Drawing.Size(639, 36);
 			this.m_lblKeysIntro.TabIndex = 0;
 			this.m_lblKeysIntro.Text = "&Type random characters into the following field:";
 			// 
 			// m_tbEdit
 			// 
 			this.m_tbEdit.AcceptsReturn = true;
-			this.m_tbEdit.Location = new System.Drawing.Point(9, 47);
+			this.m_tbEdit.Location = new System.Drawing.Point(28, 130);
+			this.m_tbEdit.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.m_tbEdit.Multiline = true;
 			this.m_tbEdit.Name = "m_tbEdit";
 			this.m_tbEdit.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.m_tbEdit.Size = new System.Drawing.Size(279, 204);
+			this.m_tbEdit.Size = new System.Drawing.Size(828, 558);
 			this.m_tbEdit.TabIndex = 1;
 			// 
 			// EntropyForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(630, 423);
+			this.ClientSize = new System.Drawing.Size(1890, 1172);
 			this.Controls.Add(this.m_grpKeyboard);
 			this.Controls.Add(this.m_grpMouse);
 			this.Controls.Add(this.m_bannerImage);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_btnOK);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "EntropyForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "<>";
-			this.Load += new System.EventHandler(this.OnFormLoad);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+			this.Load += new System.EventHandler(this.OnFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.m_picRandom)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
 			this.m_grpMouse.ResumeLayout(false);
