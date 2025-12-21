@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of the KeePass v2.59 source, with a few changes described in
+This is a copy of the KeePass v2.60 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -132,7 +132,6 @@ New KeePass source is imported using the following steps.
 
       git checkout -b vx-y-z
 
-* Open `KeePass_N48.sln`.
 * Cherry-pick non-conflicting changes from the previous version branch,
   which typically includes added files, such as the new XSL template.
   For example, if `12345678` represents a commit with the last
@@ -141,8 +140,6 @@ New KeePass source is imported using the following steps.
 
       git cherry-pick keepass-2-58-0..12345678
 
-  If the first commit has conflicts, you will need to cherry-pick changes
-  individually.
 * Trying to cherry-pick font size changes from the previous branch would
   be quite error-prone, given how Visual Studio maintains form layout
   in the source. Instead, try applying patches described in _Font change
@@ -150,20 +147,20 @@ New KeePass source is imported using the following steps.
 
 * Once font size changes are applied, tested and committed, `README.md`
   should be updated to reflect the new application version and any
-  additional changes and should be cherry-picked to `main`.
+  additional changes, and should be cherry-picked to `main`.
 
 ## Building
 
 These steps are tested on Windows 10/11 (x64) with Visual Studio 2022,
-Community Edition. The original KeePass project was upgraded to Visual
-Studio 2022.
+Community Edition.
 
-Clone this repository and check out the version branch you would like to build.
+Clone this repository and check out the version branch you would like
+to build.
 
     git checkout v2-50-1
 
-Run `cmd.exe` and run `vcvarsall.bat` from the Visual Studio installation to set
-up the x64 build environment.
+Run `cmd.exe` and run `vcvarsall.bat` from the Visual Studio installation
+to set up the x64 build environment.
 
     vcvarsall.bat x64
 
@@ -188,20 +185,19 @@ startup project to `KeePass` and build the solution.
 Versions of KeePass from around v2.58.0 require a new configuration
 file `KeePass.exe.config` in the directory where `KeePass.exe` is
 located or the program would terminate with a debug assertion for
-debug builds. The initial copy of this file may be obtained from a
-portable download of KeePass for development environments and it will
-be installed by the official KeePass installer on Windows.
+debug builds. This file will be installed by the official KeePass
+installer on Windows and may be used for development as well. It
+may also be obtained from a portable download of KeePass.
 
 ## GitHub Releases
 
-This repository is configured to build `KeePass.exe` as described above
-and maintains release packages with relevant files, which can be used as
-the installation source instead of the local build output.
+This repository is configured to build `KeePass.exe` as described
+above and maintains release packages with relevant files, which can
+be used as the installation source instead of the local build output.
 
-The package with the `150pct` in the name is intended for Windows
-configurations with the primary display scaled at 150% and the one with
-`200pct` in the name is intended for the primary display scaled at
-200%.
+The number in the package name, followed by `pct`, indicates the
+display scaling for which this package is intended, such as 125%,
+150% and 200%.
 
 ## Installing
 
@@ -213,7 +209,8 @@ https://keepass.info/download.html
 Make sure KeePass is not running and make a copy of your password
 database file.
 
-Open the KeePass installation directory, which will be one of these:
+Open the KeePass installation directory, which will be one of these
+locations:
 
     C:\Program Files (x86)\KeePass Password Safe 2
     C:\Program Files\KeePass Password Safe 2
@@ -284,7 +281,7 @@ Note the 3 version-specific scaling tags in this repository, such
 as `2-58-150pct`. Use these tags to generate scaling patches via
 Git as follows:
 
-    git diff keepass-2-58-0 2-58-0-150pct -- KeePass/Forms/* > 2-58-0-150pct.patch
+    git diff keepass-2-58-0 2-58-0-150pct -- KeePass/Forms/*.Designer.cs > 2-58-0-150pct.patch
 
 The patch generated in this way may be applied using this command:
 
@@ -294,6 +291,13 @@ When applying these patches across versions (e.g. when applying
 font scaling changes to the source for the new version), apply
 a specific patch first. If you see any errors, those forms will
 need to be updated manually, as described in _Steps_ below.
+
+Note that applying font size patches across application versions
+is error-prone. Run this command to see forms changed between
+KeePass releases. These forms should not be patched, whether
+patches apply cleanly or not.
+
+    git diff --stat keepass-2-59-0 keepass-2-60-0 -- *Form.Designer.cs
 
 After applying the relevant patch, open all forms, as described
 in _Steps_, and verify each form's properties that the font size
@@ -308,7 +312,7 @@ If more than one font size patch is applied, reset forms to the
 original font size before applying the next patch with this
 command:
 
-    for /F %p in ('dir /B KeePass\Forms\*') do git show keepass-2-59-0:KeePass/Forms/%p > KeePass\Forms\%p
+    for /F %p in ('dir /B KeePass\Forms\*.Designer.cs') do git show keepass-2-59-0:KeePass/Forms/%p > KeePass\Forms\%p
 
 Note that the KeePass version in this command must be the one
 being currently updated, even if patches from past versions
@@ -331,7 +335,7 @@ as described below.
 
 * Launch Visual Studio with 100% scaling:
 
-      devenv /noscale KeePass.sln
+      devenv /noscale KeePass_N48.sln
 
 * Select all forms in the solution, under _Forms_, except `MainForm_Events.cs`
   and `MainForm_Functions.cs`. Right-click on the selection and select
@@ -352,7 +356,7 @@ scaling mode.
 
 * Launch Visual Studio with the current scaling factor:
 
-      devenv KeePass.sln
+      devenv KeePass_N48.sln
 
 * Open all forms the same way as described above
 * Dismiss the prompt to switch to 100% display scaling mode without
@@ -382,7 +386,7 @@ Note that in order to use this command in a batch script, `%p` should
 be changed to `%%p`.
 
     for /F %p in ('dir /B KeePass\Forms\*.Designer.cs') do (
-        git show keepass-2-58-0:KeePass/Forms/%p > KeePass\Forms\%p
+        git show keepass-2-60-0:KeePass/Forms/%p > KeePass\Forms\%p
     )
 
 The best form to experiment on is `KeyCreationForm.Designer.cs`,
