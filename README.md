@@ -34,7 +34,7 @@ The official advice given on the page below is to increase the display
 scaling, which actually affects all applications, and if it is changed
 to make KeePass readable, it would render all other applications
 unusable because of the system-wide excessive scaling. In addition to
-this, the advice given with regards to not using the _Accessibility_
+this, the advice given with regard to not using the _Accessibility_
 settings is counterproductive, as these settings play a very important
 role in scaling font size in many applications, such as File Explorer
 or Chrome.
@@ -60,7 +60,7 @@ style sheets do not export entry history, collapse entry notes, drop group
 notes and group hierarchy.
 
 Being able to search through password history is quite important for those
-who want to track down some old compromised passwords and KeePass does not
+who want to track down some old compromised passwords, and KeePass does not
 offer history search in the application either.
 
 The new XSL template `Ext/XSL/KDBX_Dump_HTML.xsl` outputs all fields,
@@ -166,7 +166,7 @@ to set up the x64 build environment.
 
 The original solution is configured to sign KeePass binaries with a
 dummy `KeePass.pfx`, which cannot be automated because it requires
-user input in importing this key file on the build machine. This key
+user input when importing this key file on the build machine. This key
 file was removed from the repository and all projects were modified
 not to sign build output.
 
@@ -227,6 +227,18 @@ It's worth noting that this step replaces only the executable and not
 the KeePass encryption library, which implements encryption and other
 secure algorithms.
 
+If you extracted `KeePass.exe` from the downloaded package via Windows
+Explorer, the file will be marked as downloaded from the Internet and
+will have additional restrictions associated with it. Right-click on
+the file, navigate to the _Properties_ dialog and unlock the file at
+the bottom of the dialog. This step is not necessary if you extracted
+the content of the package via _7zip_.
+
+The application within the package is not digitally signed and will
+trigger a **Smart Screen** warning. Click _More info_ and then click
+the button to run the app anyway. This will only be required on the
+first run.
+
 Open the new KeePass application and test it based on your typical usage.
 
 Before installing a new version of KeePass, restore the original `KeePass.exe`
@@ -236,7 +248,7 @@ file.
 
 ### Overview
 
-Visual Studio is buggy and inconsistent in handling forms and DPI settings
+Visual Studio is buggy and inconsistent in handling forms and DPI settings,
 and depending on the version of Visual Studio, it may not work as described.
 
 Note that on a two-display system, the scaling of the primary display
@@ -404,7 +416,6 @@ If you experience any issues with application forms display, simply switch back
 to the original application.
 
 If you find something missing from the build instructions in this file, such as
-an inappropriate mix of some .Net assemblies between installed and built application,
-create an issue here.
+an inappropriate mix of some .Net assemblies between the installed and the built application, create an issue here.
 
 Similarly, if you find bugs in `KDBX_Dump_HTML.xsl`, also create an issue here.
