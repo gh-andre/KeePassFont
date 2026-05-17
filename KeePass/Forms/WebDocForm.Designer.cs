@@ -28,36 +28,36 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.m_wbMain = new System.Windows.Forms.WebBrowser();
-			this.SuspendLayout();
-			// 
-			// m_wbMain
-			// 
-			this.m_wbMain.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_wbMain.Location = new System.Drawing.Point(0, 0);
-			this.m_wbMain.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-			this.m_wbMain.MinimumSize = new System.Drawing.Size(60, 56);
-			this.m_wbMain.Name = "m_wbMain";
-			this.m_wbMain.Size = new System.Drawing.Size(1624, 1232);
-			this.m_wbMain.TabIndex = 0;
-			this.m_wbMain.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.OnWebNavigating);
-			// 
-			// WebDocForm
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-			this.ClientSize = new System.Drawing.Size(1624, 1232);
-			this.Controls.Add(this.m_wbMain);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-			this.MinimizeBox = false;
-			this.Name = "WebDocForm";
-			this.ShowInTaskbar = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "<>";
-			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
-			this.Load += new System.EventHandler(this.OnFormLoad);
-			this.ResumeLayout(false);
+            this.m_wbMain = new System.Windows.Forms.WebBrowser();
+            this.SuspendLayout();
+            // 
+            // m_wbMain
+            // 
+            this.m_wbMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_wbMain.Location = new System.Drawing.Point(0, 0);
+            this.m_wbMain.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.m_wbMain.MinimumSize = new System.Drawing.Size(38, 35);
+            this.m_wbMain.Name = "m_wbMain";
+            this.m_wbMain.Size = new System.Drawing.Size(1015, 770);
+            this.m_wbMain.TabIndex = 0;
+            this.m_wbMain.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.OnWebNavigating);
+            // 
+            // WebDocForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1015, 770);
+            this.Controls.Add(this.m_wbMain);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MinimizeBox = false;
+            this.Name = "WebDocForm";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "<>";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
+            this.Load += new System.EventHandler(this.OnFormLoad);
+            this.ResumeLayout(false);
 
 		}
 

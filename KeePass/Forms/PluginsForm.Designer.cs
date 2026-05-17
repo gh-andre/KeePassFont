@@ -48,10 +48,10 @@
 			// m_btnClose
 			// 
 			this.m_btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnClose.Location = new System.Drawing.Point(1596, 1194);
-			this.m_btnClose.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_btnClose.Location = new System.Drawing.Point(998, 746);
+			this.m_btnClose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_btnClose.Name = "m_btnClose";
-			this.m_btnClose.Size = new System.Drawing.Size(224, 64);
+			this.m_btnClose.Size = new System.Drawing.Size(140, 40);
 			this.m_btnClose.TabIndex = 6;
 			this.m_btnClose.Text = "Close";
 			this.m_btnClose.UseVisualStyleBackColor = true;
@@ -62,11 +62,11 @@
 			this.m_lvPlugins.FullRowSelect = true;
 			this.m_lvPlugins.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.m_lvPlugins.HideSelection = false;
-			this.m_lvPlugins.Location = new System.Drawing.Point(36, 182);
-			this.m_lvPlugins.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_lvPlugins.Location = new System.Drawing.Point(22, 114);
+			this.m_lvPlugins.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_lvPlugins.Name = "m_lvPlugins";
 			this.m_lvPlugins.ShowItemToolTips = true;
-			this.m_lvPlugins.Size = new System.Drawing.Size(1776, 450);
+			this.m_lvPlugins.Size = new System.Drawing.Size(1112, 283);
 			this.m_lvPlugins.TabIndex = 0;
 			this.m_lvPlugins.UseCompatibleStateImageBehavior = false;
 			this.m_lvPlugins.View = System.Windows.Forms.View.Details;
@@ -75,39 +75,39 @@
 			// m_lblSeparator
 			// 
 			this.m_lblSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.m_lblSeparator.Location = new System.Drawing.Point(0, 1168);
-			this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.m_lblSeparator.Location = new System.Drawing.Point(0, 730);
+			this.m_lblSeparator.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.m_lblSeparator.Name = "m_lblSeparator";
-			this.m_lblSeparator.Size = new System.Drawing.Size(1856, 6);
+			this.m_lblSeparator.Size = new System.Drawing.Size(1160, 4);
 			this.m_lblSeparator.TabIndex = 3;
 			// 
 			// m_bannerImage
 			// 
 			this.m_bannerImage.Dock = System.Windows.Forms.DockStyle.Top;
 			this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
-			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_bannerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_bannerImage.Name = "m_bannerImage";
-			this.m_bannerImage.Size = new System.Drawing.Size(1856, 166);
+			this.m_bannerImage.Size = new System.Drawing.Size(1160, 104);
 			this.m_bannerImage.TabIndex = 0;
 			this.m_bannerImage.TabStop = false;
 			// 
 			// m_grpPluginDesc
 			// 
 			this.m_grpPluginDesc.Controls.Add(this.m_lblSelectedPluginDesc);
-			this.m_grpPluginDesc.Location = new System.Drawing.Point(36, 656);
-			this.m_grpPluginDesc.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_grpPluginDesc.Location = new System.Drawing.Point(22, 410);
+			this.m_grpPluginDesc.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_grpPluginDesc.Name = "m_grpPluginDesc";
-			this.m_grpPluginDesc.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-			this.m_grpPluginDesc.Size = new System.Drawing.Size(1784, 282);
+			this.m_grpPluginDesc.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+			this.m_grpPluginDesc.Size = new System.Drawing.Size(1115, 176);
 			this.m_grpPluginDesc.TabIndex = 1;
 			this.m_grpPluginDesc.TabStop = false;
 			// 
 			// m_lblSelectedPluginDesc
 			// 
-			this.m_lblSelectedPluginDesc.Location = new System.Drawing.Point(18, 44);
-			this.m_lblSelectedPluginDesc.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.m_lblSelectedPluginDesc.Location = new System.Drawing.Point(11, 28);
+			this.m_lblSelectedPluginDesc.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.m_lblSelectedPluginDesc.Name = "m_lblSelectedPluginDesc";
-			this.m_lblSelectedPluginDesc.Size = new System.Drawing.Size(1748, 178);
+			this.m_lblSelectedPluginDesc.Size = new System.Drawing.Size(1092, 111);
 			this.m_lblSelectedPluginDesc.TabIndex = 0;
 			this.m_lblSelectedPluginDesc.Text = "<>";
 			// 
@@ -116,11 +116,11 @@
 			this.m_grpCache.Controls.Add(this.m_cbCacheDeleteOld);
 			this.m_grpCache.Controls.Add(this.m_btnClearCache);
 			this.m_grpCache.Controls.Add(this.m_lblCacheSize);
-			this.m_grpCache.Location = new System.Drawing.Point(36, 956);
-			this.m_grpCache.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_grpCache.Location = new System.Drawing.Point(22, 598);
+			this.m_grpCache.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_grpCache.Name = "m_grpCache";
-			this.m_grpCache.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-			this.m_grpCache.Size = new System.Drawing.Size(1784, 180);
+			this.m_grpCache.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+			this.m_grpCache.Size = new System.Drawing.Size(1115, 112);
 			this.m_grpCache.TabIndex = 2;
 			this.m_grpCache.TabStop = false;
 			this.m_grpCache.Text = "Plugin Cache";
@@ -128,20 +128,20 @@
 			// m_cbCacheDeleteOld
 			// 
 			this.m_cbCacheDeleteOld.AutoSize = true;
-			this.m_cbCacheDeleteOld.Location = new System.Drawing.Point(28, 110);
-			this.m_cbCacheDeleteOld.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_cbCacheDeleteOld.Location = new System.Drawing.Point(18, 69);
+			this.m_cbCacheDeleteOld.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_cbCacheDeleteOld.Name = "m_cbCacheDeleteOld";
-			this.m_cbCacheDeleteOld.Size = new System.Drawing.Size(574, 40);
+			this.m_cbCacheDeleteOld.Size = new System.Drawing.Size(365, 28);
 			this.m_cbCacheDeleteOld.TabIndex = 2;
 			this.m_cbCacheDeleteOld.Text = "&Delete old files from cache automatically";
 			this.m_cbCacheDeleteOld.UseVisualStyleBackColor = true;
 			// 
 			// m_btnClearCache
 			// 
-			this.m_btnClearCache.Location = new System.Drawing.Point(1528, 52);
-			this.m_btnClearCache.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_btnClearCache.Location = new System.Drawing.Point(955, 32);
+			this.m_btnClearCache.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_btnClearCache.Name = "m_btnClearCache";
-			this.m_btnClearCache.Size = new System.Drawing.Size(224, 64);
+			this.m_btnClearCache.Size = new System.Drawing.Size(140, 40);
 			this.m_btnClearCache.TabIndex = 1;
 			this.m_btnClearCache.Text = "&Clear";
 			this.m_btnClearCache.UseVisualStyleBackColor = true;
@@ -149,19 +149,19 @@
 			// 
 			// m_lblCacheSize
 			// 
-			this.m_lblCacheSize.Location = new System.Drawing.Point(18, 52);
-			this.m_lblCacheSize.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.m_lblCacheSize.Location = new System.Drawing.Point(11, 32);
+			this.m_lblCacheSize.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.m_lblCacheSize.Name = "m_lblCacheSize";
-			this.m_lblCacheSize.Size = new System.Drawing.Size(1492, 50);
+			this.m_lblCacheSize.Size = new System.Drawing.Size(932, 31);
 			this.m_lblCacheSize.TabIndex = 0;
 			this.m_lblCacheSize.Text = "Data in cache (size):";
 			// 
 			// m_btnMore
 			// 
-			this.m_btnMore.Location = new System.Drawing.Point(36, 1194);
-			this.m_btnMore.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_btnMore.Location = new System.Drawing.Point(22, 746);
+			this.m_btnMore.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_btnMore.Name = "m_btnMore";
-			this.m_btnMore.Size = new System.Drawing.Size(344, 64);
+			this.m_btnMore.Size = new System.Drawing.Size(215, 40);
 			this.m_btnMore.TabIndex = 4;
 			this.m_btnMore.Text = "&Get More Plugins...";
 			this.m_btnMore.UseVisualStyleBackColor = true;
@@ -169,10 +169,10 @@
 			// 
 			// m_btnOpenFolder
 			// 
-			this.m_btnOpenFolder.Location = new System.Drawing.Point(400, 1194);
-			this.m_btnOpenFolder.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_btnOpenFolder.Location = new System.Drawing.Point(250, 746);
+			this.m_btnOpenFolder.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_btnOpenFolder.Name = "m_btnOpenFolder";
-			this.m_btnOpenFolder.Size = new System.Drawing.Size(248, 64);
+			this.m_btnOpenFolder.Size = new System.Drawing.Size(155, 40);
 			this.m_btnOpenFolder.TabIndex = 5;
 			this.m_btnOpenFolder.Text = "Open &Folder";
 			this.m_btnOpenFolder.UseVisualStyleBackColor = true;
@@ -181,10 +181,10 @@
 			// PluginsForm
 			// 
 			this.AcceptButton = this.m_btnClose;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnClose;
-			this.ClientSize = new System.Drawing.Size(1856, 1290);
+			this.ClientSize = new System.Drawing.Size(1160, 806);
 			this.Controls.Add(this.m_btnOpenFolder);
 			this.Controls.Add(this.m_btnMore);
 			this.Controls.Add(this.m_grpCache);
@@ -195,7 +195,7 @@
 			this.Controls.Add(this.m_bannerImage);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "PluginsForm";

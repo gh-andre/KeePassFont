@@ -39,10 +39,10 @@
 			// m_btnOK
 			// 
 			this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_btnOK.Location = new System.Drawing.Point(480, 276);
-			this.m_btnOK.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_btnOK.Location = new System.Drawing.Point(300, 172);
+			this.m_btnOK.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_btnOK.Name = "m_btnOK";
-			this.m_btnOK.Size = new System.Drawing.Size(224, 64);
+			this.m_btnOK.Size = new System.Drawing.Size(140, 40);
 			this.m_btnOK.TabIndex = 4;
 			this.m_btnOK.Text = "OK";
 			this.m_btnOK.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
 			// m_btnCancel
 			// 
 			this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_btnCancel.Location = new System.Drawing.Point(724, 276);
-			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_btnCancel.Location = new System.Drawing.Point(452, 172);
+			this.m_btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_btnCancel.Name = "m_btnCancel";
-			this.m_btnCancel.Size = new System.Drawing.Size(224, 64);
+			this.m_btnCancel.Size = new System.Drawing.Size(140, 40);
 			this.m_btnCancel.TabIndex = 5;
 			this.m_btnCancel.Text = "Cancel";
 			this.m_btnCancel.UseVisualStyleBackColor = true;
@@ -62,55 +62,55 @@
 			// m_lblScheme
 			// 
 			this.m_lblScheme.AutoSize = true;
-			this.m_lblScheme.Location = new System.Drawing.Point(28, 42);
-			this.m_lblScheme.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.m_lblScheme.Location = new System.Drawing.Point(18, 26);
+			this.m_lblScheme.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.m_lblScheme.Name = "m_lblScheme";
-			this.m_lblScheme.Size = new System.Drawing.Size(130, 36);
+			this.m_lblScheme.Size = new System.Drawing.Size(86, 24);
 			this.m_lblScheme.TabIndex = 0;
 			this.m_lblScheme.Text = "&Scheme:";
 			// 
 			// m_tbScheme
 			// 
-			this.m_tbScheme.Location = new System.Drawing.Point(192, 34);
-			this.m_tbScheme.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_tbScheme.Location = new System.Drawing.Point(120, 21);
+			this.m_tbScheme.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_tbScheme.Name = "m_tbScheme";
-			this.m_tbScheme.Size = new System.Drawing.Size(748, 41);
+			this.m_tbScheme.Size = new System.Drawing.Size(469, 29);
 			this.m_tbScheme.TabIndex = 1;
 			// 
 			// m_lblUrlOverride
 			// 
 			this.m_lblUrlOverride.AutoSize = true;
-			this.m_lblUrlOverride.Location = new System.Drawing.Point(28, 124);
-			this.m_lblUrlOverride.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.m_lblUrlOverride.Location = new System.Drawing.Point(18, 78);
+			this.m_lblUrlOverride.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.m_lblUrlOverride.Name = "m_lblUrlOverride";
-			this.m_lblUrlOverride.Size = new System.Drawing.Size(200, 36);
+			this.m_lblUrlOverride.Size = new System.Drawing.Size(125, 24);
 			this.m_lblUrlOverride.TabIndex = 2;
 			this.m_lblUrlOverride.Text = "&URL override:";
 			// 
 			// m_tbOverride
 			// 
-			this.m_tbOverride.Location = new System.Drawing.Point(36, 174);
-			this.m_tbOverride.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_tbOverride.Location = new System.Drawing.Point(22, 109);
+			this.m_tbOverride.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.m_tbOverride.Name = "m_tbOverride";
-			this.m_tbOverride.Size = new System.Drawing.Size(904, 41);
+			this.m_tbOverride.Size = new System.Drawing.Size(566, 29);
 			this.m_tbOverride.TabIndex = 3;
 			// 
 			// UrlOverrideForm
 			// 
 			this.AcceptButton = this.m_btnOK;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.m_btnCancel;
-			this.ClientSize = new System.Drawing.Size(984, 374);
+			this.ClientSize = new System.Drawing.Size(615, 234);
 			this.Controls.Add(this.m_tbOverride);
 			this.Controls.Add(this.m_lblUrlOverride);
 			this.Controls.Add(this.m_tbScheme);
 			this.Controls.Add(this.m_lblScheme);
 			this.Controls.Add(this.m_btnCancel);
 			this.Controls.Add(this.m_btnOK);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "UrlOverrideForm";
