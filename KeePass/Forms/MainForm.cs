@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2025 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2026 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -379,7 +379,6 @@ namespace KeePass.Forms
 				UIUtil.SetEnabledFast(false, m_menuViewAlwaysOnTop);
 			}
 			UIUtil.SetChecked(m_menuViewAlwaysOnTop, mw.AlwaysOnTop);
-			EnsureAlwaysOnTopOpt();
 
 			m_mruList.Initialize(this, m_menuFileRecent, m_menuFileSyncRecent);
 			m_mruList.MarkOpened = true;
@@ -451,6 +450,8 @@ namespace KeePass.Forms
 			HotKeyManager.RegisterHotKey(AppDefs.GlobalHotKeyId.EntryMenu,
 				(Keys)Program.Config.Integration.HotKeyEntryMenu);
 
+			m_tabMain.ShowToolTipsEx = true;
+
 			m_statusMain.ShowItemToolTips = true;
 			m_statusPartInfo.AutoToolTip = true;
 			m_statusPartProgress.Visible = false;
@@ -508,6 +509,11 @@ namespace KeePass.Forms
 			Program.TriggerSystem.CheckTriggers();
 			Program.TriggerSystem.RaiseEvent(EcasEventIDs.AppInitPost);
 
+			UpdateCheckEx.EnsureConfigured(this);
+			if(Program.Config.Application.Start.CheckForUpdate)
+				UpdateCheckEx.Run(false, null);
+			// UpdateCheck.StartAsync(PwDefs.VersionUrl, m_statusPartInfo);
+
 			if(Program.CommandLineArgs.FileName != null)
 				OpenDatabase(IocFromCommandLine(), KeyUtil.KeyFromCommandLine(
 					Program.CommandLineArgs), false);
@@ -518,14 +524,9 @@ namespace KeePass.Forms
 					OpenDatabase(ioLastFile, null, false);
 			}
 
-			UpdateCheckEx.EnsureConfigured(this);
-			if(Program.Config.Application.Start.CheckForUpdate)
-				UpdateCheckEx.Run(false, null);
-			// UpdateCheck.StartAsync(PwDefs.VersionUrl, m_statusPartInfo);
-
 			ResetDefaultFocus(null);
 
-			MinimizeToTrayAtStartIfEnabled(true);
+			MinimizeAtStartIfEnabled(true);
 
 			m_bFormLoaded = true;
 			NotifyUserActivity(); // Initialize locking timeout
@@ -552,7 +553,8 @@ namespace KeePass.Forms
 				UpdateUI(false, null, false, null, true, pg, false);
 			}
 
-			MinimizeToTrayAtStartIfEnabled(false);
+			EnsureAlwaysOnTopOpt();
+			MinimizeAtStartIfEnabled(false);
 
 			// Workaround for .NET bug: the active control is correct,
 			// but it's not focused;
@@ -591,16 +593,13 @@ namespace KeePass.Forms
 				UIUtil.CreateFileTypeFilter(strExt, KPRes.KdbxFiles, true),
 				1, strExt, AppDefs.FileDialogContext.Database);
 
-			GlobalWindowManager.AddDialog(sfd.FileDialog);
-			DialogResult dr = sfd.ShowDialog();
-			GlobalWindowManager.RemoveDialog(sfd.FileDialog);
-			if(dr != DialogResult.OK) return;
+			if(sfd.ShowDialog() != DialogResult.OK) return;
 
 			string strPath = sfd.FileName;
 			IOConnectionInfo ioc = IOConnectionInfo.FromPath(strPath);
 
 			KeyCreationFormResult kcfr;
-			dr = KeyCreationForm.ShowDialog(ioc, true, out kcfr);
+			DialogResult dr = KeyCreationForm.ShowDialog(ioc, true, out kcfr);
 			if((dr != DialogResult.OK) || (kcfr == null)) return;
 
 			PwDocument dsPrevActive = m_docMgr.ActiveDocument;
@@ -836,10 +835,7 @@ namespace KeePass.Forms
 
 			PwDocument ds = m_docMgr.ActiveDocument;
 			if(!IsFileLocked(ds)) // Lock
-			{
-				LockAllDocuments();
-				if(m_bCleanedUp) return; // Exited instead of locking
-			}
+				LockAllDocuments(); // May exit instead of locking
 			else // Unlock
 			{
 				PwDatabase pd = ds.Database;
@@ -849,11 +845,9 @@ namespace KeePass.Forms
 				if(pd.IsOpen)
 				{
 					ds.LockedIoc = new IOConnectionInfo(); // Clear lock
-					RestoreWindowState(pd);
+					RestoreViewState(true);
 				}
 			}
-
-			if(this.Visible) UpdateUIState(false);
 		}
 
 		private void OnFileExit(object sender, EventArgs e)
@@ -1011,17 +1005,11 @@ namespace KeePass.Forms
 			GlobalWindowManager.CloseAllWindows();
 
 			m_docMgr.RememberActiveDocument();
-			if(!CloseAllDocuments(true))
-			{
-				e.Cancel = true;
-				UpdateUI(true, null, true, null, true, null, false);
-				return;
-			}
 
 			// When shutting down, it can happen that only OnFormClosing
 			// is called without the form actually being closed afterwards,
 			// thus we must update the UI in this case now
-			if(bSystem) UpdateUI(true, null, true, null, true, null, false);
+			if(!CloseAllDocuments(true, bSystem)) e.Cancel = true;
 		}
 
 		private void OnFormClosed(object sender, FormClosedEventArgs e)
@@ -1186,10 +1174,10 @@ namespace KeePass.Forms
 		{
 			Program.Config.Application.MostRecentlyUsed.MaxItemCount = m_mruList.MaxItemCount;
 
-			OptionsForm ofDlg = new OptionsForm();
-			ofDlg.InitEx(m_ilCurrentIcons, IsTrayed());
+			OptionsForm dlg = new OptionsForm();
+			dlg.InitEx(m_ilCurrentIcons, IsTrayed());
 
-			if(ofDlg.ShowDialog() == DialogResult.OK)
+			if(UIUtil.ShowDialogAndDestroy(dlg) == DialogResult.OK)
 			{
 				m_nLockTimerMax = (int)Program.Config.Security.WorkspaceLocking.LockAfterTime;
 				m_nClipClearMax = Program.Config.Security.ClipboardClearAfterSeconds;
@@ -1200,7 +1188,7 @@ namespace KeePass.Forms
 				m_mruList.MaxItemCount = Program.Config.Application.MostRecentlyUsed.MaxItemCount;
 				SetListFont(Program.Config.UI.StandardFont);
 
-				if(ofDlg.RequiresUIReinitialize)
+				if(dlg.RequiresUIReinitialize)
 				{
 					UIUtil.Initialize(true);
 
@@ -1217,7 +1205,6 @@ namespace KeePass.Forms
 				SaveConfig();
 				UpdateTrayIcon(true);
 			}
-			UIUtil.DestroyForm(ofDlg);
 
 			UpdateUI(false, null, true, null, true, null, false); // Styles changed
 		}
@@ -1431,10 +1418,11 @@ namespace KeePass.Forms
 		private void OnViewAlwaysOnTop(object sender, EventArgs e)
 		{
 			Debug.Assert(m_bFormLoaded); // The following toggles!
-			bool bTop = !Program.Config.MainWindow.AlwaysOnTop;
 
+			bool bTop = !Program.Config.MainWindow.AlwaysOnTop;
 			Program.Config.MainWindow.AlwaysOnTop = bTop;
 			UIUtil.SetChecked(m_menuViewAlwaysOnTop, bTop);
+
 			EnsureAlwaysOnTopOpt();
 		}
 
@@ -1486,7 +1474,9 @@ namespace KeePass.Forms
 			}
 			else if((ws == FormWindowState.Normal) || (ws == FormWindowState.Maximized))
 			{
-				NativeMethods.SyncTopMost(this);
+				// Workaround for .NET/Windows TopMost/WS_EX_TOPMOST desynchronization bug;
+				// https://sourceforge.net/p/keepass/discussion/329220/thread/d45a3b38e8/
+				EnsureAlwaysOnTopOpt();
 
 				if(Program.Config.MainWindow.EntryListAutoResizeColumns &&
 					(m_lvEntries.View == View.Details))
@@ -1511,7 +1501,7 @@ namespace KeePass.Forms
 				// indirectly by activating the main window
 				if(GlobalWindowManager.WindowCount > 0)
 				{
-					try { this.Activate(); }
+					try { Activate(); }
 					catch(Exception) { Debug.Assert(false); }
 					return;
 				}
@@ -1606,6 +1596,8 @@ namespace KeePass.Forms
 			}
 
 			GlobalMutexPool.Refresh();
+
+			UpdateCheckEx.ShowDeferredReport();
 		}
 
 		private void OnToolsPlugins(object sender, EventArgs e)
@@ -1640,7 +1632,7 @@ namespace KeePass.Forms
 			ipf.InitEx(m_ilCurrentIcons, (uint)PwIcon.Count, pd,
 				(uint)vEntries[0].IconId, vEntries[0].CustomIconUuid);
 
-			bool bSetIcons = (ipf.ShowDialog() == DialogResult.OK);
+			bool bSetIcons = (UIUtil.ShowDialogAndDestroy(ipf) == DialogResult.OK);
 			if(bSetIcons)
 			{
 				PwIcon pi = (PwIcon)ipf.ChosenIconId;
@@ -1668,7 +1660,6 @@ namespace KeePass.Forms
 					pe.Touch(true, false);
 				}
 			}
-			UIUtil.DestroyForm(ipf);
 
 			bool bUpdImg = pd.UINeedsIconUpdate;
 			bool bModified = (bSetIcons || bUpdImg);
@@ -1741,37 +1732,32 @@ namespace KeePass.Forms
 
 			PwGeneratorForm pgf = new PwGeneratorForm();
 			pgf.InitEx(null, pd.IsOpen, IsTrayed());
+			if(UIUtil.ShowDialogAndDestroy(pgf) != DialogResult.OK) return;
 
-			if(pgf.ShowDialog() == DialogResult.OK)
+			if(!pd.IsOpen) return;
+
+			PwGroup pg = (GetSelectedGroup() ?? pd.RootGroup);
+
+			PwEntry pe = new PwEntry(true, true);
+			pg.AddEntry(pe, true);
+
+			byte[] pbAdditionalEntropy = EntropyForm.CollectEntropyIfEnabled(
+				pgf.SelectedProfile);
+			bool bAcceptAlways = false;
+			string strError;
+			ProtectedString psNew = PwGeneratorUtil.GenerateAcceptable(
+				pgf.SelectedProfile, pbAdditionalEntropy, pe, pd, true,
+				ref bAcceptAlways, out strError);
+
+			if(string.IsNullOrEmpty(strError))
 			{
-				if(pd.IsOpen)
-				{
-					PwGroup pg = GetSelectedGroup();
-					if(pg == null) pg = pd.RootGroup;
+				pe.Strings.Set(PwDefs.PasswordField, psNew.WithProtection(
+					pd.MemoryProtection.ProtectPassword));
 
-					PwEntry pe = new PwEntry(true, true);
-					pg.AddEntry(pe, true);
-
-					byte[] pbAdditionalEntropy = EntropyForm.CollectEntropyIfEnabled(
-						pgf.SelectedProfile);
-					bool bAcceptAlways = false;
-					string strError;
-					ProtectedString psNew = PwGeneratorUtil.GenerateAcceptable(
-						pgf.SelectedProfile, pbAdditionalEntropy, pe, pd, true,
-						ref bAcceptAlways, out strError);
-
-					if(string.IsNullOrEmpty(strError))
-					{
-						pe.Strings.Set(PwDefs.PasswordField, psNew.WithProtection(
-							pd.MemoryProtection.ProtectPassword));
-
-						UpdateUI(false, null, false, null, true, null, true, m_lvEntries);
-						SelectEntry(pe, true, true, true, true);
-					}
-					else pg.Entries.Remove(pe);
-				}
+				UpdateUI(false, null, false, null, true, null, true, m_lvEntries);
+				SelectEntry(pe, true, true, true, true);
 			}
-			UIUtil.DestroyForm(pgf);
+			else pg.Entries.Remove(pe);
 		}
 
 		private void OnToolsTanWizard(object sender, EventArgs e)
@@ -1922,14 +1908,12 @@ namespace KeePass.Forms
 		{
 			if(!m_docMgr.ActiveDatabase.IsOpen) return;
 
-			DatabaseOperationsForm form = new DatabaseOperationsForm();
-			form.InitEx(m_docMgr.ActiveDatabase);
-			form.ShowDialog();
+			DatabaseOperationsForm dlg = new DatabaseOperationsForm();
+			dlg.InitEx(m_docMgr.ActiveDatabase);
+			UIUtil.ShowDialogAndDestroy(dlg);
 
-			// UpdateUIState(form.HasModifiedDatabase);
-			bool bMod = form.HasModifiedDatabase;
+			bool bMod = dlg.HasModifiedDatabase;
 			UpdateUI(false, null, bMod, null, bMod, null, bMod);
-			UIUtil.DestroyForm(form);
 		}
 
 		private void OnCtxPwListOpening(object sender, CancelEventArgs e)
@@ -1942,57 +1926,51 @@ namespace KeePass.Forms
 			PwDatabase pd = m_docMgr.ActiveDatabase;
 			if(!pd.IsOpen) return;
 
+			PwGroup pg = (GetSelectedGroup() ?? pd.RootGroup);
+
 			PwGeneratorForm pgf = new PwGeneratorForm();
 			pgf.InitEx(null, true, IsTrayed());
+			if(UIUtil.ShowDialogAndDestroy(pgf) != DialogResult.OK) return;
 
-			if(pgf.ShowDialog() == DialogResult.OK)
+			SingleLineEditForm dlgCount = new SingleLineEditForm();
+			dlgCount.InitEx(KPRes.GenerateCount, KPRes.GenerateCountDesc,
+				KPRes.GenerateCountLongDesc, Properties.Resources.B48x48_KGPG_Gen,
+				string.Empty, null);
+			if(UIUtil.ShowDialogAndDestroy(dlgCount) != DialogResult.OK) return;
+
+			uint uCount;
+			if(!uint.TryParse(dlgCount.ResultString, out uCount))
+				uCount = 1;
+
+			byte[] pbAdditionalEntropy = EntropyForm.CollectEntropyIfEnabled(
+				pgf.SelectedProfile);
+
+			PwObjectList<PwEntry> l = new PwObjectList<PwEntry>();
+			bool bAcceptAlways = false;
+			for(uint i = 0; i < uCount; ++i)
 			{
-				PwGroup pg = GetSelectedGroup();
-				if(pg == null) pg = pd.RootGroup;
+				PwEntry pe = new PwEntry(true, true);
+				pg.AddEntry(pe, true);
 
-				SingleLineEditForm dlgCount = new SingleLineEditForm();
-				dlgCount.InitEx(KPRes.GenerateCount, KPRes.GenerateCountDesc,
-					KPRes.GenerateCountLongDesc, Properties.Resources.B48x48_KGPG_Gen,
-					string.Empty, null);
-				if(dlgCount.ShowDialog() == DialogResult.OK)
+				string strError;
+				ProtectedString psNew = PwGeneratorUtil.GenerateAcceptable(
+					pgf.SelectedProfile, pbAdditionalEntropy, pe, pd, true,
+					ref bAcceptAlways, out strError);
+
+				if(!string.IsNullOrEmpty(strError))
 				{
-					uint uCount;
-					if(!uint.TryParse(dlgCount.ResultString, out uCount))
-						uCount = 1;
-
-					byte[] pbAdditionalEntropy = EntropyForm.CollectEntropyIfEnabled(
-						pgf.SelectedProfile);
-
-					PwObjectList<PwEntry> l = new PwObjectList<PwEntry>();
-					bool bAcceptAlways = false;
-					for(uint i = 0; i < uCount; ++i)
-					{
-						PwEntry pe = new PwEntry(true, true);
-						pg.AddEntry(pe, true);
-
-						string strError;
-						ProtectedString psNew = PwGeneratorUtil.GenerateAcceptable(
-							pgf.SelectedProfile, pbAdditionalEntropy, pe, pd, true,
-							ref bAcceptAlways, out strError);
-
-						if(!string.IsNullOrEmpty(strError))
-						{
-							pg.Entries.Remove(pe);
-							break;
-						}
-
-						pe.Strings.Set(PwDefs.PasswordField, psNew.WithProtection(
-							pd.MemoryProtection.ProtectPassword));
-
-						l.Add(pe);
-					}
-
-					UpdateUI(false, null, false, null, true, null, true, m_lvEntries);
-					SelectEntries(l, true, true, true, true);
+					pg.Entries.Remove(pe);
+					break;
 				}
-				UIUtil.DestroyForm(dlgCount);
+
+				pe.Strings.Set(PwDefs.PasswordField, psNew.WithProtection(
+					pd.MemoryProtection.ProtectPassword));
+
+				l.Add(pe);
 			}
-			UIUtil.DestroyForm(pgf);
+
+			UpdateUI(false, null, false, null, true, null, true, m_lvEntries);
+			SelectEntries(l, true, true, true, true);
 		}
 
 		private void OnViewWindowsSideBySide(object sender, EventArgs e)
@@ -2067,7 +2045,7 @@ namespace KeePass.Forms
 		{
 			if(m_uTabChangeBlocked != 0) return;
 
-			SaveWindowState();
+			SaveViewState();
 
 			TabPage tbSelect = m_tabMain.SelectedTab;
 			if(tbSelect == null) return;
@@ -2159,13 +2137,16 @@ namespace KeePass.Forms
 				//	if(f != null) f.Activate();
 				//	// SystemSounds.Beep.Play(); // Do not beep!
 				// }
-				// // else EnsureAlwaysOnTopOpt();
 
 				Form fTop = GlobalWindowManager.TopWindow;
 				if((fTop != null) && (fTop != this))
 					fTop.Activate();
-				else
+				else if(GlobalWindowManager.WindowCount == 0)
 				{
+					// Workaround for .NET/Windows TopMost/WS_EX_TOPMOST desynchronization bug;
+					// https://sourceforge.net/p/keepass/discussion/329220/thread/d45a3b38e8/
+					EnsureAlwaysOnTopOpt();
+
 					if(MonoWorkarounds.IsRequired(1760))
 					{
 						Control c = UIUtil.GetActiveControl(this);
@@ -2189,9 +2170,15 @@ namespace KeePass.Forms
 
 		private void OnToolsTriggers(object sender, EventArgs e)
 		{
+			// When UIAccess and TopMost are active, text boxes in DataGridViews
+			// cannot be focused
+			UiawDeactivateAlwaysOnTop();
+
 			EcasTriggersForm f = new EcasTriggersForm();
-			if(!f.InitEx(Program.TriggerSystem, m_ilCurrentIcons)) return;
-			UIUtil.ShowDialogAndDestroy(f);
+			if(f.InitEx(Program.TriggerSystem, m_ilCurrentIcons))
+				UIUtil.ShowDialogAndDestroy(f);
+
+			UiawReactivateAlwaysOnTop();
 		}
 
 		private void OnTabMainMouseClick(object sender, MouseEventArgs e)
@@ -2618,11 +2605,7 @@ namespace KeePass.Forms
 			{
 				dlg.ShowNewFolderButton = false;
 
-				GlobalWindowManager.AddDialog(dlg);
-				DialogResult dr = dlg.ShowDialog();
-				GlobalWindowManager.RemoveDialog(dlg);
-
-				if(dr == DialogResult.OK)
+				if(UIUtil.ShowDialog(dlg) == DialogResult.OK)
 					FileSearchEx.FindDatabaseFiles(this, dlg.SelectedPath);
 			}
 		}

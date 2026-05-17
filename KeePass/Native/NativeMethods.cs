@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2025 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2026 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -18,11 +18,8 @@
 */
 
 using System;
-using System.Diagnostics;
 using System.Runtime.InteropServices;
-using System.Security;
 using System.Text;
-using System.Windows.Forms;
 
 using KeePass.UI;
 
@@ -139,6 +136,10 @@ namespace KeePass.Native
 		[DllImport("User32.dll")]
 		[return: MarshalAs(UnmanagedType.Bool)]
 		private static extern bool SetForegroundWindow(IntPtr hWnd);
+
+		[DllImport("User32.dll")]
+		[return: MarshalAs(UnmanagedType.Bool)]
+		internal static extern bool AllowSetForegroundWindow(uint dwProcessId);
 
 		[DllImport("User32.dll")]
 		[return: MarshalAs(UnmanagedType.Bool)]
@@ -540,5 +541,17 @@ namespace KeePass.Native
 		[return: MarshalAs(UnmanagedType.Bool)]
 		internal static extern bool SystemParametersInfoI32(uint uiAction,
 			uint uiParam, ref int pvParam, uint fWinIni);
+
+		[DllImport("AdvApi32.dll", SetLastError = true)]
+		[return: MarshalAs(UnmanagedType.Bool)]
+		internal static extern bool OpenProcessToken(IntPtr hProcess,
+			uint dwDesiredAccess, ref IntPtr phToken);
+
+		[DllImport("AdvApi32.dll", EntryPoint = "GetTokenInformation",
+			SetLastError = true)]
+		[return: MarshalAs(UnmanagedType.Bool)]
+		internal static extern bool GetTokenInformationUInt32(IntPtr hToken,
+			uint uTokenInformationClass, ref uint puTokenInformation,
+			uint dwTokenInformationLength, ref uint pdwReturnLength);
 	}
 }

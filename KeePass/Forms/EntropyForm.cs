@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2025 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2026 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -46,10 +46,7 @@ namespace KeePass.Forms
 		private Bitmap m_bmpRandom = null;
 
 		private byte[] m_pbEntropy = null;
-		public byte[] GeneratedEntropy
-		{
-			get { return m_pbEntropy; }
-		}
+		public byte[] GeneratedEntropy { get { return m_pbEntropy; } }
 
 		public static byte[] CollectEntropyIfEnabled(PwProfile pp)
 		{
@@ -57,11 +54,8 @@ namespace KeePass.Forms
 			if(!pp.CollectUserEntropy) return null;
 
 			EntropyForm ef = new EntropyForm();
-			if(UIUtil.ShowDialogNotValue(ef, DialogResult.OK)) return null;
-
-			byte[] pb = ef.GeneratedEntropy;
-			UIUtil.DestroyForm(ef);
-			return pb;
+			return ((UIUtil.ShowDialogAndDestroy(ef) == DialogResult.OK) ?
+				ef.GeneratedEntropy : null);
 		}
 
 		public EntropyForm()

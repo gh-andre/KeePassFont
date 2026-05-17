@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2025 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2026 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -49,17 +49,10 @@ namespace KeePass.Forms
 		private CustomContextMenuStripEx m_ctxCustom = null;
 
 		private uint m_uChosenIcon = 0;
+		public uint ChosenIconId { get { return m_uChosenIcon; } }
+
 		private PwUuid m_puChosenCustomIcon = PwUuid.Zero;
-
-		public uint ChosenIconId
-		{
-			get { return m_uChosenIcon; }
-		}
-
-		public PwUuid ChosenCustomIconUuid
-		{
-			get { return m_puChosenCustomIcon; }
-		}
+		public PwUuid ChosenCustomIconUuid { get { return m_puChosenCustomIcon; } }
 
 		public IconPickerForm()
 		{
@@ -531,7 +524,7 @@ namespace KeePass.Forms
 				using(FolderBrowserDialog fbd = UIUtil.CreateFolderBrowserDialog(
 					KPRes.ExportToPrompt))
 				{
-					if(fbd.ShowDialog() != DialogResult.OK) return;
+					if(UIUtil.ShowDialog(fbd) != DialogResult.OK) return;
 					strDir = UrlUtil.EnsureTerminatingSeparator(fbd.SelectedPath, false);
 				}
 
@@ -652,8 +645,7 @@ namespace KeePass.Forms
 					int j = (bFwd ? (iStart + i) : (iStart - i + n)) % n;
 					ListViewItem lvi = m_lvCustomIcons.Items[j];
 
-					string strText = lvi.Text;
-					if(strText.IndexOf(strFind, StrUtil.CaseIgnoreCmp) >= 0)
+					if(StrUtil.ContainsTolerant(lvi.Text, strFind))
 					{
 						lvi.EnsureVisible();
 						UIUtil.SetFocusedItem(m_lvCustomIcons, lvi, true);

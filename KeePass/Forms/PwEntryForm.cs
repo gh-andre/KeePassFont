@@ -1,6 +1,6 @@
 /*
   KeePass Password Safe - The Open-Source Password Manager
-  Copyright (C) 2003-2025 Dominik Reichl <dominik.reichl@t-online.de>
+  Copyright (C) 2003-2026 Dominik Reichl <dominik.reichl@t-online.de>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -1017,8 +1017,7 @@ namespace KeePass.Forms
 			UIUtil.SetEnabledFast((bEdit && !bMulti && (nStringsSel >= 1)),
 				m_ctxStrMoveTo, m_ctxStrMoveToTitle, m_ctxStrMoveToUserName,
 				m_ctxStrMoveToPassword, m_ctxStrMoveToUrl, m_ctxStrMoveToNotes);
-			UIUtil.SetEnabledFast((bEdit && !bMulti), m_ctxStrOtpGen,
-				m_ctxToolsOtpGen);
+			UIUtil.SetEnabledFast(!bMulti, m_ctxStrOtpGen, m_ctxToolsOtpGen);
 
 			m_btnBinDelete.Enabled = (bEdit && (nBinSel >= 1));
 			m_btnBinOpen.Enabled = (nBinSel == 1);
@@ -1324,7 +1323,7 @@ namespace KeePass.Forms
 				using(FolderBrowserDialog fbd = UIUtil.CreateFolderBrowserDialog(
 					KPRes.AttachmentsSave))
 				{
-					if(fbd.ShowDialog() != DialogResult.OK) return;
+					if(UIUtil.ShowDialog(fbd) != DialogResult.OK) return;
 
 					string strRootPath = UrlUtil.EnsureTerminatingSeparator(
 						fbd.SelectedPath, false);
@@ -1791,7 +1790,7 @@ namespace KeePass.Forms
 			ipf.InitEx(m_ilIcons, (uint)PwIcon.Count, m_pwDatabase,
 				(uint)m_pwEntryIcon, m_pwCustomIconID);
 
-			if(ipf.ShowDialog() == DialogResult.OK)
+			if(UIUtil.ShowDialogAndDestroy(ipf) == DialogResult.OK)
 			{
 				m_pwEntryIcon = (PwIcon)ipf.ChosenIconId;
 				m_pwCustomIconID = ipf.ChosenCustomIconUuid;
@@ -1803,8 +1802,6 @@ namespace KeePass.Forms
 					UIUtil.SetButtonImage(m_btnIcon, m_ilIcons.Images[
 						(int)m_pwEntryIcon], true);
 			}
-
-			UIUtil.DestroyForm(ipf);
 
 			// UpdateHistoryList(false, true); // User may have deleted a custom icon
 		}
@@ -2081,12 +2078,8 @@ namespace KeePass.Forms
 			FieldRefForm dlg = new FieldRefForm();
 			dlg.InitEx(m_pwDatabase.RootGroup, m_ilIcons, strDefaultRef);
 
-			string strResult = string.Empty;
-			if(dlg.ShowDialog() == DialogResult.OK)
-				strResult = dlg.ResultReference;
-
-			UIUtil.DestroyForm(dlg);
-			return strResult;
+			return ((UIUtil.ShowDialogAndDestroy(dlg) == DialogResult.OK) ?
+				dlg.ResultReference : string.Empty);
 		}
 
 		private void CreateFieldReferenceIn(Control c, string strDefaultRef,
@@ -2635,9 +2628,10 @@ namespace KeePass.Forms
 
 			OtpGeneratorForm dlg = new OtpGeneratorForm();
 			dlg.InitEx(m_vStrings, m_pwDatabase);
+			dlg.ReadOnlyEx = (m_pwEditMode == PwEditMode.ViewReadOnlyEntry);
 
 			if(UIUtil.ShowDialogAndDestroy(dlg) == DialogResult.OK)
-				UpdateEntryStrings(false, true, true);
+				UpdateEntryStrings(false, false, true);
 		}
 
 		private void OnCtxToolsOtpGen(object sender, EventArgs e)
