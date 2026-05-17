@@ -50,13 +50,13 @@
 			// m_menuMain
 			// 
 			this.m_menuMain.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-			this.m_menuMain.ImageScalingSize = new System.Drawing.Size(24, 24);
+			this.m_menuMain.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.m_menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_menuFile});
 			this.m_menuMain.Location = new System.Drawing.Point(0, 0);
 			this.m_menuMain.Name = "m_menuMain";
-			this.m_menuMain.Padding = new System.Windows.Forms.Padding(14, 4, 0, 4);
-			this.m_menuMain.Size = new System.Drawing.Size(1752, 42);
+			this.m_menuMain.Padding = new System.Windows.Forms.Padding(18, 6, 0, 6);
+			this.m_menuMain.Size = new System.Drawing.Size(2336, 57);
 			this.m_menuMain.TabIndex = 2;
 			// 
 			// m_menuFile
@@ -64,48 +64,48 @@
 			this.m_menuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_menuFileExit});
 			this.m_menuFile.Name = "m_menuFile";
-			this.m_menuFile.Size = new System.Drawing.Size(62, 34);
+			this.m_menuFile.Size = new System.Drawing.Size(83, 45);
 			this.m_menuFile.Text = "&File";
 			// 
 			// m_menuFileExit
 			// 
 			this.m_menuFileExit.Name = "m_menuFileExit";
-			this.m_menuFileExit.Size = new System.Drawing.Size(149, 38);
+			this.m_menuFileExit.Size = new System.Drawing.Size(201, 50);
 			this.m_menuFileExit.Text = "E&xit";
 			// 
 			// m_statusMain
 			// 
-			this.m_statusMain.ImageScalingSize = new System.Drawing.Size(24, 24);
+			this.m_statusMain.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.m_statusMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_lblStatus});
-			this.m_statusMain.Location = new System.Drawing.Point(0, 1074);
+			this.m_statusMain.Location = new System.Drawing.Point(0, 1440);
 			this.m_statusMain.Name = "m_statusMain";
-			this.m_statusMain.Padding = new System.Windows.Forms.Padding(3, 0, 32, 0);
-			this.m_statusMain.Size = new System.Drawing.Size(1752, 22);
+			this.m_statusMain.Padding = new System.Windows.Forms.Padding(4, 0, 42, 0);
+			this.m_statusMain.Size = new System.Drawing.Size(2336, 22);
 			this.m_statusMain.TabIndex = 1;
 			// 
 			// m_lblStatus
 			// 
 			this.m_lblStatus.Name = "m_lblStatus";
-			this.m_lblStatus.Size = new System.Drawing.Size(1717, 15);
+			this.m_lblStatus.Size = new System.Drawing.Size(2290, 12);
 			this.m_lblStatus.Spring = true;
 			this.m_lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// m_webBrowser
 			// 
 			this.m_webBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_webBrowser.Location = new System.Drawing.Point(0, 79);
-			this.m_webBrowser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-			this.m_webBrowser.MinimumSize = new System.Drawing.Size(45, 42);
+			this.m_webBrowser.Location = new System.Drawing.Point(0, 104);
+			this.m_webBrowser.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+			this.m_webBrowser.MinimumSize = new System.Drawing.Size(60, 56);
 			this.m_webBrowser.Name = "m_webBrowser";
-			this.m_webBrowser.Size = new System.Drawing.Size(1752, 995);
+			this.m_webBrowser.Size = new System.Drawing.Size(2336, 1336);
 			this.m_webBrowser.TabIndex = 0;
 			this.m_webBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.OnWbDocumentCompleted);
 			this.m_webBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.OnWbNavigated);
 			// 
 			// m_toolNav
 			// 
-			this.m_toolNav.ImageScalingSize = new System.Drawing.Size(24, 24);
+			this.m_toolNav.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.m_toolNav.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_btnBack,
             this.m_btnForward,
@@ -114,10 +114,10 @@
             this.m_tssSep0,
             this.m_tbUrl,
             this.m_btnGo});
-			this.m_toolNav.Location = new System.Drawing.Point(0, 42);
+			this.m_toolNav.Location = new System.Drawing.Point(0, 57);
 			this.m_toolNav.Name = "m_toolNav";
-			this.m_toolNav.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-			this.m_toolNav.Size = new System.Drawing.Size(1752, 37);
+			this.m_toolNav.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+			this.m_toolNav.Size = new System.Drawing.Size(2336, 47);
 			this.m_toolNav.TabIndex = 3;
 			this.m_toolNav.TabStop = true;
 			// 
@@ -128,7 +128,7 @@
 			this.m_btnBack.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_btnBack.Name = "m_btnBack";
 			this.m_btnBack.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-			this.m_btnBack.Size = new System.Drawing.Size(34, 32);
+			this.m_btnBack.Size = new System.Drawing.Size(46, 41);
 			this.m_btnBack.Text = "&Back";
 			this.m_btnBack.Click += new System.EventHandler(this.OnBtnBack);
 			// 
@@ -139,7 +139,7 @@
 			this.m_btnForward.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_btnForward.Name = "m_btnForward";
 			this.m_btnForward.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-			this.m_btnForward.Size = new System.Drawing.Size(34, 32);
+			this.m_btnForward.Size = new System.Drawing.Size(46, 41);
 			this.m_btnForward.Text = "&Forward";
 			this.m_btnForward.Click += new System.EventHandler(this.OnBtnForward);
 			// 
@@ -151,7 +151,7 @@
 			this.m_btnReload.Name = "m_btnReload";
 			this.m_btnReload.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
 			this.m_btnReload.RightToLeftAutoMirrorImage = true;
-			this.m_btnReload.Size = new System.Drawing.Size(34, 32);
+			this.m_btnReload.Size = new System.Drawing.Size(46, 41);
 			this.m_btnReload.Text = "&Reload";
 			this.m_btnReload.Click += new System.EventHandler(this.OnBtnReload);
 			// 
@@ -162,7 +162,7 @@
 			this.m_btnStop.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_btnStop.Name = "m_btnStop";
 			this.m_btnStop.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-			this.m_btnStop.Size = new System.Drawing.Size(34, 32);
+			this.m_btnStop.Size = new System.Drawing.Size(46, 41);
 			this.m_btnStop.Text = "&Stop";
 			this.m_btnStop.Click += new System.EventHandler(this.OnBtnStop);
 			// 
@@ -170,14 +170,14 @@
 			// 
 			this.m_tssSep0.Name = "m_tssSep0";
 			this.m_tssSep0.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-			this.m_tssSep0.Size = new System.Drawing.Size(6, 37);
+			this.m_tssSep0.Size = new System.Drawing.Size(6, 47);
 			// 
 			// m_tbUrl
 			// 
-			this.m_tbUrl.Font = new System.Drawing.Font("Segoe UI", 11F);
+			this.m_tbUrl.Font = new System.Drawing.Font("Segoe UI", 11.25F);
 			this.m_tbUrl.Name = "m_tbUrl";
 			this.m_tbUrl.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-			this.m_tbUrl.Size = new System.Drawing.Size(445, 37);
+			this.m_tbUrl.Size = new System.Drawing.Size(592, 47);
 			this.m_tbUrl.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnTbUrlKeyDown);
 			// 
 			// m_btnGo
@@ -187,22 +187,22 @@
 			this.m_btnGo.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.m_btnGo.Name = "m_btnGo";
 			this.m_btnGo.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-			this.m_btnGo.Size = new System.Drawing.Size(34, 32);
+			this.m_btnGo.Size = new System.Drawing.Size(46, 41);
 			this.m_btnGo.Text = "&Go";
 			this.m_btnGo.Click += new System.EventHandler(this.OnBtnGo);
 			// 
 			// InternalBrowserForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-			this.ClientSize = new System.Drawing.Size(1752, 1096);
+			this.ClientSize = new System.Drawing.Size(2336, 1462);
 			this.Controls.Add(this.m_webBrowser);
 			this.Controls.Add(this.m_toolNav);
 			this.Controls.Add(this.m_statusMain);
 			this.Controls.Add(this.m_menuMain);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.MainMenuStrip = this.m_menuMain;
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
 			this.MinimizeBox = false;
 			this.Name = "InternalBrowserForm";
 			this.ShowInTaskbar = false;
