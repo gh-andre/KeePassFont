@@ -1,6 +1,6 @@
 ## Overview
 
-This is a copy of the KeePass v2.60 source, with a few changes described in
+This is a copy of the KeePass v2.61.1 source, with a few changes described in
 this file. See this page for the original application downloads and source
 packages.
 
@@ -290,31 +290,37 @@ having to go through tedious font update changes described in
 _Steps_ below.
 
 Note the 3 version-specific scaling tags in this repository, such
-as `2-58-150pct`. Use these tags to generate scaling patches via
-Git as follows:
+as `2-58-150pct`. The version 2.58.0 in this section refers to
+the previous KeePass version and 2.59.0 refers to the new version
+being prepared with new scaling values.
 
-    git diff keepass-2-58-0 2-58-0-150pct -- KeePass/Forms/*.Designer.cs > 2-58-0-150pct.patch
+Use these tags from the previous version to generate scaling patches
+as follows:
+
+    git diff keepass-2-58-0 2-58-0-150pct ^
+      -- KeePass/Forms/*.Designer.cs > 2-58-0-150pct.patch
 
 The patch generated in this way may be applied using this command:
 
-    "%PROGRAMFILES%\Git\usr\bin\patch.exe" -p1 --binary --input 2-58-0-150pct.patch
+    "%PROGRAMFILES%\Git\usr\bin\patch.exe" -p1 --binary ^
+      --input 2-58-0-150pct.patch
 
-When applying these patches across versions (e.g. when applying
-font scaling changes to the source for the new version), apply
-a specific patch first. If you see any errors, those forms will
-need to be updated manually, as described in _Steps_ below.
+Revert any forms that were changed upstream in the new version
+with this command.
 
-Note that applying font size patches across application versions
-is error-prone. Run this command to see forms changed between
-KeePass releases. These forms should not be patched, whether
-patches apply cleanly or not.
+    for /F %p in ('git diff --name-only keepass-2-58-0 keepass-2-59-1 ^
+      -- *Form.Designer.cs') do git show keepass-2-59-0:%p > %p
 
-    git diff --stat keepass-2-59-0 keepass-2-60-0 -- *Form.Designer.cs
+Use this command to list the files changed upstream in the new
+version. These files will have to be changed manually, as described
+in the section _Steps_.
 
-After applying the relevant patch, open all forms, as described
-in _Steps_, and verify each form's properties that the font size
-is 11 points. If there is any form that still has the original
-8 point setting, it will need to be updated manually.
+    git diff --stat keepass-2-58-0 keepass-2-59-0 -- *Form.Designer.cs
+
+After applying each patch, open all forms, as described in _Steps_,
+and verify each form's properties that the font size is 11 points.
+If there is any form that still has the original 8 point setting,
+it will need to be updated manually.
 
 Finally, a patch may not apply cleanly, even if there were no
 errors reported during patching. Make sure to test all forms,
@@ -324,12 +330,8 @@ If more than one font size patch is applied, reset forms to the
 original font size before applying the next patch with this
 command:
 
-    for /F %p in ('dir /B KeePass\Forms\*.Designer.cs') do git show keepass-2-59-0:KeePass/Forms/%p > KeePass\Forms\%p
-
-Note that the KeePass version in this command must be the one
-being currently updated, even if patches from past versions
-are applied, such as in this case font size patches from `2.58.0`
-are applied against `2.59.0`.
+    for /F %p in ('dir /B KeePass\Forms\*.Designer.cs') do ^
+      git show keepass-2-59-0:KeePass/Forms/%p > KeePass\Forms\%p
 
 ### Steps
 
